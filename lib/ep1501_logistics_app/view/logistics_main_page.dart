@@ -68,9 +68,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                   color: Colors.orange,
                 ),
               ),
+              Spacer(),
               Container(
-                margin: EdgeInsets.only(top: 16),
-                height: 80,
+                height: 88,
+                margin: EdgeInsets.only(bottom: 8),
                 decoration: BoxDecoration(
                   color: Colors.orange,
                 ),
