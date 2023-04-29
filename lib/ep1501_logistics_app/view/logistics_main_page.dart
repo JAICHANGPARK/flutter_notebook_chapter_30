@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class LogisticsMainPage extends StatefulWidget {
   const LogisticsMainPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,12 @@ class LogisticsMainPage extends StatefulWidget {
 class _LogisticsMainPageState extends State<LogisticsMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }
