@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1501_logistics_app/view/logistics_main_page.dart';
 
 
 class LogisticsApp extends StatelessWidget {
@@ -7,7 +8,7 @@ class LogisticsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(),
+      home: LogisticsMainPage(),
     );
   }
 }
