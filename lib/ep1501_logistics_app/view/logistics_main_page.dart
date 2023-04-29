@@ -12,8 +12,26 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [],
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Text("Afternoon"),
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(),
+                    ),
+                    child: Icon(
+                      Icons.notifications_none,
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
