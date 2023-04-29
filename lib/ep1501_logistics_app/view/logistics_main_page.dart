@@ -30,8 +30,19 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                       shape: BoxShape.circle,
                       border: Border.all(),
                     ),
+                    padding: EdgeInsets.all(8),
                     child: Icon(
                       Icons.notifications_none,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(),
+                    ),
+                    padding: EdgeInsets.all(8),
+                    child: Icon(
+                      Icons.person_outline,
                     ),
                   )
                 ],
