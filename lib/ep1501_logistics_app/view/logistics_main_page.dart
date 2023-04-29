@@ -20,7 +20,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 children: [
                   Text(
                     "Afternoon",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 34),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 34,
+                    ),
                   ),
                   Spacer(),
                   Container(
