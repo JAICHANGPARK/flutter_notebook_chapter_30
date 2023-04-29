@@ -20,11 +20,9 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 children: [
                   Text(
                     "Afternoon",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 34
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 34),
                   ),
+                  Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
@@ -36,6 +34,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                     ),
                   ),
                   Container(
+                    margin: EdgeInsets.only(left: 8),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       border: Border.all(),
