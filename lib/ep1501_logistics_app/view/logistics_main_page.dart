@@ -16,38 +16,57 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
           padding: const EdgeInsets.all(12.0),
           child: Column(
             children: [
-              Row(
-                children: [
-                  Text(
-                    "Afternoon",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 34,
+              Padding(
+                padding: const EdgeInsets.only(top: 16),
+                child: Row(
+                  children: [
+                    Text(
+                      "Afternoon",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 34,
+                      ),
                     ),
-                  ),
-                  Spacer(),
-                  Container(
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(),
+                    Spacer(),
+                    Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(),
+                      ),
+                      padding: EdgeInsets.all(8),
+                      child: Icon(
+                        Icons.notifications_none,
+                      ),
                     ),
-                    padding: EdgeInsets.all(8),
-                    child: Icon(
-                      Icons.notifications_none,
+                    Container(
+                      margin: EdgeInsets.only(left: 8),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(),
+                      ),
+                      padding: EdgeInsets.all(8),
+                      child: Icon(
+                        Icons.person_outline,
+                      ),
                     ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: 8),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(),
-                    ),
-                    padding: EdgeInsets.all(8),
-                    child: Icon(
-                      Icons.person_outline,
-                    ),
-                  )
-                ],
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 32,
+              ),
+              Container(
+                height: 340,
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                ),
+                margin: EdgeInsets.only(bottom: 16),
+              ),
+              Container(
+                height: 280,
+                decoration: BoxDecoration(
+                  color: Colors.orange,
+                ),
               )
             ],
           ),
