@@ -18,7 +18,13 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
             children: [
               Row(
                 children: [
-                  Text("Afternoon"),
+                  Text(
+                    "Afternoon",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 34
+                    ),
+                  ),
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
