@@ -11,6 +11,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(234, 234, 234, 1),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(12.0),
