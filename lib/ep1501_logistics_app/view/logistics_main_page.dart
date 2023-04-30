@@ -68,23 +68,43 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 16,
+                      left: 24,
                       right: 16,
-                      top: 16,
+                      top: 24,
                       bottom: 16,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Delivery TEAM\nTHAT CARES\n ABOUT YOU",
+                            "Delivery TEAM\nTHAT CARES\nABOUT YOU",
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                           Spacer(),
-                          Text("Logistics"),
+                          Text(
+                            "Logistics",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Container(
                             margin: EdgeInsets.only(top: 16),
                             height: 6,
                             decoration: BoxDecoration(
                               color: Colors.blue,
+                            ),
+                            child: Row(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                              ],
                             ),
                           )
                         ],
