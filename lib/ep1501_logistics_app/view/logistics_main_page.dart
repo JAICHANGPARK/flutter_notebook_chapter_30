@@ -65,6 +65,33 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                   borderRadius: BorderRadius.circular(8),
                 ),
                 margin: const EdgeInsets.only(bottom: 16),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 16,
+                      right: 16,
+                      top: 16,
+                      bottom: 16,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Delivery TEAM\nTHAT CARES\n ABOUT YOU",
+                          ),
+                          Spacer(),
+                          Text("Logistics"),
+                          Container(
+                            margin: EdgeInsets.only(top: 16),
+                            height: 6,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: 240,
@@ -85,7 +112,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                           ),
                         ),
                         SizedBox(
-                          width: 2,
+                          width: 4,
                         ),
                         Expanded(
                           child: Container(
@@ -124,18 +151,15 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         ),
                         Expanded(
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(12),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey[400]!,
-                                  spreadRadius: -4,
-                                  blurRadius: 3,
-                                  offset: Offset(0, 9),
-                                )
-                              ]
-                            ),
+                            decoration:
+                                BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12), boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey[400]!,
+                                spreadRadius: -4,
+                                blurRadius: 3,
+                                offset: Offset(0, 9),
+                              )
+                            ]),
                           ),
                         ),
                       ],
