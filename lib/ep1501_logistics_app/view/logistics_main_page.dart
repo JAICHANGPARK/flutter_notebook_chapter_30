@@ -75,7 +75,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Delivery TEAM\nTHAT CARES\nABOUT YOU",
                             textAlign: TextAlign.left,
                             style: TextStyle(
@@ -83,8 +83,8 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Spacer(),
-                          Text(
+                          const Spacer(),
+                          const Text(
                             "Logistics",
                             style: TextStyle(
                               fontSize: 18,
@@ -92,13 +92,13 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(top: 16),
+                            margin: const EdgeInsets.only(top: 16),
                             height: 6,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.blue,
                             ),
                             child: Row(
-                              children: [
+                              children: const [
                                 Expanded(child: Placeholder()),
                                 Expanded(child: Placeholder()),
                                 Expanded(child: Placeholder()),
@@ -131,7 +131,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 4,
                         ),
                         Expanded(
@@ -144,7 +144,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         ),
                       ],
                     )),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Expanded(
@@ -160,13 +160,13 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                   color: Colors.grey[400]!,
                                   spreadRadius: -4,
                                   blurRadius: 3,
-                                  offset: Offset(0, 9),
+                                  offset: const Offset(0, 9),
                                 )
                               ],
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 4,
                         ),
                         Expanded(
@@ -177,7 +177,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                 color: Colors.grey[400]!,
                                 spreadRadius: -4,
                                 blurRadius: 3,
-                                offset: Offset(0, 9),
+                                offset: const Offset(0, 9),
                               )
                             ]),
                           ),
