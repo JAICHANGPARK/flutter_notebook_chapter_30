@@ -92,7 +92,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             Icon(
                               Icons.home_filled,
                             ),
-                            Text("Home".toUpperCase()),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text("Home".toUpperCase(),),
                           ],
                         ),
                       ),
