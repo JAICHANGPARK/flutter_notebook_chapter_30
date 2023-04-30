@@ -62,7 +62,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 height: 340,
                 decoration: BoxDecoration(
                   color: const Color.fromRGBO(229, 248, 0, 1),
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(16),
                 ),
                 margin: const EdgeInsets.only(bottom: 16),
                 child: Stack(
