@@ -83,30 +83,95 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: const Color.fromRGBO(229, 248, 0, 1),
-                          borderRadius: BorderRadius.circular(16),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const Icon(
-                              Icons.home_filled,
-                              size: 28,
-                            ),
-                            const SizedBox(
-                              height: 4,
-                            ),
-                            Text(
-                              "Home".toUpperCase(),
-                            ),
-                          ],
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _index = 0;
+                          });
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: const Color.fromRGBO(229, 248, 0, 1),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(
+                                Icons.home_filled,
+                                size: 28,
+                              ),
+                              const SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "Home".toUpperCase(),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                    const Expanded(child: Placeholder()),
-                    const Expanded(child: Placeholder()),
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _index = 1;
+                          });
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: _index == 1 ? const Color.fromRGBO(229, 248, 0, 1) : Colors.white,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(
+                                Icons.search,
+                                size: 28,
+                              ),
+                              const SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "Search".toUpperCase(),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _index = 2;
+                          });
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: _index == 2 ? const Color.fromRGBO(229, 248, 0, 1) : Colors.white,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(
+                                Icons.home_filled,
+                                size: 28,
+                              ),
+                              const SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "Home".toUpperCase(),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               )
