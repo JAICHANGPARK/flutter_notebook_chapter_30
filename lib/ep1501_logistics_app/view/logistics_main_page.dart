@@ -151,14 +151,13 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         },
                         child: Container(
                           decoration: BoxDecoration(
-                            color: _index == 2 ? const Color.fromRGBO(229, 248, 0, 1) : Colors.white,
-                            borderRadius: BorderRadius.circular(16),
+                            color: _index == 2 ? const Color.fromRGBO(229, 248, 0, 1) : Colors.white,                            borderRadius: BorderRadius.circular(16),
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               const Icon(
-                                Icons.home_filled,
+                                Icons.inventory_2_outlined,
                                 size: 28,
                               ),
                               const SizedBox(
