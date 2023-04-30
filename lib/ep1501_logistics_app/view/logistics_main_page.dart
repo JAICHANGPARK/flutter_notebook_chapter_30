@@ -60,8 +60,9 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
               ),
               Container(
                 height: 340,
-                decoration: const BoxDecoration(
-                  color: Colors.yellow,
+                decoration: BoxDecoration(
+                  color: const Color.fromRGBO(229, 248, 0, 1),
+                  borderRadius: BorderRadius.circular(8),
                 ),
                 margin: const EdgeInsets.only(bottom: 16),
               ),
@@ -69,6 +70,30 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 height: 240,
                 decoration: const BoxDecoration(
                   color: Colors.orange,
+                ),
+                child: Column(
+                  children: [
+                    Expanded(
+                        child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Expanded(child: Placeholder()),
+                      ],
+                    )),
+                    Expanded(
+                        child: Row(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                      ],
+                    )),
+                  ],
                 ),
               ),
               const Spacer(),
@@ -91,7 +116,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         },
                         child: Container(
                           decoration: BoxDecoration(
-                            color: const Color.fromRGBO(229, 248, 0, 1),
+                            color: _index == 0 ? const Color.fromRGBO(229, 248, 0, 1) : Colors.white,
                             borderRadius: BorderRadius.circular(16),
                           ),
                           child: Column(
@@ -151,7 +176,8 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         },
                         child: Container(
                           decoration: BoxDecoration(
-                            color: _index == 2 ? const Color.fromRGBO(229, 248, 0, 1) : Colors.white,                            borderRadius: BorderRadius.circular(16),
+                            color: _index == 2 ? const Color.fromRGBO(229, 248, 0, 1) : Colors.white,
+                            borderRadius: BorderRadius.circular(16),
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
