@@ -75,6 +75,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 margin: EdgeInsets.only(bottom: 8),
                 decoration: BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Row(
+                  children: [],
                 ),
               )
             ],
