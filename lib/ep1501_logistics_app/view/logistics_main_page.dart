@@ -71,12 +71,13 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
               ),
               Spacer(),
               Container(
-                height: 88,
+                height: 84,
                 margin: EdgeInsets.only(bottom: 8),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(24),
                 ),
+                padding: EdgeInsets.all(6),
                 child: Row(
                   children: [
                     Expanded(
@@ -84,6 +85,15 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         decoration: BoxDecoration(
                           color: Color.fromRGBO(229, 248, 0, 1),
                           borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.home_filled,
+                            ),
+                            Text("Home".toUpperCase()),
+                          ],
                         ),
                       ),
                     ),
