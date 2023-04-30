@@ -80,17 +80,45 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
                             ),
                           ),
                         ),
-                        Expanded(child: Placeholder()),
+                        SizedBox(
+                          width: 2,
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                        ),
                       ],
                     )),
+                    SizedBox(
+                      height: 2,
+                    ),
                     Expanded(
                         child: Row(
                       children: [
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                        ),
                       ],
                     )),
                   ],
