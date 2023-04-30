@@ -79,11 +79,14 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 ),
                 child: Row(
                   children: [
-                    Expanded(child: Container(
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(229, 248, 0, 1)
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(229, 248, 0, 1),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
                       ),
-                    )),
+                    ),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
                   ],
