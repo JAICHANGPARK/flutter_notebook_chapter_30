@@ -68,9 +68,9 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
               ),
               Container(
                 height: 240,
-                decoration: const BoxDecoration(
-                  color: Colors.orange,
-                ),
+                // decoration: const BoxDecoration(
+                //   color: Colors.orange,
+                // ),
                 child: Column(
                   children: [
                     Expanded(
@@ -108,8 +108,19 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(12),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey[400]!,
+                                  spreadRadius: -4,
+                                  blurRadius: 3,
+                                  offset: Offset(0, 9),
+                                )
+                              ],
                             ),
                           ),
+                        ),
+                        SizedBox(
+                          width: 2,
                         ),
                         Expanded(
                           child: Container(
