@@ -81,7 +81,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                   children: [
                     Expanded(child: Container(
                       decoration: BoxDecoration(
-                        
+                        color: Color.fromRGBO(229, 248, 0, 1)
                       ),
                     )),
                     Expanded(child: Placeholder()),
