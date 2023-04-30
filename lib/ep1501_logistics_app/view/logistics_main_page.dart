@@ -98,7 +98,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                       ],
                     )),
                     SizedBox(
-                      height: 2,
+                      height: 4,
                     ),
                     Expanded(
                         child: Row(
@@ -120,13 +120,21 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                           ),
                         ),
                         SizedBox(
-                          width: 2,
+                          width: 4,
                         ),
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(12),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey[400]!,
+                                  spreadRadius: -4,
+                                  blurRadius: 3,
+                                  offset: Offset(0, 9),
+                                )
+                              ]
                             ),
                           ),
                         ),
