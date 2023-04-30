@@ -71,7 +71,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
               ),
               Spacer(),
               Container(
-                height: 84,
+                height: 78,
                 margin: EdgeInsets.only(bottom: 8),
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -91,6 +91,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                           children: [
                             Icon(
                               Icons.home_filled,
+                              size: 28,
                             ),
                             SizedBox(
                               height: 4,
