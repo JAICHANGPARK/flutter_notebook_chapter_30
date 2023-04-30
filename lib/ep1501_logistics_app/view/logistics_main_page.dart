@@ -78,7 +78,15 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Row(
-                  children: [],
+                  children: [
+                    Expanded(child: Container(
+                      decoration: BoxDecoration(
+                        
+                      ),
+                    )),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
                 ),
               )
             ],
