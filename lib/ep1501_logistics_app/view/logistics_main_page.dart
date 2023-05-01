@@ -379,7 +379,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                 height: 4,
                               ),
                               Text(
-                                "Home".toUpperCase(),
+                                "My DELIVERIES".toUpperCase(),
                               ),
                             ],
                           ),
