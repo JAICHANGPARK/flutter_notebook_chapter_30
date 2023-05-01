@@ -141,10 +141,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                   left: 12,
                                   child: Text(
                                     "SEND\nSHIPMENT",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16
-                                    ),
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                   ),
                                 )
                               ],
@@ -191,15 +188,18 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         ),
                         Expanded(
                           child: Container(
-                            decoration:
-                                BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12), boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey[400]!,
-                                spreadRadius: -4,
-                                blurRadius: 3,
-                                offset: const Offset(0, 9),
-                              )
-                            ]),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey[400]!,
+                                  spreadRadius: -4,
+                                  blurRadius: 3,
+                                  offset: const Offset(0, 9),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ],
