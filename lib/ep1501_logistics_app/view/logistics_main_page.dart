@@ -204,6 +204,26 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                 )
                               ],
                             ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  right: 12,
+                                  top: 12,
+                                  child: Icon(Icons.biotech),
+                                ),
+                                Positioned(
+                                  bottom: 12,
+                                  left: 12,
+                                  child: Text(
+                                    "HELP\nCENTER",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         const SizedBox(
@@ -220,6 +240,26 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                   spreadRadius: -4,
                                   blurRadius: 3,
                                   offset: const Offset(0, 9),
+                                )
+                              ],
+                            ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  right: 12,
+                                  top: 12,
+                                  child: Icon(Icons.flight_takeoff),
+                                ),
+                                Positioned(
+                                  bottom: 12,
+                                  left: 12,
+                                  child: Text(
+                                    "SERVICE\nPOINTS",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
                                 )
                               ],
                             ),
