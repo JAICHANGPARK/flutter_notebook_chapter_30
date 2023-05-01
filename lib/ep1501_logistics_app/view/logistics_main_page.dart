@@ -380,6 +380,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "My DELIVERIES".toUpperCase(),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12
+                                ),
                               ),
                             ],
                           ),
