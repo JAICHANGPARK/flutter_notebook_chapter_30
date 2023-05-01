@@ -19,6 +19,9 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
           padding: const EdgeInsets.all(12.0),
           child: Column(
             children: [
+              Expanded(child: Column(children: [
+
+              ],),),
               Padding(
                 padding: const EdgeInsets.only(top: 16),
                 child: Row(
