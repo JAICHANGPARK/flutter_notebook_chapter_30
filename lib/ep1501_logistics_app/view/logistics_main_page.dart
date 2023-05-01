@@ -136,6 +136,11 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                   top: 12,
                                   child: Icon(Icons.rocket_launch),
                                 ),
+                                Positioned(
+                                  child: Text(
+                                    "SEND\nSHIPMENT",
+                                  ),
+                                )
                               ],
                             ),
                           ),
