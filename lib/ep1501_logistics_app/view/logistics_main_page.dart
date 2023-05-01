@@ -101,24 +101,25 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                     ),
                                     Container(
                                       margin: const EdgeInsets.only(top: 16),
-                                      height: 6,
+                                      height: 4,
                                       decoration: const BoxDecoration(
-                                        color: Colors.blue,
+                                        // color: Colors.blue,
                                       ),
                                       child: Row(
                                         children:  [
                                           Expanded(child: Container(
                                             color: Colors.black,
                                           )),
+                                          SizedBox(width: 4,),
                                           Expanded(child: Container(
                                             color: Colors.black,
-                                          )),
+                                          )),SizedBox(width: 4,),
                                           Expanded(child: Container(
                                             color: Colors.grey,
-                                          )),
+                                          )),SizedBox(width: 4,),
                                           Expanded(child: Container(
                                             color: Colors.grey,
-                                          )),
+                                          )),SizedBox(width: 4,),
                                           Expanded(child: Container(
                                             color: Colors.grey,
                                           )),
