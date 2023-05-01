@@ -353,7 +353,16 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Row(
-                            children: [],
+                            children: [
+                              Text("ID:"),
+                              Text("94 2167 2200 0000"),
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  shape: BoxShape.circle,
+                                ),
+                              )
+                            ],
                           ),
                         ),
                         SizedBox(
