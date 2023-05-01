@@ -111,11 +111,17 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                             color: Colors.black,
                                           )),
                                           Expanded(child: Container(
-                                            color: Coors.black,
+                                            color: Colors.black,
                                           )),
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder()),
+                                          Expanded(child: Container(
+                                            color: Colors.grey,
+                                          )),
+                                          Expanded(child: Container(
+                                            color: Colors.grey,
+                                          )),
+                                          Expanded(child: Container(
+                                            color: Colors.grey,
+                                          )),
                                         ],
                                       ),
                                     )
