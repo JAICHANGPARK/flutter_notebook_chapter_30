@@ -355,15 +355,26 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                           padding: EdgeInsets.symmetric(horizontal: 12),
                           child: Row(
                             children: [
-                              Text("ID:"),
-                              Text("94 2167 2200 0000"),
+                              Text("ID:", style: TextStyle(
+                                fontSize: 18,
+                              ),),
+                              Text(
+                                "94 2167 2200 0000",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
+                              Spacer(),
                               Container(
                                 decoration: BoxDecoration(
                                   border: Border.all(),
                                   shape: BoxShape.circle,
                                 ),
                                 padding: EdgeInsets.all(8),
-                                child: Icon(Icons.location_pin,),
+                                child: Icon(
+                                  Icons.location_pin,
+                                ),
                               )
                             ],
                           ),
