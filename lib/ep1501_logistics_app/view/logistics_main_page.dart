@@ -353,10 +353,18 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.grey[200]!,
+                                  color: Colors.grey[200]!,
+                                  spreadRadius: -32,
+                                  blurRadius: 2,
+                                  offset: Offset(0,32)
+                              ),
+                              BoxShadow(
+                                color: Colors.grey[300]!,
                                 spreadRadius: -8,
-                                offset: Offset(0,4)
-                              )
+                                blurRadius: 2,
+                                offset: Offset(0,16)
+                              ),
+
                             ]
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 12),
