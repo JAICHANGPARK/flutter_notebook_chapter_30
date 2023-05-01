@@ -130,7 +130,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Stack(
-                              children: [
+                              children: const [
                                 Positioned(
                                   right: 12,
                                   top: 12,
@@ -161,7 +161,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Stack(
-                              children: [
+                              children: const [
                                 Positioned(
                                   right: 12,
                                   top: 12,
@@ -205,7 +205,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ],
                             ),
                             child: Stack(
-                              children: [
+                              children: const [
                                 Positioned(
                                   right: 12,
                                   top: 12,
@@ -244,7 +244,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ],
                             ),
                             child: Stack(
-                              children: [
+                              children: const [
                                 Positioned(
                                   right: 12,
                                   top: 12,
