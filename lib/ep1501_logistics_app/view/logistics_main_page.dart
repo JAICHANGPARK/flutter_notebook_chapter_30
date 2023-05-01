@@ -320,6 +320,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "Home".toUpperCase(),
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12
+                                ),
                               ),
                             ],
                           ),
@@ -350,6 +354,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "Search".toUpperCase(),
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12
+                                ),
                               ),
                             ],
                           ),
