@@ -341,15 +341,19 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         Expanded(
                             child: Container(
                           margin: EdgeInsets.symmetric(vertical: 16),
-                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
                         )),
                         Container(
                           height: 52,
-                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
                           child: Row(
-                            children: [
-                              
-                            ],
+                            children: [],
                           ),
                         ),
                         SizedBox(
