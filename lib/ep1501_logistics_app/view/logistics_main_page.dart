@@ -103,24 +103,40 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                       margin: const EdgeInsets.only(top: 16),
                                       height: 4,
                                       decoration: const BoxDecoration(
-                                        // color: Colors.blue,
-                                      ),
+                                          // color: Colors.blue,
+                                          ),
                                       child: Row(
-                                        children:  [
-                                          Expanded(child: Container(
+                                        children: [
+                                          Expanded(
+                                              child: Container(
                                             color: Colors.black,
                                           )),
-                                          SizedBox(width: 4,),
-                                          Expanded(child: Container(
+                                          SizedBox(
+                                            width: 4,
+                                          ),
+                                          Expanded(
+                                              child: Container(
                                             color: Colors.black,
-                                          )),SizedBox(width: 4,),
-                                          Expanded(child: Container(
+                                          )),
+                                          SizedBox(
+                                            width: 4,
+                                          ),
+                                          Expanded(
+                                              child: Container(
                                             color: Colors.grey,
-                                          )),SizedBox(width: 4,),
-                                          Expanded(child: Container(
+                                          )),
+                                          SizedBox(
+                                            width: 4,
+                                          ),
+                                          Expanded(
+                                              child: Container(
                                             color: Colors.grey,
-                                          )),SizedBox(width: 4,),
-                                          Expanded(child: Container(
+                                          )),
+                                          SizedBox(
+                                            width: 4,
+                                          ),
+                                          Expanded(
+                                              child: Container(
                                             color: Colors.grey,
                                           )),
                                         ],
@@ -350,13 +366,14 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                           ),
                         ),
                         Expanded(
-                            child: Container(
-                          margin: const EdgeInsets.symmetric(vertical: 16),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12),
+                          child: Container(
+                            margin: const EdgeInsets.symmetric(vertical: 16),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
                           ),
-                        )),
+                        ),
                         Container(
                           height: 52,
                           decoration: BoxDecoration(
