@@ -160,6 +160,26 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(12),
                             ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  right: 12,
+                                  top: 12,
+                                  child: Icon(Icons.save),
+                                ),
+                                Positioned(
+                                  bottom: 12,
+                                  left: 12,
+                                  child: Text(
+                                    "FEES\n&PRICES",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ],
