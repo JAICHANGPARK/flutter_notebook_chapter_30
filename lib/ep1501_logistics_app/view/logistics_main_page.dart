@@ -322,10 +322,9 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             children: [
                               Expanded(
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                      color: const Color.fromRGBO(229, 248, 0, 1),
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                decoration: BoxDecoration(
+                                    color: const Color.fromRGBO(229, 248, 0, 1),
+                                    borderRadius: BorderRadius.circular(8)),
                                 child: Center(
                                   child: Text("TO ME (6)"),
                                 ),
@@ -339,22 +338,23 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             ],
                           ),
                         ),
-                        Expanded(child: Container(
+                        Expanded(
+                            child: Container(
                           margin: EdgeInsets.symmetric(vertical: 16),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                            borderRadius: BorderRadius.circular(12)
-                          ),
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
                         )),
-
                         Container(
-
                           height: 52,
-                          decoration: BoxDecoration(
-                            color: Colors.white
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
+                          child: Row(
+                            children: [
+                              
+                            ],
                           ),
                         ),
-                        SizedBox(height: 24,)
+                        SizedBox(
+                          height: 24,
+                        )
                       ],
                     ),
                   ],
