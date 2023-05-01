@@ -284,17 +284,17 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                     Column(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 16),
+                          padding: const EdgeInsets.only(top: 8),
                           child: Row(
                             children: [
-                              Text(
+                              const Text(
                                 "Deliveries",
                                 style: TextStyle(
                                   fontSize: 32,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
@@ -307,9 +307,24 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                             ],
                           ),
-                        )
+                        ),
+                        Container(
+                          height: 48,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Row(
+                            children: [
+                              Expanded(child: Container()),
+                              Expanded(child: Container()),
+                            ],
+                          ),
+                        ),
+
                       ],
-                    )
+                    ),
+
                   ],
                 ),
               ),
@@ -348,7 +363,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "Home".toUpperCase(),
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                               ),
                             ],
                           ),
@@ -379,7 +394,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "Search".toUpperCase(),
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                               ),
                             ],
                           ),
@@ -410,7 +425,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "My DELIVERIES".toUpperCase(),
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                               ),
                             ],
                           ),
