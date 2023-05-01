@@ -114,7 +114,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 ),
               ),
               Container(
-                height: 240,
+                height: 220,
                 // decoration: const BoxDecoration(
                 //   color: Colors.orange,
                 // ),
@@ -137,8 +137,14 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                   child: Icon(Icons.rocket_launch),
                                 ),
                                 Positioned(
+                                  bottom: 12,
+                                  left: 12,
                                   child: Text(
                                     "SEND\nSHIPMENT",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16
+                                    ),
                                   ),
                                 )
                               ],
