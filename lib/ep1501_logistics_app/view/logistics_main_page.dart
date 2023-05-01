@@ -210,7 +210,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
               const Spacer(),
               Container(
                 height: 78,
-                margin: const EdgeInsets.only(bottom: 8),
+                margin: const EdgeInsets.only(bottom: 16),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(24),
