@@ -288,10 +288,21 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             Text(
                               "Deliveries",
                               style: TextStyle(
-                                fontSize: 28,
+                                fontSize: 32,
                                 fontWeight: FontWeight.bold,
                               ),
-                            )
+                            ),
+                            Spacer(),
+                            Container(
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(),
+                              ),
+                              padding: const EdgeInsets.all(8),
+                              child: const Icon(
+                                Icons.timer_outlined,
+                              ),
+                            ),
                           ],
                         )
                       ],
