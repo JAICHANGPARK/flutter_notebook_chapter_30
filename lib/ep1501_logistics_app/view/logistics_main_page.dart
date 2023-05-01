@@ -281,7 +281,21 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                       ],
                     ),
                     Container(),
-                    Container(),
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text(
+                              "Deliveries",
+                              style: TextStyle(
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
@@ -320,10 +334,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "Home".toUpperCase(),
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                               ),
                             ],
                           ),
@@ -354,10 +365,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "Search".toUpperCase(),
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                               ),
                             ],
                           ),
@@ -388,10 +396,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "My DELIVERIES".toUpperCase(),
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                               ),
                             ],
                           ),
