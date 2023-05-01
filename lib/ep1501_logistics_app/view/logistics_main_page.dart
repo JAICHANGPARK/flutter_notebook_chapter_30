@@ -362,6 +362,8 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                   border: Border.all(),
                                   shape: BoxShape.circle,
                                 ),
+                                padding: EdgeInsets.all(8),
+                                child: Icon(Icons.location_pin,),
                               )
                             ],
                           ),
