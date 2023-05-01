@@ -352,6 +352,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(12),
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 12),
                           child: Row(
                             children: [
                               Text("ID:"),
