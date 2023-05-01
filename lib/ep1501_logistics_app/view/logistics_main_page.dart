@@ -132,8 +132,8 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             child: Stack(
                               children: [
                                 Positioned(
-                                  right: 8,
-                                  top: 8,
+                                  right: 12,
+                                  top: 12,
                                   child: Icon(Icons.rocket_launch),
                                 ),
                               ],
