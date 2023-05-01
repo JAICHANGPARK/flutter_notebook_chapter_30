@@ -309,15 +309,23 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                           ),
                         ),
                         Container(
-                          height: 48,
+                          height: 42,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Row(
                             children: [
-                              Expanded(child: Container()),
-                              Expanded(child: Container()),
+                              Expanded(child: Container(
+                                child: Center(
+                                  child: Text("TO ME (6)"),
+                                ),
+                              )),
+                              Expanded(child: Container(
+                                child: Center(
+                                  child: Text("FROm ME (2)"),
+                                ),
+                              )),
                             ],
                           ),
                         ),
