@@ -308,7 +308,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 42,
                         ),
                         Container(
@@ -317,7 +317,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          padding: EdgeInsets.all(4),
+                          padding: const EdgeInsets.all(4),
                           child: Row(
                             children: [
                               Expanded(
@@ -325,13 +325,13 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                 decoration: BoxDecoration(
                                     color: const Color.fromRGBO(229, 248, 0, 1),
                                     borderRadius: BorderRadius.circular(8)),
-                                child: Center(
+                                child: const Center(
                                   child: Text("TO ME (6)"),
                                 ),
                               )),
                               Expanded(
                                   child: Container(
-                                child: Center(
+                                child: const Center(
                                   child: Text("FROM ME (2)"),
                                 ),
                               )),
@@ -340,7 +340,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         ),
                         Expanded(
                             child: Container(
-                          margin: EdgeInsets.symmetric(vertical: 16),
+                          margin: const EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(12),
@@ -351,35 +351,45 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey[200]!,
+                                spreadRadius: -8,
+                                offset: Offset(0,4)
+                              )
+                            ]
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 12),
                           child: Row(
                             children: [
-                              Text("ID:", style: TextStyle(
-                                fontSize: 18,
-                              ),),
-                              Text(
+                              const Text(
+                                "ID:",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                ),
+                              ),
+                              const Text(
                                 "94 2167 2200 0000",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Container(
                                 decoration: BoxDecoration(
                                   border: Border.all(),
                                   shape: BoxShape.circle,
                                 ),
-                                padding: EdgeInsets.all(8),
-                                child: Icon(
+                                padding: const EdgeInsets.all(8),
+                                child: const Icon(
                                   Icons.location_pin,
                                 ),
                               )
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 24,
                         )
                       ],
