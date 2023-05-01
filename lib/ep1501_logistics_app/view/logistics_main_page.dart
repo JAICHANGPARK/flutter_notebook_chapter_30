@@ -348,25 +348,12 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         )),
                         Container(
                           height: 52,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12),
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.grey[200]!,
-                                  spreadRadius: -32,
-                                  blurRadius: 2,
-                                  offset: Offset(0,32)
-                              ),
-                              BoxShadow(
-                                color: Colors.grey[300]!,
-                                spreadRadius: -8,
-                                blurRadius: 2,
-                                offset: Offset(0,16)
-                              ),
-
-                            ]
-                          ),
+                          decoration:
+                              BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12), boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey[200]!, spreadRadius: -32, blurRadius: 1, offset: Offset(0, 32)),
+                            BoxShadow(color: Colors.grey[300]!, spreadRadius: -8, blurRadius: 1, offset: Offset(0, 16)),
+                          ]),
                           padding: const EdgeInsets.symmetric(horizontal: 12),
                           child: Row(
                             children: [
