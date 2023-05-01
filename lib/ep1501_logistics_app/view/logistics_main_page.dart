@@ -317,13 +317,14 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          p
+                          padding: EdgeInsets.all(4),
                           child: Row(
                             children: [
                               Expanded(
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: const Color.fromRGBO(229, 248, 0, 1),
+                                      borderRadius: BorderRadius.circular(8)
                                     ),
                                 child: Center(
                                   child: Text("TO ME (6)"),
