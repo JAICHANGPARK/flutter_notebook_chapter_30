@@ -129,6 +129,13 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(12),
                             ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  child: Icon(Icons.rocket_launch),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                         const SizedBox(
