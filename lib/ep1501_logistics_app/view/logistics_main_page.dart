@@ -339,6 +339,20 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             ],
                           ),
                         ),
+                        Expanded(child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white
+                          ),
+                        )),
+
+                        Container(
+                          
+                          height: 52,
+                          decoration: BoxDecoration(
+                            color: Colors.white
+                          ),
+                        ),
+                        SizedBox(height: 24,)
                       ],
                     ),
                   ],
