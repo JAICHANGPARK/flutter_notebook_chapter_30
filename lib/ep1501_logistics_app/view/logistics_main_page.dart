@@ -283,27 +283,30 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                     Container(),
                     Column(
                       children: [
-                        Row(
-                          children: [
-                            Text(
-                              "Deliveries",
-                              style: TextStyle(
-                                fontSize: 32,
-                                fontWeight: FontWeight.bold,
+                        Padding(
+                          padding: const EdgeInsets.only(top: 16),
+                          child: Row(
+                            children: [
+                              Text(
+                                "Deliveries",
+                                style: TextStyle(
+                                  fontSize: 32,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            Spacer(),
-                            Container(
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(),
+                              Spacer(),
+                              Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(),
+                                ),
+                                padding: const EdgeInsets.all(8),
+                                child: const Icon(
+                                  Icons.timer_outlined,
+                                ),
                               ),
-                              padding: const EdgeInsets.all(8),
-                              child: const Icon(
-                                Icons.timer_outlined,
-                              ),
-                            ),
-                          ],
+                            ],
+                          ),
                         )
                       ],
                     )
