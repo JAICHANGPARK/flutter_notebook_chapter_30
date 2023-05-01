@@ -141,7 +141,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                                   left: 12,
                                   child: Text(
                                     "SEND\nSHIPMENT",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
                                   ),
                                 )
                               ],
