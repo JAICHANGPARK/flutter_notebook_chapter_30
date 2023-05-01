@@ -340,6 +340,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                           ),
                         ),
                         Expanded(child: Container(
+                          margin: EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
                               color: Colors.white,
                             borderRadius: BorderRadius.circular(12)
@@ -347,7 +348,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                         )),
 
                         Container(
-                          margin: EdgeInsets.only(top: 12),
+
                           height: 52,
                           decoration: BoxDecoration(
                             color: Colors.white
