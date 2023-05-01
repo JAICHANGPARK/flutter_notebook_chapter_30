@@ -308,31 +308,38 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                             ],
                           ),
                         ),
+                        SizedBox(
+                          height: 42,
+                        ),
                         Container(
                           height: 42,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8),
                           ),
+                          p
                           child: Row(
                             children: [
-                              Expanded(child: Container(
+                              Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: const Color.fromRGBO(229, 248, 0, 1),
+                                    ),
                                 child: Center(
                                   child: Text("TO ME (6)"),
                                 ),
                               )),
-                              Expanded(child: Container(
+                              Expanded(
+                                  child: Container(
                                 child: Center(
-                                  child: Text("FROm ME (2)"),
+                                  child: Text("FROM ME (2)"),
                                 ),
                               )),
                             ],
                           ),
                         ),
-
                       ],
                     ),
-
                   ],
                 ),
               ),
