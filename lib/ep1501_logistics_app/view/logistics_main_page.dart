@@ -372,6 +372,42 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(12),
                             ),
+                            child: Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Row(
+                                    children: [
+                                      const Text(
+                                        "ID:",
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                        ),
+                                      ),
+                                      const Text(
+                                        "94 2167 2200 0000",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 18,
+                                        ),
+                                      ),
+                                      const Spacer(),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          border: Border.all(),
+                                          shape: BoxShape.circle,
+                                        ),
+                                        padding: const EdgeInsets.all(8),
+                                        child: const Icon(
+                                          Icons.location_pin,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Divider(),
+                              ],
+                            ),
                           ),
                         ),
                         Container(
