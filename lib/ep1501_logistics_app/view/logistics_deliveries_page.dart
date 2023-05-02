@@ -129,14 +129,14 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                         "Boston",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 16
+                          fontSize: 16,
                         ),
                       ),
                       Text(
                         "New york",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                            fontSize: 16
+                          fontSize: 16,
                         ),
                       ),
                     ],
