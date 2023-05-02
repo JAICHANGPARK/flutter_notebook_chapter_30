@@ -201,7 +201,51 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: SeparatorWidget(),
-                )
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                        child: Column(
+                      children: [
+                        Text(
+                          "DELIVERY COST",
+                        ),
+                        SizedBox(
+                          height: 6,
+                        ),
+                        Text(
+                          "\$10.99",
+                        )
+                      ],
+                    )),
+                    Expanded(child: Column( children: [
+                      Text(
+                        "ITEMS #",
+                      ),
+                      SizedBox(
+                        height: 6,
+                      ),
+                      Text(
+                        "5",
+                      )
+                    ],)),
+                    Expanded(child: Column( children: [
+                      Text(
+                        "DELIVERY COST",
+                      ),
+                      SizedBox(
+                        height: 6,
+                      ),
+                      Text(
+                        "\$10.99",
+                      )
+                    ],)),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  child: SeparatorWidget(),
+                ),
               ],
             ),
           ),
