@@ -110,63 +110,66 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                   color: Colors.grey,
                   thickness: 2,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("27 JAN 2023"),
-                    Text("28 JAN 2023"),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("27 JAN 2023"),
+                      Text("28 JAN 2023"),
+                    ],
+                  ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("Boston"),
-                    Text("New york"),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Boston"),
+                      Text("New york"),
+                    ],
+                  ),
                 ),
-                Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 3,
-                    ),
-                    Expanded(
-                      child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 4),
-                        height: 2,
-                        color: Colors.black,
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(8.0, 12, 8.0, 12),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 3,
                       ),
-                    ),
-                    CircleAvatar(
-                      radius: 3,
-                    ),
-                    Expanded(
-                      child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 4),
-                        height: 2,
-                        color: Colors.black,
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.symmetric(horizontal: 4),
+                          height: 2,
+                          color: Colors.black,
+                        ),
                       ),
-                    ),
-                    CircleAvatar(
-                      radius: 3,
-                    ),
-                    Expanded(
-                      child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 4),
-                        height: 2,
-                        color: Colors.black,
+                      CircleAvatar(
+                        radius: 3,
                       ),
-                    ),
-                    CircleAvatar(
-                      radius: 3,
-                    ),
-                    Expanded(
-                      child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 4),
-                        height: 2,
-                        color: Colors.black,
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.symmetric(horizontal: 4),
+                          height: 2,
+                          color: Colors.black,
+                        ),
                       ),
-                    ),
-                  ],
+                      CircleAvatar(
+                        radius: 3,
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.symmetric(horizontal: 4),
+                          height: 2,
+                          color: Colors.black,
+                        ),
+                      ),
+                      CircleAvatar(
+                        radius: 3,
+                      ),
+
+                    ],
+                  ),
                 )
               ],
             ),
