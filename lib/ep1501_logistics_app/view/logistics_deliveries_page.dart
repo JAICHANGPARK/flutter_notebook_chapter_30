@@ -136,6 +136,7 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                     children: [
                       CircleAvatar(
                         radius: 3,
+                        backgroundColor: Colors.black,
                       ),
                       Expanded(
                         child: Container(
@@ -146,6 +147,7 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                       ),
                       CircleAvatar(
                         radius: 3,
+                        backgroundColor: Colors.black,
                       ),
                       Expanded(
                         child: Container(
@@ -156,18 +158,19 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                       ),
                       CircleAvatar(
                         radius: 3,
+                        backgroundColor: Colors.black,
                       ),
                       Expanded(
                         child: Container(
                           margin: EdgeInsets.symmetric(horizontal: 4),
                           height: 2,
-                          color: Colors.black,
+                          color: Colors.grey,
                         ),
                       ),
                       CircleAvatar(
                         radius: 3,
+                        backgroundColor: Colors.grey,
                       ),
-
                     ],
                   ),
                 )
