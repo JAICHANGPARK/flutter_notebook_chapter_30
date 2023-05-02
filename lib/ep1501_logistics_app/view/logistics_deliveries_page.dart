@@ -215,6 +215,9 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                         ),
                         Text(
                           "\$10.99",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         )
                       ],
                     )),
@@ -229,6 +232,9 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                         ),
                         Text(
                           "5",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         )
                       ],
                     )),
