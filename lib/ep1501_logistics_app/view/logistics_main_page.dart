@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1501_logistics_app/view/logistics_home_page.dart';
 
 class LogisticsMainPage extends StatefulWidget {
   const LogisticsMainPage({Key? key}) : super(key: key);
@@ -24,7 +25,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 child: IndexedStack(
                   index: _index,
                   children: [
-
+                    LogisticsHomePage(),
                     Container(),
                     Column(
                       children: [
