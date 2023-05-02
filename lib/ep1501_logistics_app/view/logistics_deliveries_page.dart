@@ -243,6 +243,9 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                           ),
                           Text(
                             "30.8 lbs",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
                           )
                         ],
                       ),
