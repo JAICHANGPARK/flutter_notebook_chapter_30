@@ -10,7 +10,7 @@ class LogisticsDeliveriesPage extends StatefulWidget {
 class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
   @override
   Widget build(BuildContext context) {
-    return     Column(
+    return Column(
       children: [
         Padding(
           padding: const EdgeInsets.only(top: 8),
@@ -51,19 +51,18 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
             children: [
               Expanded(
                   child: Container(
-                    decoration: BoxDecoration(
-                        color: const Color.fromRGBO(229, 248, 0, 1),
-                        borderRadius: BorderRadius.circular(8)),
-                    child: const Center(
-                      child: Text("TO ME (6)"),
-                    ),
-                  )),
+                decoration:
+                    BoxDecoration(color: const Color.fromRGBO(229, 248, 0, 1), borderRadius: BorderRadius.circular(8)),
+                child: const Center(
+                  child: Text("TO ME (6)"),
+                ),
+              )),
               Expanded(
                   child: Container(
-                    child: const Center(
-                      child: Text("FROM ME (2)"),
-                    ),
-                  )),
+                child: const Center(
+                  child: Text("FROM ME (2)"),
+                ),
+              )),
             ],
           ),
         ),
@@ -77,7 +76,7 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(16,8,16,0),
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
                   child: Row(
                     children: [
                       const Text(
@@ -111,6 +110,12 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                   color: Colors.grey,
                   thickness: 2,
                 ),
+                Row(
+                  children: [
+                    Text("27 JAN 2023"),
+                    Text("28 JAN 2023"),
+                  ],
+                )
               ],
             ),
           ),
