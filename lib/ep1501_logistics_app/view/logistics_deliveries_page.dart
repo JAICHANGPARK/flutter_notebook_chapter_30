@@ -231,13 +231,13 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                     ],)),
                     Expanded(child: Column( children: [
                       Text(
-                        "DELIVERY COST",
+                        "WEIGHT",
                       ),
                       SizedBox(
                         height: 6,
                       ),
                       Text(
-                        "\$10.99",
+                        "30.8 lbs",
                       )
                     ],)),
                   ],
