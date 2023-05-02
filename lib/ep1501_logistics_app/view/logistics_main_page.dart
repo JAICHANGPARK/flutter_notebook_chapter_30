@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1501_logistics_app/view/logistics_deliveries_page.dart';
 import 'package:flutter_notebook_chapter_30/ep1501_logistics_app/view/logistics_home_page.dart';
 
 class LogisticsMainPage extends StatefulWidget {
@@ -27,7 +28,7 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                   children: [
                     LogisticsHomePage(),
                     Container(),
-
+                    LogisticsDeliveriesPage(),
                   ],
                 ),
               ),
