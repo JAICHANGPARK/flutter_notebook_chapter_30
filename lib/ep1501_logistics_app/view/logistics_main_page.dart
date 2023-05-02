@@ -26,9 +26,9 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                 child: IndexedStack(
                   index: _index,
                   children: [
-                    LogisticsHomePage(),
+                    const LogisticsHomePage(),
                     Container(),
-                    LogisticsDeliveriesPage(),
+                    const LogisticsDeliveriesPage(),
                   ],
                 ),
               ),
