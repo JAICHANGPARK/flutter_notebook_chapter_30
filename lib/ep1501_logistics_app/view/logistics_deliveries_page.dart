@@ -115,7 +115,7 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
+                    children: const [
                       Text("27 JAN 2023"),
                       Text("28 JAN 2023"),
                     ],
@@ -125,7 +125,7 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
+                    children: const [
                       Text(
                         "Boston",
                         style: TextStyle(
@@ -206,7 +206,7 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                   children: [
                     Expanded(
                         child: Column(
-                      children: [
+                      children: const [
                         Text(
                           "DELIVERY COST",
                         ),
@@ -223,7 +223,7 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                     )),
                     Expanded(
                         child: Column(
-                      children: [
+                      children: const [
                         Text(
                           "ITEMS #",
                         ),
@@ -240,7 +240,7 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                     )),
                     Expanded(
                       child: Column(
-                        children: [
+                        children: const [
                           Text(
                             "WEIGHT",
                           ),
