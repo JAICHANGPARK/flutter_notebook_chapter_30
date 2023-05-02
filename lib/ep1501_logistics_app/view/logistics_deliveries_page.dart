@@ -185,6 +185,17 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                       ),
                     ],
                   ),
+                ),
+                Center(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      "ON THE WAY To FACILITY",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
                 )
               ],
             ),
