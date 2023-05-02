@@ -111,12 +111,14 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                   thickness: 2,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("27 JAN 2023"),
                     Text("28 JAN 2023"),
                   ],
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Boston"),
                     Text("New york"),
