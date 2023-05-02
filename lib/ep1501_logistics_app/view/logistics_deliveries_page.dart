@@ -125,8 +125,20 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Boston"),
-                      Text("New york"),
+                      Text(
+                        "Boston",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16
+                        ),
+                      ),
+                      Text(
+                        "New york",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                            fontSize: 16
+                        ),
+                      ),
                     ],
                   ),
                 ),
