@@ -218,28 +218,35 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                         )
                       ],
                     )),
-                    Expanded(child: Column( children: [
-                      Text(
-                        "ITEMS #",
+                    Expanded(
+                        child: Column(
+                      children: [
+                        Text(
+                          "ITEMS #",
+                        ),
+                        SizedBox(
+                          height: 6,
+                        ),
+                        Text(
+                          "5",
+                        )
+                      ],
+                    )),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Text(
+                            "WEIGHT",
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Text(
+                            "30.8 lbs",
+                          )
+                        ],
                       ),
-                      SizedBox(
-                        height: 6,
-                      ),
-                      Text(
-                        "5",
-                      )
-                    ],)),
-                    Expanded(child: Column( children: [
-                      Text(
-                        "WEIGHT",
-                      ),
-                      SizedBox(
-                        height: 6,
-                      ),
-                      Text(
-                        "30.8 lbs",
-                      )
-                    ],)),
+                    ),
                   ],
                 ),
                 Padding(
