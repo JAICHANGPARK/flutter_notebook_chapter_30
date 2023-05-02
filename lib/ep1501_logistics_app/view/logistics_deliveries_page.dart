@@ -131,10 +131,41 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                     ),
                     Expanded(
                       child: Container(
+                        margin: EdgeInsets.symmetric(horizontal: 4),
                         height: 2,
                         color: Colors.black,
                       ),
-                    )
+                    ),
+                    CircleAvatar(
+                      radius: 3,
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.symmetric(horizontal: 4),
+                        height: 2,
+                        color: Colors.black,
+                      ),
+                    ),
+                    CircleAvatar(
+                      radius: 3,
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.symmetric(horizontal: 4),
+                        height: 2,
+                        color: Colors.black,
+                      ),
+                    ),
+                    CircleAvatar(
+                      radius: 3,
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.symmetric(horizontal: 4),
+                        height: 2,
+                        color: Colors.black,
+                      ),
+                    ),
                   ],
                 )
               ],
