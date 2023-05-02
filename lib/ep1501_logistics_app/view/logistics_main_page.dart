@@ -67,7 +67,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "Home".toUpperCase(),
-                                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
                               ),
                             ],
                           ),
@@ -98,7 +101,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "Search".toUpperCase(),
-                                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
                               ),
                             ],
                           ),
@@ -129,7 +135,10 @@ class _LogisticsMainPageState extends State<LogisticsMainPage> {
                               ),
                               Text(
                                 "My DELIVERIES".toUpperCase(),
-                                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
                               ),
                             ],
                           ),
