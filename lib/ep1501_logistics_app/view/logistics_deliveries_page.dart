@@ -123,6 +123,19 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                     Text("Boston"),
                     Text("New york"),
                   ],
+                ),
+                Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 3,
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 2,
+                        color: Colors.black,
+                      ),
+                    )
+                  ],
                 )
               ],
             ),
