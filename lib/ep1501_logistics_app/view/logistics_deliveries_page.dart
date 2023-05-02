@@ -115,6 +115,12 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                     Text("27 JAN 2023"),
                     Text("28 JAN 2023"),
                   ],
+                ),
+                Row(
+                  children: [
+                    Text("Boston"),
+                    Text("New york"),
+                  ],
                 )
               ],
             ),
