@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1501_logistics_app/view/widgets/seperator_widget.dart';
 
 class LogisticsDeliveriesPage extends StatefulWidget {
   const LogisticsDeliveriesPage({Key? key}) : super(key: key);
@@ -196,6 +197,10 @@ class _LogisticsDeliveriesPageState extends State<LogisticsDeliveriesPage> {
                       ),
                     ),
                   ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  child: SeparatorWidget(),
                 )
               ],
             ),
