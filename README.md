@@ -5,7 +5,6 @@
 - by ScrumLaunch
 - https://dribbble.com/shots/21318782-Rexto-Logistics-Mobile-App
 
-
 A new Flutter project.
 
 ## Getting Started
