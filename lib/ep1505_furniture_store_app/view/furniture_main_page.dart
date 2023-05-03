@@ -27,6 +27,24 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
               Icons.inventory_2_outlined,
             ),
             label: "My Order"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.storefront,
+              ),
+              label: "Store"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.favorite_border,
+              ),
+              label: "Wishlist"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_outline,
+              ),
+              label: "Profile"
           )
         ],
       ),
