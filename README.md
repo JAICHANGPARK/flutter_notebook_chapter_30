@@ -6,6 +6,8 @@
 - by Yafi Asyam for Omnicreativora
 - https://dribbble.com/shots/21341690-BOXEL-Furniture-Store-App
 
+<img src="https://cdn.dribbble.com/userupload/6511027/file/original-a71ffb0d1a13589476630553e23bac4b.png?compress=1&resize=2400x1800" width="500px"/>
+
 ## ep1501-1504
 
 - Rexto Logistics Mobile App
