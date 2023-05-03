@@ -49,7 +49,13 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-
+                      Container(
+                        height: 140,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                      ),
+                      
                     ],
                   ),
                 ),
