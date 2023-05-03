@@ -44,7 +44,16 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                     ),
                   )
                 ],
-              )
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
