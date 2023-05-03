@@ -49,6 +49,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
+                      SizedBox(
+                        height: 12,
+                      ),
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 8),
                         height: 140,
