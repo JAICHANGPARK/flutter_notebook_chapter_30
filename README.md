@@ -1,5 +1,11 @@
 # flutter_notebook_chapter_30
 
+## ep1505
+
+- BOXEL | Furniture Store App
+- by Yafi Asyam for Omnicreativora
+- https://dribbble.com/shots/21341690-BOXEL-Furniture-Store-App
+
 ## ep1501-1504
 
 - Rexto Logistics Mobile App
