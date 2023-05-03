@@ -94,6 +94,17 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           ],
                         ),
                       ),
+                      Row(
+                        children: [
+                          Text("Products"),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "See all",
+                            ),
+                          )
+                        ],
+                      )
                     ],
                   ),
                 ),
