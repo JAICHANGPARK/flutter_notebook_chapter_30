@@ -49,7 +49,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      
+
                     ],
                   ),
                 ),
