@@ -22,6 +22,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
             return BottomNavigationBar(
               onTap: (idx) {
                 menuIndex.value = idx;
+                // v = idx;
               },
               currentIndex: v,
               items: const [
