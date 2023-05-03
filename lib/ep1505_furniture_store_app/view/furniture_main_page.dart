@@ -17,36 +17,33 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.holiday_village_outlined,
-            ),
-            label: "Home"
-          ),
+              icon: Icon(
+                Icons.holiday_village_outlined,
+              ),
+              label: "Home"),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.inventory_2_outlined,
-            ),
-            label: "My Order"
-          ),
+              icon: Icon(
+                Icons.inventory_2_outlined,
+              ),
+              label: "My Order"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.storefront,
               ),
-              label: "Store"
-          ),
+              label: "Store"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.favorite_border,
               ),
-              label: "Wishlist"
-          ),
+              label: "Wishlist"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_outline,
               ),
-              label: "Profile"
-          )
+              label: "Profile"),
         ],
+        selectedItemColor: Colors.brown,
+        b
       ),
     );
   }
