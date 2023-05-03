@@ -8,14 +8,20 @@ class FurnitureMainPage extends StatefulWidget {
 }
 
 class _FurnitureMainPageState extends State<FurnitureMainPage> {
+  ValueNotifier<int> menuIndex = ValueNotifier(0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [],
+        children: const [],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        onTap: (idx) {
+          menuIndex.value = idx;
+        },
+        currentIndex: menuIndex.value,
+        items: const [
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.holiday_village_outlined,
