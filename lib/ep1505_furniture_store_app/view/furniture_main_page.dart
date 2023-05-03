@@ -14,30 +14,39 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      border: Border.all(color: Colors.grey),
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        border: Border.all(color: Colors.grey),
+                      ),
+                      height: 42,
+                      child: TextField(),
                     ),
-                    height: 42,
-                    child: TextField(),
                   ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.chat_outlined),
-                ),
-                Badge(
-                  child: Icon(Icons.notifications_none),
-                ),
-              ],
-            )
-          ],
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.chat_outlined),
+                  ),
+                  Badge(
+                    child: Icon(Icons.notifications_none),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.shopping_bag_outlined,
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: ValueListenableBuilder<int>(
