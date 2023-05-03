@@ -10,6 +10,19 @@ class FurnitureMainPage extends StatefulWidget {
 class _FurnitureMainPageState extends State<FurnitureMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.holiday_village_outlined,
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
