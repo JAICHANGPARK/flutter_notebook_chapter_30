@@ -16,41 +16,45 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
       body: Column(
         children: const [],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        onTap: (idx) {
-          menuIndex.value = idx;
-        },
-        currentIndex: menuIndex.value,
-        items: const [
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.holiday_village_outlined,
-              ),
-              label: "Home"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.inventory_2_outlined,
-              ),
-              label: "My Order"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.storefront,
-              ),
-              label: "Store"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.favorite_border,
-              ),
-              label: "Wishlist"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person_outline,
-              ),
-              label: "Profile"),
-        ],
-        selectedItemColor: Colors.brown,
-        type: BottomNavigationBarType.fixed,
-      ),
+      bottomNavigationBar: ValueListenableBuilder<int>(
+          valueListenable: menuIndex,
+          builder: (context, v, _) {
+            return BottomNavigationBar(
+              onTap: (idx) {
+                menuIndex.value = idx;
+              },
+              currentIndex: v,
+              items: const [
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.holiday_village_outlined,
+                    ),
+                    label: "Home"),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.inventory_2_outlined,
+                    ),
+                    label: "My Order"),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.storefront,
+                    ),
+                    label: "Store"),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.favorite_border,
+                    ),
+                    label: "Wishlist"),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.person_outline,
+                    ),
+                    label: "Profile"),
+              ],
+              selectedItemColor: Colors.brown,
+              type: BottomNavigationBarType.fixed,
+            );
+          }),
     );
   }
 }
