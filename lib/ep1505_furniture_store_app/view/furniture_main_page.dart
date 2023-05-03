@@ -20,6 +20,13 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
             icon: Icon(
               Icons.holiday_village_outlined,
             ),
+            label: "Home"
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.inventory_2_outlined,
+            ),
+            label: "My Order"
           )
         ],
       ),
