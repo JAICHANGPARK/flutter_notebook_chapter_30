@@ -73,7 +73,12 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         ),
                         child: Row(
                           children: [
-                            Expanded(child: Placeholder()),
+                            Expanded(child: Column(children: [
+                              Expanded(child: Placeholder()),
+                              SizedBox(height: 6,),
+                              Expanded(child: Placeholder()),
+                            ],)),
+                            SizedBox(width: 6,),
                             Expanded(child: Placeholder()),
                           ],
                         ),
