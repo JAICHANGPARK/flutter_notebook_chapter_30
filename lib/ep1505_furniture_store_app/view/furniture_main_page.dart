@@ -43,7 +43,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
               label: "Profile"),
         ],
         selectedItemColor: Colors.brown,
-        b
+        type: BottomNavigationBarType.fixed,
       ),
     );
   }
