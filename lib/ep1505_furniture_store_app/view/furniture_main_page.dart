@@ -50,12 +50,19 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                   child: Column(
                     children: [
                       Container(
+                        margin: EdgeInsets.symmetric(vertical: 8),
                         height: 140,
                         decoration: BoxDecoration(
                           color: Colors.blue,
                         ),
                       ),
-                      
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical: 8),
+                        height: 140,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                      )
                     ],
                   ),
                 ),
