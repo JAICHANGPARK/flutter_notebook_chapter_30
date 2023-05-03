@@ -66,6 +66,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           color: Colors.blue,
                         ),
                       ),
+                      SizedBox(
+                        height: 12,
+                      ),
                       Container(
                         height: 240,
                         decoration: BoxDecoration(
@@ -82,7 +85,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             Expanded(child: Placeholder()),
                           ],
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
