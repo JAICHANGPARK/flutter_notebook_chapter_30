@@ -95,6 +95,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         ),
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text("Products"),
                           TextButton(
