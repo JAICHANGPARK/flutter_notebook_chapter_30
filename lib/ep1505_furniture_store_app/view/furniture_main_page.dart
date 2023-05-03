@@ -65,6 +65,18 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         decoration: BoxDecoration(
                           color: Colors.blue,
                         ),
+                      ),
+                      Container(
+                        height: 240,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                        child: Row(
+                          children: [
+                            Expanded(child: Placeholder()),
+                            Expanded(child: Placeholder()),
+                          ],
+                        ),
                       )
                     ],
                   ),
