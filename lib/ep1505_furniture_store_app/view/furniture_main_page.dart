@@ -13,8 +13,32 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: const [],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      border: Border.all(color: Colors.grey),
+                    ),
+                    height: 42,
+                    child: TextField(),
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.chat_outlined),
+                ),
+                Badge(
+                  child: Icon(Icons.notifications_none),
+                ),
+              ],
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: ValueListenableBuilder<int>(
           valueListenable: menuIndex,
