@@ -242,7 +242,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       Container(
                         height: 240,
                         decoration: const BoxDecoration(
-                          color: Colors.blue,
+
                         ),
                         child: Row(
                           children: [
@@ -255,7 +255,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                         color: Colors.grey[200],
                                       ),
                                       child: Stack(
-                                        children: [
+                                        children: const [
                                           Positioned(
                                             left: 16,
                                             top: 16,
@@ -280,7 +280,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                         color: Colors.grey[200],
                                       ),
                                       child: Stack(
-                                        children: [
+                                        children: const [
                                           Positioned(
                                             left: 16,
                                             top: 16,
@@ -308,7 +308,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   color: Colors.grey[200],
                                 ),
                                 child: Stack(
-                                  children: [
+                                  children: const [
                                     Positioned(
                                       left: 16,
                                       top: 16,
