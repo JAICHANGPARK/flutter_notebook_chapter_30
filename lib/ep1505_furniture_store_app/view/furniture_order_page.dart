@@ -99,9 +99,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(
-                          left: 8,
-                        ),
+                        padding: const EdgeInsets.only(left: 12, top: 12),
                         child: Row(
                           children: [
                             CircleAvatar(
@@ -137,6 +135,9 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                                 borderRadius: BorderRadius.circular(2),
                                 border: Border.all(),
                               ),
+                            ),
+                            SizedBox(
+                              width: 16,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
