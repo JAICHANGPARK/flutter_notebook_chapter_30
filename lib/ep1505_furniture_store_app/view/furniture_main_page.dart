@@ -302,8 +302,27 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             const SizedBox(
                               width: 6,
                             ),
-                            const Expanded(
-                              child: Placeholder(),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 16,
+                                      top: 16,
+                                      child: Text(
+                                        "Minimalist\nInspiration",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 18,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ),
                           ],
                         ),
