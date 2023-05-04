@@ -22,12 +22,13 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 children: [
                   Expanded(
                     child: Container(
+                      height: 42,
+                      padding: EdgeInsets.symmetric(horizontal: 8),
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         border: Border.all(color: Colors.grey),
+                        borderRadius: BorderRadius.circular(4),
                       ),
-                      height: 42,
-                      padding: EdgeInsets.symmetric(horizontal: 8),
                       child: const TextField(
                         decoration: InputDecoration(
                           icon: Icon(Icons.search),
