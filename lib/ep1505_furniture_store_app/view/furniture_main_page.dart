@@ -18,7 +18,10 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
         child: ValueListenableBuilder(
           builder: (context, v, _) {
             return IndexedStack(
-              children: [],
+              index: v,
+              children: [
+                
+              ],
             );
           },
           valueListenable: menuIndex,
