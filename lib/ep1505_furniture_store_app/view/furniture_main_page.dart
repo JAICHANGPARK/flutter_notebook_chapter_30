@@ -73,7 +73,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               'Summer Sale',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -81,16 +81,16 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                 color: Colors.white,
                               ),
                             ),
-                            Text(
+                            const Text(
                               "25% off for all furniture",
                               style: TextStyle(
                                 color: Colors.white,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 24,
                             ),
-                            Text(
+                            const Text(
                               "SHOP NOW",
                             ),
                             DotsIndicator(
