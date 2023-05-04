@@ -67,11 +67,11 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               'Summer Sale',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -79,13 +79,16 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                 color: Colors.white,
                               ),
                             ),
-                            Text(
+                            const Text(
                               "25% off for all furniture",
                               style: TextStyle(
                                 color: Colors.white,
                               ),
                             ),
-                            Text(
+                            const SizedBox(
+                              height: 24,
+                            ),
+                            const Text(
                               "SHOP NOW",
                             ),
                           ],
