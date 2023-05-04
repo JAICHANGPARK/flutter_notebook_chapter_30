@@ -98,22 +98,31 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                   ),
                   child: Column(
                     children: [
-                      Row(
-                        children: [
-                          CircleAvatar(
-                            radius: 14,
-                            backgroundColor: Colors.grey[200],
-                          ),
-                          Text("Waiting Payment"),
-                          Text("12 Aug 2023"),
-                          Spacer(),
-                          IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              Icons.more_vert,
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          left: 8,
+                        ),
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 14,
+                              backgroundColor: Colors.grey[200],
                             ),
-                          )
-                        ],
+
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 12),
+                              child: Text("Waiting Payment"),
+                            ),
+                            Text("12 Aug 2023"),
+                            Spacer(),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.more_vert,
+                              ),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
