@@ -77,6 +77,9 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                   child: Center(
                     child: Text(
                       tabItems[index],
+                      style: TextStyle(
+                        color: _tabIndex == index ? Colors.white : Colors.black,
+                      ),
                     ),
                   ),
                 ),
