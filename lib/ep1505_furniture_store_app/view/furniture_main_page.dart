@@ -354,9 +354,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           itemBuilder: (BuildContext context, int index) {
                             return Container(
                               width: 200,
-                              margin: EdgeInsets.only(right: 16),
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
+                              margin: const EdgeInsets.only(right: 16),
+                              decoration:  BoxDecoration(
+                                color: Colors.grey[300]!,
                               ),
                             );
                           },
