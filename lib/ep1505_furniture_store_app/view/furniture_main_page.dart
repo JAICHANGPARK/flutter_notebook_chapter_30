@@ -22,8 +22,8 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
             );
           },
           valueListenable: menuIndex,
-          child: IndexedStack(
-            children: [],
+          child: Container(
+            color: Colors.blue,
           ),
         ),
       ),
