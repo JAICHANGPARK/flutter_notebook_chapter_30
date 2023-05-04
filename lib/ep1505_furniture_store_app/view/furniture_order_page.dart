@@ -71,6 +71,8 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                     border: Border.all(
                       color: Colors.grey,
                     ),
+                    borderRadius: BorderRadius.circular(4),
+                    color: _tabIndex == index ? Colors.deepOrange : Colors.white,
                   ),
                   child: Center(
                     child: Text(
