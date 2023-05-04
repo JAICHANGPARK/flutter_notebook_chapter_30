@@ -53,7 +53,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
           color: Colors.grey,
         ),
         SizedBox(
-          height: 32,
+          height: 30,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: tabItems.length,
