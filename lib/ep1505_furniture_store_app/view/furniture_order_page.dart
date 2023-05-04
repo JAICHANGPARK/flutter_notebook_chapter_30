@@ -56,6 +56,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
           height: 42,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
+            itemCount: tabItems.length,
             itemBuilder: (context, index) {
               return GestureDetector(
                 onTap: () {
@@ -64,6 +65,10 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                   });
                 },
                 child: Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                    color: Colors.grey,
+                  )),
                   child: Center(
                     child: Text(
                       tabItems[index],
