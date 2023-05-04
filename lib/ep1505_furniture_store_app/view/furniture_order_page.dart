@@ -157,6 +157,22 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             )
                           ],
                         ),
+                      ),
+                      Row(
+                        children: [
+                          Text("Total Price"),
+                          Text("\$72"),
+                          Container(
+                            child: Center(
+                              child: Text(
+                                "Pay Now",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
                       )
                     ],
                   ),
