@@ -163,6 +163,9 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                         child: Row(
                           children: [
                             Text("Total Price"),
+                            SizedBox(
+                              width: 12,
+                            ),
                             Text("\$72"),
                             Spacer(),
                             Container(
