@@ -96,7 +96,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                 color: Colors.white,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 8,
                             ),
                             DotsIndicator(
@@ -269,7 +269,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 6,
                                   ),
                                   Expanded(
@@ -328,7 +328,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Products",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -337,11 +337,11 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: const Text(
-                              "See all",
-                            ),
                             style: TextButton.styleFrom(
                               foregroundColor: Colors.black,
+                            ),
+                            child: const Text(
+                              "See all",
                             ),
                           )
                         ],
