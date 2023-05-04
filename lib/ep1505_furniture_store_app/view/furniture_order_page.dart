@@ -40,7 +40,11 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
               )
             ],
           ),
-        )
+        ),
+        Divider(
+          color: Colors.grey,
+        ),
+        
       ],
     );
   }
