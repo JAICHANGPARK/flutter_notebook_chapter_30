@@ -275,20 +275,25 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                     height: 6,
                                   ),
                                   Expanded(
-                                    child: Stack(
-                                      children: [
-                                        Positioned(
-                                          left: 16,
-                                          top: 16,
-                                          child: Text(
-                                            "Wood Style",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 18,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            left: 16,
+                                            top: 16,
+                                            child: Text(
+                                              "Wood Style",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
                                             ),
                                           ),
-                                        ),
-                                      ],
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ],
