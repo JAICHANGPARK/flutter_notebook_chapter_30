@@ -8,6 +8,14 @@ class FurnitureOrderPage extends StatefulWidget {
 }
 
 class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
+  List<String> tabItems = [
+    "All Order",
+    "Payment",
+    "On Progress",
+    "Shipping",
+  ];
+  int _tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -44,7 +52,16 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
         Divider(
           color: Colors.grey,
         ),
-        
+        SizedBox(
+          height: 42,
+          child: ListView.builder(
+            itemBuilder: (context, index) {
+              return GestureDetector(
+                  onTap: (){},
+                  child: Container());
+            },
+          ),
+        )
       ],
     );
   }
