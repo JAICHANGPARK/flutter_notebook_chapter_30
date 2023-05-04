@@ -15,8 +15,16 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: IndexedStack(
-          children: [],
+        child: ValueListenableBuilder(
+          builder: (context, v, _) {
+            return IndexedStack(
+              children: [],
+            );
+          },
+          valueListenable: menuIndex,
+          child: IndexedStack(
+            children: [],
+          ),
         ),
       ),
       bottomNavigationBar: ValueListenableBuilder<int>(
