@@ -107,22 +107,39 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       ),
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 8),
-                        height: 140,
+                        height: 160,
                         decoration: const BoxDecoration(
                           color: Colors.blue,
                         ),
                         child: Column(
                           children: [
-                            Expanded(child: Row(
-                              children: [
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
-                              ],
-                            )),
-                            Expanded(child: Placeholder()),
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  Expanded(child: Column(
+                                    children: [
+                                      CircleAvatar(),
+                                      Text("Sofa")
+                                    ],
+                                  )),
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
