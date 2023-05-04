@@ -261,7 +261,10 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                             top: 16,
                                             child: Text(
                                               "Small Item",
-                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
                                             ),
                                           ),
                                         ],
@@ -278,7 +281,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                           left: 16,
                                           top: 16,
                                           child: Text(
-                                            "Small Item",
+                                            "Wood Style",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               fontSize: 18,
