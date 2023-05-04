@@ -66,7 +66,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         height: 140,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: Colors.indigo,
                           borderRadius: BorderRadius.circular(4),
                         ),
                         padding: const EdgeInsets.all(16),
@@ -92,6 +92,12 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             ),
                             const Text(
                               "SHOP NOW",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
                             ),
                             DotsIndicator(
                               dotsCount: 4,
