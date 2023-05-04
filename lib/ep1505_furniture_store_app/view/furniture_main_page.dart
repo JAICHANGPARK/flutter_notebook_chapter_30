@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class FurnitureMainPage extends StatefulWidget {
@@ -71,7 +72,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         padding: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               'Summer Sale',
                               style: TextStyle(
@@ -92,7 +93,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             Text(
                               "SHOP NOW",
                             ),
-
+                            DotsIndicator(
+                              dotsCount: 4,
+                            )
                           ],
                         ),
                       ),
