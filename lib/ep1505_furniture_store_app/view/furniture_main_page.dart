@@ -108,9 +108,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 8),
                         height: 160,
-                        decoration: const BoxDecoration(
-
-                        ),
+                        decoration: const BoxDecoration(),
                         child: Column(
                           children: [
                             Expanded(
@@ -129,48 +127,48 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   )),
                                   Expanded(
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: const [
-                                          CircleAvatar(),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text("Sofa")
-                                        ],
-                                      )),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      CircleAvatar(),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Sofa")
+                                    ],
+                                  )),
                                   Expanded(
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: const [
-                                          CircleAvatar(),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text("Sofa")
-                                        ],
-                                      )),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      CircleAvatar(),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Sofa")
+                                    ],
+                                  )),
                                   Expanded(
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: const [
-                                          CircleAvatar(),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text("Sofa")
-                                        ],
-                                      )),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      CircleAvatar(),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Sofa")
+                                    ],
+                                  )),
                                   Expanded(
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: const [
-                                          CircleAvatar(),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text("Sofa")
-                                        ],
-                                      )),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      CircleAvatar(),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Sofa")
+                                    ],
+                                  )),
                                 ],
                               ),
                             ),
@@ -179,59 +177,59 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                 children: [
                                   Expanded(
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: const [
-                                          CircleAvatar(),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text("Sofa")
-                                        ],
-                                      )),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      CircleAvatar(),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Sofa")
+                                    ],
+                                  )),
                                   Expanded(
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: const [
-                                          CircleAvatar(),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text("Sofa")
-                                        ],
-                                      )),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      CircleAvatar(),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Sofa")
+                                    ],
+                                  )),
                                   Expanded(
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: const [
-                                          CircleAvatar(),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text("Sofa")
-                                        ],
-                                      )),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      CircleAvatar(),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Sofa")
+                                    ],
+                                  )),
                                   Expanded(
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: const [
-                                          CircleAvatar(),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text("Sofa")
-                                        ],
-                                      )),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      CircleAvatar(),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Sofa")
+                                    ],
+                                  )),
                                   Expanded(
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: const [
-                                          CircleAvatar(),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text("Sofa")
-                                        ],
-                                      )),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      CircleAvatar(),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Sofa")
+                                    ],
+                                  )),
                                 ],
                               ),
                             ),
@@ -250,8 +248,19 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           children: [
                             Expanded(
                               child: Column(
-                                children:  [
-                                  Expanded(child: Container()),
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                      ),
+                                      child: Stack(
+                                        children: [
+
+                                        ],
+                                      ),
+                                    ),
+                                  ),
                                   SizedBox(
                                     height: 6,
                                   ),
