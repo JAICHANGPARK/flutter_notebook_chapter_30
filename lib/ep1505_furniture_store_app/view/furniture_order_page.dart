@@ -137,6 +137,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             ),
                           ),
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Dreamwalker Chair"),
                               Text("1 item"),
