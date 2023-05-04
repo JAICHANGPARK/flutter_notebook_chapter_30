@@ -158,21 +158,29 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                           ],
                         ),
                       ),
-                      Row(
-                        children: [
-                          Text("Total Price"),
-                          Text("\$72"),
-                          Container(
-                            child: Center(
-                              child: Text(
-                                "Pay Now",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Row(
+                          children: [
+                            Text("Total Price"),
+                            Text("\$72"),
+                            Spacer(),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                                borderRadius: BorderRadius.circular(4)
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "Pay Now",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
-                            ),
-                          )
-                        ],
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
