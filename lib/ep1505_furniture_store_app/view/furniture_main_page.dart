@@ -109,7 +109,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         margin: const EdgeInsets.symmetric(vertical: 8),
                         height: 160,
                         decoration: const BoxDecoration(
-                          color: Colors.blue,
+
                         ),
                         child: Column(
                           children: [
@@ -119,7 +119,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   Expanded(
                                       child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
+                                    children: const [
                                       CircleAvatar(),
                                       SizedBox(
                                         height: 8,
@@ -130,7 +130,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   Expanded(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
+                                        children: const [
                                           CircleAvatar(),
                                           SizedBox(
                                             height: 8,
@@ -141,7 +141,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   Expanded(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
+                                        children: const [
                                           CircleAvatar(),
                                           SizedBox(
                                             height: 8,
@@ -152,7 +152,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   Expanded(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
+                                        children: const [
                                           CircleAvatar(),
                                           SizedBox(
                                             height: 8,
@@ -163,7 +163,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   Expanded(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
+                                        children: const [
                                           CircleAvatar(),
                                           SizedBox(
                                             height: 8,
@@ -180,7 +180,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   Expanded(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
+                                        children: const [
                                           CircleAvatar(),
                                           SizedBox(
                                             height: 8,
@@ -191,7 +191,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   Expanded(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
+                                        children: const [
                                           CircleAvatar(),
                                           SizedBox(
                                             height: 8,
@@ -202,7 +202,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   Expanded(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
+                                        children: const [
                                           CircleAvatar(),
                                           SizedBox(
                                             height: 8,
@@ -213,7 +213,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   Expanded(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
+                                        children: const [
                                           CircleAvatar(),
                                           SizedBox(
                                             height: 8,
@@ -224,7 +224,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   Expanded(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
+                                        children: const [
                                           CircleAvatar(),
                                           SizedBox(
                                             height: 8,
@@ -250,8 +250,8 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           children: [
                             Expanded(
                               child: Column(
-                                children: const [
-                                  Expanded(child: Placeholder()),
+                                children:  [
+                                  Expanded(child: Container()),
                                   SizedBox(
                                     height: 6,
                                   ),
