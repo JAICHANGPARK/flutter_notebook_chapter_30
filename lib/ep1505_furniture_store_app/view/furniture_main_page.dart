@@ -241,9 +241,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       ),
                       Container(
                         height: 240,
-                        decoration: const BoxDecoration(
-
-                        ),
+                        decoration: const BoxDecoration(),
                         child: Row(
                           children: [
                             Expanded(
@@ -330,11 +328,20 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text("Products"),
+                          Text(
+                            "Products",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),
+                          ),
                           TextButton(
                             onPressed: () {},
                             child: const Text(
                               "See all",
+                            ),
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.black,
                             ),
                           )
                         ],
