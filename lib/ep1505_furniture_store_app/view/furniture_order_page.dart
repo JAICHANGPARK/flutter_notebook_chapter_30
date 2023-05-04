@@ -57,8 +57,19 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
           child: ListView.builder(
             itemBuilder: (context, index) {
               return GestureDetector(
-                  onTap: (){},
-                  child: Container());
+                onTap: () {
+                  setState(() {
+                    _tabIndex = index;
+                  });
+                },
+                child: Container(
+                  child: Center(
+                    child: Text(
+                      tabItems[index],
+                    ),
+                  ),
+                ),
+              );
             },
           ),
         )
