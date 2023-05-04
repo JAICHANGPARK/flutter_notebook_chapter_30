@@ -127,6 +127,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                       Padding(
                         padding: const EdgeInsets.all(12.0),
                         child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
                               height: 52,
@@ -141,6 +142,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text("Dreamwalker Chair"),
                                 Text("1 item"),
