@@ -27,19 +27,19 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         border: Border.all(color: Colors.grey),
                       ),
                       height: 42,
-                      child: TextField(),
+                      child: const TextField(),
                     ),
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.chat_outlined),
+                    icon: const Icon(Icons.chat_outlined),
                   ),
-                  Badge(
+                  const Badge(
                     child: Icon(Icons.notifications_none),
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.shopping_bag_outlined,
                     ),
                   )
@@ -49,36 +49,36 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
                       Container(
-                        margin: EdgeInsets.symmetric(vertical: 8),
+                        margin: const EdgeInsets.symmetric(vertical: 8),
                         height: 140,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.blue,
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.symmetric(vertical: 8),
+                        margin: const EdgeInsets.symmetric(vertical: 8),
                         height: 140,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.blue,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
                       Container(
                         height: 240,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.blue,
                         ),
                         child: Row(
                           children: [
                             Expanded(
                               child: Column(
-                                children: [
+                                children: const [
                                   Expanded(child: Placeholder()),
                                   SizedBox(
                                     height: 6,
@@ -87,20 +87,22 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 6,
                             ),
-                            Expanded(child: Placeholder()),
+                            const Expanded(
+                              child: Placeholder(),
+                            ),
                           ],
                         ),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Products"),
+                          const Text("Products"),
                           TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               "See all",
                             ),
                           )
