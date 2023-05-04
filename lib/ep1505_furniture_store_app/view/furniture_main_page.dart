@@ -67,6 +67,17 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(4),
                         ),
+                        padding: EdgeInsets.all(16),
+                        child: Column(
+                          children: [
+                            Text(
+                              'Summer Sale',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 8),
