@@ -116,9 +116,14 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             Expanded(
                               child: Row(
                                 children: [
-                                  Expanded(child: Column(
+                                  Expanded(
+                                      child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       CircleAvatar(),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
                                       Text("Sofa")
                                     ],
                                   )),
