@@ -127,10 +127,50 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                       Text("Sofa")
                                     ],
                                   )),
-                                  Expanded(child: Placeholder()),
-                                  Expanded(child: Placeholder()),
-                                  Expanded(child: Placeholder()),
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          CircleAvatar(),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Text("Sofa")
+                                        ],
+                                      )),
+                                  Expanded(
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          CircleAvatar(),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Text("Sofa")
+                                        ],
+                                      )),
+                                  Expanded(
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          CircleAvatar(),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Text("Sofa")
+                                        ],
+                                      )),
+                                  Expanded(
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          CircleAvatar(),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Text("Sofa")
+                                        ],
+                                      )),
                                 ],
                               ),
                             ),
