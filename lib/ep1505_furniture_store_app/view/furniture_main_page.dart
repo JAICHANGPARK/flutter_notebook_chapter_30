@@ -23,7 +23,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                   Expanded(
                     child: Container(
                       height: 42,
-                      padding: EdgeInsets.symmetric(horizontal: 8),
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
                         border: Border.all(color: Colors.grey),
