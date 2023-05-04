@@ -347,7 +347,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         ],
                       ),
                       Container(
-                        height: 300,
+                        height: 200,
                         child: ListView.builder(
                           itemCount: 10,
                           scrollDirection: Axis.horizontal,
