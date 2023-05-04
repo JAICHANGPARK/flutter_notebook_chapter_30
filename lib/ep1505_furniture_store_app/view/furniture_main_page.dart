@@ -111,6 +111,12 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         decoration: const BoxDecoration(
                           color: Colors.blue,
                         ),
+                        child: Column(
+                          children: [
+                            Expanded(child: Placeholder()),
+                            Expanded(child: Placeholder()),
+                          ],
+                        ),
                       ),
                       const SizedBox(
                         height: 12,
