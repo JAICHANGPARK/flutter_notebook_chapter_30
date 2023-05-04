@@ -349,9 +349,14 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       Container(
                         height: 300,
                         child: ListView.builder(
+                          itemCount: 10,
+                          scrollDirection: Axis.horizontal,
                           itemBuilder: (BuildContext context, int index) {
                             return Container(
                               width: 300,
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                              ),
                             );
                           },
                         ),
