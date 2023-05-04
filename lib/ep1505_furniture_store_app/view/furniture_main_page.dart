@@ -15,7 +15,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child:
+        child: 
       ),
       bottomNavigationBar: ValueListenableBuilder<int>(
           valueListenable: menuIndex,
