@@ -256,6 +256,17 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                       ),
                                       child: Stack(
                                         children: [
+                                          Positioned(
+                                            left: 16,
+                                            top: 16,
+                                            child: Text(
+                                              "Small Item",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18
+                                              ),
+                                            ),
+                                          ),
 
                                         ],
                                       ),
