@@ -86,6 +86,37 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
               );
             },
           ),
+        ),
+        Expanded(
+          child: Container(
+            color: Colors.grey[300],
+            child: ListView(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          CircleAvatar(),
+                          Text("Waiting Payment"),
+                          Text("12 Aug 2023"),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.more_vert,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         )
       ],
     );
