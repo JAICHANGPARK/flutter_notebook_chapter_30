@@ -261,13 +261,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                             top: 16,
                                             child: Text(
                                               "Small Item",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 18
-                                              ),
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                             ),
                                           ),
-
                                         ],
                                       ),
                                     ),
@@ -275,7 +271,23 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   SizedBox(
                                     height: 6,
                                   ),
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          left: 16,
+                                          top: 16,
+                                          child: Text(
+                                            "Small Item",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
