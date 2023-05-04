@@ -92,6 +92,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             Text(
                               "SHOP NOW",
                             ),
+
                           ],
                         ),
                       ),
