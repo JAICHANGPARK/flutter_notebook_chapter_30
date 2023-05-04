@@ -63,8 +63,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 8),
                         height: 140,
-                        decoration: const BoxDecoration(
+                        decoration: BoxDecoration(
                           color: Colors.blue,
+                          borderRadius: BorderRadius.circular(4),
                         ),
                       ),
                       Container(
