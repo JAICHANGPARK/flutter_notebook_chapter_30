@@ -170,6 +170,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                                 border: Border.all(),
                                 borderRadius: BorderRadius.circular(4)
                               ),
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                               child: Center(
                                 child: Text(
                                   "Pay Now",
