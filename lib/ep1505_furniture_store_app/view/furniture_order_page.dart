@@ -137,7 +137,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                               ),
                             ),
                             SizedBox(
-                              width: 16,
+                              width: 12,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
