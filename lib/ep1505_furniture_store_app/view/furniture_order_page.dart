@@ -93,6 +93,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
             child: ListView(
               children: [
                 Container(
+                  margin: EdgeInsets.only(bottom: 12),
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
@@ -189,6 +190,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                     ],
                   ),
                 ),
+
               ],
             ),
           ),
