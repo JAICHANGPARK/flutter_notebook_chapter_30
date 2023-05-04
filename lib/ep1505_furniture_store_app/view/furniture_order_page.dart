@@ -108,7 +108,6 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                               radius: 14,
                               backgroundColor: Colors.grey[200],
                             ),
-
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 12),
                               child: Text("Waiting Payment"),
