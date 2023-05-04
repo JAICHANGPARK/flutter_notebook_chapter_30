@@ -12,25 +12,34 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          children: [
-            Text("Order List"),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.chat_outlined,
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            children: [
+              Text(
+                "Order List",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            Badge(
-              child: Icon(Icons.notifications_none),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.shopping_bag_outlined,
+              Spacer(),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.chat_outlined,
+                ),
               ),
-            )
-          ],
+              Badge(
+                child: Icon(Icons.notifications_none),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.shopping_bag_outlined,
+                ),
+              )
+            ],
+          ),
         )
       ],
     );
