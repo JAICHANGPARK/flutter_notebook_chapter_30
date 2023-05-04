@@ -27,7 +27,11 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         border: Border.all(color: Colors.grey),
                       ),
                       height: 42,
-                      child: const TextField(),
+                      child: const TextField(
+                        decoration: InputDecoration(
+                          icon: Icon(Icons.search),
+                        ),
+                      ),
                     ),
                   ),
                   IconButton(
