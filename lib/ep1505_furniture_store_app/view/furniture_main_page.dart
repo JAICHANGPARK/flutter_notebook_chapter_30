@@ -353,7 +353,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (BuildContext context, int index) {
                             return Container(
-                              width: 200,
+                              width: 186,
                               margin: const EdgeInsets.only(right: 16),
                               decoration:  BoxDecoration(
                                 color: Colors.grey[300]!,
