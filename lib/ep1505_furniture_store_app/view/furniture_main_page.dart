@@ -74,6 +74,14 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                               'Summer Sale',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              "25% off for all furniture",
+                              style: TextStyle(
+                                color: Colors.white,
                               ),
                             )
                           ],
