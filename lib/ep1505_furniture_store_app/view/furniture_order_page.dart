@@ -100,9 +100,13 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                     children: [
                       Row(
                         children: [
-                          CircleAvatar(),
+                          CircleAvatar(
+                            radius: 14,
+                            backgroundColor: Colors.grey[200],
+                          ),
                           Text("Waiting Payment"),
                           Text("12 Aug 2023"),
+                          Spacer(),
                           IconButton(
                             onPressed: () {},
                             icon: Icon(
