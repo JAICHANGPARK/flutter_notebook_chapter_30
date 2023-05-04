@@ -32,6 +32,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         decoration: InputDecoration(
                           icon: Icon(Icons.search),
                           hintText: "Search Furniture",
+                          border: InputBorder.none,
                         ),
                       ),
                     ),
