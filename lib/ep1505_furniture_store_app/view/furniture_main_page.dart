@@ -345,7 +345,11 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             ),
                           )
                         ],
+                      ),
+                      Row(
+                        children: [],
                       )
+
                     ],
                   ),
                 ),
