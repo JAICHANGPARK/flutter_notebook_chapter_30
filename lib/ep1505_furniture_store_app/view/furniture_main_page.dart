@@ -1,6 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_30/ep1505_furniture_store_app/view/furniture_home_page.dart';
+import 'package:flutter_notebook_chapter_30/ep1505_furniture_store_app/view/furniture_order_page.dart';
 
 class FurnitureMainPage extends StatefulWidget {
   const FurnitureMainPage({Key? key}) : super(key: key);
@@ -22,6 +23,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
               index: v,
               children: const [
                 FurnitureHomePage(),
+                FurnitureOrderPage(),
               ],
             );
           },
