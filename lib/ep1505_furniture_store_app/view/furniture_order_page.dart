@@ -68,9 +68,10 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                   margin: EdgeInsets.symmetric(horizontal: 8),
                   padding: EdgeInsets.symmetric(horizontal: 12),
                   decoration: BoxDecoration(
-                      border: Border.all(
-                    color: Colors.grey,
-                  )),
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                  ),
                   child: Center(
                     child: Text(
                       tabItems[index],
