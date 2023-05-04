@@ -190,6 +190,104 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                     ],
                   ),
                 ),
+                Container(
+                  margin: EdgeInsets.only(bottom: 12),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 12, top: 12),
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 14,
+                              backgroundColor: Colors.grey[200],
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 12),
+                              child: Text("Waiting Payment"),
+                            ),
+                            Text("12 Aug 2023"),
+                            Spacer(),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.more_vert,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Divider(
+                        color: Colors.grey,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 52,
+                              width: 52,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(2),
+                                border: Border.all(),
+                              ),
+                            ),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("Dreamwalker Chair"),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text("1 item"),
+                              ],
+                            ),
+                            Spacer(),
+                            Text(
+                              "\$72",
+                            )
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Row(
+                          children: [
+                            Text("Total Price"),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text("\$72"),
+                            Spacer(),
+                            Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(4)
+                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              child: Center(
+                                child: Text(
+                                  "Pay Now",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
 
               ],
             ),
