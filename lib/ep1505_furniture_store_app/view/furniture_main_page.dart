@@ -69,6 +69,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         ),
                         padding: EdgeInsets.all(16),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               'Summer Sale',
@@ -83,7 +84,10 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                               style: TextStyle(
                                 color: Colors.white,
                               ),
-                            )
+                            ),
+                            Text(
+                              "SHOP NOW",
+                            ),
                           ],
                         ),
                       ),
