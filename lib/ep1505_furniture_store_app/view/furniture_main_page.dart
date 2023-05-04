@@ -346,10 +346,12 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           )
                         ],
                       ),
-                      Row(
-                        children: [],
-                      )
-
+                      Container(
+                        height: 300,
+                        child: ListView.builder(
+                          itemBuilder: (BuildContext context, int index) {},
+                        ),
+                      ),
                     ],
                   ),
                 ),
