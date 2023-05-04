@@ -126,6 +126,27 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                       Divider(
                         color: Colors.grey,
                       ),
+                      Row(
+                        children: [
+                          Container(
+                            height: 52,
+                            width: 52,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(2),
+                              border: Border.all(),
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              Text("Dreamwalker Chair"),
+                              Text("1 item"),
+                            ],
+                          ),
+                          Text(
+                            "\$72",
+                          )
+                        ],
+                      )
                     ],
                   ),
                 ),
