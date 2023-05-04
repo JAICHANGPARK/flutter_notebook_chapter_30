@@ -145,9 +145,13 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text("Dreamwalker Chair"),
+                                SizedBox(
+                                  height: 8,
+                                ),
                                 Text("1 item"),
                               ],
                             ),
+                            Spacer(),
                             Text(
                               "\$72",
                             )
