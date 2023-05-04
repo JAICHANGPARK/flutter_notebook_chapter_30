@@ -27,9 +27,11 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                         border: Border.all(color: Colors.grey),
                       ),
                       height: 42,
+                      padding: EdgeInsets.symmetric(horizontal: 8),
                       child: const TextField(
                         decoration: InputDecoration(
                           icon: Icon(Icons.search),
+                          hintText: "Search Furniture",
                         ),
                       ),
                     ),
