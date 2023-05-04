@@ -55,6 +55,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
         SizedBox(
           height: 42,
           child: ListView.builder(
+            scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return GestureDetector(
                 onTap: () {
