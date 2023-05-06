@@ -393,7 +393,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                                 PopupMenuItem(child: Text("Delete"))
                               ];
                             }),
-                           
+
                           ],
                         ),
                       ),
