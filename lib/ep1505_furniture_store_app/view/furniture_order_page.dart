@@ -109,7 +109,12 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             ),
                             const Padding(
                               padding: EdgeInsets.symmetric(horizontal: 12),
-                              child: Text("Waiting Payment"),
+                              child: Text(
+                                "Waiting Payment",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                             const Text("12 Aug 2023"),
                             const Spacer(),
@@ -165,7 +170,10 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             const Spacer(),
                             const Text(
                               "\$72",
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                              ),
                             )
                           ],
                         ),
