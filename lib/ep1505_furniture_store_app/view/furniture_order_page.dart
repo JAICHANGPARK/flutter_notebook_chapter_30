@@ -154,7 +154,12 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                                 SizedBox(
                                   height: 8,
                                 ),
-                                Text("1 item"),
+                                Text(
+                                  "1 item",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
                               ],
                             ),
                             const Spacer(),
