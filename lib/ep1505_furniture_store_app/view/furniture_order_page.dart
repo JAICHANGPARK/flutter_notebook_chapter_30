@@ -388,6 +388,9 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                               ),
                             ),
                             const Spacer(),
+                            DropdownMenu(dropdownMenuEntries: [
+
+                            ]),
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(
