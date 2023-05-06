@@ -24,32 +24,32 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
           padding: const EdgeInsets.all(8.0),
           child: Row(
             children: [
-              Text(
+              const Text(
                 "Order List",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.chat_outlined,
                 ),
               ),
-              Badge(
+              const Badge(
                 child: Icon(Icons.notifications_none),
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.shopping_bag_outlined,
                 ),
               )
             ],
           ),
         ),
-        Divider(
+        const Divider(
           color: Colors.grey,
         ),
         SizedBox(
@@ -65,8 +65,8 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                   });
                 },
                 child: Container(
-                  margin: EdgeInsets.symmetric(horizontal: 8),
-                  padding: EdgeInsets.symmetric(horizontal: 12),
+                  margin: const EdgeInsets.symmetric(horizontal: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.grey,
@@ -93,8 +93,8 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
             child: ListView(
               children: [
                 Container(
-                  margin: EdgeInsets.only(bottom: 12),
-                  decoration: BoxDecoration(
+                  margin: const EdgeInsets.only(bottom: 12),
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
                   child: Column(
@@ -107,22 +107,22 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                               radius: 14,
                               backgroundColor: Colors.grey[200],
                             ),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 12),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12),
                               child: Text("Waiting Payment"),
                             ),
-                            Text("12 Aug 2023"),
-                            Spacer(),
+                            const Text("12 Aug 2023"),
+                            const Spacer(),
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.more_vert,
                               ),
                             )
                           ],
                         ),
                       ),
-                      Divider(
+                      const Divider(
                         color: Colors.grey,
                       ),
                       Padding(
@@ -138,22 +138,22 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                                 border: Border.all(),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 12,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("Dreamwalker Chair"),
-                                SizedBox(
+                                const Text("Dreamwalker Chair"),
+                                const SizedBox(
                                   height: 8,
                                 ),
-                                Text("1 item"),
+                                const Text("1 item"),
                               ],
                             ),
-                            Spacer(),
-                            Text(
+                            const Spacer(),
+                            const Text(
                               "\$72",
                             )
                           ],
@@ -163,19 +163,16 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                         padding: const EdgeInsets.all(12.0),
                         child: Row(
                           children: [
-                            Text("Total Price"),
-                            SizedBox(
+                            const Text("Total Price"),
+                            const SizedBox(
                               width: 12,
                             ),
-                            Text("\$72"),
-                            Spacer(),
+                            const Text("\$72"),
+                            const Spacer(),
                             Container(
-                              decoration: BoxDecoration(
-                                border: Border.all(),
-                                borderRadius: BorderRadius.circular(4)
-                              ),
-                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                              child: Center(
+                              decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(4)),
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              child: const Center(
                                 child: Text(
                                   "Pay Now",
                                   style: TextStyle(
@@ -191,8 +188,8 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(bottom: 12),
-                  decoration: BoxDecoration(
+                  margin: const EdgeInsets.only(bottom: 12),
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
                   child: Column(
@@ -205,22 +202,22 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                               radius: 14,
                               backgroundColor: Colors.grey[200],
                             ),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 12),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12),
                               child: Text("Waiting Payment"),
                             ),
-                            Text("12 Aug 2023"),
-                            Spacer(),
+                            const Text("12 Aug 2023"),
+                            const Spacer(),
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.more_vert,
                               ),
                             )
                           ],
                         ),
                       ),
-                      Divider(
+                      const Divider(
                         color: Colors.grey,
                       ),
                       Padding(
@@ -236,22 +233,22 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                                 border: Border.all(),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 12,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("Dreamwalker Chair"),
-                                SizedBox(
+                                const Text("Dreamwalker Chair"),
+                                const SizedBox(
                                   height: 8,
                                 ),
-                                Text("1 item"),
+                                const Text("1 item"),
                               ],
                             ),
-                            Spacer(),
-                            Text(
+                            const Spacer(),
+                            const Text(
                               "\$72",
                             )
                           ],
@@ -261,19 +258,16 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                         padding: const EdgeInsets.all(12.0),
                         child: Row(
                           children: [
-                            Text("Total Price"),
-                            SizedBox(
+                            const Text("Total Price"),
+                            const SizedBox(
                               width: 12,
                             ),
-                            Text("\$72"),
-                            Spacer(),
+                            const Text("\$72"),
+                            const Spacer(),
                             Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(),
-                                  borderRadius: BorderRadius.circular(4)
-                              ),
-                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                              child: Center(
+                              decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(4)),
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              child: const Center(
                                 child: Text(
                                   "Pay Now",
                                   style: TextStyle(
@@ -288,7 +282,6 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                     ],
                   ),
                 ),
-
               ],
             ),
           ),
