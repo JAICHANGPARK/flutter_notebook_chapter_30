@@ -116,7 +116,12 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                                 ),
                               ),
                             ),
-                            const Text("12 Aug 2023"),
+                            const Text(
+                              "12 Aug 2023",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
                             const Spacer(),
                             IconButton(
                               onPressed: () {},
