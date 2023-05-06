@@ -430,7 +430,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                                   height: 8,
                                 ),
                                 Text(
-                                  "1 item",
+                                  "3 item",
                                   style: TextStyle(
                                     color: Colors.grey,
                                   ),
@@ -439,7 +439,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             ),
                             const Spacer(),
                             const Text(
-                              "\$72",
+                              "\$102",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
@@ -457,31 +457,21 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                               width: 12,
                             ),
                             const Text(
-                              "\$72",
+                              "\$306",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
                               ),
                             ),
                             const Spacer(),
-                            Container(
-                              decoration: BoxDecoration(
-                                border: Border.all(color: Colors.deepOrange),
-                                borderRadius: BorderRadius.circular(4),
+                            Text(
+                              "Estimate",
+                              style: TextStyle(
+                                color: Colors.grey,
                               ),
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 20,
-                                vertical: 8,
-                              ),
-                              child: const Center(
-                                child: Text(
-                                  "Pay Now",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.deepOrange,
-                                  ),
-                                ),
-                              ),
+                            ),
+                            Text(
+                              "15 - 18 Aug 2023",
                             )
                           ],
                         ),
