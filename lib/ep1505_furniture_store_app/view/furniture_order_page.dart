@@ -478,6 +478,16 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             )
                           ],
                         ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Track Package",
+                          ),
+                        ),
                       )
                     ],
                   ),
