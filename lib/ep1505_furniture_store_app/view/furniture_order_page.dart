@@ -472,6 +472,9 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             ),
                             Text(
                               "15 - 18 Aug 2023",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             )
                           ],
                         ),
