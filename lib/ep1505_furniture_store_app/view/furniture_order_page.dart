@@ -388,9 +388,9 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                               ),
                             ),
                             const Spacer(),
-                            DropdownMenu(dropdownMenuEntries: [
-
-                            ]),
+                            PopupMenuButton(itemBuilder: (context) {
+                              return [];
+                            }),
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(
