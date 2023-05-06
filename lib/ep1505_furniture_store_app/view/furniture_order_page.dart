@@ -144,12 +144,17 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                const Text("Dreamwalker Chair"),
-                                const SizedBox(
+                              children: const [
+                                Text(
+                                  "Dreamwalker Chair",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
                                   height: 8,
                                 ),
-                                const Text("1 item"),
+                                Text("1 item"),
                               ],
                             ),
                             const Spacer(),
@@ -239,12 +244,12 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                const Text("Dreamwalker Chair"),
-                                const SizedBox(
+                              children: const [
+                                Text("Dreamwalker Chair"),
+                                SizedBox(
                                   height: 8,
                                 ),
-                                const Text("1 item"),
+                                Text("1 item"),
                               ],
                             ),
                             const Spacer(),
