@@ -165,10 +165,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             const Spacer(),
                             const Text(
                               "\$72",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                             )
                           ],
                         ),
@@ -181,11 +178,20 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             const SizedBox(
                               width: 12,
                             ),
-                            const Text("\$72"),
+                            const Text(
+                              "\$72",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                            ),
                             const Spacer(),
                             Container(
-                              decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(4)),
-                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 8,
+                              ),
                               child: const Center(
                                 child: Text(
                                   "Pay Now",
