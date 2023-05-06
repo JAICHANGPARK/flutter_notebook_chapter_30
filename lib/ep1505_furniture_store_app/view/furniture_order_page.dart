@@ -192,7 +192,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               padding: const EdgeInsets.symmetric(
-                                horizontal: 16,
+                                horizontal: 20,
                                 vertical: 8,
                               ),
                               child: const Center(
