@@ -134,7 +134,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                               height: 52,
                               width: 52,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(2),
+                                borderRadius: BorderRadius.circular(4),
                                 border: Border.all(),
                               ),
                             ),
