@@ -165,6 +165,10 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             const Spacer(),
                             const Text(
                               "\$72",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15
+                              ),
                             )
                           ],
                         ),
