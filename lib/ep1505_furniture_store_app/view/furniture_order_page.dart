@@ -389,14 +389,11 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             ),
                             const Spacer(),
                             PopupMenuButton(itemBuilder: (context) {
-                              return [];
+                              return [
+                                PopupMenuItem(child: Text("Delete"))
+                              ];
                             }),
-                            IconButton(
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.more_vert,
-                              ),
-                            )
+                           
                           ],
                         ),
                       ),
