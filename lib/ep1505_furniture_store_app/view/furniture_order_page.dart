@@ -481,8 +481,10 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4),
-                        ),
+                            borderRadius: BorderRadius.circular(4),
+                            border: Border.all(
+                              color: Colors.deepOrange,
+                            )),
                         child: Center(
                           child: Text(
                             "Track Package",
