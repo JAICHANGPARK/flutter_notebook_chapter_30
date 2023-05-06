@@ -389,11 +389,8 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                             ),
                             const Spacer(),
                             PopupMenuButton(itemBuilder: (context) {
-                              return [
-                                PopupMenuItem(child: Text("Delete"))
-                              ];
+                              return [const PopupMenuItem(child: Text("Delete"))];
                             }),
-
                           ],
                         ),
                       ),
@@ -451,19 +448,19 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                       Padding(
                         padding: const EdgeInsets.all(12.0),
                         child: Row(
-                          children: [
-                            const Text("Total Price"),
-                            const SizedBox(
+                          children: const [
+                            Text("Total Price"),
+                            SizedBox(
                               width: 12,
                             ),
-                            const Text(
+                            Text(
                               "\$306",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
                               ),
                             ),
-                            const Spacer(),
+                            Spacer(),
                             Text(
                               "Estimate",
                               style: TextStyle(
@@ -480,15 +477,15 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                        padding: EdgeInsets.symmetric(vertical: 8),
+                        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                        padding: const EdgeInsets.symmetric(vertical: 8),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(4),
                           border: Border.all(
                             color: Colors.deepOrange,
                           ),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Track Package",
                             style: TextStyle(
