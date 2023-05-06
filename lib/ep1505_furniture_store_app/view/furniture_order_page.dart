@@ -480,7 +480,7 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
+                        margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                         padding: EdgeInsets.symmetric(vertical: 8),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(4),
@@ -491,6 +491,10 @@ class _FurnitureOrderPageState extends State<FurnitureOrderPage> {
                         child: Center(
                           child: Text(
                             "Track Package",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.deepOrange,
+                            ),
                           ),
                         ),
                       )
