@@ -68,9 +68,11 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                   right: 0,
                   bottom: 0,
                   child: Container(
+
                     color: Colors.white,
                     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
