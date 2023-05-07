@@ -25,6 +25,7 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                     fit: BoxFit.cover,
                   ),
                 ),
+                padding: EdgeInsets.only(left: 12, top: 24),
                 child: Row(
                   children: [
                     IconButton(
