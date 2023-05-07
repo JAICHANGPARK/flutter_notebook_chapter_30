@@ -6,6 +6,7 @@ class FarmersApp extends StatelessWidget {
   FarmersApp({Key? key}) : super(key: key);
 
   final _router = GoRouter(
+    initialLocation: "/profile",
     routes: [
       GoRoute(
         path: "/profile",
@@ -16,6 +17,9 @@ class FarmersApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router();
+    return MaterialApp.router(
+
+      routerConfig: _router,
+    );
   }
 }
