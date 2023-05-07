@@ -105,21 +105,21 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                             )
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
-                        Text(
+                        const Text(
                           "Dream Walker",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
-                        Text(
-                          "Repulic of Korea, Seoul",
+                        const Text(
+                          "Republic of Korea, Seoul",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
