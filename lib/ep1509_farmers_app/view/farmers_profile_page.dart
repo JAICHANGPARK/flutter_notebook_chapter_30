@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FarmersProfilePage extends StatefulWidget {
   const FarmersProfilePage({Key? key}) : super(key: key);
 
@@ -14,7 +13,20 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(child: child)
+          Positioned(
+              child: Column(
+            children: [
+              Container(
+                height: 250,
+                color: Colors.blue,
+              ),
+              Expanded(
+                child: Container(
+                  color: Colors.white,
+                ),
+              )
+            ],
+          ))
         ],
       ),
     );
