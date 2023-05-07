@@ -76,6 +76,8 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Container(
+                              width: 160,
+                              padding: EdgeInsets.symmetric(horizontal: 32,vertical: 8),
                               decoration: BoxDecoration(
                                 color: Colors.black,
                                 borderRadius: BorderRadius.circular(32),
