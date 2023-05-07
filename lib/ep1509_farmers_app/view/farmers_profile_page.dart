@@ -29,8 +29,7 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                 child: Column(
                   children: [
                     Row(
-                      crossAxisAlignment: CrossAxisAlignment.center
-                      ,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         IconButton(
                           onPressed: () {},
