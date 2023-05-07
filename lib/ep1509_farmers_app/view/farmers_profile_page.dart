@@ -57,7 +57,13 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
           ),
           Positioned(
             top: 250,
-            child: Stack(children: [],
+            child: Stack(
+              children: [
+                Positioned(
+                    child: Container(
+                  color: Colors.blue,
+                ))
+              ],
             ),
           )
         ],
