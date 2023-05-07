@@ -64,12 +64,12 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
               children: [
                 Positioned(
                   top: 50,
-                  left:0,
+                  left: 0,
                   right: 0,
                   bottom: 0,
                   child: Container(
                     color: Colors.white,
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                     child: Column(
                       children: [
                         Row(
@@ -77,7 +77,7 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                           children: [
                             Container(
                               width: 160,
-                              padding: EdgeInsets.symmetric(horizontal: 32,vertical: 12),
+                              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 12),
                               decoration: BoxDecoration(
                                 color: Colors.black,
                                 borderRadius: BorderRadius.circular(32),
@@ -91,6 +91,9 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                                   ),
                                 ),
                               ),
+                            ),
+                            SizedBox(
+                              width: 12,
                             ),
                             CircleAvatar(
                               foregroundColor: Colors.black,
