@@ -31,6 +31,7 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                       onPressed: () {},
                       icon: Icon(Icons.arrow_back_ios),
                     ),
+                    Text("Back"),
                   ],
                 ),
               ),
