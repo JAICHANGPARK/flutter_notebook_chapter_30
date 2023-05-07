@@ -68,15 +68,33 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                   right: 0,
                   bottom: 0,
                   child: Container(
-                    color: Colors.blue,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(32)
+                              ),
+                              child: Center(
+                                child: Text("Shop"),
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 Positioned(
-                    left: 16,
-                    top: 0,
-                    child: CircleAvatar(
-                      radius: 48,
-                    ))
+                  left: 16,
+                  top: 0,
+                  child: CircleAvatar(
+                    radius: 48,
+                  ),
+                )
               ],
             ),
           )
