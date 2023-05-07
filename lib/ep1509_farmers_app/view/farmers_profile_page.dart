@@ -18,7 +18,14 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
             children: [
               Container(
                 height: 250,
-                color: Colors.blue,
+
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  image: DecorationImage(
+                    image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/14/03/50/farmer-1822530_1280.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
               Expanded(
                 child: Container(
