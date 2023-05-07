@@ -103,6 +103,10 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                               ),
                             )
                           ],
+                        ),
+                        Text("Dream Walker"),
+                        Text(
+                          "Repulic of Korea, Seoul",
                         )
                       ],
                     ),
