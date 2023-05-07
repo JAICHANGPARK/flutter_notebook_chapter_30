@@ -69,7 +69,7 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                   bottom: 0,
                   child: Container(
                     color: Colors.white,
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                     child: Column(
                       children: [
                         Row(
@@ -77,7 +77,7 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                           children: [
                             Container(
                               width: 160,
-                              padding: EdgeInsets.symmetric(horizontal: 32,vertical: 8),
+                              padding: EdgeInsets.symmetric(horizontal: 32,vertical: 12),
                               decoration: BoxDecoration(
                                 color: Colors.black,
                                 borderRadius: BorderRadius.circular(32),
