@@ -64,14 +64,16 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
               children: [
                 Positioned(
                   top: 50,
-                  left: 0,
+                  left:0,
                   right: 0,
                   bottom: 0,
                   child: Container(
                     color: Colors.white,
+
                     child: Column(
                       children: [
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Container(
                               decoration: BoxDecoration(
@@ -86,6 +88,13 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                                     color: Colors.white,
                                   ),
                                 ),
+                              ),
+                            ),
+                            CircleAvatar(
+                              foregroundColor: Colors.black,
+                              backgroundColor: Colors.grey[200],
+                              child: Icon(
+                                Icons.favorite,
                               ),
                             )
                           ],
