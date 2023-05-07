@@ -56,14 +56,14 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
             ),
           ),
           Positioned(
-            top: 200,
+            top: 180,
             left: 0,
             right: 0,
             bottom: 0,
             child: Stack(
               children: [
                 Positioned(
-                  top: 40,
+                  top: 50,
                   left: 0,
                   right: 0,
                   bottom: 0,
@@ -71,7 +71,12 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                     color: Colors.blue,
                   ),
                 ),
-
+                Positioned(
+                    left: 16,
+                    top: 0,
+                    child: CircleAvatar(
+                      radius: 48,
+                    ))
               ],
             ),
           )
