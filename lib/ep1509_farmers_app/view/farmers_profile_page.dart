@@ -68,7 +68,6 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                   right: 0,
                   bottom: 0,
                   child: Container(
-
                     color: Colors.white,
                     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                     child: Column(
@@ -106,9 +105,24 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                             )
                           ],
                         ),
-                        Text("Dream Walker"),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          "Dream Walker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Text(
                           "Repulic of Korea, Seoul",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
                         )
                       ],
                     ),
