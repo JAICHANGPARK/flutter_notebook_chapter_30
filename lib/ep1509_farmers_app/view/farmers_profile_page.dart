@@ -25,19 +25,25 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                     fit: BoxFit.cover,
                   ),
                 ),
-                padding: EdgeInsets.only(left: 12, top: 24),
-                child: Row(
+                padding: EdgeInsets.only(left: 12, top: 64),
+                child: Column(
                   children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.arrow_back_ios),
-                      color: Colors.white,
-                    ),
-                    Text(
-                      "Back",
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center
+                      ,
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.arrow_back_ios),
+                          color: Colors.white,
+                        ),
+                        Text(
+                          "Back",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
