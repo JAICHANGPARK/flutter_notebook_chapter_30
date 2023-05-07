@@ -69,7 +69,7 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                   bottom: 0,
                   child: Container(
                     color: Colors.white,
-
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                     child: Column(
                       children: [
                         Row(
