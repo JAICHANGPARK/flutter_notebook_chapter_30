@@ -56,7 +56,16 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
             ),
           ),
           Positioned(
-            child: Column(),
+            child: Column(
+              children: [
+                Container(
+                  height: 250,
+                ),
+                Expanded(
+                  child: Container(),
+                ),
+              ],
+            ),
           )
         ],
       ),
