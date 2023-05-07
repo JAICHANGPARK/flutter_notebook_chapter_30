@@ -11,6 +11,12 @@ class FarmersProfilePage extends StatefulWidget {
 class _FarmersProfilePageState extends State<FarmersProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned(child: child)
+        ],
+      ),
+    );
   }
 }
