@@ -76,10 +76,16 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.black,
-                                borderRadius: BorderRadius.circular(32)
+                                borderRadius: BorderRadius.circular(32),
                               ),
                               child: Center(
-                                child: Text("Shop"),
+                                child: Text(
+                                  "Shop",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ),
                             )
                           ],
