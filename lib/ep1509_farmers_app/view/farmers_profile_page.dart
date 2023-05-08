@@ -8,6 +8,9 @@ class FarmersProfilePage extends StatefulWidget {
 }
 
 class _FarmersProfilePageState extends State<FarmersProfilePage> {
+  List<String> chips = [
+    ""
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -157,6 +160,13 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                             Padding(
                               padding: const EdgeInsets.only(left: 8, right: 20),
                               child: Text("plants in GrowthByou"),
+                            ),
+                          ],
+                        ),
+                        Wrap(
+                          children: [
+                            Chip(
+                              label: Text("Tomatoes"),
                             ),
                           ],
                         )
