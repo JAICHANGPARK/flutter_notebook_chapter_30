@@ -127,7 +127,12 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 12),
                           child: Text(
-                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                         Row(
                           children: [
@@ -142,8 +147,17 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                               padding: const EdgeInsets.only(left: 8, right: 20),
                               child: Text("members"),
                             ),
-                            Text("642"),
-                            Text("plants in GrowthByou"),
+                            Text(
+                              "642",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8, right: 20),
+                              child: Text("plants in GrowthByou"),
+                            ),
                           ],
                         )
                       ],
