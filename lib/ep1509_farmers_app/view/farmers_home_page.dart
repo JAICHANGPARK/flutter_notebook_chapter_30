@@ -12,6 +12,9 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        foregroundColor: Colors.black,
         centerTitle: true,
         title: Text("My Virtual Garden"),
         actions: [
