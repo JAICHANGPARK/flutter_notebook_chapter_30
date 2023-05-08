@@ -10,14 +10,14 @@ class FarmersProfilePage extends StatefulWidget {
 class _FarmersProfilePageState extends State<FarmersProfilePage> {
   List<String> chips = [
     "🍅 Tomatoes",
-    "Cucumbers",
-    "Carrots",
-    "Potatoes",
-    "Onions",
-    "Oranges",
-    "Apples",
-    "Strawberries",
-    "Olives",
+    "🥒 Cucumbers",
+    "🥕 Carrots",
+    "🥔 Potatoes",
+    "🧅 Onions",
+    "🍊 Oranges",
+    "🍎 Apples",
+    "🍓 Strawberries",
+    " Olives",
   ];
 
   @override
