@@ -131,8 +131,17 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                         ),
                         Row(
                           children: [
-                            Text("12"),
-                            Text("members"),
+                            Text(
+                              "12",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8, right: 20),
+                              child: Text("members"),
+                            ),
                             Text("642"),
                             Text("plants in GrowthByou"),
                           ],
