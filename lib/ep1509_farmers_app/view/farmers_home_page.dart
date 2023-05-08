@@ -15,7 +15,10 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
         centerTitle: true,
         title: Text("My Virtual Garden"),
         actions: [
-          CircleAvatar(),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: CircleAvatar(),
+          ),
         ],
       ),
     );
