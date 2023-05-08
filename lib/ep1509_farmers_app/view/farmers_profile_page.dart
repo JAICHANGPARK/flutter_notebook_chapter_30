@@ -195,17 +195,19 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                         ),
                         Container(
                           margin: EdgeInsets.symmetric(vertical: 8),
-                          height: 100,
+                          height: 84,
                           decoration: BoxDecoration(
                             color: Colors.blue,
                           ),
                           child: Row(
                             children: [
-                            Expanded(child: Placeholder()),
                               Expanded(child: Placeholder()),
+                              SizedBox(width: 8,),
                               Expanded(child: Placeholder()),
+                              SizedBox(width: 8,),
                               Expanded(child: Placeholder()),
-
+                              SizedBox(width: 8,),
+                              Expanded(child: Placeholder()),
                             ],
                           ),
                         )
