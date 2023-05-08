@@ -6,8 +6,12 @@ class FarmersApp extends StatelessWidget {
   FarmersApp({Key? key}) : super(key: key);
 
   final _router = GoRouter(
-    initialLocation: "/profile",
+    initialLocation: "/",
     routes: [
+      GoRoute(
+        path: "/",
+        builder: (context, state) => FarmersHomePage(),
+      ),
       GoRoute(
         path: "/profile",
         builder: (context, state) => FarmersProfilePage(),
