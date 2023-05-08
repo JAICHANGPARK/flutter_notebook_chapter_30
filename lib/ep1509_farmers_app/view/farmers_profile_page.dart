@@ -191,6 +191,7 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                           "Photo",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            fontSize: 15
                           ),
                         ),
                         Container(
