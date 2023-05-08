@@ -173,11 +173,13 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                           ],
                         ),
                         Wrap(
-                          children: [
-                            Chip(
-                              label: Text("Tomatoes"),
-                            ),
-                          ],
+                          children: chips
+                              .map(
+                                (e) => Chip(
+                                  label: Text(e),
+                                ),
+                              )
+                              .toList(),
                         )
                       ],
                     ),
