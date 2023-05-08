@@ -189,10 +189,7 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                         ),
                         Text(
                           "Photo",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                         ),
                         Container(
                           margin: EdgeInsets.symmetric(vertical: 8),
@@ -203,15 +200,31 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                           child: Row(
                             children: [
                               Expanded(child: Placeholder()),
-                              SizedBox(width: 8,),
+                              SizedBox(
+                                width: 8,
+                              ),
                               Expanded(child: Placeholder()),
-                              SizedBox(width: 8,),
+                              SizedBox(
+                                width: 8,
+                              ),
                               Expanded(child: Placeholder()),
-                              SizedBox(width: 8,),
+                              SizedBox(
+                                width: 8,
+                              ),
                               Expanded(child: Placeholder()),
                             ],
                           ),
-                        )
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Text(
+                          "Way to plant",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
+                        ),
                       ],
                     ),
                   ),
