@@ -11,11 +11,11 @@ class FarmersApp extends StatelessWidget {
     routes: [
       GoRoute(
         path: "/",
-        builder: (context, state) => FarmersHomePage(),
+        builder: (context, state) => const FarmersHomePage(),
       ),
       GoRoute(
         path: "/profile",
-        builder: (context, state) => FarmersProfilePage(),
+        builder: (context, state) => const FarmersProfilePage(),
       ),
     ],
   );
