@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class FarmersHomePage extends StatefulWidget {
   const FarmersHomePage({Key? key}) : super(key: key);
@@ -11,6 +12,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -20,7 +22,11 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
         actions: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: CircleAvatar(),
+            child: GestureDetector(
+                onTap: () {
+                  context.go("/profile");
+                },
+                child: CircleAvatar()),
           ),
         ],
       ),
