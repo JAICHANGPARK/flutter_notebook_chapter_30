@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FarmersHomePage extends StatefulWidget {
   const FarmersHomePage({Key? key}) : super(key: key);
 
@@ -11,6 +10,14 @@ class FarmersHomePage extends StatefulWidget {
 class _FarmersHomePageState extends State<FarmersHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("My Virtual Garden"),
+        actions: [
+          CircleAvatar(),
+        ],
+      ),
+    );
   }
 }
