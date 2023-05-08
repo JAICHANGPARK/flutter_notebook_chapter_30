@@ -123,6 +123,19 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                           style: TextStyle(
                             color: Colors.grey,
                           ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          child: Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+                        ),
+                        Row(
+                          children: [
+                            Text("12"),
+                            Text("members"),
+                            Text("642"),
+                            Text("plants in GrowthByou"),
+                          ],
                         )
                       ],
                     ),
