@@ -186,6 +186,28 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                                 )
                                 .toList(),
                           ),
+                        ),
+                        Text(
+                          "Photo",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.symmetric(vertical: 8),
+                          height: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                          child: Row(
+                            children: [
+                            Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+
+                            ],
+                          ),
                         )
                       ],
                     ),
