@@ -172,14 +172,20 @@ class _FarmersProfilePageState extends State<FarmersProfilePage> {
                             ),
                           ],
                         ),
-                        Wrap(
-                          children: chips
-                              .map(
-                                (e) => Chip(
-                                  label: Text(e),
-                                ),
-                              )
-                              .toList(),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          child: Wrap(
+                            spacing: 8,
+                            runSpacing: 0,
+                            children: chips
+                                .map(
+                                  (e) => Chip(
+                                    backgroundColor: Colors.grey[200],
+                                    label: Text(e),
+                                  ),
+                                )
+                                .toList(),
+                          ),
                         )
                       ],
                     ),
