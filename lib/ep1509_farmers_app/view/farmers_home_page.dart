@@ -30,6 +30,15 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
           ),
         ],
       ),
+      body: Column(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.white
+            ),
+          )
+        ],
+      ),
     );
   }
 }
