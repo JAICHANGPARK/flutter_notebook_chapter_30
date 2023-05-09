@@ -115,9 +115,30 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                     ),
                   ),
                   Container(
-                    height: 120,
+                    height: 140,
                     color: Colors.blue,
                     margin: EdgeInsets.only(top: 16, bottom: 20),
+                    child: Row(
+                      children: seedItems
+                          .map(
+                            (e) => Expanded(
+                              child: Card(
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      right: 4,
+                                      top: 4,
+                                      child: Icon(
+                                        Icons.info_outline,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          )
+                          .toList(),
+                    ),
                   )
                 ],
               ),
