@@ -33,11 +33,9 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
       body: Column(
         children: [
           Container(
-            decoration: BoxDecoration(color: Colors.white,
-            borderRadius: BorderRadius.only(
-              bottomRight: Radius.circular(24),
-              bottomLeft: Radius.circular(24)
-            )),
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(24), bottomLeft: Radius.circular(24))),
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
             child: Center(
               child: Wrap(
@@ -78,7 +76,21 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                 ],
               ),
             ),
-          )
+          ),
+          Expanded(child: SingleChildScrollView(
+            child: ListView(
+              children: [
+                Text(
+                  "Seeds",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16
+                  ),
+                )
+              ],
+            ),
+          )),
+
         ],
       ),
     );
