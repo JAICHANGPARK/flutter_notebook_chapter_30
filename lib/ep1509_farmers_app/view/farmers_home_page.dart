@@ -41,6 +41,24 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                   label: Text(
                     "2 Seeds",
                   ),
+                ),
+                Chip(
+                  backgroundColor: Colors.grey[200],
+                  label: Text(
+                    "16 In Growth",
+                  ),
+                ),
+                Chip(
+                  backgroundColor: Colors.grey[200],
+                  label: Text(
+                    "5 Ready",
+                  ),
+                ),
+                Chip(
+                  backgroundColor: Colors.grey[200],
+                  label: Text(
+                    "2 Seeds",
+                  ),
                 )
               ],
             ),
