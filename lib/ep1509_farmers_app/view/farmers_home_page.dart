@@ -38,7 +38,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.grey[100],
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -60,8 +60,12 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
         children: [
           Container(
             decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(bottomRight: Radius.circular(24), bottomLeft: Radius.circular(24))),
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(24),
+                bottomLeft: Radius.circular(24),
+              ),
+            ),
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
             child: Center(
               child: Wrap(
@@ -157,7 +161,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                           Text("${e.duration} (${e.progress?.toStringAsFixed(0)}%)"),
                                           LinearPercentIndicator(
                                             lineHeight: 8,
-                                           barRadius: Radius.circular(24),
+                                            barRadius: Radius.circular(24),
                                             backgroundColor: Colors.grey[300],
                                             progressColor: Colors.black,
                                             percent: ((e.progress ?? 0) / 100),
