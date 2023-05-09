@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_30/ep1509_farmers_app/model/garden.dart';
 import 'package:go_router/go_router.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class FarmersHomePage extends StatefulWidget {
   const FarmersHomePage({Key? key}) : super(key: key);
@@ -140,6 +141,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                             style: TextStyle(fontSize: 40),
                                           ),
                                           Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
                                                 e.count ?? "",
@@ -152,7 +154,12 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                               )
                                             ],
                                           ),
-                                          Text("${e.duration} (${e.progress?.toStringAsFixed(0)}%)")
+                                          Text("${e.duration} (${e.progress?.toStringAsFixed(0)}%)"),
+                                          LinearPercentIndicator(
+                                            linearStrokeCap: LinearStrokeCap.roundAll,
+                                            backgroundColor: Colors.grey[300],
+                                            progressColor: Colors.black,
+                                          ),
                                         ],
                                       ),
                                     )
