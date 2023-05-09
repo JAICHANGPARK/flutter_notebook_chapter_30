@@ -33,12 +33,15 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
       body: Column(
         children: [
           Container(
-            decoration: BoxDecoration(
-              color: Colors.white
-            ),
+            decoration: BoxDecoration(color: Colors.white),
             child: Wrap(
               children: [
-                Chip(label: Text(""))
+                Chip(
+                  backgroundColor: Colors.grey[200],
+                  label: Text(
+                    "2 Seeds",
+                  ),
+                )
               ],
             ),
           )
