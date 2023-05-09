@@ -155,10 +155,15 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                             ],
                                           ),
                                           Text("${e.duration} (${e.progress?.toStringAsFixed(0)}%)"),
-                                          LinearPercentIndicator(
-                                            linearStrokeCap: LinearStrokeCap.roundAll,
-                                            backgroundColor: Colors.grey[300],
-                                            progressColor: Colors.black,
+                                          SizedBox(
+                                            height: 32,
+                                            child: LinearPercentIndicator(
+                                              lineHeight: 8,
+                                              linearStrokeCap: LinearStrokeCap.roundAll,
+                                              backgroundColor: Colors.grey[300],
+                                              progressColor: Colors.black,
+                                              percent: ((e.progress ?? 0) / 100),
+                                            ),
                                           ),
                                         ],
                                       ),
