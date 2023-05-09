@@ -34,33 +34,44 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
         children: [
           Container(
             decoration: BoxDecoration(color: Colors.white),
-            child: Wrap(
-              children: [
-                Chip(
-                  backgroundColor: Colors.grey[200],
-                  label: Text(
-                    "2 Seeds",
+            child: Center(
+              child: Wrap(
+                alignment: WrapAlignment.center,
+                runAlignment: WrapAlignment.center,
+                spacing: 8,
+                children: [
+                  Chip(
+                    backgroundColor: Colors.grey[200],
+                    label: Text(
+                      "2 Seeds",
+                    ),
                   ),
-                ),
-                Chip(
-                  backgroundColor: Colors.grey[200],
-                  label: Text(
-                    "16 In Growth",
+                  Chip(
+                    backgroundColor: Colors.grey[200],
+                    label: Text(
+                      "16 In Growth",
+                    ),
                   ),
-                ),
-                Chip(
-                  backgroundColor: Colors.grey[200],
-                  label: Text(
-                    "5 Ready",
+                  Chip(
+                    backgroundColor: Colors.grey[200],
+                    label: Text(
+                      "5 Ready",
+                    ),
                   ),
-                ),
-                Chip(
-                  backgroundColor: Colors.grey[200],
-                  label: Text(
-                    "2 Seeds",
+                  Chip(
+                    backgroundColor: Colors.grey[200],
+                    label: Text(
+                      "6 On The Way",
+                    ),
                   ),
-                )
-              ],
+                  Chip(
+                    backgroundColor: Colors.grey[200],
+                    label: Text(
+                      "54 Consumed",
+                    ),
+                  )
+                ],
+              ),
             ),
           )
         ],
