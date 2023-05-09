@@ -33,7 +33,11 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
       body: Column(
         children: [
           Container(
-            decoration: BoxDecoration(color: Colors.white),
+            decoration: BoxDecoration(color: Colors.white,
+            borderRadius: BorderRadius.only(
+              bottomRight: Radius.circular(16),
+              bottomLeft: Radius.circular(16)
+            )),
             child: Center(
               child: Wrap(
                 alignment: WrapAlignment.center,
