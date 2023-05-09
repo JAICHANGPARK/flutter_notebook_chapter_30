@@ -77,21 +77,22 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
               ),
             ),
           ),
-          Expanded(child: Padding(
-            padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
-            child: ListView(
-              children: [
-                Text(
-                  "Seeds",
-                  style: TextStyle(
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 16, right: 16, top: 20),
+              child: ListView(
+                children: [
+                  Text(
+                    "Seeds",
+                    style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 16
-                  ),
-                )
-              ],
+                      fontSize: 16,
+                    ),
+                  )
+                ],
+              ),
             ),
-          )),
-
+          ),
         ],
       ),
     );
