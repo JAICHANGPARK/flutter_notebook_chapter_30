@@ -117,7 +117,6 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                   ),
                   Container(
                     height: 140,
-                    color: Colors.blue,
                     margin: EdgeInsets.only(top: 16, bottom: 20),
                     child: Row(
                       children: seedItems
