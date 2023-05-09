@@ -10,7 +10,29 @@ class FarmersHomePage extends StatefulWidget {
 }
 
 class _FarmersHomePageState extends State<FarmersHomePage> {
-  List<Garden> seedItems = [];
+  List<Garden> seedItems = [
+    Garden(
+      emoji: "🍅",
+      count: "12",
+      title: "Tomatoes",
+      duration: "1 month",
+      progress: 5.0,
+    ),
+    Garden(
+      emoji: "🧅",
+      count: "12",
+      title: "Onions",
+      duration: "1 month",
+      progress: 5.0,
+    ),
+    Garden(
+      emoji: "🧅",
+      count: "12",
+      title: "Onions",
+      duration: "1 month",
+      progress: 5.0,
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
