@@ -135,6 +135,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                     ),
                                     Positioned(
                                       child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
                                           Text(
                                             e.emoji ?? "",
@@ -155,15 +156,12 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                             ],
                                           ),
                                           Text("${e.duration} (${e.progress?.toStringAsFixed(0)}%)"),
-                                          SizedBox(
-                                            height: 32,
-                                            child: LinearPercentIndicator(
-                                              lineHeight: 8,
-                                             barRadius: Radius.circular(24),
-                                              backgroundColor: Colors.grey[300],
-                                              progressColor: Colors.black,
-                                              percent: ((e.progress ?? 0) / 100),
-                                            ),
+                                          LinearPercentIndicator(
+                                            lineHeight: 8,
+                                           barRadius: Radius.circular(24),
+                                            backgroundColor: Colors.grey[300],
+                                            progressColor: Colors.black,
+                                            percent: ((e.progress ?? 0) / 100),
                                           ),
                                         ],
                                       ),
