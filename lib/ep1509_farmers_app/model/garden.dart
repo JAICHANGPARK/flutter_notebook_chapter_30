@@ -12,3 +12,4 @@ class Garden with _$Garden {
     double? progress,
   }) = _Garden;
 }
+
