@@ -88,7 +88,8 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
-                  )
+                  ),
+
                 ],
               ),
             ),
