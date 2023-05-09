@@ -137,11 +137,15 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                         children: [
                                           Text(
                                             e.emoji ?? "",
+                                            style: TextStyle(fontSize: 40),
                                           ),
                                           Row(
                                             children: [
                                               Text(
                                                 e.count ?? "",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
                                               Text(
                                                 e.title ?? "",
