@@ -36,6 +36,11 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
             decoration: BoxDecoration(
               color: Colors.white
             ),
+            child: Wrap(
+              children: [
+                Chip(label: Text(""))
+              ],
+            ),
           )
         ],
       ),
