@@ -16,12 +16,15 @@ dependencies:
   cupertino_icons: ^1.0.5
   dots_indicator: any
   go_router: ^7.0.0
+  freezed_annotation: any
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.1
+  freezed: any
+  build_runner: any
 
 flutter:
 
