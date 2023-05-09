@@ -151,7 +151,8 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                                 e.title ?? "",
                                               )
                                             ],
-                                          )
+                                          ),
+                                          Text("${e.duration} (${e.progress?.toStringAsFixed(0)}%)")
                                         ],
                                       ),
                                     )
