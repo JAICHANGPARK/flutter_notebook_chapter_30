@@ -35,9 +35,10 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
           Container(
             decoration: BoxDecoration(color: Colors.white,
             borderRadius: BorderRadius.only(
-              bottomRight: Radius.circular(16),
-              bottomLeft: Radius.circular(16)
+              bottomRight: Radius.circular(24),
+              bottomLeft: Radius.circular(24)
             )),
+            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
             child: Center(
               child: Wrap(
                 alignment: WrapAlignment.center,
