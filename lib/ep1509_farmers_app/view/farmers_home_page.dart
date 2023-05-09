@@ -159,7 +159,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                             height: 32,
                                             child: LinearPercentIndicator(
                                               lineHeight: 8,
-                                              linearStrokeCap: LinearStrokeCap.roundAll,
+                                             barRadius: Radius.circular(24),
                                               backgroundColor: Colors.grey[300],
                                               progressColor: Colors.black,
                                               percent: ((e.progress ?? 0) / 100),
