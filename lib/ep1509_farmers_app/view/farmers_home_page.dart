@@ -77,18 +77,16 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
               ),
             ),
           ),
-          Expanded(child: SingleChildScrollView(
-            child: ListView(
-              children: [
-                Text(
-                  "Seeds",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16
-                  ),
-                )
-              ],
-            ),
+          Expanded(child: ListView(
+            children: [
+              Text(
+                "Seeds",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16
+                ),
+              )
+            ],
           )),
 
         ],
