@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1509_farmers_app/model/garden.dart';
 import 'package:go_router/go_router.dart';
 
 class FarmersHomePage extends StatefulWidget {
@@ -9,6 +10,8 @@ class FarmersHomePage extends StatefulWidget {
 }
 
 class _FarmersHomePageState extends State<FarmersHomePage> {
+  List<Garden> seedItems = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,7 +92,6 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                       fontSize: 16,
                     ),
                   ),
-
                 ],
               ),
             ),
