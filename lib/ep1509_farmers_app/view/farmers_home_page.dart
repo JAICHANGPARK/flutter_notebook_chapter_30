@@ -131,6 +131,25 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                       child: Icon(
                                         Icons.info_outline,
                                       ),
+                                    ),
+                                    Positioned(
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            e.emoji ?? "",
+                                          ),
+                                          Row(
+                                            children: [
+                                              Text(
+                                                e.count ?? "",
+                                              ),
+                                              Text(
+                                                e.title ?? "",
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     )
                                   ],
                                 ),
