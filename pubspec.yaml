@@ -17,6 +17,7 @@ dependencies:
   dots_indicator: any
   go_router: ^7.0.0
   freezed_annotation: any
+  percent_indicator: any
 
 dev_dependencies:
   flutter_test:
