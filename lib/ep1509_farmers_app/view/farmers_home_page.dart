@@ -114,6 +114,11 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                       fontSize: 16,
                     ),
                   ),
+                  Container(
+                    height: 120,
+                    color: Colors.blue,
+                    margin: EdgeInsets.only(top: 16, bottom: 20),
+                  )
                 ],
               ),
             ),
