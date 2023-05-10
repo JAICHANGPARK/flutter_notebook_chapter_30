@@ -77,6 +77,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(8)
                   ),
                   margin: EdgeInsets.only(top: 16),
                   padding: EdgeInsets.all(16),
@@ -86,11 +87,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         radius: 24,
                         backgroundColor: Colors.white,
                       ),
-                      Column(
-                        children: [
-                          Text("Saturday 22 Apr 2023"),
-                          Text("Sunny",)
-                        ],
+                      SizedBox(width: 16,),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Saturday 22 Apr 2023"),
+                            SizedBox(height: 12,),
+                            Text("Sunny",)
+                          ],
+                        ),
                       ),
                       Text("18°C")
                     ],
