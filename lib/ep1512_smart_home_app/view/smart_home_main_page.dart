@@ -79,7 +79,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           ),
           Expanded(
             child: Column(
-              children: [],
+              children: const [],
             ),
           ),
         ],
@@ -96,24 +96,24 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           backgroundColor: Colors.grey[300],
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.black,
-          items: [
-            const BottomNavigationBarItem(
+          items: const [
+            BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: "Home",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.route),
               label: "Routine",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.add_circle_outline_rounded),
               label: "Add device",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.door_back_door_outlined),
               label: "Rooms",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.settings_outlined),
               label: "Settings",
             ),
