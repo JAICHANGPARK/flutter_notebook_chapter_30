@@ -6,7 +6,7 @@
 - by Marcin Grygierczyk
 - https://dribbble.com/shots/21408433-Smart-Home-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/6786404/file/original-6ff43fe2eaad2d49fe7de1ba4cbecf08.png?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/6863690/file/original-308003067664e8c14daef6d8b3c8e1e3.png?compress=1&resize=1600x1200" width="500px"/>
 
 ## ep1509-1511
 
