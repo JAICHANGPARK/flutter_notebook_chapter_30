@@ -18,6 +18,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           Container(
             color: Colors.black,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
