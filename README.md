@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_30
 
-## ep1509
+## ep1512
+
+- Smart Home - Mobile App
+- by Marcin Grygierczyk
+- https://dribbble.com/shots/21381117-Growth-By-You-Virtual-garden-of-farmers-products
+
+<img src="https://cdn.dribbble.com/userupload/6786404/file/original-6ff43fe2eaad2d49fe7de1ba4cbecf08.png?compress=1&resize=1600x1200" width="500px"/>
+
+## ep1509-1511
 
 - Growth By You – Virtual garden of farmers' products
 - by Olga Kad ✨
