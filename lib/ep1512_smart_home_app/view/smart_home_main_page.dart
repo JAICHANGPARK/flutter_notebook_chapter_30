@@ -73,6 +73,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     color: Colors.grey,
                     fontWeight: FontWeight.bold,
                   ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.1),
+                  ),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 24,
+                        backgroundColor: Colors.white,
+                        
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
