@@ -24,6 +24,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           currentIndex: pageIndex,
           backgroundColor: Colors.grey[300],
           type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.black,
+
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
