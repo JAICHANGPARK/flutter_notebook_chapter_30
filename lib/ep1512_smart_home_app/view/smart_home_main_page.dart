@@ -78,12 +78,14 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0.1),
                   ),
+                  margin: EdgeInsets.only(top: 16),
+                  padding: EdgeInsets.all(16),
                   child: Row(
                     children: [
                       CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.white,
-                        
+
                       )
                     ],
                   ),
