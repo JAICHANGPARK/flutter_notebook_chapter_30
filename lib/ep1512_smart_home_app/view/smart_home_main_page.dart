@@ -96,7 +96,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
 
-                                  color: Colors.grey
+                                  color: Colors.grey,
                               ),),
                             SizedBox(
                               height: 12,
@@ -105,7 +105,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               "Sunny", style: TextStyle(
                                 fontWeight: FontWeight.bold,
 
-                                color: Colors.white
+                                color: Colors.white,
                             ),
                             )
                           ],
@@ -116,7 +116,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 28,
-                          color: Colors.white
+                          color: Colors.white,
                         ),
                       )
                     ],
