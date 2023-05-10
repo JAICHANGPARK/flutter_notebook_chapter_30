@@ -21,6 +21,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               pageIndex = idx;
             });
           },
+          currentIndex: pageIndex,
           backgroundColor: Colors.grey[300],
           type: BottomNavigationBarType.fixed,
           items: [
