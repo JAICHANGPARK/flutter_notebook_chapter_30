@@ -12,21 +12,21 @@ class FarmersHomePage extends StatefulWidget {
 
 class _FarmersHomePageState extends State<FarmersHomePage> {
   List<Garden> seedItems = [
-    Garden(
+    const Garden(
       emoji: "🍅",
       count: "12",
       title: "Tomatoes",
       duration: "1 month",
       progress: 5.0,
     ),
-    Garden(
+    const Garden(
       emoji: "🧅",
       count: "12",
       title: "Onions",
       duration: "1 month",
       progress: 5.0,
     ),
-    Garden(
+    const Garden(
       emoji: "🧅",
       count: "12",
       title: "Onions",
@@ -44,7 +44,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
         elevation: 0,
         foregroundColor: Colors.black,
         centerTitle: true,
-        title: Text("My Virtual Garden"),
+        title: const Text("My Virtual Garden"),
         actions: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -52,21 +52,21 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                 onTap: () {
                   context.go("/profile");
                 },
-                child: CircleAvatar()),
+                child: const CircleAvatar()),
           ),
         ],
       ),
       body: Column(
         children: [
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(24),
                 bottomLeft: Radius.circular(24),
               ),
             ),
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
             child: Center(
               child: Wrap(
                 alignment: WrapAlignment.center,
@@ -75,31 +75,31 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                 children: [
                   Chip(
                     backgroundColor: Colors.grey[200],
-                    label: Text(
+                    label: const Text(
                       "2 Seeds",
                     ),
                   ),
                   Chip(
                     backgroundColor: Colors.grey[200],
-                    label: Text(
+                    label: const Text(
                       "16 In Growth",
                     ),
                   ),
                   Chip(
                     backgroundColor: Colors.grey[200],
-                    label: Text(
+                    label: const Text(
                       "5 Ready",
                     ),
                   ),
                   Chip(
                     backgroundColor: Colors.grey[200],
-                    label: Text(
+                    label: const Text(
                       "6 On The Way",
                     ),
                   ),
                   Chip(
                     backgroundColor: Colors.grey[200],
-                    label: Text(
+                    label: const Text(
                       "54 Consumed",
                     ),
                   )
@@ -112,7 +112,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
               padding: const EdgeInsets.only(left: 16, right: 16, top: 20),
               child: ListView(
                 children: [
-                  Text(
+                  const Text(
                     "Seeds",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -121,7 +121,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                   ),
                   Container(
                     height: 140,
-                    margin: EdgeInsets.only(top: 16, bottom: 20),
+                    margin: const EdgeInsets.only(top: 16, bottom: 20),
                     child: Row(
                       children: seedItems
                           .map(
@@ -129,7 +129,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                               child: Card(
                                 child: Stack(
                                   children: [
-                                    Positioned(
+                                    const Positioned(
                                       right: 4,
                                       top: 4,
                                       child: Icon(
@@ -142,14 +142,14 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                         children: [
                                           Text(
                                             e.emoji ?? "",
-                                            style: TextStyle(fontSize: 40),
+                                            style: const TextStyle(fontSize: 40),
                                           ),
                                           Row(
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
                                                 e.count ?? "",
-                                                style: TextStyle(
+                                                style: const TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -161,7 +161,7 @@ class _FarmersHomePageState extends State<FarmersHomePage> {
                                           Text("${e.duration} (${e.progress?.toStringAsFixed(0)}%)"),
                                           LinearPercentIndicator(
                                             lineHeight: 8,
-                                            barRadius: Radius.circular(24),
+                                            barRadius: const Radius.circular(24),
                                             backgroundColor: Colors.grey[300],
                                             progressColor: Colors.black,
                                             percent: ((e.progress ?? 0) / 100),
