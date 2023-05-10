@@ -17,46 +17,46 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         children: [
           Container(
             color: Colors.black,
-            padding: EdgeInsets.fromLTRB(16, 52, 16, 16),
+            padding: const EdgeInsets.fromLTRB(16, 52, 16, 16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.location_on_outlined,
                       color: Colors.grey,
                     ),
-                    Text(
+                    const Text(
                       "Republic of Korea, Seoul",
                       style: TextStyle(
                         color: Colors.grey,
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Container(
-                      margin: EdgeInsets.only(right: 12),
+                      margin: const EdgeInsets.only(right: 12),
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                         shape: BoxShape.circle,
                       ),
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.notifications_none,
                         ),
                         onPressed: () {},
                         color: Colors.white,
                       ),
                     ),
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 24,
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 48,
                 ),
-                Text(
+                const Text(
                   "Hello Dream",
                   style: TextStyle(
                     color: Colors.white,
@@ -64,10 +64,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     fontSize: 32,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
-                Text(
+                const Text(
                   "Welcome back to your smart home!",
                   style: TextStyle(
                     color: Colors.grey,
@@ -97,23 +97,23 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.black,
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: "Home",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.route),
               label: "Routine",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.add_circle_outline_rounded),
               label: "Add device",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.door_back_door_outlined),
               label: "Rooms",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.settings_outlined),
               label: "Settings",
             ),
