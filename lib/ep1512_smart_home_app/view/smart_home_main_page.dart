@@ -11,30 +11,35 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.grey[100],
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Routine",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.add_circle_outline_rounded),
-            label: "Add device",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.door_back_door_outlined),
-            label: "Rooms",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings_outlined),
-            label: "Settings",
-          ),
-        ],
+      bottomNavigationBar: SizedBox(
+        height: 80,
+        child: BottomNavigationBar(
+
+          backgroundColor: Colors.grey[300],
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.route),
+              label: "Routine",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.add_circle_outline_rounded),
+              label: "Add device",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.door_back_door_outlined),
+              label: "Rooms",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.settings_outlined),
+              label: "Settings",
+            ),
+          ],
+        ),
       ),
     );
   }
