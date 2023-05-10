@@ -13,6 +13,18 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            color: Colors.black,
+          ),
+          Expanded(
+            child: Column(
+              children: [],
+            ),
+          ),
+        ],
+      ),
       bottomNavigationBar: SizedBox(
         height: 90,
         child: BottomNavigationBar(
@@ -25,7 +37,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           backgroundColor: Colors.grey[300],
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.black,
-
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
