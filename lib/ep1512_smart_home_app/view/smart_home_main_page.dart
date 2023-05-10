@@ -10,6 +10,14 @@ class SmartHomeMainPage extends StatefulWidget {
 class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+          ),
+        ],
+      ),
+    );
   }
 }
