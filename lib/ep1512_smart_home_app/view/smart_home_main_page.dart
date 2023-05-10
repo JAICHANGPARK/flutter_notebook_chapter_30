@@ -14,7 +14,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: SizedBox(
-        height: 80,
+        height: 90,
         child: BottomNavigationBar(
           onTap: (idx) {
             setState(() {
