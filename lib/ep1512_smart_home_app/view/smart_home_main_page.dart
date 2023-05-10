@@ -17,7 +17,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         children: [
           Container(
             color: Colors.black,
-            padding: EdgeInsets.fromLTRB(16, 48, 16, 16),
+            padding: EdgeInsets.fromLTRB(16, 52, 16, 16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -25,9 +25,17 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   children: [
                     Icon(
                       Icons.location_on_outlined,
+                      color: Colors.grey,
                     ),
-                    Text("Republic of Korea, Seoul"),
+                    Text(
+                      "Republic of Korea, Seoul",
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Spacer(),
                     Container(
+                      margin: EdgeInsets.only(right: 12),
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                         shape: BoxShape.circle,
