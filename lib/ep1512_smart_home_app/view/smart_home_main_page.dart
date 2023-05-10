@@ -93,18 +93,18 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
+                          children: const [
+                            Text(
                               "Saturday 22 Apr 2023",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.grey,
                               ),
                             ),
-                            const SizedBox(
+                            SizedBox(
                               height: 12,
                             ),
-                            const Text(
+                            Text(
                               "Sunny",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
