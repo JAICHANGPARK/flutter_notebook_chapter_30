@@ -53,14 +53,27 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     )
                   ],
                 ),
+                SizedBox(
+                  height: 48,
+                ),
                 Text(
                   "Hello Dream",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
+                    fontSize: 32,
                   ),
                 ),
-                Text("Welcome back to your smart home!")
+                SizedBox(
+                  height: 8,
+                ),
+                Text(
+                  "Welcome back to your smart home!",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
               ],
             ),
           ),
