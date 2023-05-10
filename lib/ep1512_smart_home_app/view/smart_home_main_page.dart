@@ -12,6 +12,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.grey[100],
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
