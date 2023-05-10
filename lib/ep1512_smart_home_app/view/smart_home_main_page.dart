@@ -17,6 +17,24 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         children: [
           Container(
             color: Colors.black,
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      Icons.location_on_outlined,
+                    ),
+                    Text("Republic of Korea, Seoul"),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey),
+                        shape: BoxShape.circle
+                      ),
+                    )
+                  ],
+                ),
+              ],
+            ),
           ),
           Expanded(
             child: Column(
