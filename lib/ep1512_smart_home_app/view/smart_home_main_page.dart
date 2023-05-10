@@ -53,6 +53,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     )
                   ],
                 ),
+                Text(
+                  "Hello Martin",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
               ],
             ),
           ),
