@@ -79,32 +79,32 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     color: Colors.white.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  margin: EdgeInsets.only(top: 24, bottom: 24),
-                  padding: EdgeInsets.all(16),
+                  margin: const EdgeInsets.only(top: 24, bottom: 24),
+                  padding: const EdgeInsets.all(16),
                   child: Row(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.white,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 16,
                       ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               "Saturday 22 Apr 2023",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.grey,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 12,
                             ),
-                            Text(
+                            const Text(
                               "Sunny",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -114,7 +114,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           ],
                         ),
                       ),
-                      Text(
+                      const Text(
                         "18°C",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
