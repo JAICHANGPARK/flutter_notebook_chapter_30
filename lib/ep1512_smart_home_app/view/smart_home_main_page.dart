@@ -92,7 +92,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           Text("Sunny",)
                         ],
                       ),
-                      Text("18")
+                      Text("18°C")
                     ],
                   ),
                 )
