@@ -60,7 +60,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   "Hello Dream",
                   style: TextStyle(
                     color: Colors.white,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w400,
                     fontSize: 32,
                   ),
                 ),
@@ -79,7 +79,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     color: Colors.white.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  margin: EdgeInsets.only(top: 16),
+                  margin: EdgeInsets.only(top: 24, bottom: 24),
                   padding: EdgeInsets.all(16),
                   child: Row(
                     children: [
