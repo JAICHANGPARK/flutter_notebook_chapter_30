@@ -15,6 +15,23 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "Routine",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_circle_outline_rounded),
+            label: "Add device",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.door_back_door_outlined),
+            label: "Rooms",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings_outlined),
+            label: "Settings",
           ),
         ],
       ),
