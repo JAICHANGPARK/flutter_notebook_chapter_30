@@ -149,7 +149,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           selectedItemColor: Colors.black,
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.home_filled),
               label: "Home",
             ),
             BottomNavigationBarItem(
