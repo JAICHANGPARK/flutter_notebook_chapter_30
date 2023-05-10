@@ -17,6 +17,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         children: [
           Container(
             color: Colors.black,
+            padding: EdgeInsets.fromLTRB(16, 48, 16, 16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -36,7 +37,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           Icons.notifications_none,
                         ),
                         onPressed: () {},
+                        color: Colors.white,
                       ),
+                    ),
+                    CircleAvatar(
+                      radius: 24,
                     )
                   ],
                 ),
