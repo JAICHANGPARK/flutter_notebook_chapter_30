@@ -92,12 +92,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Saturday 22 Apr 2023"),
+                            Text("Saturday 22 Apr 2023",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+
+                                  color: Colors.grey
+                              ),),
                             SizedBox(
                               height: 12,
                             ),
                             Text(
-                              "Sunny",
+                              "Sunny", style: TextStyle(
+                                fontWeight: FontWeight.bold,
+
+                                color: Colors.white
+                            ),
                             )
                           ],
                         ),
