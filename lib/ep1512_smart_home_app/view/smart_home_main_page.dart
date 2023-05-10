@@ -29,7 +29,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     Container(
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
-                        shape: BoxShape.circle
+                        shape: BoxShape.circle,
+                      ),
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.notifications_none,
+                        ),
+                        onPressed: () {},
                       ),
                     )
                   ],
