@@ -84,19 +84,19 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   ),
                   margin: const EdgeInsets.only(top: 24, bottom: 24),
                   padding: const EdgeInsets.all(16),
-                  child: Row(
+                  child: const Row(
                     children: [
-                      const CircleAvatar(
+                      CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.white,
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 16,
                       ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Saturday 22 Apr 2023",
                               style: TextStyle(
@@ -117,7 +117,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           ],
                         ),
                       ),
-                      const Text(
+                      Text(
                         "18°C",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
