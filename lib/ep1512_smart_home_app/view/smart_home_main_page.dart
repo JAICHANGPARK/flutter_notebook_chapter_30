@@ -181,19 +181,31 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   }),
                 ),
                 Expanded(
-                  child: GridView.count(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 12,
-                    mainAxisSpacing: 12,
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: GridView.count(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 12,
+                      mainAxisSpacing: 12,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                            borderRadius: BorderRadius.circular(8)
                           ),
                         ),
-                      )
-                    ],
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                              borderRadius: BorderRadius.circular(8)
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],
