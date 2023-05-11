@@ -187,6 +187,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       crossAxisCount: 2,
                       crossAxisSpacing: 12,
                       mainAxisSpacing: 12,
+                      padding: EdgeInsets.zero,
+                      childAspectRatio: 0.85,
                       children: [
                         Container(
                           decoration: BoxDecoration(
