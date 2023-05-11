@@ -135,6 +135,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             child: Column(
               children: [
                 Container(
+                  margin: EdgeInsets.fromLTRB(16  , 20, 0, 16),
                   height: 48,
                   color: Colors.blue,
                   child: ListView(
