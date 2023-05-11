@@ -183,6 +183,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 Expanded(
                   child: GridView.count(
                     crossAxisCount: 2,
+                    
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey,
+                          ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
               ],
