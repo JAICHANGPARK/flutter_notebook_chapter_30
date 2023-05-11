@@ -140,9 +140,12 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   height: 48,
                   color: Colors.blue,
                   child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       final item = smartHomeTabMenuItems[index];
                       return Container(
+                        width: 100,
+
                         child: Stack(
                           children: [
                             Positioned(
