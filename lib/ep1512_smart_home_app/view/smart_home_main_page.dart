@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-
+final smartTabIndex = StateProvider((ref) => 0);
 
 class SmartHomeMainPage extends StatefulWidget {
   const SmartHomeMainPage({Key? key}) : super(key: key);
