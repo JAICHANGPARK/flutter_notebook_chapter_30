@@ -205,6 +205,22 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             ),
                               borderRadius: BorderRadius.circular(8)
                           ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                              borderRadius: BorderRadius.circular(8)
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                              borderRadius: BorderRadius.circular(8)
+                          ),
                         )
                       ],
                     ),
