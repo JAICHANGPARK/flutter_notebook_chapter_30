@@ -138,38 +138,43 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 Container(
                   margin: EdgeInsets.fromLTRB(16, 20, 0, 16),
                   height: 48,
-                  color: Colors.blue,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-                      final item = smartHomeTabMenuItems[index];
-                      return Container(
-                        width: 120,
-                        child: Stack(
-                          children: [
-                            Positioned.fill(
-                              child: Center(
-                                child: Text(
-                                  item.title ?? "",
-                                  style: TextStyle(fontSize: 16),
+                  child: Consumer(builder: (context, ref, child) {
+                    final currentIndex = ref.watch(smartTabIndex);
+                    return ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        final item = smartHomeTabMenuItems[index];
+                        return GestureDetector(
+                          onTap: () {
+                            ref.watch(smartTabIndex.notifier).state = index;
+                          },
+                          child: Container(
+                            width: 120,
+                            child: Stack(
+                              children: [
+                                Positioned.fill(
+                                  child: Center(
+                                    child: Text(
+                                      item.title ?? "",
+                                      style: TextStyle(fontSize: 16),
+                                    ),
+                                  ),
                                 ),
-                              ),
+                                Positioned(
+                                  right: 0,
+                                  top: 0,
+                                  child: Text(
+                                    item.num ?? "0",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                )
+                              ],
                             ),
-                            Positioned(
-                              right: 0,
-                              top: 0,
-                              child: Text(
-                                item.num ?? "0",
-                                style: TextStyle(
-                                  fontSize: 12
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
-                      );
-                    },
-                  ),
+                          ),
+                        );
+                      },
+                    );
+                  }),
                 ),
                 Expanded(
                   child: GridView.count(
