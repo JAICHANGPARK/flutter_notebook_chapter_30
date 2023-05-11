@@ -142,6 +142,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     final currentIndex = ref.watch(smartTabIndex);
                     return ListView.builder(
                       scrollDirection: Axis.horizontal,
+                      itemCount: smartHomeTabMenuItems.length,
                       itemBuilder: (context, index) {
                         final item = smartHomeTabMenuItems[index];
                         return GestureDetector(
@@ -161,8 +162,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   ),
                                 ),
                                 Positioned(
-                                  right: 0,
-                                  top: 0,
+                                  right: 4,
+                                  top: 4,
                                   child: Text(
                                     item.num ?? "0",
                                     style: TextStyle(fontSize: 12),
