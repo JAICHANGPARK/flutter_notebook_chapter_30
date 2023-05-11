@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+
 class SmartHomeMainPage extends StatefulWidget {
   const SmartHomeMainPage({Key? key}) : super(key: key);
 
@@ -133,11 +135,9 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               children: [
                 Container(
                   height: 48,
+                  color: Colors.blue,
                   child: ListView(
-                    children: [
-
-
-                    ],
+                    children: [],
                   ),
                 ),
                 Expanded(
