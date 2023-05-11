@@ -133,6 +133,12 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               children: [
                 Container(
                   height: 48,
+                  child: ListView(
+                    children: [
+
+
+                    ],
+                  ),
                 ),
                 Expanded(
                   child: GridView.count(
