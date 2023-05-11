@@ -130,7 +130,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           ),
           Expanded(
             child: Column(
-              children: const [],
+              children: [
+                Container(
+                  height: 48,
+                ),
+                Expanded(
+                  child: GridView.count(
+                    crossAxisCount: 2,
+                  ),
+                ),
+              ],
             ),
           ),
         ],
