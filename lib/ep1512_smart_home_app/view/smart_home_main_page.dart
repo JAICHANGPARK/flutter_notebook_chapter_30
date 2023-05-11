@@ -145,16 +145,23 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       final item = smartHomeTabMenuItems[index];
                       return Container(
                         width: 120,
-
                         child: Stack(
                           children: [
                             Positioned.fill(
                               child: Center(
                                 child: Text(
                                   item.title ?? "",
-                                  style: TextStyle(
-                                    fontSize: 16
-                                  ),
+                                  style: TextStyle(fontSize: 16),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              right: 0,
+                              top: 0,
+                              child: Text(
+                                item.num ?? "0",
+                                style: TextStyle(
+                                  fontSize: 12
                                 ),
                               ),
                             )
