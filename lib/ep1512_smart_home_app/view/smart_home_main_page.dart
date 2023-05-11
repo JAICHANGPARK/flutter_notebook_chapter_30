@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/model/smart_tab_menu_data.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final smartTabIndex = StateProvider((ref) => 0);
@@ -135,11 +136,24 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(16  , 20, 0, 16),
+                  margin: EdgeInsets.fromLTRB(16, 20, 0, 16),
                   height: 48,
                   color: Colors.blue,
-                  child: ListView(
-                    children: [],
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      final item = smartHomeTabMenuItems[index];
+                      return Container(
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              child: Text(
+                                item.title ?? "",
+                              ),
+                            )
+                          ],
+                        ),
+                      );
+                    },
                   ),
                 ),
                 Expanded(
