@@ -157,7 +157,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   child: Center(
                                     child: Text(
                                       item.title ?? "",
-                                      style: TextStyle(fontSize: 16),
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: currentIndex == index ? FontWeight.bold : FontWeight.normal,
+                                      ),
                                     ),
                                   ),
                                 ),
