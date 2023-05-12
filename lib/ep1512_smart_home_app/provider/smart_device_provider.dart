@@ -16,7 +16,7 @@ class SmartDeviceService extends Notifier<List<SmartDevice>> {
       SmartDevice(
         name: "Stereo",
         subtitle: "123456 123456",
-        isOn: true,
+        isOn: false,
       ),
       SmartDevice(
         name: "Lamp",
@@ -24,9 +24,9 @@ class SmartDeviceService extends Notifier<List<SmartDevice>> {
         isOn: false,
       ),
       SmartDevice(
-        name: "Television",
+        name: "Air-conditioning",
         subtitle: "123456 123456",
-        isOn: true,
+        isOn: false,
       ),
     ];
   }
