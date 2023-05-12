@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/model/smart_tab_menu_data.dart';
+import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/provider/smart_device_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final smartTabIndex = StateProvider((ref) => 0);
@@ -183,46 +184,51 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: GridView.count(
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 12,
-                      mainAxisSpacing: 12,
-                      padding: EdgeInsets.zero,
-                      childAspectRatio: 0.85,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey,
-                            ),
-                            borderRadius: BorderRadius.circular(8)
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey,
-                            ),
-                              borderRadius: BorderRadius.circular(8)
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey,
+                    child: Consumer(
+                      builder: (context, ref, _) {
+                        final items = ref.watch(smartDeviceProvider);
+                        return GridView.count(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 12,
+                          mainAxisSpacing: 12,
+                          padding: EdgeInsets.zero,
+                          childAspectRatio: 0.85,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                borderRadius: BorderRadius.circular(8)
                               ),
-                              borderRadius: BorderRadius.circular(8)
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                  borderRadius: BorderRadius.circular(8)
                               ),
-                              borderRadius: BorderRadius.circular(8)
-                          ),
-                        )
-                      ],
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                  borderRadius: BorderRadius.circular(8)
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                  borderRadius: BorderRadius.circular(8)
+                              ),
+                            )
+                          ],
+                        );
+                      }
                     ),
                   ),
                 ),
