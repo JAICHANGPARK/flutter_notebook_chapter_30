@@ -198,10 +198,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         itemBuilder: (context, index) {
                           return Container(
                             decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.grey,
-                                ),
-                                borderRadius: BorderRadius.circular(8)),
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    CircleAvatar(),
+                                    Text(items[index].isOn ?? false ? "On" : "Off"),
+                                  ],
+                                )
+                              ],
+                            ),
                           );
                         },
                       );
