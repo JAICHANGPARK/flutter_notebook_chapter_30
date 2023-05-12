@@ -192,7 +192,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           crossAxisCount: 2,
                           crossAxisSpacing: 12,
                           mainAxisSpacing: 12,
-                          childAspectRatio: 0.85,
+                          childAspectRatio: 0.9,
                         ),
                         itemCount: items.length,
                         itemBuilder: (context, index) {
@@ -205,6 +205,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             ),
                             padding: EdgeInsets.all(16),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -219,7 +220,14 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
+                                SizedBox(
+                                  height: 12,
+                                ),
                                 Text(items[index].subtitle ?? "-"),
+                                Switch(
+                                  value: items[index].isOn ?? false,
+                                  onChanged: (v) {},
+                                )
                               ],
                             ),
                           );
