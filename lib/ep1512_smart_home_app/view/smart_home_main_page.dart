@@ -184,52 +184,65 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Consumer(
-                      builder: (context, ref, _) {
-                        final items = ref.watch(smartDeviceProvider);
-                        return GridView.count(
+                    child: Consumer(builder: (context, ref, _) {
+                      final items = ref.watch(smartDeviceProvider);
+                      return GridView.builder(
+                        padding: EdgeInsets.zero,
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           crossAxisSpacing: 12,
                           mainAxisSpacing: 12,
-                          padding: EdgeInsets.zero,
                           childAspectRatio: 0.85,
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
+                        ),
+                        itemCount: items.length,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey,
                                 ),
-                                borderRadius: BorderRadius.circular(8)
-                              ),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8)),
+                          );
+                        },
+                      );
+                      return GridView.count(
+                        crossAxisCount: 2,
+                        crossAxisSpacing: 12,
+                        mainAxisSpacing: 12,
+                        padding: EdgeInsets.zero,
+                        childAspectRatio: 0.85,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey,
                                 ),
-                                  borderRadius: BorderRadius.circular(8)
-                              ),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8)
-                              ),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8)
-                              ),
-                            )
-                          ],
-                        );
-                      }
-                    ),
+                                borderRadius: BorderRadius.circular(8)),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                borderRadius: BorderRadius.circular(8)),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                borderRadius: BorderRadius.circular(8)),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                borderRadius: BorderRadius.circular(8)),
+                          )
+                        ],
+                      );
+                    }),
                   ),
                 ),
               ],
