@@ -203,14 +203,23 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               ),
                               borderRadius: BorderRadius.circular(8),
                             ),
+                            padding: EdgeInsets.all(16),
                             child: Column(
                               children: [
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     CircleAvatar(),
                                     Text(items[index].isOn ?? false ? "On" : "Off"),
                                   ],
-                                )
+                                ),
+                                Text(
+                                  items[index].name ?? "-",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(items[index].subtitle ?? "-"),
                               ],
                             ),
                           );
