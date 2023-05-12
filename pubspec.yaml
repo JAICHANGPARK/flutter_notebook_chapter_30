@@ -15,7 +15,7 @@ dependencies:
 
   cupertino_icons: ^1.0.5
   dots_indicator: any
-  go_router: ^7.0.0
+  go_router: ^7.0.1
   freezed_annotation: any
   percent_indicator: any
   flutter_riverpod: any
