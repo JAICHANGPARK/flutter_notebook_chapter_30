@@ -214,6 +214,9 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     Text(items[index].isOn ?? false ? "On" : "Off"),
                                   ],
                                 ),
+                                SizedBox(
+                                  height: 16,
+                                ),
                                 Text(
                                   items[index].name ?? "-",
                                   style: TextStyle(
