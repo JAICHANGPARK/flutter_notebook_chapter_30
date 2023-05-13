@@ -39,22 +39,26 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                     ),
                   ),
                   Positioned(
-                    left: 0,
+                      left: 0,
                       right: 0,
                       bottom: 0,
                       top: 0,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Text(
-                        widget.smartDevice.name ?? "??",
-                      ),
-                      Text(
-                        widget.smartDevice.subtitle ?? "??",
-                      )
-                    ],
-                  ))
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text(
+                            widget.smartDevice.name ?? "??",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18
+                            ),
+                          ),
+                          Text(
+                            widget.smartDevice.subtitle ?? "??",
+                          )
+                        ],
+                      ))
                 ],
               ),
             )
