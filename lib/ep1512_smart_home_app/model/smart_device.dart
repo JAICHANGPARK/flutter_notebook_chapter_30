@@ -12,6 +12,6 @@ class SmartDevice with _$SmartDevice {
     String? subtitle,
     bool? isOn,
     Color? color,
-    IconData icon,
+    IconData? icon,
   }) = _SmartDevice;
 }
