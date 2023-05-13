@@ -13,6 +13,7 @@ class SmartHomeApp extends StatelessWidget {
         GoRoute(
           path: ":device",
           builder: (context, state) {
+            print(state.toString());
             return SmartDeviceDetailPage();
           },
         ),
