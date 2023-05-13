@@ -11,7 +11,7 @@ class SmartHomeApp extends StatelessWidget {
     routes: [
       GoRoute(path: "/", builder: (context, state) => SmartHomeMainPage(), routes: [
         GoRoute(
-          path: ":device",
+          path: "device/:item",
           builder: (context, state) {
             print(state.toString());
             return SmartDeviceDetailPage();
