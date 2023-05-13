@@ -64,7 +64,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                   )
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
