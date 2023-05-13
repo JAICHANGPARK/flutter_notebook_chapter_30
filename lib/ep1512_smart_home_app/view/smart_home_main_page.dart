@@ -137,7 +137,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(16, 20, 0, 16),
+                  margin: const EdgeInsets.fromLTRB(16, 20, 0, 16),
                   height: 48,
                   child: Consumer(builder: (context, ref, child) {
                     final currentIndex = ref.watch(smartTabIndex);
@@ -170,7 +170,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   top: 4,
                                   child: Text(
                                     item.num ?? "0",
-                                    style: TextStyle(fontSize: 12),
+                                    style: const TextStyle(fontSize: 12),
                                   ),
                                 )
                               ],
@@ -188,7 +188,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       final items = ref.watch(smartDeviceProvider);
                       return GridView.builder(
                         padding: EdgeInsets.zero,
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           crossAxisSpacing: 12,
                           mainAxisSpacing: 12,
@@ -203,7 +203,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               ),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: const EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -217,16 +217,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     Text(items[index].isOn ?? false ? "On" : "Off"),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Text(
                                   items[index].name ?? "-",
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 12,
                                 ),
                                 Text(items[index].subtitle ?? "-"),
