@@ -19,6 +19,8 @@ mixin _$SmartDevice {
   String? get name => throw _privateConstructorUsedError;
   String? get subtitle => throw _privateConstructorUsedError;
   bool? get isOn => throw _privateConstructorUsedError;
+  Color? get color => throw _privateConstructorUsedError;
+  IconData? get icon => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $SmartDeviceCopyWith<SmartDevice> get copyWith =>
@@ -31,7 +33,12 @@ abstract class $SmartDeviceCopyWith<$Res> {
           SmartDevice value, $Res Function(SmartDevice) then) =
       _$SmartDeviceCopyWithImpl<$Res, SmartDevice>;
   @useResult
-  $Res call({String? name, String? subtitle, bool? isOn});
+  $Res call(
+      {String? name,
+      String? subtitle,
+      bool? isOn,
+      Color? color,
+      IconData? icon});
 }
 
 /// @nodoc
@@ -50,6 +57,8 @@ class _$SmartDeviceCopyWithImpl<$Res, $Val extends SmartDevice>
     Object? name = freezed,
     Object? subtitle = freezed,
     Object? isOn = freezed,
+    Object? color = freezed,
+    Object? icon = freezed,
   }) {
     return _then(_value.copyWith(
       name: freezed == name
@@ -64,6 +73,14 @@ class _$SmartDeviceCopyWithImpl<$Res, $Val extends SmartDevice>
           ? _value.isOn
           : isOn // ignore: cast_nullable_to_non_nullable
               as bool?,
+      color: freezed == color
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as Color?,
+      icon: freezed == icon
+          ? _value.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as IconData?,
     ) as $Val);
   }
 }
@@ -76,7 +93,12 @@ abstract class _$$_SmartDeviceCopyWith<$Res>
       __$$_SmartDeviceCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? name, String? subtitle, bool? isOn});
+  $Res call(
+      {String? name,
+      String? subtitle,
+      bool? isOn,
+      Color? color,
+      IconData? icon});
 }
 
 /// @nodoc
@@ -93,6 +115,8 @@ class __$$_SmartDeviceCopyWithImpl<$Res>
     Object? name = freezed,
     Object? subtitle = freezed,
     Object? isOn = freezed,
+    Object? color = freezed,
+    Object? icon = freezed,
   }) {
     return _then(_$_SmartDevice(
       name: freezed == name
@@ -107,6 +131,14 @@ class __$$_SmartDeviceCopyWithImpl<$Res>
           ? _value.isOn
           : isOn // ignore: cast_nullable_to_non_nullable
               as bool?,
+      color: freezed == color
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as Color?,
+      icon: freezed == icon
+          ? _value.icon
+          : icon // ignore: cast_nullable_to_non_nullable
+              as IconData?,
     ));
   }
 }
@@ -114,7 +146,7 @@ class __$$_SmartDeviceCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_SmartDevice implements _SmartDevice {
-  _$_SmartDevice({this.name, this.subtitle, this.isOn});
+  _$_SmartDevice({this.name, this.subtitle, this.isOn, this.color, this.icon});
 
   @override
   final String? name;
@@ -122,10 +154,14 @@ class _$_SmartDevice implements _SmartDevice {
   final String? subtitle;
   @override
   final bool? isOn;
+  @override
+  final Color? color;
+  @override
+  final IconData? icon;
 
   @override
   String toString() {
-    return 'SmartDevice(name: $name, subtitle: $subtitle, isOn: $isOn)';
+    return 'SmartDevice(name: $name, subtitle: $subtitle, isOn: $isOn, color: $color, icon: $icon)';
   }
 
   @override
@@ -136,11 +172,14 @@ class _$_SmartDevice implements _SmartDevice {
             (identical(other.name, name) || other.name == name) &&
             (identical(other.subtitle, subtitle) ||
                 other.subtitle == subtitle) &&
-            (identical(other.isOn, isOn) || other.isOn == isOn));
+            (identical(other.isOn, isOn) || other.isOn == isOn) &&
+            (identical(other.color, color) || other.color == color) &&
+            (identical(other.icon, icon) || other.icon == icon));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, name, subtitle, isOn);
+  int get hashCode =>
+      Object.hash(runtimeType, name, subtitle, isOn, color, icon);
 
   @JsonKey(ignore: true)
   @override
@@ -153,7 +192,9 @@ abstract class _SmartDevice implements SmartDevice {
   factory _SmartDevice(
       {final String? name,
       final String? subtitle,
-      final bool? isOn}) = _$_SmartDevice;
+      final bool? isOn,
+      final Color? color,
+      final IconData? icon}) = _$_SmartDevice;
 
   @override
   String? get name;
@@ -161,6 +202,10 @@ abstract class _SmartDevice implements SmartDevice {
   String? get subtitle;
   @override
   bool? get isOn;
+  @override
+  Color? get color;
+  @override
+  IconData? get icon;
   @override
   @JsonKey(ignore: true)
   _$$_SmartDeviceCopyWith<_$_SmartDevice> get copyWith =>
