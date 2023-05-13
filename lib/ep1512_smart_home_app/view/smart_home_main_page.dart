@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/model/smart_tab_menu_data.dart';
 import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/provider/smart_device_provider.dart';
+import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/view/smart_device_detail_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -199,9 +200,12 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         itemBuilder: (context, index) {
                           return GestureDetector(
                             onTap: () {
-                              context.push(
-                                "/device",
-                                extra: items[index],
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => SmartDeviceDetailPage(
+                                    smartDevice: items[index],
+                                  ),
+                                ),
                               );
                             },
                             child: Container(
