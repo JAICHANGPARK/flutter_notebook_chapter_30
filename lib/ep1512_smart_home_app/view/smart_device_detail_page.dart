@@ -78,9 +78,10 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
               ),
             ),
             Container(
+              margin: EdgeInsets.symmetric(vertical: 24, horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.grey[400],
-                borderRadius: BorderRadius.circular(16)
+                borderRadius: BorderRadius.circular(16),
               ),
               child: SwitchListTile(
                 title: Text("Device status"),
