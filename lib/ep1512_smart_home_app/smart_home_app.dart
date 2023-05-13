@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/model/smart_device.dart';
 import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/view/smart_device_detail_page.dart';
 import 'package:go_router/go_router.dart';
 
@@ -9,15 +10,22 @@ class SmartHomeApp extends StatelessWidget {
 
   final router = GoRouter(
     routes: [
-      GoRoute(path: "/", builder: (context, state) => SmartHomeMainPage(), routes: [
-        GoRoute(
-          path: "device/:item",
-          builder: (context, state) {
-            print(state.toString());
-            return SmartDeviceDetailPage();
-          },
-        ),
-      ]),
+      GoRoute(
+        path: "/",
+        builder: (context, state) => SmartHomeMainPage(),
+        routes: [
+          GoRoute(
+            path: "device/:item",
+            builder: (context, state) {
+              print(state.toString());
+              return SmartDeviceDetailPage(
+                smartDevice: SmartDevice(),
+                // smartDevice: state.extra as SmartDevice,
+              );
+            },
+          ),
+        ],
+      ),
     ],
   );
 
