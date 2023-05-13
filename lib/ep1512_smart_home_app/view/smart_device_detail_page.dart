@@ -106,8 +106,8 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                   Column(
                     children: [
                       Container(
-                        height: 58,
-                        width: 58,
+                        height: 64,
+                        width: 64,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
@@ -118,7 +118,13 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                       SizedBox(
                         height: 12,
                       ),
-                      Text("Auto")
+                      Text(
+                        "Auto",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      )
                     ],
                   )
                 ],
