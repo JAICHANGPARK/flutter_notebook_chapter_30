@@ -102,6 +102,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 16, 16, 32),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     children: [
@@ -143,7 +144,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                         height: 12,
                       ),
                       Text(
-                        "Auto",
+                        "Cool",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
@@ -167,7 +168,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                         height: 12,
                       ),
                       Text(
-                        "Auto",
+                        "Eco",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
@@ -191,7 +192,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                         height: 12,
                       ),
                       Text(
-                        "Auto",
+                        "Heat",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
