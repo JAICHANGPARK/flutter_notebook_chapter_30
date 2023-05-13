@@ -78,11 +78,17 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
               ),
             ),
             Container(
+              decoration: BoxDecoration(
+                color: Colors.grey[400],
+                borderRadius: BorderRadius.circular(16)
+              ),
               child: SwitchListTile(
                 title: Text("Device status"),
                 value: _isOn,
                 onChanged: (v) {
-                  
+                  setState(() {
+                    _isOn = v;
+                  });
                 },
               ),
             )
