@@ -16,6 +16,12 @@ class SmartDeviceDetailPage extends StatefulWidget {
 class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }
