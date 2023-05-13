@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/model/smart_tab_menu_data.dart';
 import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/provider/smart_device_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 final smartTabIndex = StateProvider((ref) => 0);
 
@@ -196,51 +197,56 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ),
                         itemCount: items.length,
                         itemBuilder: (context, index) {
-                          return Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey,
+                          return GestureDetector(
+                            onTap: (){
+                              context.push("/", extra: items[index]);
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                borderRadius: BorderRadius.circular(8),
                               ),
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            padding: const EdgeInsets.all(16),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    CircleAvatar(
-                                      backgroundColor: items[index].color,
-                                      child: Icon(items[index].icon),
-                                    ),
-                                    Text(items[index].isOn ?? false ? "On" : "Off"),
-                                  ],
-                                ),
-                                const SizedBox(
-                                  height: 16,
-                                ),
-                                Text(
-                                  items[index].name ?? "-",
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
+                              padding: const EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: items[index].color,
+                                        child: Icon(items[index].icon),
+                                      ),
+                                      Text(items[index].isOn ?? false ? "On" : "Off"),
+                                    ],
                                   ),
-                                ),
-                                const SizedBox(
-                                  height: 12,
-                                ),
-                                Text(items[index].subtitle ?? "-"),
-                                Switch(
-                                  value: items[index].isOn ?? false,
-                                  onChanged: (v) {
-                                    final data = items[index].copyWith(isOn: v);
-                                    ref.read(smartDeviceProvider.notifier).update(
-                                          index,
-                                          data,
-                                        );
-                                  },
-                                )
-                              ],
+                                  const SizedBox(
+                                    height: 16,
+                                  ),
+                                  Text(
+                                    items[index].name ?? "-",
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 12,
+                                  ),
+                                  Text(items[index].subtitle ?? "-"),
+                                  Switch(
+                                    value: items[index].isOn ?? false,
+                                    onChanged: (v) {
+                                      final data = items[index].copyWith(isOn: v);
+                                      ref.read(smartDeviceProvider.notifier).update(
+                                            index,
+                                            data,
+                                          );
+                                    },
+                                  )
+                                ],
+                              ),
                             ),
                           );
                         },
