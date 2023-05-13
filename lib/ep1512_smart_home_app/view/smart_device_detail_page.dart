@@ -97,6 +97,21 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                   });
                 },
               ),
+            ),
+            Expanded(child: Placeholder()),
+            Row(
+              children: [
+                Column(
+                  children: [
+                    Container(
+                      height: 58,
+                      width: 58,
+                      decoration: BoxDecoration(),
+                    ),
+                    Text("Auto")
+                  ],
+                )
+              ],
             )
           ],
         ),
