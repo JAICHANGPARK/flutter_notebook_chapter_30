@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:flutter/cupertino.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'smart_device.freezed.dart';
@@ -8,5 +11,7 @@ class SmartDevice with _$SmartDevice {
     String? name,
     String? subtitle,
     bool? isOn,
+    Color? color,
+    IconData icon,
   }) = _SmartDevice;
 }
