@@ -198,8 +198,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         itemCount: items.length,
                         itemBuilder: (context, index) {
                           return GestureDetector(
-                            onTap: (){
-                              context.push("/device", extra: items[index]);
+                            onTap: () {
+                              context.push(
+                                "/device",
+                                extra: items[index],
+                              );
                             },
                             child: Container(
                               decoration: BoxDecoration(
