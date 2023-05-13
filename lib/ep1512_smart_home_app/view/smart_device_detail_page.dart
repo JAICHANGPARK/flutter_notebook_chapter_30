@@ -27,6 +27,8 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                 children: [
                   Positioned(
                     left: 16,
+                    top: 0,
+                    bottom: 0,
                     child: Container(
                       height: 54,
                       width: 54,
@@ -35,7 +37,24 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                         border: Border.all(),
                       ),
                     ),
-                  )
+                  ),
+                  Positioned(
+                    left: 0,
+                      right: 0,
+                      bottom: 0,
+                      top: 0,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Text(
+                        widget.smartDevice.name ?? "??",
+                      ),
+                      Text(
+                        widget.smartDevice.subtitle ?? "??",
+                      )
+                    ],
+                  ))
                 ],
               ),
             )
