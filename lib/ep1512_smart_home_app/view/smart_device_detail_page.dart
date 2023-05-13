@@ -22,7 +22,6 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
           children: [
             Container(
               height: 72,
-              color: Colors.blue,
               child: Stack(
                 children: [
                   Positioned(
@@ -30,11 +29,14 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                     top: 0,
                     bottom: 0,
                     child: Container(
-                      height: 54,
-                      width: 54,
+                      height: 48,
+                      width: 48,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(),
+                      ),
+                      child: Icon(
+                        Icons.arrow_back,
                       ),
                     ),
                   ),
@@ -49,10 +51,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                         children: [
                           Text(
                             widget.smartDevice.name ?? "??",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                           Text(
                             widget.smartDevice.subtitle ?? "??",
