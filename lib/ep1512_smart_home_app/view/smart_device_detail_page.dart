@@ -25,9 +25,16 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
               color: Colors.blue,
               child: Stack(
                 children: [
-                  Container(
-                    height: 64,
-                    width: 64,
+                  Positioned(
+                    left: 16,
+                    child: Container(
+                      height: 54,
+                      width: 54,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(),
+                      ),
+                    ),
                   )
                 ],
               ),
