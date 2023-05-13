@@ -35,7 +35,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                         shape: BoxShape.circle,
                         border: Border.all(),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.arrow_back,
                       ),
                     ),
@@ -51,7 +51,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                       children: [
                         Text(
                           widget.smartDevice.name ?? "??",
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
                           ),
