@@ -39,9 +39,9 @@ class SmartDeviceService extends Notifier<List<SmartDevice>> {
       ),
     ];
   }
-  void update(int index, SmartDevice data){
-    
 
-
+  void update(int index, SmartDevice data) {
+    state[index] = data;
+    state = [...state];
   }
 }
