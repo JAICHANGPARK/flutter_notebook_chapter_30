@@ -19,7 +19,20 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Container(
+              height: 72,
+              color: Colors.blue,
+              child: Stack(
+                children: [
+                  Container(
+                    height: 64,
+                    width: 64,
+                  )
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );
