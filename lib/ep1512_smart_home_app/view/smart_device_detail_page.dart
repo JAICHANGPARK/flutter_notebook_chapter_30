@@ -99,19 +99,30 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
               ),
             ),
             Expanded(child: Placeholder()),
-            Row(
-              children: [
-                Column(
-                  children: [
-                    Container(
-                      height: 58,
-                      width: 58,
-                      decoration: BoxDecoration(),
-                    ),
-                    Text("Auto")
-                  ],
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 32),
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        height: 58,
+                        width: 58,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.grey[200]!,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                      Text("Auto")
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
