@@ -14,6 +14,18 @@ class SmartDeviceDetailPage extends StatefulWidget {
 }
 
 class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
+  bool _isOn = false;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    // widget.smartDevice.isOn;
+    setState(() {
+      _isOn = widget.smartDevice.isOn ?? false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,6 +77,15 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                 ],
               ),
             ),
+            Container(
+              child: SwitchListTile(
+                title: Text("Device status"),
+                value: _isOn,
+                onChanged: (v) {
+                  
+                },
+              ),
+            )
           ],
         ),
       ),
