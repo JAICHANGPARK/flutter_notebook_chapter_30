@@ -210,7 +210,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    CircleAvatar(),
+                                    CircleAvatar(
+                                      backgroundColor: items[index].color,
+                                      child: Icon(items[index].icon),
+                                    ),
                                     Text(items[index].isOn ?? false ? "On" : "Off"),
                                   ],
                                 ),
