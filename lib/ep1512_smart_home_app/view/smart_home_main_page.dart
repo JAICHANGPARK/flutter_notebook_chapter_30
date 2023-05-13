@@ -232,7 +232,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 Text(items[index].subtitle ?? "-"),
                                 Switch(
                                   value: items[index].isOn ?? false,
-                                  onChanged: (v) {},
+                                  onChanged: (v) {
+                                    final data = items[index].copyWith(isOn: v);
+                                    ref.read(smartDeviceProvider.notifier).update(
+                                          index,
+                                          data,
+                                        );
+                                  },
                                 )
                               ],
                             ),
