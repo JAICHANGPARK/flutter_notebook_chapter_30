@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_30/ep1512_smart_home_app/model/smart_device.dart';
+import 'package:rulers/rulers.dart';
 
 class SmartDeviceDetailPage extends StatefulWidget {
   const SmartDeviceDetailPage({
@@ -98,7 +99,18 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                 },
               ),
             ),
-            const Expanded(child: Placeholder()),
+            Expanded(
+                child: Column(
+              children: [
+                RulerWidget(
+                  height: 160,
+                  largeScaleBarsInterval: 25,
+                  smallScaleBarsInterval: 5,
+                  scaleBackgroundColor: Colors.white,
+                  barsColor: Colors.black,
+                ),
+              ],
+            )),
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 16, 16, 32),
               child: Row(
