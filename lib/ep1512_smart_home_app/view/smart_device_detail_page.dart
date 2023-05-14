@@ -101,6 +101,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
             ),
             Expanded(
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 RulerWidget(
                   height: 160,
@@ -114,6 +115,17 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                     child: Icon(Icons.swap_horiz),
                   ),
                 ),
+                Text(
+                  "20°C",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 64
+                  ),
+                ),
+                SizedBox(height: 24,),
+                Text(
+                  "Temperature",
+                )
               ],
             )),
             Padding(
@@ -144,10 +156,6 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                           fontSize: 18,
                         ),
                       ),
-                      Text("20°C"),
-                      Text(
-                        "Temperature",
-                      )
                     ],
                   ),
                   Column(
