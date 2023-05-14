@@ -78,13 +78,13 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+              margin: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.grey[300],
                 borderRadius: BorderRadius.circular(16),
               ),
               child: SwitchListTile(
-                title: Text(
+                title: const Text(
                   "Device status",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -98,7 +98,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                 },
               ),
             ),
-            Expanded(child: Placeholder()),
+            const Expanded(child: Placeholder()),
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 16, 16, 32),
               child: Row(
@@ -115,12 +115,12 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                             color: Colors.grey[200]!,
                           ),
                         ),
-                        child: Icon(Icons.refresh),
+                        child: const Icon(Icons.refresh),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
-                      Text(
+                      const Text(
                         "Auto",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -140,12 +140,12 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                             color: Colors.grey[200]!,
                           ),
                         ),
-                        child: Icon(Icons.mode_fan_off_outlined),
+                        child: const Icon(Icons.mode_fan_off_outlined),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
-                      Text(
+                      const Text(
                         "Cool",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -165,12 +165,12 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                             color: Colors.grey[200]!,
                           ),
                         ),
-                        child: Icon(Icons.eco_outlined),
+                        child: const Icon(Icons.eco_outlined),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
-                      Text(
+                      const Text(
                         "Eco",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -190,12 +190,12 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                             color: Colors.grey[200]!,
                           ),
                         ),
-                        child: Icon(Icons.light_mode_outlined),
+                        child: const Icon(Icons.light_mode_outlined),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
-                      Text(
+                      const Text(
                         "Heat",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
