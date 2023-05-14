@@ -114,6 +114,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                   indicatorWidget: Container(
                     child: Icon(Icons.swap_horiz),
                   ),
+
                 ),
                 Text(
                   "20°C",
