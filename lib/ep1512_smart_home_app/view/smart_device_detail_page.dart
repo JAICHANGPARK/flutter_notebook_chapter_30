@@ -107,6 +107,8 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                   largeScaleBarsInterval: 25,
                   smallScaleBarsInterval: 5,
                   scaleBackgroundColor: Colors.white,
+                  inRangeBarColor: Colors.black,
+                  outRangeBarColor: Colors.grey,
                   barsColor: Colors.black,
                   indicatorWidget: Container(
                     child: Icon(Icons.swap_horiz),
@@ -141,6 +143,10 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
                         ),
+                      ),
+                      Text("20°C"),
+                      Text(
+                        "Temperature",
                       )
                     ],
                   ),
