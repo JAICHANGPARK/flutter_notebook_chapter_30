@@ -20,6 +20,8 @@ dependencies:
   percent_indicator: any
   flutter_riverpod: any
 
+  rulers: ^1.0.7
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
