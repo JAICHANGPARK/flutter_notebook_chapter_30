@@ -140,6 +140,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                             color: Colors.grey[200]!,
                           ),
                         ),
+                        child: Icon(Icons.mode_fan_off_outlined),
                       ),
                       SizedBox(
                         height: 12,
