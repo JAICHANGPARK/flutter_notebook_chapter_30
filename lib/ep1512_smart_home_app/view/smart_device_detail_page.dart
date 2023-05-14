@@ -108,6 +108,9 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                   smallScaleBarsInterval: 5,
                   scaleBackgroundColor: Colors.white,
                   barsColor: Colors.black,
+                  indicatorWidget: Container(
+                    child: Icon(Icons.swap_horiz),
+                  ),
                 ),
               ],
             )),
