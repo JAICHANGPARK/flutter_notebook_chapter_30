@@ -165,6 +165,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                             color: Colors.grey[200]!,
                           ),
                         ),
+                        child: Icon(Icons.eco_outlined),
                       ),
                       SizedBox(
                         height: 12,
@@ -189,6 +190,7 @@ class _SmartDeviceDetailPageState extends State<SmartDeviceDetailPage> {
                             color: Colors.grey[200]!,
                           ),
                         ),
+                        child: Icon(Icons.light_mode_outlined),
                       ),
                       SizedBox(
                         height: 12,
