@@ -30,6 +30,14 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                   ),
                 ],
               ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(4),
+                border: Border.all(
+                  color: Colors.grey[200]!,
+                ),
+              ),
             )
           ],
         ),
