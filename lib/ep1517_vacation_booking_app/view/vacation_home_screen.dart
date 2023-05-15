@@ -53,20 +53,28 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                 ),
               ),
             ),
-            Container(
-              margin: EdgeInsets.symmetric(vertical: 16),
-              height: 120,
-              color: Colors.blue,
-            ),
-            Container(
-              margin: EdgeInsets.symmetric(vertical: 16),
-              height: 280,
-              color: Colors.orange,
-            ),
-            Container(
-              margin: EdgeInsets.symmetric(vertical: 16),
-              height: 160,
-              color: Colors.orange,
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 16),
+                      height: 120,
+                      color: Colors.blue,
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 16),
+                      height: 280,
+                      color: Colors.orange,
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 16),
+                      height: 160,
+                      color: Colors.orange,
+                    ),
+                  ],
+                ),
+              ),
             ),
 
           ],
