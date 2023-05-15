@@ -14,16 +14,22 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Text("Hi, Dreamwalker"),
-                Spacer(),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.notifications_none),
-                ),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Text("Hi, Dreamwalker"),
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.notifications_none),
+                  ),
+                ],
+              ),
             )
           ],
         ),
