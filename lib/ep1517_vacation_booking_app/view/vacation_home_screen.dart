@@ -17,25 +17,29 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Row(
-          children: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.search),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.favorite_border),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.chat_bubble_outline),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.settings_outlined),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.search),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.favorite_border),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.chat_bubble_outline),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.settings_outlined),
+              ),
+            ],
+          ),
         ),
       ),
     );
