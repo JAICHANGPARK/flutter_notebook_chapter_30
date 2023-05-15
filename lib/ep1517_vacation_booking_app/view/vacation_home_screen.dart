@@ -38,10 +38,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                   color: Colors.grey[300]!,
                 ),
               ),
-              margin: EdgeInsets.symmetric(
-                horizontal: 16,
-                vertical: 16
-              ),
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               padding: EdgeInsets.symmetric(horizontal: 12),
               child: TextField(
                 decoration: InputDecoration(
@@ -55,6 +52,14 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                   hintText: "Where do you want to go?",
                 ),
               ),
+            ),
+            Container(
+              height: 120,
+              color: Colors.blue,
+            ),
+            Container(
+              height: 240,
+              color: Colors.orange,
             )
           ],
         ),
