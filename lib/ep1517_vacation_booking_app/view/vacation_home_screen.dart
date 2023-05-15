@@ -13,7 +13,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
       ),
     );
