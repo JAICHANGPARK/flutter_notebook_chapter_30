@@ -13,15 +13,28 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [
-
-          ],
+          children: [],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-            
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.search),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.search),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.search),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.search),
+            ),
           ],
         ),
       ),
