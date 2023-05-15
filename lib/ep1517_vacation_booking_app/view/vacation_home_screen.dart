@@ -38,6 +38,20 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                   color: Colors.grey[200]!,
                 ),
               ),
+              margin: EdgeInsets.symmetric(
+                horizontal: 16,
+              ),
+              
+              child: TextField(
+                decoration: InputDecoration(
+                  icon: Icon(
+                    Icons.location_on_outlined,
+                  ),
+                  suffixIcon: Icon(
+                    Icons.tune,
+                  ),
+                ),
+              ),
             )
           ],
         ),
