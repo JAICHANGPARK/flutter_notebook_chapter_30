@@ -25,15 +25,15 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.search),
+              icon: Icon(Icons.favorite_border),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.search),
+              icon: Icon(Icons.chat_bubble_outline),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.search),
+              icon: Icon(Icons.settings_outlined),
             ),
           ],
         ),
