@@ -54,13 +54,21 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
               ),
             ),
             Container(
+              margin: EdgeInsets.symmetric(vertical: 16),
               height: 120,
               color: Colors.blue,
             ),
             Container(
-              height: 240,
+              margin: EdgeInsets.symmetric(vertical: 16),
+              height: 280,
               color: Colors.orange,
-            )
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 16),
+              height: 160,
+              color: Colors.orange,
+            ),
+
           ],
         ),
       ),
