@@ -11,10 +11,19 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
+      body: SafeArea(
+        child: Column(
+          children: [
 
-        ],
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            
+          ],
+        ),
       ),
     );
   }
