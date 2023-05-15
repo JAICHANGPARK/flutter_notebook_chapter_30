@@ -13,7 +13,19 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              children: [
+                CircleAvatar(),
+                Text("Hi, Dreamwalker"),
+                Spacer(),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.notifications_none),
+                ),
+              ],
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
