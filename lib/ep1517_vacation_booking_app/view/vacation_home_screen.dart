@@ -35,13 +35,14 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(4),
                 border: Border.all(
-                  color: Colors.grey[200]!,
+                  color: Colors.grey[300]!,
                 ),
               ),
               margin: EdgeInsets.symmetric(
                 horizontal: 16,
+                vertical: 16
               ),
-              
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: TextField(
                 decoration: InputDecoration(
                   icon: Icon(
@@ -50,6 +51,8 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                   suffixIcon: Icon(
                     Icons.tune,
                   ),
+                  border: InputBorder.none,
+                  hintText: "Where do you want to go?",
                 ),
               ),
             )
