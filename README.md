@@ -2,9 +2,9 @@
 
 ## ep1517
 
-- Smart Home - Mobile App
-- by Marcin Grygierczyk
-- https://dribbble.com/shots/21408433-Smart-Home-Mobile-App
+- Vacation Property Booking Mobile App
+- by Conceptzilla
+- https://dribbble.com/shots/21458379-Vacation-Property-Booking-Mobile-App
 
 <img src="https://cdn.dribbble.com/userupload/6863690/file/original-308003067664e8c14daef6d8b3c8e1e3.png?compress=1&resize=1600x1200" width="500px"/>
 
