@@ -61,7 +61,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                   children: [
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 16),
-                      height: 120,
+                      height: 100,
                       // color: Colors.blue,
                       padding: EdgeInsets.only(left: 16),
                       child: ListView.builder(
@@ -91,7 +91,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                   style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.black
+                                    color: Colors.black45
                                   ),
                                 ),
                               ],
