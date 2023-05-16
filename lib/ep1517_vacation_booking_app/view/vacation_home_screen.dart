@@ -110,7 +110,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                         vertical: 16,
                       ),
                       height: 280,
-                      color: Colors.orange,
+                     
                       padding: const EdgeInsets.only(left: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
