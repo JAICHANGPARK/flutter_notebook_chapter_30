@@ -214,6 +214,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
                                         "Sample Place",
@@ -229,6 +230,26 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                           fontSize: 12,
                                         ),
                                       ),
+                                      const Text.rich(
+                                        TextSpan(
+                                          children: [
+                                            TextSpan(
+                                              text: "\$299",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: "/night",
+                                              style: TextStyle(
+                                                // fontWeight: FontWeight.bold,
+                                                fontSize: 12,
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      )
                                     ],
                                   ),
                                 )
