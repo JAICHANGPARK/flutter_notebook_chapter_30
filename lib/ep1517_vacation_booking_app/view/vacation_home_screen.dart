@@ -63,7 +63,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 90,
                       // color: Colors.blue,
-                      padding: EdgeInsets.only(left: 16),
+                      padding: const EdgeInsets.only(left: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: tabItems.length,
@@ -82,18 +82,18 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                     ),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.villa_outlined,
                                     color: Colors.grey,
                                     size: 32,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
                                 Text(
                                   tabItems[index],
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black45,
