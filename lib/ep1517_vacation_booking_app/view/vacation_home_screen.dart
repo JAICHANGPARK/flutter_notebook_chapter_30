@@ -184,9 +184,10 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       ),
                     ),
                     Container(
-                      margin: const EdgeInsets.symmetric(vertical: 16),
+                      margin: const EdgeInsets.symmetric(vertical: 8),
                       height: 160,
                       color: Colors.orange,
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -202,7 +203,15 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                           ),
                           Expanded(
                             child: Row(
-                              children: [],
+                              children: [
+                                Container(
+                                  width: 120,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(8)
+                                  ),
+                                )
+                              ],
                             ),
                           )
                         ],
