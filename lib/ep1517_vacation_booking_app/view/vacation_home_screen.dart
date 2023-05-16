@@ -144,6 +144,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                             image: DecorationImage(
                                               image: NetworkImage(
                                                   "https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_1280.jpg"),
+                                              fit: BoxFit.cover,
                                             ),
                                           ),
                                         ),
