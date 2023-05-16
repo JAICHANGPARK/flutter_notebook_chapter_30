@@ -67,18 +67,29 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                         scrollDirection: Axis.horizontal,
                         itemCount: tabItems.length,
                         itemBuilder: (context, index) {
-                          return Column(
-                            children: [
-                              Container(
-                                height: 54,
-                                width: 54,
-                                decoration: BoxDecoration(
-                                  border: Border.all(),
-                                  borderRadius: BorderRadius.circular(8),
+                          return Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
                                 ),
-                              ),
-                              Text(tabItems[index]),
-                            ],
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  tabItems[index],
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ],
+                            ),
                           );
                         },
                       ),
