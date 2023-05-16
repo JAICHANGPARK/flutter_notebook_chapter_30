@@ -64,11 +64,11 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       height: 120,
                       color: Colors.blue,
                       child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
                         itemCount: tabItems.length,
                         itemBuilder: (context, index) {
                           return Column(
                             children: [
-                              
                               Text(tabItems[index]),
                             ],
                           );
