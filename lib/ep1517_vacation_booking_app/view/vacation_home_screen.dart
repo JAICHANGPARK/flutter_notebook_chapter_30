@@ -8,6 +8,8 @@ class VacationHomeScreen extends StatefulWidget {
 }
 
 class _VacationHomeScreenState extends State<VacationHomeScreen> {
+  List<String> tabItems = ["Hot deal", "Countryside", "Near beach", "Iconic cities", "Amazing place"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,6 +63,17 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 120,
                       color: Colors.blue,
+                      child: ListView.builder(
+                        itemCount: tabItems.length,
+                        itemBuilder: (context, index) {
+                          return Column(
+                            children: [
+                              
+                              Text(tabItems[index]),
+                            ],
+                          );
+                        },
+                      ),
                     ),
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 16),
@@ -76,7 +89,6 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                 ),
               ),
             ),
-
           ],
         ),
       ),
