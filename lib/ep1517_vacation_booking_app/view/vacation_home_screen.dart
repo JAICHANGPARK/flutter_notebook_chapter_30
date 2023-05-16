@@ -135,13 +135,29 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                           color: Colors.blue,
                                         ),
                                       ),
-                                      Text("Sample Places"),
+                                      Text(
+                                        "Sample Places",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20,
+                                        ),
+                                      ),
                                       Text.rich(
                                         TextSpan(
                                           children: [
-                                            TextSpan(text: "\$399"),
+                                            TextSpan(
+                                              text: "\$399",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20,
+                                              ),
+                                            ),
                                             TextSpan(
                                               text: "/night",
+                                              style: TextStyle(
+                                                // fontWeight: FontWeight.bold,
+                                                fontSize: 12,
+                                              ),
                                             )
                                           ],
                                         ),
