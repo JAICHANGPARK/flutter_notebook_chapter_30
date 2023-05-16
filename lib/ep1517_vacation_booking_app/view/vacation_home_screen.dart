@@ -213,6 +213,13 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
                                     borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2017/04/10/22/28/residence-2219972_1280.jpg",
+
+                                      ),
+                                      fit: BoxFit.cover
+                                    )
                                   ),
                                 ),
                                 Expanded(
