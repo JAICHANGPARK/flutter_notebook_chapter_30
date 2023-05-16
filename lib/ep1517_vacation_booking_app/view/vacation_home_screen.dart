@@ -141,7 +141,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                           decoration: BoxDecoration(
                                             color: Colors.blue,
                                             borderRadius: BorderRadius.circular(16),
-                                            image: DecorationImage(
+                                            image: const DecorationImage(
                                               image: NetworkImage(
                                                   "https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_1280.jpg"),
                                               fit: BoxFit.cover,
@@ -191,7 +191,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 8),
                       height: 160,
-                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -213,18 +213,17 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
                                     borderRadius: BorderRadius.circular(8),
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                       image: NetworkImage(
                                         "https://cdn.pixabay.com/photo/2017/04/10/22/28/residence-2219972_1280.jpg",
-
                                       ),
-                                      fit: BoxFit.cover
-                                    )
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
                                 ),
-                                Expanded(
+                                const Expanded(
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -243,7 +242,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                             fontSize: 12,
                                           ),
                                         ),
-                                        const Text.rich(
+                                        Text.rich(
                                           TextSpan(
                                             children: [
                                               TextSpan(
