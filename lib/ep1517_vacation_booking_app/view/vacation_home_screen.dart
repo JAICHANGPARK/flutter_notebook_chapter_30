@@ -208,7 +208,12 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                   width: 120,
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(8)
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    children: [],
                                   ),
                                 )
                               ],
