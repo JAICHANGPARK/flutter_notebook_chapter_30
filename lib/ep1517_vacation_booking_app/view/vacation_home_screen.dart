@@ -111,12 +111,12 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       ),
                       height: 280,
                       color: Colors.orange,
-                      padding: EdgeInsets.only(left: 16),
+                      padding: const EdgeInsets.only(left: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Building with history"),
-                          SizedBox(
+                          const Text("Building with history"),
+                          const SizedBox(
                             height: 8,
                           ),
                           Expanded(
@@ -131,22 +131,22 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                     children: [
                                       Expanded(
                                         child: Container(
-                                          margin: EdgeInsets.only(bottom: 8),
+                                          margin: const EdgeInsets.only(bottom: 8),
                                           width: 240,
                                           color: Colors.blue,
                                         ),
                                       ),
-                                      Text(
+                                      const Text(
                                         "Sample Places",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 20,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 6,
                                       ),
-                                      Text.rich(
+                                      const Text.rich(
                                         TextSpan(
                                           children: [
                                             TextSpan(
