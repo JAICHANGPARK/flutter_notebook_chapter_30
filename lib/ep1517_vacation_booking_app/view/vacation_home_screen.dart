@@ -111,10 +111,14 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       ),
                       height: 280,
                       color: Colors.orange,
+                      padding: EdgeInsets.only(left: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Building with history"),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Expanded(
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
@@ -123,7 +127,12 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                 return Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Expanded(child: Container()),
+                                    Expanded(
+                                      child: Container(
+                                        width: 200,
+                                        color: Colors.blue,
+                                      ),
+                                    ),
                                     Text("Sample Places"),
                                     Text.rich(
                                       TextSpan(
