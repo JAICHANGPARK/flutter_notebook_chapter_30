@@ -69,6 +69,14 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                         itemBuilder: (context, index) {
                           return Column(
                             children: [
+                              Container(
+                                height: 54,
+                                width: 54,
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
                               Text(tabItems[index]),
                             ],
                           );
