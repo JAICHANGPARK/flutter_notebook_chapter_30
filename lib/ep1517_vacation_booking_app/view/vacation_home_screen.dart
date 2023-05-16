@@ -131,7 +131,8 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                     children: [
                                       Expanded(
                                         child: Container(
-                                          width: 200,
+                                          margin: EdgeInsets.only(bottom: 8),
+                                          width: 240,
                                           color: Colors.blue,
                                         ),
                                       ),
@@ -141,6 +142,9 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                           fontWeight: FontWeight.bold,
                                           fontSize: 20,
                                         ),
+                                      ),
+                                      SizedBox(
+                                        height: 6,
                                       ),
                                       Text.rich(
                                         TextSpan(
