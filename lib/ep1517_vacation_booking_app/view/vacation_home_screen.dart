@@ -124,27 +124,30 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
                               itemBuilder: (context, index) {
-                                return Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Expanded(
-                                      child: Container(
-                                        width: 200,
-                                        color: Colors.blue,
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 16),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+                                          width: 200,
+                                          color: Colors.blue,
+                                        ),
                                       ),
-                                    ),
-                                    Text("Sample Places"),
-                                    Text.rich(
-                                      TextSpan(
-                                        children: [
-                                          TextSpan(text: "\$399"),
-                                          TextSpan(
-                                            text: "/night",
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
+                                      Text("Sample Places"),
+                                      Text.rich(
+                                        TextSpan(
+                                          children: [
+                                            TextSpan(text: "\$399"),
+                                            TextSpan(
+                                              text: "/night",
+                                            )
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 );
                               },
                             ),
