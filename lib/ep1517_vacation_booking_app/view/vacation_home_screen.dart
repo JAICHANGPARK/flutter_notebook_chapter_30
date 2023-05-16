@@ -185,6 +185,11 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 160,
                       color: Colors.orange,
+                      child: Column(
+                        children: [
+                          
+                        ],
+                      ),
                     ),
                   ],
                 ),
