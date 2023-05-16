@@ -106,9 +106,29 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       ),
                     ),
                     Container(
-                      margin: const EdgeInsets.symmetric(vertical: 16),
+                      margin: const EdgeInsets.symmetric(
+                        vertical: 16,
+                      ),
                       height: 280,
                       color: Colors.orange,
+                      child: Column(
+                        children: [
+                          Text("Building with history"),
+                          Expanded(
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                                return Column(
+                                  children: [
+                                    Expanded(child: Container())
+                                  ],
+                                );
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 16),
