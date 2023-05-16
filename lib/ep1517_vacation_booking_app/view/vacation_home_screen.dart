@@ -112,6 +112,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       height: 280,
                       color: Colors.orange,
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Building with history"),
                           Expanded(
@@ -120,8 +121,20 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Expanded(child: Container())
+                                    Expanded(child: Container()),
+                                    Text("Sample Places"),
+                                    Text.rich(
+                                      TextSpan(
+                                        children: [
+                                          TextSpan(text: "\$399"),
+                                          TextSpan(
+                                            text: "/night",
+                                          )
+                                        ],
+                                      ),
+                                    )
                                   ],
                                 );
                               },
