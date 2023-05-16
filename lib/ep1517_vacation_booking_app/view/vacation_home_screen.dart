@@ -61,7 +61,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                   children: [
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 16),
-                      height: 100,
+                      height: 90,
                       // color: Colors.blue,
                       padding: EdgeInsets.only(left: 16),
                       child: ListView.builder(
@@ -84,6 +84,8 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                   ),
                                   child: Icon(
                                     Icons.villa_outlined,
+                                    color: Colors.grey,
+                                    size: 32,
                                   ),
                                 ),
                                 SizedBox(
