@@ -18,15 +18,15 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  CircleAvatar(),
-                  SizedBox(
+                  const CircleAvatar(),
+                  const SizedBox(
                     width: 8,
                   ),
-                  Text("Hi, Dreamwalker"),
-                  Spacer(),
+                  const Text("Hi, Dreamwalker"),
+                  const Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.notifications_none),
+                    icon: const Icon(Icons.notifications_none),
                   ),
                 ],
               ),
@@ -38,9 +38,9 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                   color: Colors.grey[300]!,
                 ),
               ),
-              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-              padding: EdgeInsets.symmetric(horizontal: 12),
-              child: TextField(
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: const TextField(
                 decoration: InputDecoration(
                   icon: Icon(
                     Icons.location_on_outlined,
@@ -58,17 +58,17 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                 child: Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 16),
+                      margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 120,
                       color: Colors.blue,
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 16),
+                      margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 280,
                       color: Colors.orange,
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 16),
+                      margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 160,
                       color: Colors.orange,
                     ),
@@ -89,23 +89,23 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
             children: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.search),
+                icon: const Icon(Icons.search),
                 color: Colors.deepOrange,
                 iconSize: 30,
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.favorite_border),
+                icon: const Icon(Icons.favorite_border),
                 iconSize: 30,
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.chat_bubble_outline),
+                icon: const Icon(Icons.chat_bubble_outline),
                 iconSize: 30,
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.settings_outlined),
+                icon: const Icon(Icons.settings_outlined),
                 iconSize: 30,
               ),
             ],
