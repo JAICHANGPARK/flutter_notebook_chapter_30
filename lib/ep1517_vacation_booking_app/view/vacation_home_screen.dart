@@ -141,6 +141,10 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                           decoration: BoxDecoration(
                                             color: Colors.blue,
                                             borderRadius: BorderRadius.circular(16),
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_1280.jpg"),
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -186,7 +190,6 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 8),
                       height: 160,
-                      color: Colors.orange,
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
