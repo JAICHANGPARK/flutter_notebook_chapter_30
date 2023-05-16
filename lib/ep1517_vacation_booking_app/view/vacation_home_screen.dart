@@ -115,7 +115,12 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text("Building with history"),
+                          const Text(
+                            "Building with history",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           const SizedBox(
                             height: 8,
                           ),
@@ -133,7 +138,8 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                         child: Container(
                                           margin: const EdgeInsets.only(bottom: 8),
                                           width: 240,
-                                          color: Colors.blue,
+                                          decoration: BoxDecoration(
+                                              color: Colors.blue, borderRadius: BorderRadius.circular(16)),
                                         ),
                                       ),
                                       const Text(
