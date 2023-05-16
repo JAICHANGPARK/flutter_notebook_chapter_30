@@ -213,7 +213,18 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                 ),
                                 Expanded(
                                   child: Column(
-                                    children: [],
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Sample Place",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 24
+                                        ),
+                                      ),
+                                      Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
+                                          "eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+                                    ],
                                   ),
                                 )
                               ],
