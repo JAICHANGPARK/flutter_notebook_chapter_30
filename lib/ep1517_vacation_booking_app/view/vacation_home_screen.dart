@@ -219,11 +219,16 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                         "Sample Place",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
-                                          fontSize: 24
+                                          fontSize: 24,
                                         ),
                                       ),
-                                      Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
-                                          "eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+                                      Text(
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
+                                        "eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 )
