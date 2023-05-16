@@ -139,7 +139,9 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                           margin: const EdgeInsets.only(bottom: 8),
                                           width: 240,
                                           decoration: BoxDecoration(
-                                              color: Colors.blue, borderRadius: BorderRadius.circular(16)),
+                                            color: Colors.blue,
+                                            borderRadius: BorderRadius.circular(16),
+                                          ),
                                         ),
                                       ),
                                       const Text(
@@ -186,8 +188,23 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                       height: 160,
                       color: Colors.orange,
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          
+                          const Text(
+                            "Last Visited",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black54,
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 12,
+                          ),
+                          Expanded(
+                            child: Row(
+                              children: [],
+                            ),
+                          )
                         ],
                       ),
                     ),
