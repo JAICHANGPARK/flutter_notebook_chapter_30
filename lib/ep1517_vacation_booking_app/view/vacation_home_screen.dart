@@ -82,6 +82,9 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                     ),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
+                                  child: Icon(
+                                    Icons.villa_outlined,
+                                  ),
                                 ),
                                 SizedBox(
                                   height: 8,
@@ -91,7 +94,7 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                   style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.black45
+                                    color: Colors.black45,
                                   ),
                                 ),
                               ],
