@@ -62,20 +62,24 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 120,
-                      color: Colors.blue,
+                      // color: Colors.blue,
+                      padding: EdgeInsets.only(left: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: tabItems.length,
                         itemBuilder: (context, index) {
                           return Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.only(right: 24),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Container(
                                   height: 64,
                                   width: 64,
                                   decoration: BoxDecoration(
-                                    border: Border.all(),
+                                    border: Border.all(
+                                      color: Colors.grey[400]!,
+                                    ),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
@@ -86,6 +90,8 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                   tabItems[index],
                                   style: TextStyle(
                                     fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black
                                   ),
                                 ),
                               ],
