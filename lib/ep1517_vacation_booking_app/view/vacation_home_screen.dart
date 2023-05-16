@@ -212,45 +212,48 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                                   ),
                                 ),
                                 Expanded(
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text(
-                                        "Sample Place",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 24,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          "Sample Place",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 24,
+                                          ),
                                         ),
-                                      ),
-                                      Text(
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
-                                        "eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                                        style: TextStyle(
-                                          fontSize: 12,
+                                        Text(
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do "
+                                          "eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
                                         ),
-                                      ),
-                                      const Text.rich(
-                                        TextSpan(
-                                          children: [
-                                            TextSpan(
-                                              text: "\$299",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 20,
+                                        const Text.rich(
+                                          TextSpan(
+                                            children: [
+                                              TextSpan(
+                                                text: "\$299",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 20,
+                                                ),
                                               ),
-                                            ),
-                                            TextSpan(
-                                              text: "/night",
-                                              style: TextStyle(
-                                                // fontWeight: FontWeight.bold,
-                                                fontSize: 12,
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                      )
-                                    ],
+                                              TextSpan(
+                                                text: "/night",
+                                                style: TextStyle(
+                                                  // fontWeight: FontWeight.bold,
+                                                  fontSize: 12,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],
