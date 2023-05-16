@@ -110,7 +110,6 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                         vertical: 16,
                       ),
                       height: 280,
-                     
                       padding: const EdgeInsets.only(left: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -119,10 +118,11 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                             "Building with history",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              color: Colors.black54,
                             ),
                           ),
                           const SizedBox(
-                            height: 8,
+                            height: 12,
                           ),
                           Expanded(
                             child: ListView.builder(
