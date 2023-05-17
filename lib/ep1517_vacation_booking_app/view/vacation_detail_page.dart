@@ -12,6 +12,9 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        foregroundColor: Colors.black,
         title: Text("SEARCH"),
         actions: [
           IconButton(
