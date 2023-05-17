@@ -90,6 +90,8 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
               decoration: BoxDecoration(
                 color: Colors.deepOrange,
               ),
+              margin: EdgeInsets.symmetric(vertical: 16),
+              padding: EdgeInsets.symmetric(vertical: 16),
               child: Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
