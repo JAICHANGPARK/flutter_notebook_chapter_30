@@ -32,7 +32,16 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(child: Container()),
+            Expanded(
+                child: Container(
+                  margin: EdgeInsets.symmetric(vertical: 16),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage("https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            )),
             const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -127,7 +136,6 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
                   children: [
                     Icon(
                       Icons.view_in_ar,
-                      
                     ),
                     SizedBox(
                       width: 8,
