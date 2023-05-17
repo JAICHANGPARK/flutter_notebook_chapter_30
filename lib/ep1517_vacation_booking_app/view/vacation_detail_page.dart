@@ -27,22 +27,55 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
           )
         ],
       ),
-      body: Column(
-        children: [
-          Expanded(child: Container()),
-          Column(
-            children: [
-              Row(
-                children: [
-                  Text("Sample Place4"),
-                  Spacer(),
-                  Icon(Icons.star),
-                  Text("4.8"),
-                ],
-              )
-            ],
-          )
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(child: Container()),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Text("Sample Place4"),
+                    Spacer(),
+                    Icon(Icons.star),
+                    Text("4.8"),
+                  ],
+                ),
+                Wrap(
+                  spacing: 8,
+                  children: [
+                    Chip(
+                      label: Text("1 bedroom"),
+                    ),
+                    Chip(
+                      label: Text("2 beds"),
+                    ),
+                    Chip(
+                      label: Text("1 bath"),
+                    ),
+                  ],
+                ),
+                Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: "\$529",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                      TextSpan(text: "/night")
+                    ],
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
