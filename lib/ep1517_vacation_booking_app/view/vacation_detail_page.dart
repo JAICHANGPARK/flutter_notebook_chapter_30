@@ -33,15 +33,17 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-                child: Container(
-                  margin: EdgeInsets.symmetric(vertical: 16),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage("https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg"),
-                  fit: BoxFit.cover,
+              child: Container(
+                margin: EdgeInsets.symmetric(vertical: 16),
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage("https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                  borderRadius: BorderRadius.circular(16),
                 ),
               ),
-            )),
+            ),
             const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
