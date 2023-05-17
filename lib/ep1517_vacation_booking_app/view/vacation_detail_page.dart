@@ -38,7 +38,12 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
               children: [
                 Row(
                   children: [
-                    Text("Sample Place4"),
+                    Text("Sample Place4",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                      ),
+                    ),
                     Spacer(),
                     Icon(Icons.star),
                     Text("4.8"),
