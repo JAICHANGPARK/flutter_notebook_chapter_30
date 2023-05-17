@@ -87,7 +87,10 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
               ],
             ),
             Container(
-              decoration: BoxDecoration(color: Colors.deepOrange, borderRadius: BorderRadius.circular(8)),
+              decoration: BoxDecoration(
+                color: Colors.deepOrange,
+                borderRadius: BorderRadius.circular(8),
+              ),
               margin: EdgeInsets.symmetric(vertical: 16),
               padding: EdgeInsets.symmetric(vertical: 16),
               child: Center(
@@ -100,9 +103,41 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
                         color: Colors.white,
                       ),
                     ),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Icon(
                       Icons.arrow_forward,
+                      color: Colors.white,
                     )
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(8),
+              ),
+              margin: EdgeInsets.only(bottom: 24),
+              padding: EdgeInsets.symmetric(vertical: 16),
+              child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.view_in_ar,
+                      
+                    ),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Text(
+                      "VIRTUAL TOUR",
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
                   ],
                 ),
               ),
