@@ -15,15 +15,15 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
         backgroundColor: Colors.white,
         elevation: 0,
         foregroundColor: Colors.black,
-        title: Text("SEARCH"),
+        title: const Text("SEARCH"),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.share),
+            icon: const Icon(Icons.share),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.favorite_border),
+            icon: const Icon(Icons.favorite_border),
           )
         ],
       ),
@@ -33,7 +33,7 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(child: Container()),
-            Column(
+            const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
@@ -53,9 +53,8 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
                     Text("4.8"),
                   ],
                 ),
-               
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  padding: EdgeInsets.symmetric(vertical: 8),
                   child: Wrap(
                     spacing: 8,
                     children: [
@@ -86,6 +85,24 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
                   ),
                 )
               ],
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.deepOrange,
+              ),
+              child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "BOOK",
+                    ),
+                    Icon(
+                      Icons.arrow_forward,
+                    )
+                  ],
+                ),
+              ),
             )
           ],
         ),
