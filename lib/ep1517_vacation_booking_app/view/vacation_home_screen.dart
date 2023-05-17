@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1517_vacation_booking_app/view/vacation_detail_page.dart';
 
 class VacationHomeScreen extends StatefulWidget {
   const VacationHomeScreen({Key? key}) : super(key: key);
@@ -129,57 +130,66 @@ class _VacationHomeScreenState extends State<VacationHomeScreen> {
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
                               itemBuilder: (context, index) {
-                                return Padding(
-                                  padding: const EdgeInsets.only(right: 16),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Expanded(
-                                        child: Container(
-                                          margin: const EdgeInsets.only(bottom: 8),
-                                          width: 240,
-                                          decoration: BoxDecoration(
-                                            color: Colors.blue,
-                                            borderRadius: BorderRadius.circular(16),
-                                            image: const DecorationImage(
-                                              image: NetworkImage(
-                                                  "https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_1280.jpg"),
-                                              fit: BoxFit.cover,
+                                return GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) => VacationDetailPage(),
+                                      ),
+                                    );
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(right: 16),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            margin: const EdgeInsets.only(bottom: 8),
+                                            width: 240,
+                                            decoration: BoxDecoration(
+                                              color: Colors.blue,
+                                              borderRadius: BorderRadius.circular(16),
+                                              image: const DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_1280.jpg"),
+                                                fit: BoxFit.cover,
+                                              ),
                                             ),
                                           ),
                                         ),
-                                      ),
-                                      const Text(
-                                        "Sample Places",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 20,
+                                        const Text(
+                                          "Sample Places",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
                                         ),
-                                      ),
-                                      const SizedBox(
-                                        height: 6,
-                                      ),
-                                      const Text.rich(
-                                        TextSpan(
-                                          children: [
-                                            TextSpan(
-                                              text: "\$399",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 20,
-                                              ),
-                                            ),
-                                            TextSpan(
-                                              text: "/night",
-                                              style: TextStyle(
-                                                // fontWeight: FontWeight.bold,
-                                                fontSize: 12,
-                                              ),
-                                            )
-                                          ],
+                                        const SizedBox(
+                                          height: 6,
                                         ),
-                                      )
-                                    ],
+                                        const Text.rich(
+                                          TextSpan(
+                                            children: [
+                                              TextSpan(
+                                                text: "\$399",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 20,
+                                                ),
+                                              ),
+                                              TextSpan(
+                                                text: "/night",
+                                                style: TextStyle(
+                                                  // fontWeight: FontWeight.bold,
+                                                  fontSize: 12,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 );
                               },
