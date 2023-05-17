@@ -34,9 +34,9 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
           children: [
             Expanded(
               child: Container(
-                margin: EdgeInsets.symmetric(vertical: 16),
+                margin: const EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
-                  image: DecorationImage(
+                  image: const DecorationImage(
                     image: NetworkImage("https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg"),
                     fit: BoxFit.cover,
                   ),
@@ -102,9 +102,9 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
                 color: Colors.deepOrange,
                 borderRadius: BorderRadius.circular(8),
               ),
-              margin: EdgeInsets.symmetric(vertical: 16),
-              padding: EdgeInsets.symmetric(vertical: 16),
-              child: Center(
+              margin: const EdgeInsets.symmetric(vertical: 16),
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: const Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -130,9 +130,9 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
                 color: Colors.grey[200],
                 borderRadius: BorderRadius.circular(8),
               ),
-              margin: EdgeInsets.only(bottom: 24),
-              padding: EdgeInsets.symmetric(vertical: 16),
-              child: Center(
+              margin: const EdgeInsets.only(bottom: 24),
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: const Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
