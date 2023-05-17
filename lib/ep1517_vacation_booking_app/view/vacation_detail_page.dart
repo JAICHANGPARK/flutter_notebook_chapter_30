@@ -87,9 +87,7 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
               ],
             ),
             Container(
-              decoration: BoxDecoration(
-                color: Colors.deepOrange,
-              ),
+              decoration: BoxDecoration(color: Colors.deepOrange, borderRadius: BorderRadius.circular(8)),
               margin: EdgeInsets.symmetric(vertical: 16),
               padding: EdgeInsets.symmetric(vertical: 16),
               child: Center(
@@ -98,6 +96,9 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
                   children: [
                     Text(
                       "BOOK",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
                     Icon(
                       Icons.arrow_forward,
