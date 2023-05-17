@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class VacationDetailPage extends StatefulWidget {
   const VacationDetailPage({Key? key}) : super(key: key);
 
@@ -15,7 +14,14 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
       appBar: AppBar(
         title: Text("SEARCH"),
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.share),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.share),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.favorite_border),
+          )
         ],
       ),
     );
