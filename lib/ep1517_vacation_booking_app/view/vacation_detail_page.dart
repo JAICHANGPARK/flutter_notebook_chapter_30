@@ -11,6 +11,13 @@ class VacationDetailPage extends StatefulWidget {
 class _VacationDetailPageState extends State<VacationDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("SEARCH"),
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.share),
+        ],
+      ),
+    );
   }
 }
