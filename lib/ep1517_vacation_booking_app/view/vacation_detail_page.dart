@@ -38,30 +38,38 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
               children: [
                 Row(
                   children: [
-                    Text("Sample Place4",
+                    Text(
+                      "Sample Place4",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 24,
                       ),
                     ),
                     Spacer(),
-                    Icon(Icons.star),
+                    Icon(
+                      Icons.star,
+                      color: Colors.orange,
+                    ),
                     Text("4.8"),
                   ],
                 ),
-                Wrap(
-                  spacing: 8,
-                  children: [
-                    Chip(
-                      label: Text("1 bedroom"),
-                    ),
-                    Chip(
-                      label: Text("2 beds"),
-                    ),
-                    Chip(
-                      label: Text("1 bath"),
-                    ),
-                  ],
+               
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: Wrap(
+                    spacing: 8,
+                    children: [
+                      Chip(
+                        label: Text("1 bedroom"),
+                      ),
+                      Chip(
+                        label: Text("2 beds"),
+                      ),
+                      Chip(
+                        label: Text("1 bath"),
+                      ),
+                    ],
+                  ),
                 ),
                 Text.rich(
                   TextSpan(
