@@ -27,6 +27,23 @@ class _VacationDetailPageState extends State<VacationDetailPage> {
           )
         ],
       ),
+      body: Column(
+        children: [
+          Expanded(child: Container()),
+          Column(
+            children: [
+              Row(
+                children: [
+                  Text("Sample Place4"),
+                  Spacer(),
+                  Icon(Icons.star),
+                  Text("4.8"),
+                ],
+              )
+            ],
+          )
+        ],
+      ),
     );
   }
 }
