@@ -69,7 +69,14 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text("DREAMWALKER MODULES"),
-                        const Text("DREAM WALKER"),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        const Text(
+                          "DREAM WALKER",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                        SizedBox(height: 12),
                         const Row(
                           children: [
                             Text.rich(
@@ -87,6 +94,24 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              width: 16,
+                            ),
+                            Text.rich(
+                              TextSpan(
+                                children: [
+                                  TextSpan(
+                                    text: "Brand: ",
+                                  ),
+                                  TextSpan(
+                                    text: "Moog",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                         Container(
@@ -95,11 +120,24 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                             color: Colors.green[100],
                             borderRadius: BorderRadius.circular(4),
                           ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 4,
+                          ),
                           child: const Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Icon(Icons.local_shipping),
-                              Text("Free Shipping"),
+                              Icon(
+                                Icons.local_shipping,
+                                size: 20,
+                                color: Colors.green,
+                              ),
+                              SizedBox(
+                                width: 6,
+                              ),
+                              Text(
+                                "Free Shipping",
+                                style: TextStyle(color: Colors.green),
+                              ),
                             ],
                           ),
                         ),
