@@ -76,10 +76,13 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                               TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: "SKU",
+                                    text: "SKU: ",
                                   ),
                                   TextSpan(
                                     text: "476415",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -100,9 +103,8 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                             ],
                           ),
                         ),
-
                         Container(
-                          margin: EdgeInsets.only(bottom: 8 ,top: 0),
+                          margin: EdgeInsets.only(bottom: 8, top: 0),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(2),
                             border: Border.all(
