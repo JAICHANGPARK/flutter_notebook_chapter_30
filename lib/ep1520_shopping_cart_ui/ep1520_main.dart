@@ -99,7 +99,17 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                             ],
                           ),
                         ),
-                        
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(2),
+                            border: Border.all(
+                              color: Colors.grey[200]!,
+                            ),
+                          ),
+                          child: Row(
+                            children: [],
+                          ),
+                        )
                       ],
                     ),
                   )
