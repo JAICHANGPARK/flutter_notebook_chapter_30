@@ -52,6 +52,7 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
             return Container(
               padding: EdgeInsets.all(16),
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     height: 72,
@@ -84,7 +85,21 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                               ),
                             ),
                           ],
-                        )
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.green[100],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(Icons.local_shipping),
+                              Text("Free Shipping"),
+                            ],
+                          ),
+                        ),
+                        
                       ],
                     ),
                   )
