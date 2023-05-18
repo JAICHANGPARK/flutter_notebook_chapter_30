@@ -60,8 +60,12 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                       color: Colors.blue,
                     ),
                   ),
+                  SizedBox(
+                    width: 16,
+                  ),
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("DREAMWALKER MODULES"),
                         Text("DREAM WALKER"),
