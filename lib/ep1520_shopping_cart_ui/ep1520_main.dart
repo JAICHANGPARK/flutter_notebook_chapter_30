@@ -31,9 +31,10 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [],
+      body: SafeArea(
+        child: ListView.builder(itemBuilder: (context, index) {}),
       ),
+      persistentFooterButtons: [],
     );
   }
 }
