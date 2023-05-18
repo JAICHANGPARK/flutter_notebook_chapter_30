@@ -20,7 +20,6 @@ class _ShoppingCartUIState extends State<ShoppingCartUI> {
   }
 }
 
-
 class ShoppingCartWidget extends StatefulWidget {
   const ShoppingCartWidget({Key? key}) : super(key: key);
 
@@ -31,6 +30,10 @@ class ShoppingCartWidget extends StatefulWidget {
 class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [],
+      ),
+    );
   }
 }
