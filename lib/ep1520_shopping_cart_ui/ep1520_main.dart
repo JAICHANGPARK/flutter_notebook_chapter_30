@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(ShoppingCartUI());
+  runApp(const ShoppingCartUI());
 }
 
 class ShoppingCartUI extends StatefulWidget {
@@ -14,7 +14,7 @@ class ShoppingCartUI extends StatefulWidget {
 class _ShoppingCartUIState extends State<ShoppingCartUI> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: ShoppingCartWidget(),
     );
   }
@@ -32,13 +32,13 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Cart"),
+        title: const Text("Cart"),
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.clear,
             ),
           ),
@@ -50,27 +50,27 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
           itemCount: 10,
           itemBuilder: (context, index) {
             return Container(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     height: 72,
                     width: 72,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.blue,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("DREAMWALKER MODULES"),
-                        Text("DREAM WALKER"),
-                        Row(
+                        const Text("DREAMWALKER MODULES"),
+                        const Text("DREAM WALKER"),
+                        const Row(
                           children: [
                             Text.rich(
                               TextSpan(
@@ -90,12 +90,12 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                           ],
                         ),
                         Container(
-                          margin: EdgeInsets.symmetric(vertical: 16),
+                          margin: const EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
                             color: Colors.green[100],
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(Icons.local_shipping),
@@ -104,14 +104,14 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(bottom: 8, top: 0),
+                          margin: const EdgeInsets.only(bottom: 8, top: 0),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(2),
                             border: Border.all(
                               color: Colors.grey[200]!,
                             ),
                           ),
-                          child: IntrinsicHeight(
+                          child: const IntrinsicHeight(
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -131,19 +131,19 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
               ),
             );
           },
-          separatorBuilder: (BuildContext context, int index) => Divider(),
+          separatorBuilder: (BuildContext context, int index) => const Divider(),
         ),
       ),
       persistentFooterButtons: [
         OutlinedButton(
           onPressed: () {},
-          child: Text(
+          child: const Text(
             "View Cart",
           ),
         ),
         ElevatedButton(
           onPressed: () {},
-          child: Text("CHECKOUT"),
+          child: const Text("CHECKOUT"),
         ),
       ],
     );
