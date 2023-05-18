@@ -14,6 +14,23 @@ class ShoppingCartUI extends StatefulWidget {
 class _ShoppingCartUIState extends State<ShoppingCartUI> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: ShoppingCartWidget(),
+    );
+  }
+}
+
+
+class ShoppingCartWidget extends StatefulWidget {
+  const ShoppingCartWidget({Key? key}) : super(key: key);
+
+  @override
+  State<ShoppingCartWidget> createState() => _ShoppingCartWidgetState();
+}
+
+class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
