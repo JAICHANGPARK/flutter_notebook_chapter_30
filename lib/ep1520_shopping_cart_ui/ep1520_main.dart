@@ -87,6 +87,7 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                           ],
                         ),
                         Container(
+                          margin: EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
                             color: Colors.green[100],
                             borderRadius: BorderRadius.circular(4),
@@ -99,7 +100,9 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                             ],
                           ),
                         ),
+
                         Container(
+                          margin: EdgeInsets.only(bottom: 8 ,top: 0),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(2),
                             border: Border.all(
