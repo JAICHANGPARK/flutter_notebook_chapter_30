@@ -46,7 +46,13 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
         elevation: 1,
       ),
       body: SafeArea(
-        child: ListView.builder(itemBuilder: (context, index) {}),
+        child: ListView.separated(
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            return Container();
+          },
+          separatorBuilder: (BuildContext context, int index) => Divider(),
+        ),
       ),
       persistentFooterButtons: [],
     );
