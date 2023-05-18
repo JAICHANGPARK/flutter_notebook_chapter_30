@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(ShoppingCartUI());
+}
+
 class ShoppingCartUI extends StatefulWidget {
   const ShoppingCartUI({Key? key}) : super(key: key);
 
