@@ -106,8 +106,17 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                               color: Colors.grey[200]!,
                             ),
                           ),
-                          child: Row(
-                            children: [],
+                          child: IntrinsicHeight(
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.remove),
+                                VerticalDivider(),
+                                Text("1"),
+                                VerticalDivider(),
+                                Icon(Icons.add),
+                              ],
+                            ),
                           ),
                         )
                       ],
