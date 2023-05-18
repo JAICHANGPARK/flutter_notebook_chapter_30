@@ -31,6 +31,10 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Cart"),
+        foregroundColor: Colors.white,
+      ),
       body: SafeArea(
         child: ListView.builder(itemBuilder: (context, index) {}),
       ),
