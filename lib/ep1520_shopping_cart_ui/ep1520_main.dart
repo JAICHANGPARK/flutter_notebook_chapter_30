@@ -122,6 +122,7 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                           ),
                           padding: EdgeInsets.symmetric(
                             horizontal: 4,
+                            vertical: 4
                           ),
                           child: const Row(
                             mainAxisSize: MainAxisSize.min,
