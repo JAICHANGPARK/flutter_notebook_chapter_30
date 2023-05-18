@@ -129,14 +129,17 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
                               Icon(
                                 Icons.local_shipping,
                                 size: 20,
-                                color: Colors.green,
+                                color: Colors.teal,
                               ),
                               SizedBox(
                                 width: 6,
                               ),
                               Text(
                                 "Free Shipping",
-                                style: TextStyle(color: Colors.green),
+                                style: TextStyle(
+                                  color: Colors.teal,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ],
                           ),
