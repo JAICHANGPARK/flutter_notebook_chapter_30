@@ -33,7 +33,17 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Cart"),
-        foregroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.white,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.clear,
+            ),
+          ),
+        ],
+        elevation: 1,
       ),
       body: SafeArea(
         child: ListView.builder(itemBuilder: (context, index) {}),
