@@ -49,12 +49,60 @@ class _ShoppingCartWidgetState extends State<ShoppingCartWidget> {
         child: ListView.separated(
           itemCount: 10,
           itemBuilder: (context, index) {
-            return Container();
+            return Container(
+              padding: EdgeInsets.all(16),
+              child: Row(
+                children: [
+                  Container(
+                    height: 72,
+                    width: 72,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("DREAMWALKER MODULES"),
+                        Text("DREAM WALKER"),
+                        Row(
+                          children: [
+                            Text.rich(
+                              TextSpan(
+                                children: [
+                                  TextSpan(
+                                    text: "SKU",
+                                  ),
+                                  TextSpan(
+                                    text: "476415",
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            );
           },
           separatorBuilder: (BuildContext context, int index) => Divider(),
         ),
       ),
-      persistentFooterButtons: [],
+      persistentFooterButtons: [
+        OutlinedButton(
+          onPressed: () {},
+          child: Text(
+            "View Cart",
+          ),
+        ),
+        ElevatedButton(
+          onPressed: () {},
+          child: Text("CHECKOUT"),
+        ),
+      ],
     );
   }
 }
