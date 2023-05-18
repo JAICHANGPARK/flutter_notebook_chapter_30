@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_30
 
-## ep1517
+## ep1520
+
+- Stratis UI - Cart
+- by Monty Hayton
+- https://dribbble.com/shots/21481324-Stratis-UI-Cart
+
+<img src="https://cdn.dribbble.com/userupload/7067758/file/original-cfb79b3ba22ce89813d6835b69e0aafb.png?compress=1&resize=1600x1200" width="500px"/>
+
+## ep1517-1519
 
 - Vacation Property Booking Mobile App
 - by Conceptzilla
