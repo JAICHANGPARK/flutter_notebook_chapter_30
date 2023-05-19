@@ -21,24 +21,26 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   const CircleAvatar(
                     radius: 24,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: const Column(
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           "Dreamwalker",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            fontSize: 16,
                           ),
                         ),
                         SizedBox(
-                          height: 8,
+                          height: 4,
                         ),
                         Text("Enjoy your favorite podcast."),
                       ],
                     ),
                   ),
+                  Spacer(),
                   Container(
                     height: 48,
                     width: 48,
@@ -48,9 +50,22 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         color: Colors.grey[300]!,
                       ),
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.notifications_none,
                     ),
+                  )
+                ],
+              ),
+            ),
+            Text("Listen Your"),
+            Text.rich(
+              TextSpan(
+                children: [
+                  TextSpan(
+                    text: "Favorite",
+                  ),
+                  TextSpan(
+                    text: "Podcast",
                   )
                 ],
               ),
