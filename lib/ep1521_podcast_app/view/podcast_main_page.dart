@@ -14,29 +14,46 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                const CircleAvatar(),
-                const Column(
-                  children: [
-                    Text("Dreamwalker"),
-                    Text("Enjoy your favorite podcast."),
-                  ],
-                ),
-                Container(
-                  height: 48,
-                  width: 48,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Colors.grey[300]!,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  const CircleAvatar(
+                    radius: 24,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: const Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Dreamwalker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text("Enjoy your favorite podcast."),
+                      ],
                     ),
                   ),
-                  child: Icon(
-                    Icons.notifications_none,
-                  ),
-                )
-              ],
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                    ),
+                    child: Icon(
+                      Icons.notifications_none,
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
