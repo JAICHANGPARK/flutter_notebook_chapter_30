@@ -7,7 +7,7 @@ https://dribbble.com/shots/21500063-Corecast-Podcast-App
 - by Sans Design for Sans Brothers
 - https://dribbble.com/shots/21500063-Corecast-Podcast-App
 
-<img src="https://cdn.dribbble.com/userupload/7067758/file/original-cfb79b3ba22ce89813d6835b69e0aafb.png?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/7123065/file/original-4f36b12bdae2be1a0d020113e9525ec2.png?compress=1&resize=1905x1429" width="500px"/>
 
 ## ep1520
 
