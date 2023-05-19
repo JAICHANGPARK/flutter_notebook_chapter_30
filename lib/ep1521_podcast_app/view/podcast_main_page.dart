@@ -86,8 +86,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 child: DefaultTabController(
                   length: 4,
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TabBar(
+                        isScrollable: true,
                         indicatorColor: Colors.transparent,
                         labelColor: Colors.black,
                         unselectedLabelColor: Colors.grey,
