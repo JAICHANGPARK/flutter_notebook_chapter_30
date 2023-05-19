@@ -79,7 +79,45 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(12),
                 ),
-              )
+                margin: EdgeInsets.symmetric(vertical:16 ),
+              ),
+              Text("Listen Podcast"),
+              Expanded(
+                child: DefaultTabController(
+                  length: 4,
+                  child: Column(
+                    children: [
+                      TabBar(
+                        tabs: [
+                          Tab(
+                            text: "Recent",
+                          ),
+                          Tab(
+                            text: "Recent",
+                          ),
+                          Tab(
+                            text: "Recent",
+                          ),
+                          Tab(
+                            text: "Recent",
+                          ),
+                        ],
+                      ),
+                      Expanded(
+                          child: TabBarView(
+                        children: [
+                          Container(
+                            color: Colors.blue,
+                          ),
+                          Container(),
+                          Container(),
+                          Container(),
+                        ],
+                      ))
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
