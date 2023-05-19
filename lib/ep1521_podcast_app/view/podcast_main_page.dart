@@ -88,6 +88,9 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   child: Column(
                     children: [
                       TabBar(
+                        indicatorColor: Colors.transparent,
+                        labelColor: Colors.black,
+                        unselectedLabelColor: Colors.grey,
                         tabs: [
                           Tab(
                             text: "Recent",
@@ -123,31 +126,28 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-            ),
-            label: "Home"
-          ),
+              icon: Icon(
+                Icons.home,
+              ),
+              label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
-              label: "Home"
-          ),
+              label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
-              label: "Home"
-          ),
+              label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
-              label: "Home"
-          )
+              label: "Home")
         ],
       ),
     );
