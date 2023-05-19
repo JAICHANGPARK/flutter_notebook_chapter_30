@@ -13,7 +13,27 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Row(
+            children: [
+              CircleAvatar(),
+              Column(
+                children: [
+                  Text("Dreamwalker"),
+                  Text("Enjoy your favorite podcast."),
+                ],
+              ),
+              Container(
+                height: 48,
+                width: 48,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Colors.grey[200]!,
+                  ),
+                ),
+              )
+            ],
+          )
         ],
       ),
     );
