@@ -13,6 +13,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
