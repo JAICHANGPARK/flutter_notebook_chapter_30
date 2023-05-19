@@ -1,11 +1,11 @@
 # flutter_notebook_chapter_30
 https://dribbble.com/shots/21500063-Corecast-Podcast-App
 
-## ep1520
+## ep1521
 
-- Stratis UI - Cart
-- by Monty Hayton
-- https://dribbble.com/shots/21481324-Stratis-UI-Cart
+- Corecast - Podcast App
+- by Sans Design for Sans Brothers
+- https://dribbble.com/shots/21500063-Corecast-Podcast-App
 
 <img src="https://cdn.dribbble.com/userupload/7067758/file/original-cfb79b3ba22ce89813d6835b69e0aafb.png?compress=1&resize=1600x1200" width="500px"/>
 
