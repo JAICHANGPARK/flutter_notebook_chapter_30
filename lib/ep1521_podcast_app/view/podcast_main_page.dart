@@ -12,12 +12,12 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
                 children: [
                   const CircleAvatar(
                     radius: 24,
@@ -57,21 +57,31 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   )
                 ],
               ),
-            ),
-            Text("Listen Your"),
-            Text.rich(
-              TextSpan(
-                children: [
-                  TextSpan(
-                    text: "Favorite",
-                  ),
-                  TextSpan(
-                    text: "Podcast",
-                  )
-                ],
+              SizedBox(
+                height: 24,
               ),
-            )
-          ],
+              Text("Listen Your"),
+              Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Favorite",
+                    ),
+                    TextSpan(
+                      text: "Podcast",
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: 160,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
