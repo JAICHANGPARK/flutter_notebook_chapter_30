@@ -29,8 +29,11 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
-                      color: Colors.grey[200]!,
+                      color: Colors.grey[300]!,
                     ),
+                  ),
+                  child: Icon(
+                    Icons.notifications_none,
                   ),
                 )
               ],
