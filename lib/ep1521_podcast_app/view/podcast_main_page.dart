@@ -79,7 +79,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                margin: EdgeInsets.symmetric(vertical:16 ),
+                margin: EdgeInsets.symmetric(vertical: 16),
               ),
               Text("Listen Podcast"),
               Expanded(
@@ -121,6 +121,34 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+            label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+              ),
+              label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+              ),
+              label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+              ),
+              label: "Home"
+          )
+        ],
       ),
     );
   }
