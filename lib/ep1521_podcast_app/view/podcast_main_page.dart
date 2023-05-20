@@ -91,7 +91,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               Container(
                 height: 180,
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(103, 65, 255, 1),
+                  color: const Color.fromRGBO(103, 65, 255, 1),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 margin: const EdgeInsets.symmetric(
@@ -112,9 +112,9 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: const TabBar(
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 8),
+                        child: TabBar(
                           isScrollable: true,
                           indicatorColor: Colors.transparent,
                           labelColor: Colors.black,
@@ -147,13 +147,14 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                   itemBuilder: (context, index) {
                                     return Container(
                                       width: 200,
-                                      margin: EdgeInsets.only(right: 16),
+                                      margin: const EdgeInsets.only(right: 16),
                                       decoration: BoxDecoration(
                                         color: Colors.orange[100],
                                         borderRadius: BorderRadius.circular(8),
                                       ),
-                                      padding: EdgeInsets.all(16),
+                                      padding: const EdgeInsets.all(16),
                                       child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Row(
                                             children: [
@@ -162,10 +163,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                                 width: 80,
                                                 color: Colors.blue,
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 8,
                                               ),
-                                              Column(
+                                              const Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text(
@@ -180,8 +181,16 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                               )
                                             ],
                                           ),
-                                          Text("Flutter Development"),
-                                          Text("1 hours left"),
+                                          const Text("Flutter Development"),
+                                          const Text("1 hours left"),
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              color: Color.fromRGBO(205, 242, 3, 1),
+                                            ),
+                                            child: Icon(
+                                              Icons.play_circle,
+                                            ),
+                                          )
                                         ],
                                       ),
                                     );
