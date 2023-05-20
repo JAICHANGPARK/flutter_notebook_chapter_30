@@ -62,27 +62,21 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               ),
               const Text(
                 "Listen Your",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               ),
               const Text.rich(
                 TextSpan(
                   children: [
                     TextSpan(
                       text: "Favorite",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24
-                      ),
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                     ),
                     TextSpan(
                       text: "Podcast",
                       style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24,
-                        color: Colors.purple
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                        color: Color.fromRGBO(103, 65, 255, 1),
                       ),
                     )
                   ],
@@ -102,7 +96,6 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 "Listen Podcast",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-
                 ),
               ),
               Expanded(
