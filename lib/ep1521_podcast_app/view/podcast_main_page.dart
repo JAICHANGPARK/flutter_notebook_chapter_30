@@ -95,12 +95,15 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 margin: const EdgeInsets.symmetric(
-                  vertical: 16,
+                  vertical: 20,
                 ),
               ),
               const Text(
                 "Listen Podcast",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
               ),
               Expanded(
                 child: DefaultTabController(
@@ -141,12 +144,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                   width: 180,
                                   decoration: BoxDecoration(
                                     color: Colors.orange[100],
-                                    borderRadius: BorderRadius.circular(8)
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
                                 );
                               },
-
-
                             ),
                           ),
                           Container(),
