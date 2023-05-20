@@ -89,7 +89,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ),
               ),
               Container(
-                height: 180,
+                height: 160,
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: const Color.fromRGBO(103, 65, 255, 1),
@@ -104,11 +104,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
 
                   children: [
                     Text("TOP CHART OF THE DAY"),
+                    SizedBox(height: 16,),
                     Text("Stuff You Should Know", style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                       fontSize: 18
                     ),),
+                    SizedBox(height: 24,),
                     Container(
                       width: 100,
                       height: 32,
