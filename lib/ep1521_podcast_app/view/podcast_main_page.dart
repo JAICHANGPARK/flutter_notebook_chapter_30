@@ -118,7 +118,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         unselectedLabelColor: Colors.grey,
                         tabs: [
                           Tab(
-                            text: "Recent",
+                            text: "Recent🔥",
                           ),
                           Tab(
                             text: "Topic",
