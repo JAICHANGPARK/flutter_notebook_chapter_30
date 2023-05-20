@@ -136,7 +136,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         ),
                       ),
                       SizedBox(
-                          height: 260,
+                          height: 240,
                           child: TabBarView(
                             children: [
                               Container(
@@ -181,9 +181,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                               )
                                             ],
                                           ),
+                                          SizedBox(height: 8,),
                                           const Text("Flutter Development"),
+                                          SizedBox(height: 8,),
                                           const Text("1 hours left"),
+                                          SizedBox(height: 8,),
                                           Container(
+                                            padding: EdgeInsets.all(12),
                                             decoration: BoxDecoration(
                                               color: Color.fromRGBO(205, 242, 3, 1),
                                             ),
