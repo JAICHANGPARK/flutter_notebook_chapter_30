@@ -81,7 +81,12 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ),
                 margin: EdgeInsets.symmetric(vertical: 16),
               ),
-              Text("Listen Podcast"),
+              Text(
+                "Listen Podcast",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               Expanded(
                 child: DefaultTabController(
                   length: 4,
