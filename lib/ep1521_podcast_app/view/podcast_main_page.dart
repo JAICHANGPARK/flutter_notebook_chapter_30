@@ -113,6 +113,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       ),
 
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         // mainAxisSize: MainAxisSize.min,
                         children: [
                           Icon(Icons.play_circle),
