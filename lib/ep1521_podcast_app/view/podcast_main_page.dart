@@ -58,7 +58,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ],
               ),
               const SizedBox(
-                height: 24,
+                height: 32,
               ),
               const Text(
                 "Listen Your",
@@ -98,6 +98,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   vertical: 20,
                 ),
               ),
+              SizedBox(height: 8,),
               const Text(
                 "Listen Podcast",
                 style: TextStyle(
@@ -111,25 +112,28 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const TabBar(
-                        isScrollable: true,
-                        indicatorColor: Colors.transparent,
-                        labelColor: Colors.black,
-                        unselectedLabelColor: Colors.grey,
-                        tabs: [
-                          Tab(
-                            text: "Recent🔥",
-                          ),
-                          Tab(
-                            text: "Topic",
-                          ),
-                          Tab(
-                            text: "Authors",
-                          ),
-                          Tab(
-                            text: "Episodes",
-                          ),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: const TabBar(
+                          isScrollable: true,
+                          indicatorColor: Colors.transparent,
+                          labelColor: Colors.black,
+                          unselectedLabelColor: Colors.grey,
+                          tabs: [
+                            Tab(
+                              text: "Recent🔥",
+                            ),
+                            Tab(
+                              text: "Topic",
+                            ),
+                            Tab(
+                              text: "Authors",
+                            ),
+                            Tab(
+                              text: "Episodes",
+                            ),
+                          ],
+                        ),
                       ),
                       Expanded(
                           child: TabBarView(
