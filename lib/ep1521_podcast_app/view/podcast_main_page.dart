@@ -62,14 +62,20 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               ),
               const Text(
                 "Listen Your",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
               ),
               const Text.rich(
                 TextSpan(
                   children: [
                     TextSpan(
                       text: "Favorite",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                      ),
                     ),
                     TextSpan(
                       text: "Podcast",
