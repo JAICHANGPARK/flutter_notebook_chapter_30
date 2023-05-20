@@ -60,15 +60,30 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               const SizedBox(
                 height: 24,
               ),
-              const Text("Listen Your"),
+              const Text(
+                "Listen Your",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24
+                ),
+              ),
               const Text.rich(
                 TextSpan(
                   children: [
                     TextSpan(
                       text: "Favorite",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24
+                      ),
                     ),
                     TextSpan(
                       text: "Podcast",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        color: Colors.purple
+                      ),
                     )
                   ],
                 ),
@@ -87,6 +102,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 "Listen Podcast",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
+
                 ),
               ),
               Expanded(
