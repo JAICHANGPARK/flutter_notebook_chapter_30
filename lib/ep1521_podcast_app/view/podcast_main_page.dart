@@ -170,9 +170,9 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               label: "Discover"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Icons.person,
               ),
-              label: "Home")
+              label: "Profile")
         ],
       ),
     );
