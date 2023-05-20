@@ -160,14 +160,14 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Icons.download,
               ),
-              label: "Home"),
+              label: "Download"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Icons.explore_outlined,
               ),
-              label: "Home"),
+              label: "Discover"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
