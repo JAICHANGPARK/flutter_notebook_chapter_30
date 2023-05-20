@@ -90,6 +90,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               ),
               Container(
                 height: 180,
+                padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: const Color.fromRGBO(103, 65, 255, 1),
                   borderRadius: BorderRadius.circular(12),
@@ -97,18 +98,25 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 margin: const EdgeInsets.symmetric(
                   vertical: 20,
                 ),
+                width: double.infinity,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+
                   children: [
                     Text("TOP CHART OF THE DAY"),
                     Text("Stuff You Should Know"),
                     Container(
+                      width: 100,
+                      height: 32,
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(205, 242, 3, 1),
                       ),
+
                       child: Row(
-                        mainAxisSize: MainAxisSize.min,
+                        // mainAxisSize: MainAxisSize.min,
                         children: [
                           Icon(Icons.play_circle),
+                          SizedBox(width: 6,),
                           Text("Play now")
                         ],
                       ),
