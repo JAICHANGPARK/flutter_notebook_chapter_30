@@ -152,24 +152,36 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                         color: Colors.orange[100],
                                         borderRadius: BorderRadius.circular(8),
                                       ),
+                                      padding: EdgeInsets.all(16),
                                       child: Column(
                                         children: [
                                           Row(
                                             children: [
                                               Container(
-                                                height: 100,
+                                                height: 90,
                                                 width: 80,
                                                 color: Colors.blue,
+                                              ),
+                                              SizedBox(
+                                                width: 8,
                                               ),
                                               Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
-                                                  Text("Dream\nWalker"),
-                                                  Text("Podcast")
+                                                  Text(
+                                                    "Dream\nWalker",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 16,
+                                                    ),
+                                                  ),
+                                                  Text("Podcast"),
                                                 ],
                                               )
                                             ],
-                                          )
+                                          ),
+                                          Text("Flutter Development"),
+                                          Text("1 hours left"),
                                         ],
                                       ),
                                     );
