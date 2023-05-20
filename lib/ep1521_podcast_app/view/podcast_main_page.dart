@@ -136,23 +136,23 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        items: [
-          const BottomNavigationBarItem(
+        items: const [
+          BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
               label: "Home"),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
               label: "Home"),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
               label: "Home"),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
