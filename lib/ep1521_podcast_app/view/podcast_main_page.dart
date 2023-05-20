@@ -41,7 +41,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       ],
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     height: 48,
                     width: 48,
@@ -57,11 +57,11 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
-              Text("Listen Your"),
-              Text.rich(
+              const Text("Listen Your"),
+              const Text.rich(
                 TextSpan(
                   children: [
                     TextSpan(
@@ -79,11 +79,11 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                margin: EdgeInsets.symmetric(
+                margin: const EdgeInsets.symmetric(
                   vertical: 16,
                 ),
               ),
-              Text(
+              const Text(
                 "Listen Podcast",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -95,7 +95,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      TabBar(
+                      const TabBar(
                         isScrollable: true,
                         indicatorColor: Colors.transparent,
                         labelColor: Colors.black,
@@ -137,22 +137,22 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
               label: "Home"),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
               label: "Home"),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
               label: "Home"),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
