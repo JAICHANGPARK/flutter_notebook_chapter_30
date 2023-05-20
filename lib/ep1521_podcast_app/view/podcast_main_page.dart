@@ -89,16 +89,16 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ),
               ),
               Container(
-                height: 160,
+                height: 180,
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: Color.fromRGBO(103, 65, 255, 1),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 margin: const EdgeInsets.symmetric(
                   vertical: 20,
                 ),
               ),
-              SizedBox(height: 8,),
+              // SizedBox(height: 8,),
               const Text(
                 "Listen Podcast",
                 style: TextStyle(
