@@ -64,7 +64,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 "Listen Your",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 24,
+                  fontSize: 32,
                 ),
               ),
               const Text.rich(
@@ -74,14 +74,14 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       text: "Favorite",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 24,
+                        fontSize: 32,
                       ),
                     ),
                     TextSpan(
-                      text: "Podcast",
+                      text: " Podcast",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 24,
+                        fontSize: 32,
                         color: Color.fromRGBO(103, 65, 255, 1),
                       ),
                     )
