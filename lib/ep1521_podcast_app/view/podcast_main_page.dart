@@ -97,6 +97,24 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 margin: const EdgeInsets.symmetric(
                   vertical: 20,
                 ),
+                child: Column(
+                  children: [
+                    Text("TOP CHART OF THE DAY"),
+                    Text("Stuff You Should Know"),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(205, 242, 3, 1),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.play_circle),
+                          Text("Play now")
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
               // SizedBox(height: 8,),
               const Text(
@@ -181,11 +199,17 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                               )
                                             ],
                                           ),
-                                          SizedBox(height: 8,),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
                                           const Text("Flutter Development"),
-                                          SizedBox(height: 8,),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
                                           const Text("1 hours left"),
-                                          SizedBox(height: 8,),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
                                           Container(
                                             padding: EdgeInsets.all(12),
                                             decoration: BoxDecoration(
