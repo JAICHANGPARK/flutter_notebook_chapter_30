@@ -150,30 +150,34 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: const [
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-              ),
-              label: "Home"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.download,
-              ),
-              label: "Download"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.explore_outlined,
-              ),
-              label: "Discover"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person,
-              ),
-              label: "Profile")
-        ],
+      bottomNavigationBar: SizedBox(
+        height: 80,
+        child: BottomNavigationBar(
+
+          type: BottomNavigationBarType.fixed,
+          items: const [
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                ),
+                label: "Home"),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.download,
+                ),
+                label: "Download"),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.explore_outlined,
+                ),
+                label: "Discover"),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.person,
+                ),
+                label: "Profile")
+          ],
+        ),
       ),
     );
   }
