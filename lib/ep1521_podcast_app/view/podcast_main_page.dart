@@ -104,12 +104,17 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
 
                   children: [
                     Text("TOP CHART OF THE DAY"),
-                    Text("Stuff You Should Know"),
+                    Text("Stuff You Should Know", style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 18
+                    ),),
                     Container(
                       width: 100,
                       height: 32,
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(205, 242, 3, 1),
+                        borderRadius: BorderRadius.circular(16)
                       ),
 
                       child: Row(
