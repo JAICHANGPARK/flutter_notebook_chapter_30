@@ -100,10 +100,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               ),
               const Text(
                 "Listen Podcast",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               Expanded(
                 child: DefaultTabController(
@@ -136,6 +133,21 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         children: [
                           Container(
                             color: Colors.blue,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 180,
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange[100],
+                                    borderRadius: BorderRadius.circular(8)
+                                  ),
+                                );
+                              },
+
+
+                            ),
                           ),
                           Container(),
                           Container(),
@@ -153,7 +165,6 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
-
           type: BottomNavigationBarType.fixed,
           items: const [
             BottomNavigationBarItem(
