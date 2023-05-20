@@ -136,31 +136,51 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         ),
                       ),
                       SizedBox(
-                        height: 260,
+                          height: 260,
                           child: TabBarView(
-                        children: [
-                          Container(
-                            color: Colors.blue,
-                            child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemCount: 10,
-                              itemBuilder: (context, index) {
-                                return Container(
-                                  width: 200,
-                                  margin: EdgeInsets.only(right: 16),
-                                  decoration: BoxDecoration(
-                                    color: Colors.orange[100],
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                );
-                              },
-                            ),
-                          ),
-                          Container(),
-                          Container(),
-                          Container(),
-                        ],
-                      ))
+                            children: [
+                              Container(
+                                color: Colors.blue,
+                                child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  itemCount: 10,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      width: 200,
+                                      margin: EdgeInsets.only(right: 16),
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                      child: Column(
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Container(
+                                                height: 100,
+                                                width: 80,
+                                                color: Colors.blue,
+                                              ),
+                                              Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("Dream\nWalker"),
+                                                  Text("Podcast")
+                                                ],
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ),
+                              Container(),
+                              Container(),
+                              Container(),
+                            ],
+                          ))
                     ],
                   ),
                 ),
