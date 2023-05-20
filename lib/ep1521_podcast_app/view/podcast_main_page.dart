@@ -135,7 +135,8 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                           ],
                         ),
                       ),
-                      Expanded(
+                      SizedBox(
+                        height: 260,
                           child: TabBarView(
                         children: [
                           Container(
@@ -145,7 +146,8 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  width: 180,
+                                  width: 200,
+                                  margin: EdgeInsets.only(right: 16),
                                   decoration: BoxDecoration(
                                     color: Colors.orange[100],
                                     borderRadius: BorderRadius.circular(8),
