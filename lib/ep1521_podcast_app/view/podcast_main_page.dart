@@ -102,6 +102,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 "Listen Podcast",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
+                  fontSize: 18
                 ),
               ),
               Expanded(
@@ -120,13 +121,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                             text: "Recent",
                           ),
                           Tab(
-                            text: "Recent",
+                            text: "Topic",
                           ),
                           Tab(
-                            text: "Recent",
+                            text: "Authors",
                           ),
                           Tab(
-                            text: "Recent",
+                            text: "Episodes",
                           ),
                         ],
                       ),
