@@ -80,6 +80,8 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                     TextSpan(
                       text: " Podcast",
                       style: TextStyle(
+
+
                         fontWeight: FontWeight.bold,
                         fontSize: 32,
                         color: Color.fromRGBO(103, 65, 255, 1),
