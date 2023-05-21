@@ -79,6 +79,9 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                         ),
                         LinearPercentIndicator(
                           padding: EdgeInsets.zero,
+                          percent: 0.75,
+                          progressColor: Colors.purple,
+                          backgroundColor: Colors.black,
                         ),
                       ],
                     ),
