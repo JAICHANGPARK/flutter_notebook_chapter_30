@@ -13,8 +13,18 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Download"),
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
       ),
-
+      body: Column(
+        children: [
+          Text("Pending Download"),
+          Container(
+            height: 200,
+            color: Colors.orange,
+          )
+        ],
+      ),
     );
   }
 }
