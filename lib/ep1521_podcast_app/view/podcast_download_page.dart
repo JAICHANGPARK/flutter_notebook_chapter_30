@@ -38,7 +38,7 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 180,
+                    width: 160,
                     margin: EdgeInsets.only(right: 16),
                     decoration: BoxDecoration(
                       color: Colors.pink,
@@ -47,8 +47,22 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(child: Placeholder()),
-                        Text("Flutter Development"),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "Flutter Development",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 6,
+                        ),
                         Text("Podcast Flutter"),
+                        SizedBox(
+                          height: 6,
+                        ),
                         Align(
                           alignment: Alignment.centerRight,
                           child: Text(
@@ -56,13 +70,32 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                             textAlign: TextAlign.end,
                           ),
                         ),
-                        LinearPercentIndicator(),
+                        LinearPercentIndicator(
+                          padding: EdgeInsets.zero,
+                        ),
                       ],
                     ),
                   );
                 },
                 itemCount: 10,
               ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Your Download",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "View All",
+                  ),
+                )
+              ],
             )
           ],
         ),
