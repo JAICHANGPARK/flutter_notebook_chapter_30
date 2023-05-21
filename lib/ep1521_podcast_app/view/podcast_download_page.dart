@@ -15,15 +15,20 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
         title: Text("Download"),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
+        elevation: 0,
       ),
-      body: Column(
-        children: [
-          Text("Pending Download"),
-          Container(
-            height: 200,
-            color: Colors.orange,
-          )
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Pending Download"),
+            Container(
+              height: 200,
+              color: Colors.orange,
+            )
+          ],
+        ),
       ),
     );
   }
