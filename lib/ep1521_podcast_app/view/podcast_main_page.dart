@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1521_podcast_app/view/podcast_download_page.dart';
 import 'package:flutter_notebook_chapter_30/ep1521_podcast_app/view/podcast_home_page.dart';
 
 class PodcastMainPage extends StatefulWidget {
@@ -20,9 +21,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
           child: IndexedStack(
             index: _index,
             children: [
-              PodcastHomePage(),
+              const PodcastHomePage(),
+              const PodcastDownloadPage(),
             ],
-          )
+          ),
         ),
       ),
       bottomNavigationBar: SizedBox(
