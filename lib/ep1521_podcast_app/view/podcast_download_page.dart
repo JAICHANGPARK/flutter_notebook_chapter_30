@@ -111,7 +111,7 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
             Expanded(
               child: ListView.builder(
                 itemCount: 10,
-                itemBuilder: (context, inde) {
+                itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 16),
                     child: Row(
@@ -122,7 +122,17 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                           decoration: BoxDecoration(
                             color: Colors.red,
                           ),
-                        )
+                        ),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Modern Android Development"),
+                              Text("Podcast Android"),
+                            ],
+                          ),
+                        ),
+                        CircleAvatar(),
                       ],
                     ),
                   );
