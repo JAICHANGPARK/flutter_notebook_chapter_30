@@ -24,7 +24,10 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
           children: [
             Text(
               "Pending Download",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
             ),
             Container(
               margin: EdgeInsets.symmetric(vertical: 16),
@@ -33,7 +36,16 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return Container();
+                  return Container(
+                    width: 180,
+                    margin: EdgeInsets.only(right: 16),
+                    decoration: BoxDecoration(
+                      color: Colors.pink,
+                    ),
+                    child: Column(
+                      children: [],
+                    ),
+                  );
                 },
                 itemCount: 10,
               ),
