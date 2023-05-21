@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1521_podcast_app/view/podcast_home_page.dart';
 
 class PodcastMainPage extends StatefulWidget {
   const PodcastMainPage({Key? key}) : super(key: key);
@@ -18,7 +19,9 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
           padding: const EdgeInsets.all(16.0),
           child: IndexedStack(
             index: _index,
-            children: [],
+            children: [
+              PodcastHomePage(),
+            ],
           )
         ),
       ),
