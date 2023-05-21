@@ -22,10 +22,21 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Pending Download"),
+            Text(
+              "Pending Download",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+            ),
             Container(
+              margin: EdgeInsets.symmetric(vertical: 16),
               height: 200,
               color: Colors.orange,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container();
+                },
+                itemCount: 10,
+              ),
             )
           ],
         ),
