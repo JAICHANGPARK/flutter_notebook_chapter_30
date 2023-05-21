@@ -180,73 +180,73 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                           height: 240,
                           child: TabBarView(
                             children: [
-                              Container(
+                              ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemCount: 10,
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    width: 200,
+                                    margin: const EdgeInsets.only(right: 16),
+                                    decoration: BoxDecoration(
+                                      color: Colors.orange[100],
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    padding: const EdgeInsets.all(16),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Container(
+                                              height: 90,
+                                              width: 80,
 
-                                child: ListView.builder(
-                                  scrollDirection: Axis.horizontal,
-                                  itemCount: 10,
-                                  itemBuilder: (context, index) {
-                                    return Container(
-                                      width: 200,
-                                      margin: const EdgeInsets.only(right: 16),
-                                      decoration: BoxDecoration(
-                                        color: Colors.orange[100],
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
-                                      padding: const EdgeInsets.all(16),
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Row(
-                                            children: [
-                                              Container(
-                                                height: 90,
-                                                width: 80,
-                                                color: Colors.blue,
+                                              decoration: BoxDecoration( color: Colors.blue,
+                                                borderRadius: BorderRadius.circular(8)
                                               ),
-                                              const SizedBox(
-                                                width: 8,
-                                              ),
-                                              const Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    "Dream\nWalker",
-                                                    style: TextStyle(
-                                                      fontWeight: FontWeight.bold,
-                                                      fontSize: 16,
-                                                    ),
+                                            ),
+                                            const SizedBox(
+                                              width: 8,
+                                            ),
+                                            const Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  "Dream\nWalker",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 16,
                                                   ),
-                                                  Text("Podcast"),
-                                                ],
-                                              )
-                                            ],
+                                                ),
+                                                Text("Podcast"),
+                                              ],
+                                            )
+                                          ],
+                                        ),
+                                        const SizedBox(
+                                          height: 8,
+                                        ),
+                                        const Text("Flutter Development"),
+                                        const SizedBox(
+                                          height: 8,
+                                        ),
+                                        const Text("1 hours left"),
+                                        const SizedBox(
+                                          height: 8,
+                                        ),
+                                        Container(
+                                          padding: const EdgeInsets.all(12),
+                                          decoration: const BoxDecoration(
+                                            color: Color.fromRGBO(205, 242, 3, 1),
                                           ),
-                                          const SizedBox(
-                                            height: 8,
+                                          child: const Icon(
+                                            Icons.play_circle,
                                           ),
-                                          const Text("Flutter Development"),
-                                          const SizedBox(
-                                            height: 8,
-                                          ),
-                                          const Text("1 hours left"),
-                                          const SizedBox(
-                                            height: 8,
-                                          ),
-                                          Container(
-                                            padding: const EdgeInsets.all(12),
-                                            decoration: const BoxDecoration(
-                                              color: Color.fromRGBO(205, 242, 3, 1),
-                                            ),
-                                            child: const Icon(
-                                              Icons.play_circle,
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    );
-                                  },
-                                ),
+                                        )
+                                      ],
+                                    ),
+                                  );
+                                },
                               ),
                               Container(),
                               Container(),
