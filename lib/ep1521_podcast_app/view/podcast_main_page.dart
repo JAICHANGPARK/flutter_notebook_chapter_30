@@ -80,8 +80,6 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                     TextSpan(
                       text: " Podcast",
                       style: TextStyle(
-
-
                         fontWeight: FontWeight.bold,
                         fontSize: 32,
                         color: Color.fromRGBO(103, 65, 255, 1),
@@ -92,7 +90,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               ),
               Container(
                 height: 160,
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: const Color.fromRGBO(103, 65, 255, 1),
                   borderRadius: BorderRadius.circular(12),
@@ -103,30 +101,37 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 width: double.infinity,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-
                   children: [
-                    Text("TOP CHART OF THE DAY"),
-                    SizedBox(height: 16,),
-                    Text("Stuff You Should Know", style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 18
-                    ),),
-                    SizedBox(height: 24,),
+                    const Text("TOP CHART OF THE DAY"),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    const Text(
+                      "Stuff You Should Know",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 24,
+                    ),
                     Container(
                       width: 100,
                       height: 32,
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(205, 242, 3, 1),
-                        borderRadius: BorderRadius.circular(16)
+                        color: const Color.fromRGBO(205, 242, 3, 1),
+                        borderRadius: BorderRadius.circular(16),
                       ),
-
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         // mainAxisSize: MainAxisSize.min,
                         children: [
                           Icon(Icons.play_circle),
-                          SizedBox(width: 6,),
+                          SizedBox(
+                            width: 6,
+                          ),
                           Text("Play now")
                         ],
                       ),
@@ -176,7 +181,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                           child: TabBarView(
                             children: [
                               Container(
-                                color: Colors.blue,
+
                                 child: ListView.builder(
                                   scrollDirection: Axis.horizontal,
                                   itemCount: 10,
@@ -217,23 +222,23 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                               )
                                             ],
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 8,
                                           ),
                                           const Text("Flutter Development"),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 8,
                                           ),
                                           const Text("1 hours left"),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 8,
                                           ),
                                           Container(
-                                            padding: EdgeInsets.all(12),
-                                            decoration: BoxDecoration(
+                                            padding: const EdgeInsets.all(12),
+                                            decoration: const BoxDecoration(
                                               color: Color.fromRGBO(205, 242, 3, 1),
                                             ),
-                                            child: Icon(
+                                            child: const Icon(
                                               Icons.play_circle,
                                             ),
                                           )
