@@ -16,15 +16,12 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: IndexedStack(
-            index: _index,
-            children: [
-              const PodcastHomePage(),
-              const PodcastDownloadPage(),
-            ],
-          ),
+        child: IndexedStack(
+          index: _index,
+          children: [
+            const PodcastHomePage(),
+            const PodcastDownloadPage(),
+          ],
         ),
       ),
       bottomNavigationBar: SizedBox(
