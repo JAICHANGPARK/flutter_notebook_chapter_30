@@ -95,7 +95,10 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
               children: [
                 const Text(
                   "Your Download",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
                 ),
                 TextButton(
                   onPressed: () {},
@@ -104,6 +107,27 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                   ),
                 )
               ],
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, inde) {
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 16),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 84,
+                          width: 84,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                          ),
+                        )
+                      ],
+                    ),
+                  );
+                },
+              ),
             )
           ],
         ),
