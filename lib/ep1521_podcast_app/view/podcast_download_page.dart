@@ -46,7 +46,12 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(child: Placeholder()),
+                        Expanded(child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            color: Colors.red
+                          ),
+                        )),
                         SizedBox(
                           height: 8,
                         ),
@@ -87,6 +92,7 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                   "Your Download",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    fontSize: 16
                   ),
                 ),
                 TextButton(
