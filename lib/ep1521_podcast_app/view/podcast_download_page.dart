@@ -119,11 +119,11 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                         Container(
                           height: 84,
                           width: 84,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.red,
                           ),
                         ),
-                        Expanded(
+                        const Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -132,7 +132,7 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                             ],
                           ),
                         ),
-                        CircleAvatar(),
+                        const CircleAvatar(),
                       ],
                     ),
                   );
