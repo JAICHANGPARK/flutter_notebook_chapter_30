@@ -44,11 +44,18 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                       color: Colors.pink,
                     ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(child: Placeholder()),
                         Text("Flutter Development"),
                         Text("Podcast Flutter"),
-                        Text("75%"),
+                        Align(
+                          alignment: Alignment.centerRight,
+                          child: Text(
+                            "75%",
+                            textAlign: TextAlign.end,
+                          ),
+                        ),
                         LinearPercentIndicator(),
                       ],
                     ),
