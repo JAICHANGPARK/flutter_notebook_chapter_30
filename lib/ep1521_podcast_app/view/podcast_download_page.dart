@@ -13,7 +13,7 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Download"),
+        title: const Text("Download"),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,
@@ -23,7 +23,7 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               "Pending Download",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -31,7 +31,7 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 16),
+              margin: const EdgeInsets.symmetric(vertical: 16),
               height: 200,
               color: Colors.orange,
               child: ListView.builder(
@@ -39,36 +39,38 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     width: 160,
-                    margin: EdgeInsets.only(right: 16),
-                    decoration: BoxDecoration(
+                    margin: const EdgeInsets.only(right: 16),
+                    decoration: const BoxDecoration(
                       color: Colors.pink,
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8),
-                            color: Colors.red
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              color: Colors.red,
+                            ),
                           ),
-                        )),
-                        SizedBox(
+                        ),
+                        const SizedBox(
                           height: 8,
                         ),
-                        Text(
+                        const Text(
                           "Flutter Development",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 6,
                         ),
-                        Text("Podcast Flutter"),
-                        SizedBox(
+                        const Text("Podcast Flutter"),
+                        const SizedBox(
                           height: 6,
                         ),
-                        Align(
+                        const Align(
                           alignment: Alignment.centerRight,
                           child: Text(
                             "75%",
@@ -88,16 +90,13 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   "Your Download",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16
-                  ),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "View All",
                   ),
                 )
