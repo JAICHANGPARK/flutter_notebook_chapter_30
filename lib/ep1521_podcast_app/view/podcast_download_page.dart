@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class PodcastDownloadPage extends StatefulWidget {
   const PodcastDownloadPage({Key? key}) : super(key: key);
@@ -43,7 +44,13 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                       color: Colors.pink,
                     ),
                     child: Column(
-                      children: [],
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Text("Flutter Development"),
+                        Text("Podcast Flutter"),
+                        Text("75%"),
+                        LinearPercentIndicator(),
+                      ],
                     ),
                   );
                 },
