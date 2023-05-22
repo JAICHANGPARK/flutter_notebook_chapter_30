@@ -187,7 +187,13 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                             ],
                           ),
                         ),
-                        const CircleAvatar(),
+                        const CircleAvatar(
+                          backgroundColor: Color.fromRGBO(103, 65, 255, 1),
+                          foregroundColor: Colors.white,
+                          child: Icon(
+                            Icons.play_arrow,
+                          ),
+                        ),
                       ],
                     ),
                   );
