@@ -59,8 +59,10 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                                   top: 8,
                                   child: Container(
                                     padding: EdgeInsets.all(12),
-                                    decoration:
-                                        BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
                                     child: Center(
                                       child: Icon(
                                         Icons.cloud_download,
