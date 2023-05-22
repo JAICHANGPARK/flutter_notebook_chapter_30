@@ -38,11 +38,11 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 160,
+                    width: 150,
                     margin: const EdgeInsets.only(right: 16),
                     decoration: const BoxDecoration(
-                      // color: Colors.pink,
-                    ),
+                        // color: Colors.pink,
+                        ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -51,6 +51,25 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8),
                               color: Colors.red,
+                            ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  right: 8,
+                                  top: 8,
+                                  child: Container(
+                                    padding: EdgeInsets.all(12),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                    ),
+                                    child: Center(
+                                      child: Icon(
+                                        Icons.cloud_download,
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              ],
                             ),
                           ),
                         ),
