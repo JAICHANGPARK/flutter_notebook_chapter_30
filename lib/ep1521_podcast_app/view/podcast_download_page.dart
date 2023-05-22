@@ -33,7 +33,7 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
             Container(
               margin: const EdgeInsets.symmetric(vertical: 16),
               height: 200,
-              color: Colors.orange,
+              // color: Colors.orange,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
@@ -41,7 +41,7 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                     width: 160,
                     margin: const EdgeInsets.only(right: 16),
                     decoration: const BoxDecoration(
-                      color: Colors.pink,
+                      // color: Colors.pink,
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
