@@ -156,8 +156,14 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                         Container(
                           height: 84,
                           width: 84,
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             color: Colors.red,
+                            borderRadius: BorderRadius.circular(8),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2023/05/18/18/45/building-8003029_1280.jpg"),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         SizedBox(
@@ -171,7 +177,7 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                                 "Modern Android Development",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 16
+                                  fontSize: 16,
                                 ),
                               ),
                               SizedBox(
