@@ -59,10 +59,8 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                                   top: 8,
                                   child: Container(
                                     padding: EdgeInsets.all(12),
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                                     child: Center(
                                       child: Icon(
                                         Icons.cloud_download,
@@ -86,7 +84,12 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                         const SizedBox(
                           height: 6,
                         ),
-                        const Text("Podcast Flutter"),
+                        const Text(
+                          "Podcast Flutter",
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
                         const SizedBox(
                           height: 6,
                         ),
@@ -95,13 +98,20 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                           child: Text(
                             "75%",
                             textAlign: TextAlign.end,
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
                           ),
+                        ),
+                        SizedBox(
+                          height: 4,
                         ),
                         LinearPercentIndicator(
                           padding: EdgeInsets.zero,
                           percent: 0.75,
                           progressColor: Colors.purple,
                           backgroundColor: Colors.black,
+                          barRadius: Radius.circular(8),
                         ),
                       ],
                     ),
