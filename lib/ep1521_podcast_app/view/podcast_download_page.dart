@@ -160,11 +160,23 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                             color: Colors.red,
                           ),
                         ),
+                        SizedBox(
+                          width: 12,
+                        ),
                         const Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Modern Android Development"),
+                              Text(
+                                "Modern Android Development",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Text("Podcast Android"),
                             ],
                           ),
