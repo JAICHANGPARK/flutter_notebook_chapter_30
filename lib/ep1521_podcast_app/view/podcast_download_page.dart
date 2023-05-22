@@ -51,6 +51,11 @@ class _PodcastDownloadPageState extends State<PodcastDownloadPage> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8),
                               color: Colors.red,
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2023/05/09/18/50/bridge-7982238_1280.jpg"),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                             child: Stack(
                               children: [
