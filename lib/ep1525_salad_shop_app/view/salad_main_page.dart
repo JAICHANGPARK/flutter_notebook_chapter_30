@@ -30,7 +30,12 @@ class _SaladMainPageState extends State<SaladMainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text("Home"),
+                  Text(
+                    "Home",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   SizedBox(
                     height: 6,
                   ),
