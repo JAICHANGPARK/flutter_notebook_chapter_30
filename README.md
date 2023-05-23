@@ -1,7 +1,15 @@
 # flutter_notebook_chapter_30
-https://dribbble.com/shots/21500063-Corecast-Podcast-App
 
-## ep1521
+
+## ep1525
+
+- Saladworks Mobile App
+- by Orix Creative
+- https://dribbble.com/shots/21535360-Saladworks-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/7228300/file/original-e239f7237986fbcf453e1e5b93ddd092.png?compress=1&resize=1600x1200" width="500px"/>
+
+## ep1521-1524
 
 - Corecast - Podcast App
 - by Sans Design for Sans Brothers
