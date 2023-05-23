@@ -10,6 +10,18 @@ class SaladMainPage extends StatefulWidget {
 class _SaladMainPageState extends State<SaladMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("SaladShop"),
+        actions: [],
+      ),
+      drawer: Drawer(),
+      bottomNavigationBar: BottomAppBar(
+        height: 72,
+        child: Row(
+          children: [],
+        ),
+      ),
+    );
   }
 }
