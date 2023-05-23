@@ -19,7 +19,17 @@ class _SaladMainPageState extends State<SaladMainPage> {
       bottomNavigationBar: BottomAppBar(
         height: 72,
         child: Row(
-          children: [],
+          children: [
+            Column(
+              children: [
+                Text("Home"),
+                CircleAvatar(
+                  radius: 4,
+                  backgroundColor: Colors.black,
+                ),
+              ],
+            )
+          ],
         ),
       ),
     );
