@@ -61,6 +61,27 @@ class _SaladMainPageState extends State<SaladMainPage> {
             height: 340,
             color: Colors.green,
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Best Sales",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text("See All"),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
