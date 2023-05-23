@@ -12,21 +12,28 @@ class _SaladMainPageState extends State<SaladMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("SaladShop"),
-        actions: [],
+        title: const Text("SaladShop"),
+        actions: [
+          CircleAvatar(),
+        ],
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
+        foregroundColor: Colors.black,
       ),
-      drawer: Drawer(),
+      drawer: const Drawer(),
+      body: Column(
+        children: [],
+      ),
       bottomNavigationBar: BottomAppBar(
         height: 72,
+        elevation: 0,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
+              const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -47,25 +54,25 @@ class _SaladMainPageState extends State<SaladMainPage> {
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.explore_outlined,
                 ),
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.search,
                 ),
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.percent,
                 ),
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.account_circle_outlined,
                 ),
               )
