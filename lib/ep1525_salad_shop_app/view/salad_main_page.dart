@@ -39,6 +39,24 @@ class _SaladMainPageState extends State<SaladMainPage> {
               icon: Icon(
                 Icons.explore_outlined,
               ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.search,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.percent,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.account_circle_outlined,
+              ),
             )
           ],
         ),
