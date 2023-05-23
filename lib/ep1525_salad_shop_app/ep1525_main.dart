@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_notebook_chapter_30/ep1525_salad_shop_app/view/salad_main_page.dart';
 
 void main() {
-
+  runApp(SaladShopApp());
 }
 
 class SaladShopApp extends StatelessWidget {
@@ -10,6 +10,8 @@ class SaladShopApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: SaladMainPage(),
+    );
   }
 }
