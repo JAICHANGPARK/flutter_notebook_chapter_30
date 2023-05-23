@@ -22,8 +22,9 @@ class _SaladMainPageState extends State<SaladMainPage> {
       bottomNavigationBar: BottomAppBar(
         height: 72,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
