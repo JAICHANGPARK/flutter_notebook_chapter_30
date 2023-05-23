@@ -35,6 +35,25 @@ class _SaladMainPageState extends State<SaladMainPage> {
             decoration: BoxDecoration(
               color: Colors.pink,
             ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Salad Features",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text("See All"),
+                ),
+              ],
+            ),
           )
         ],
       ),
