@@ -14,6 +14,9 @@ class _SaladMainPageState extends State<SaladMainPage> {
       appBar: AppBar(
         title: Text("SaladShop"),
         actions: [],
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
       ),
       drawer: Drawer(),
       bottomNavigationBar: BottomAppBar(
@@ -21,6 +24,8 @@ class _SaladMainPageState extends State<SaladMainPage> {
         child: Row(
           children: [
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text("Home"),
                 CircleAvatar(
@@ -28,6 +33,12 @@ class _SaladMainPageState extends State<SaladMainPage> {
                   backgroundColor: Colors.black,
                 ),
               ],
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.explore_outlined,
+              ),
             )
           ],
         ),
