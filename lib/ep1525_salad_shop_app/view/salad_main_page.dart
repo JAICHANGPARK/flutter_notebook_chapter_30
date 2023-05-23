@@ -14,8 +14,13 @@ class _SaladMainPageState extends State<SaladMainPage> {
       appBar: AppBar(
         title: const Text("SaladShop"),
         actions: [
-          CircleAvatar(),
+
+          CircleAvatar(
+            child: Icon(Icons.light),
+          ),
+          SizedBox(width: 8,),
         ],
+
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
