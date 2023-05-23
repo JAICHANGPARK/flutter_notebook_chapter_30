@@ -14,13 +14,13 @@ class _SaladMainPageState extends State<SaladMainPage> {
       appBar: AppBar(
         title: const Text("SaladShop"),
         actions: [
-
           CircleAvatar(
             child: Icon(Icons.light),
           ),
-          SizedBox(width: 8,),
+          SizedBox(
+            width: 8,
+          ),
         ],
-
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -28,7 +28,15 @@ class _SaladMainPageState extends State<SaladMainPage> {
       ),
       drawer: const Drawer(),
       body: Column(
-        children: [],
+        children: [
+          Container(
+            margin: EdgeInsets.fromLTRB(8, 24, 8, 16),
+            height: 140,
+            decoration: BoxDecoration(
+              color: Colors.pink,
+            ),
+          )
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         height: 72,
