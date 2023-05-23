@@ -43,10 +43,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
               children: [
                 Text(
                   "Salad Features",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20
-                  ),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 TextButton(
                   onPressed: () {},
@@ -54,7 +51,12 @@ class _SaladMainPageState extends State<SaladMainPage> {
                 ),
               ],
             ),
-          )
+          ),
+          Container(
+            height: 340,
+            color: Colors.green,
+          ),
+          
         ],
       ),
       bottomNavigationBar: BottomAppBar(
