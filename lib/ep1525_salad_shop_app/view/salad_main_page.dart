@@ -58,7 +58,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
             ),
           ),
           Container(
-            height: 340,
+            height: 320,
             color: Colors.green,
           ),
           Padding(
@@ -82,6 +82,12 @@ class _SaladMainPageState extends State<SaladMainPage> {
               ],
             ),
           ),
+          Container(
+            height: 110,
+            decoration: BoxDecoration(
+              color: Colors.orange
+            ),
+          )
         ],
       ),
       bottomNavigationBar: BottomAppBar(
