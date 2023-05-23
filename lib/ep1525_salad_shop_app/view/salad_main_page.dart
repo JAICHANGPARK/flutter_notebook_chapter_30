@@ -32,10 +32,10 @@ class _SaladMainPageState extends State<SaladMainPage> {
                 children: [
                   Text("Home"),
                   SizedBox(
-                    height: 4,
+                    height: 6,
                   ),
                   CircleAvatar(
-                    radius: 4,
+                    radius: 3,
                     backgroundColor: Colors.black,
                   ),
                 ],
