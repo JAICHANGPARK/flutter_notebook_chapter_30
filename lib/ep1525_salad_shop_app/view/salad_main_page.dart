@@ -21,44 +21,50 @@ class _SaladMainPageState extends State<SaladMainPage> {
       drawer: Drawer(),
       bottomNavigationBar: BottomAppBar(
         height: 72,
-        child: Row(
-          children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text("Home"),
-                CircleAvatar(
-                  radius: 4,
-                  backgroundColor: Colors.black,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text("Home"),
+                  SizedBox(
+                    height: 4,
+                  ),
+                  CircleAvatar(
+                    radius: 4,
+                    backgroundColor: Colors.black,
+                  ),
+                ],
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.explore_outlined,
                 ),
-              ],
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.explore_outlined,
               ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.search,
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.search,
+                ),
               ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.percent,
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.percent,
+                ),
               ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.account_circle_outlined,
-              ),
-            )
-          ],
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.account_circle_outlined,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
