@@ -37,13 +37,18 @@ class _SaladMainPageState extends State<SaladMainPage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   "Salad Features",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
                 TextButton(
                   onPressed: () {},
@@ -56,7 +61,6 @@ class _SaladMainPageState extends State<SaladMainPage> {
             height: 340,
             color: Colors.green,
           ),
-          
         ],
       ),
       bottomNavigationBar: BottomAppBar(
