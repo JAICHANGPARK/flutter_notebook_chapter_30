@@ -61,6 +61,8 @@ class _SaladMainPageState extends State<SaladMainPage> {
                           "Fresh,plant-\nforward, earth\nfriendly food",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            color: Color.fromRGBO(231, 235, 123, 1),
+
                           ),
                         )
                       ],
