@@ -47,10 +47,12 @@ class _SaladMainPageState extends State<SaladMainPage> {
                           decoration: BoxDecoration(
                             color: Color.fromRGBO(231, 235, 123, 1),
                           ),
+                          padding: EdgeInsets.all(2),
                           child: Text(
                             "Saladworks",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 12
                             ),
                           ),
                         ),
@@ -62,6 +64,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Color.fromRGBO(231, 235, 123, 1),
+                            fontSize: 15
 
                           ),
                         )
