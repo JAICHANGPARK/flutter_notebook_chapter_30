@@ -168,10 +168,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
           //   height: 16,
           // ),
           Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 16,
-              vertical: 16
-            ),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -191,7 +188,43 @@ class _SaladMainPageState extends State<SaladMainPage> {
           ),
           Container(
             height: 110,
-            decoration: const BoxDecoration(color: Colors.orange),
+            decoration: const BoxDecoration(
+              color: Colors.orange,
+            ),
+            margin: EdgeInsets.only(left: 16),
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return Container(
+                  width: 260,
+                  margin: EdgeInsets.only(right: 16),
+                  color: Colors.blue,
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 64,
+                        width: 64,
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text(
+                              "Spring Asparagus Salad",
+                            ),
+                            Row(
+                              children: [
+                                
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                );
+              },
+            ),
           )
         ],
       ),
