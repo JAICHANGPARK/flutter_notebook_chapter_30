@@ -208,26 +208,32 @@ class _SaladMainPageState extends State<SaladMainPage> {
                         color: Colors.pink,
                       ),
                       Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Spring Asparagus Salad",
-                            ),
-                            Row(
-                              children: [
-                                Text("\$ 70.00"),
-                                Text(
-                                  " \$75.00",
-                                  style: TextStyle(
-                                    decoration: TextDecoration.lineThrough,
-                                    fontSize: 13,
-                                    color: Colors.grey,
-                                  ),
-                                )
-                              ],
-                            )
-                          ],
+                        child: Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Spring Asparagus Salad",
+                              ),
+                              SizedBox(
+                                height: 12,
+                              ),
+                              Row(
+                                children: [
+                                  Text("\$ 70.00"),
+                                  Text(
+                                    " \$75.00",
+                                    style: TextStyle(
+                                      decoration: TextDecoration.lineThrough,
+                                      fontSize: 13,
+                                      color: Colors.grey,
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
