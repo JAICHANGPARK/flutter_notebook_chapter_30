@@ -11,16 +11,16 @@ class _SaladMainPageState extends State<SaladMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(254, 251, 240, 1),
+      backgroundColor: const Color.fromRGBO(254, 251, 240, 1),
       appBar: AppBar(
         title: const Text("SaladShop"),
-        actions: [
-          const CircleAvatar(
+        actions: const [
+          CircleAvatar(
             child: Icon(Icons.light),
             backgroundColor: Color.fromRGBO(130, 134, 112, 1),
             foregroundColor: Colors.white,
           ),
-          const SizedBox(
+          SizedBox(
             width: 8,
           ),
         ],
@@ -100,7 +100,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
           ),
           Container(
             height: 260,
-            margin: EdgeInsets.only(left: 16),
+            margin: const EdgeInsets.only(left: 16),
             child: ListView.builder(
               itemCount: 10,
               scrollDirection: Axis.horizontal,
@@ -115,16 +115,16 @@ class _SaladMainPageState extends State<SaladMainPage> {
                         Expanded(
                           child: Container(
                             width: 180,
-                            color: Color.fromRGBO(232, 220, 199, 1),
+                            color: const Color.fromRGBO(232, 220, 199, 1),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Column(
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
@@ -149,11 +149,11 @@ class _SaladMainPageState extends State<SaladMainPage> {
                               ],
                             ),
                             Container(
-                              padding: EdgeInsets.all(2),
+                              padding: const EdgeInsets.all(2),
                               decoration: BoxDecoration(
                                 border: Border.all(),
                               ),
-                              child: Icon(Icons.add),
+                              child: const Icon(Icons.add),
                             )
                           ],
                         ),
@@ -191,14 +191,14 @@ class _SaladMainPageState extends State<SaladMainPage> {
             decoration: const BoxDecoration(
               color: Colors.orange,
             ),
-            margin: EdgeInsets.only(left: 16),
+            margin: const EdgeInsets.only(left: 16),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
                   width: 260,
-                  margin: EdgeInsets.only(right: 16),
+                  margin: const EdgeInsets.only(right: 16),
                   color: Colors.blue,
                   child: Row(
                     children: [
@@ -207,9 +207,9 @@ class _SaladMainPageState extends State<SaladMainPage> {
                         width: 84,
                         color: Colors.pink,
                       ),
-                      Expanded(
+                      const Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.all(12.0),
+                          padding: EdgeInsets.all(12.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
