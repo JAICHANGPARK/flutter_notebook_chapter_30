@@ -11,13 +11,16 @@ class _SaladMainPageState extends State<SaladMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(254, 251, 240, 1),
       appBar: AppBar(
         title: const Text("SaladShop"),
         actions: [
-          CircleAvatar(
+          const CircleAvatar(
             child: Icon(Icons.light),
+            backgroundColor: Color.fromRGBO(130, 134, 112, 1),
+            foregroundColor: Colors.white,
           ),
-          SizedBox(
+          const SizedBox(
             width: 8,
           ),
         ],
@@ -30,9 +33,9 @@ class _SaladMainPageState extends State<SaladMainPage> {
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.fromLTRB(8, 24, 8, 16),
+            margin: const EdgeInsets.fromLTRB(8, 24, 8, 16),
             height: 140,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(45, 54, 42, 1),
             ),
             child: Row(
@@ -44,29 +47,22 @@ class _SaladMainPageState extends State<SaladMainPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color.fromRGBO(231, 235, 123, 1),
                           ),
-                          padding: EdgeInsets.all(2),
-                          child: Text(
+                          padding: const EdgeInsets.all(2),
+                          child: const Text(
                             "Saladworks",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 12
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 12,
                         ),
-                        Text(
+                        const Text(
                           "Fresh,plant-\nforward, earth\nfriendly food",
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Color.fromRGBO(231, 235, 123, 1),
-                            fontSize: 15
-
-                          ),
+                              fontWeight: FontWeight.bold, color: Color.fromRGBO(231, 235, 123, 1), fontSize: 15),
                         )
                       ],
                     ),
@@ -85,7 +81,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   "Salad Features",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -94,7 +90,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text("See All"),
+                  child: const Text("See All"),
                 ),
               ],
             ),
@@ -110,7 +106,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   "Best Sales",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -119,14 +115,14 @@ class _SaladMainPageState extends State<SaladMainPage> {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text("See All"),
+                  child: const Text("See All"),
                 ),
               ],
             ),
           ),
           Container(
             height: 110,
-            decoration: BoxDecoration(color: Colors.orange),
+            decoration: const BoxDecoration(color: Colors.orange),
           )
         ],
       ),
