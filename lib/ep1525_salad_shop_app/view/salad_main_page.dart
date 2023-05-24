@@ -35,9 +35,22 @@ class _SaladMainPageState extends State<SaladMainPage> {
             decoration: BoxDecoration(
               color: Colors.pink,
             ),
-            child: Column(
+            child: Row(
               children: [
-                
+                Expanded(
+                    child: Column(
+                  children: [
+                    Container(
+                      child: Text("Saladworks"),
+                    ),
+                    Text(
+                      "Fresh,plant-\nforward, earth\nfriendly food",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  ],
+                ))
               ],
             ),
           ),
