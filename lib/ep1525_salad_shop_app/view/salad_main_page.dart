@@ -99,8 +99,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
             ),
           ),
           Container(
-            height: 300,
-            color: Colors.green,
+            height: 260,
             margin: EdgeInsets.only(left: 16),
             child: ListView.builder(
               itemCount: 10,
@@ -108,46 +107,58 @@ class _SaladMainPageState extends State<SaladMainPage> {
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.only(right: 16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Expanded(
-                        child: Container(
-                          width: 160,
-                          color: Color.fromRGBO(232, 220, 199, 1),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Row(
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Crunch Salad"),
-                              Row(
-                                children: [
-                                  Text("\$ 70.00"),
-                                  Text(
-                                    "\$75.00",
-                                    style: TextStyle(
-                                      decoration: TextDecoration.lineThrough,
-                                    ),
-                                  )
-                                ],
-                              )
-                            ],
+                  child: Container(
+                    width: 180,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Container(
+                            width: 180,
+                            color: Color.fromRGBO(232, 220, 199, 1),
                           ),
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Crunch Salad",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text("\$ 70.00"),
+                                    Text(
+                                      " \$75.00",
+                                      style: TextStyle(
+                                        decoration: TextDecoration.lineThrough,
+                                        fontSize: 13,
+                                        color: Colors.grey,
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
                             ),
-                            child: Icon(Icons.add),
-                          )
-                        ],
-                      )
-                    ],
+                            Container(
+                              padding: EdgeInsets.all(2),
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                              ),
+                              child: Icon(Icons.add),
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },
