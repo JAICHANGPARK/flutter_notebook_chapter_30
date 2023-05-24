@@ -187,7 +187,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
             ),
           ),
           Container(
-            height: 110,
+            height: 100,
             decoration: const BoxDecoration(
               color: Colors.orange,
             ),
@@ -208,13 +208,22 @@ class _SaladMainPageState extends State<SaladMainPage> {
                       ),
                       Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Spring Asparagus Salad",
                             ),
                             Row(
                               children: [
-                                
+                                Text("\$ 70.00"),
+                                Text(
+                                  " \$75.00",
+                                  style: TextStyle(
+                                    decoration: TextDecoration.lineThrough,
+                                    fontSize: 13,
+                                    color: Colors.grey,
+                                  ),
+                                )
                               ],
                             )
                           ],
