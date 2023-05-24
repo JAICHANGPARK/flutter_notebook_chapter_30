@@ -164,9 +164,13 @@ class _SaladMainPageState extends State<SaladMainPage> {
               },
             ),
           ),
+          // SizedBox(
+          //   height: 16,
+          // ),
           Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 16,
+              vertical: 16
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
