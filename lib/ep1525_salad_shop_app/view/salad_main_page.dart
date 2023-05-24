@@ -133,6 +133,12 @@ class _SaladMainPageState extends State<SaladMainPage> {
                                 ],
                               )
                             ],
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                            ),
+                            child: Icon(Icons.add),
                           )
                         ],
                       )
