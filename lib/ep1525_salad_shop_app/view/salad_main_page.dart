@@ -35,6 +35,11 @@ class _SaladMainPageState extends State<SaladMainPage> {
             decoration: BoxDecoration(
               color: Colors.pink,
             ),
+            child: Column(
+              children: [
+                
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(
@@ -84,9 +89,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
           ),
           Container(
             height: 110,
-            decoration: BoxDecoration(
-              color: Colors.orange
-            ),
+            decoration: BoxDecoration(color: Colors.orange),
           )
         ],
       ),
