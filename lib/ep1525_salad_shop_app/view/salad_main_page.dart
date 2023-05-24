@@ -99,7 +99,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
             ),
           ),
           Container(
-            height: 320,
+            height: 300,
             color: Colors.green,
             margin: EdgeInsets.only(left: 16),
             child: ListView.builder(
@@ -113,12 +113,17 @@ class _SaladMainPageState extends State<SaladMainPage> {
                     children: [
                       Expanded(
                         child: Container(
-                          width: 140,
+                          width: 160,
+                          color: Color.fromRGBO(232, 220, 199, 1),
                         ),
+                      ),
+                      SizedBox(
+                        height: 8,
                       ),
                       Row(
                         children: [
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Crunch Salad"),
                               Row(
