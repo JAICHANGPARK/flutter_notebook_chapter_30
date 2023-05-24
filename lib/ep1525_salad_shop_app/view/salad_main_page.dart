@@ -215,6 +215,9 @@ class _SaladMainPageState extends State<SaladMainPage> {
                             children: [
                               Text(
                                 "Spring Asparagus Salad",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                               SizedBox(
                                 height: 12,
