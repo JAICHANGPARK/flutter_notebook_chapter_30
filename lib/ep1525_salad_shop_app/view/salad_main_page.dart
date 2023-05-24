@@ -33,24 +33,43 @@ class _SaladMainPageState extends State<SaladMainPage> {
             margin: EdgeInsets.fromLTRB(8, 24, 8, 16),
             height: 140,
             decoration: BoxDecoration(
-              color: Colors.pink,
+              color: Color.fromRGBO(45, 54, 42, 1),
             ),
             child: Row(
               children: [
                 Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 16, top: 32, bottom: 16),
                     child: Column(
-                  children: [
-                    Container(
-                      child: Text("Saladworks"),
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(231, 235, 123, 1),
+                          ),
+                          child: Text(
+                            "Saladworks",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Text(
+                          "Fresh,plant-\nforward, earth\nfriendly food",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
                     ),
-                    Text(
-                      "Fresh,plant-\nforward, earth\nfriendly food",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )
-                  ],
-                ))
+                  ),
+                ),
+                Expanded(
+                  child: Container(),
+                ),
               ],
             ),
           ),
