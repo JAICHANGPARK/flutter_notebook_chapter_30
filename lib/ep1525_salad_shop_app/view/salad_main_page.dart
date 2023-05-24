@@ -101,16 +101,45 @@ class _SaladMainPageState extends State<SaladMainPage> {
           Container(
             height: 320,
             color: Colors.green,
+            margin: EdgeInsets.only(left: 16),
             child: ListView.builder(
-              itemBuilder: (context, index) {
-                return Column(
-                  children: [
-                    
-                  ],
-                );
-              },
               itemCount: 10,
               scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.only(right: 16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Container(
+                          width: 140,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Column(
+                            children: [
+                              Text("Crunch Salad"),
+                              Row(
+                                children: [
+                                  Text("\$ 70.00"),
+                                  Text(
+                                    "\$75.00",
+                                    style: TextStyle(
+                                      decoration: TextDecoration.lineThrough,
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                );
+              },
             ),
           ),
           Padding(
