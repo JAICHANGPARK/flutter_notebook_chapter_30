@@ -187,7 +187,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
             ),
           ),
           Container(
-            height: 100,
+            height: 84,
             decoration: const BoxDecoration(
               color: Colors.orange,
             ),
@@ -203,8 +203,9 @@ class _SaladMainPageState extends State<SaladMainPage> {
                   child: Row(
                     children: [
                       Container(
-                        height: 64,
-                        width: 64,
+                        // height: 64,
+                        width: 84,
+                        color: Colors.pink,
                       ),
                       Expanded(
                         child: Column(
