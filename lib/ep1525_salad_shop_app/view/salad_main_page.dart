@@ -101,6 +101,17 @@ class _SaladMainPageState extends State<SaladMainPage> {
           Container(
             height: 320,
             color: Colors.green,
+            child: ListView.builder(
+              itemBuilder: (context, index) {
+                return Column(
+                  children: [
+                    
+                  ],
+                );
+              },
+              itemCount: 10,
+              scrollDirection: Axis.horizontal,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(
