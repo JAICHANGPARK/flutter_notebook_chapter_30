@@ -8,6 +8,8 @@ class SaladMainPage extends StatefulWidget {
 }
 
 class _SaladMainPageState extends State<SaladMainPage> {
+  int menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
