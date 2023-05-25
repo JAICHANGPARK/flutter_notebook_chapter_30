@@ -282,51 +282,56 @@ class _SaladMainPageState extends State<SaladMainPage> {
                   Expanded(
                     child: TabBarView(
                       children: [
-                        GridView.builder(
-                          itemCount: 30,
-                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                          ),
-                          itemBuilder: (context, index) {
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Expanded(child: Container(
-                                  decoration: BoxDecoration(
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: GridView.builder(
+                            itemCount: 30,
+                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2,
+                              crossAxisSpacing: 12,
+                              mainAxisSpacing: 12
+                            ),
+                            itemBuilder: (context, index) {
+                              return Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(child: Container(
+                                    decoration: BoxDecoration(
 
-                                  ),
-                                )),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text("Fish Taco Salad"),
-                                        Row(
-                                          children: [
-                                            Text("\$82.00"),
-                                            Text("\$89.00"),
-                                          ],
-                                        )
-                                      ],
                                     ),
-                                    Container(
-                                      padding: EdgeInsets.all(4),
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                          color: Colors.grey,
+                                  )),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("Fish Taco Salad"),
+                                          Row(
+                                            children: [
+                                              Text("\$82.00"),
+                                              Text("\$89.00"),
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.all(4),
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.grey,
+                                          ),
                                         ),
-                                      ),
-                                      child: Icon(
-                                        Icons.add,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ],
-                            );
-                          },
+                                        child: Icon(
+                                          Icons.add,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              );
+                            },
+                          ),
                         ),
                         Container(),
                         Container(),
