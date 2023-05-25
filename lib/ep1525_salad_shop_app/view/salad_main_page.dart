@@ -289,17 +289,19 @@ class _SaladMainPageState extends State<SaladMainPage> {
                             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 2,
                               crossAxisSpacing: 12,
-                              mainAxisSpacing: 12
+                              mainAxisSpacing: 12,
                             ),
                             itemBuilder: (context, index) {
                               return Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Expanded(child: Container(
-                                    decoration: BoxDecoration(
-
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: const Color.fromRGBO(232, 220, 199, 1),
+                                      ),
                                     ),
-                                  )),
+                                  ),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
