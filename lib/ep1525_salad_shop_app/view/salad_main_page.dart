@@ -192,8 +192,8 @@ class _SaladMainPageState extends State<SaladMainPage> {
           Container(
             height: 84,
             decoration: const BoxDecoration(
-              // color: Colors.orange,
-            ),
+                // color: Colors.orange,
+                ),
             margin: const EdgeInsets.only(left: 16),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -254,6 +254,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
         height: 72,
         elevation: 0,
         surfaceTintColor: const Color.fromRGBO(254, 251, 240, 1),
+        color: const Color.fromRGBO(254, 251, 240, 1),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Row(
