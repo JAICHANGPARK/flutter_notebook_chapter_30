@@ -302,13 +302,24 @@ class _SaladMainPageState extends State<SaladMainPage> {
                                       ),
                                     ),
                                   ),
+                                  SizedBox(
+                                    height: 12,
+                                  ),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Fish Taco Salad"),
+                                          Text(
+                                            "Fish Taco Salad",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            height: 4,
+                                          ),
                                           Row(
                                             children: [
                                               Text("\$82.00"),
