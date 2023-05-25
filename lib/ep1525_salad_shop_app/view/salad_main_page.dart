@@ -262,6 +262,7 @@ class _SaladMainPageState extends State<SaladMainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+
               GestureDetector(
                 onTap: (){
                   setState(() {
