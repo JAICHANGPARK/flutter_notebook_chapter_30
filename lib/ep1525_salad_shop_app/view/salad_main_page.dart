@@ -289,12 +289,18 @@ class _SaladMainPageState extends State<SaladMainPage> {
                           ),
                           itemBuilder: (context, index) {
                             return Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Expanded(child: Container()),
+                                Expanded(child: Container(
+                                  decoration: BoxDecoration(
+
+                                  ),
+                                )),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text("Fish Taco Salad"),
                                         Row(
