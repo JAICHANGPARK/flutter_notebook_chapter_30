@@ -262,43 +262,44 @@ class _SaladMainPageState extends State<SaladMainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              menuIndex == 0
-                  ? GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          menuIndex = 0;
-                        });
-                      },
-                      child: const Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Home",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
+              switch (menuIndex == 0) {
+                true => GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        menuIndex = 0;
+                      });
+                    },
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Home",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
                           ),
-                          SizedBox(
-                            height: 6,
-                          ),
-                          CircleAvatar(
-                            radius: 3,
-                            backgroundColor: Colors.black,
-                          ),
-                        ],
-                      ),
-                    )
-                  : IconButton(
-                      onPressed: () {
-                        setState(() {
-                          menuIndex = 0;
-                        });
-                      },
-                      icon: const Icon(
-                        Icons.home_filled,
-                      ),
+                        ),
+                        SizedBox(
+                          height: 6,
+                        ),
+                        CircleAvatar(
+                          radius: 3,
+                          backgroundColor: Colors.black,
+                        ),
+                      ],
                     ),
+                  ),
+                false => IconButton(
+                    onPressed: () {
+                      setState(() {
+                        menuIndex = 0;
+                      });
+                    },
+                    icon: const Icon(
+                      Icons.home_filled,
+                    ),
+                  ),
+              },
               IconButton(
                 onPressed: () {
                   setState(() {
