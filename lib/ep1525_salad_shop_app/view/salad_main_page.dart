@@ -320,7 +320,11 @@ class _SaladMainPageState extends State<SaladMainPage> {
                 ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    menuIndex = 4;
+                  });
+                },
                 icon: const Icon(
                   Icons.account_circle_outlined,
                 ),
