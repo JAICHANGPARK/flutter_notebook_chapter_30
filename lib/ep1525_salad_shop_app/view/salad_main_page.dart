@@ -275,10 +275,20 @@ class _SaladMainPageState extends State<SaladMainPage> {
                       ),
                     ],
                   ),
+                  Divider(
+                    height: 0,
+                    color: Colors.grey,
+                  ),
                   Expanded(
                     child: TabBarView(
                       children: [
-                        Container(),
+                        GridView.builder(
+                          itemCount: 30,
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                          ),
+                          itemBuilder: (context, index) {},
+                        ),
                         Container(),
                         Container(),
                       ],
