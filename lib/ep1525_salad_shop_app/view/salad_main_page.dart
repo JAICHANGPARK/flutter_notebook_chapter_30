@@ -287,7 +287,40 @@ class _SaladMainPageState extends State<SaladMainPage> {
                           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
                           ),
-                          itemBuilder: (context, index) {},
+                          itemBuilder: (context, index) {
+                            return Column(
+                              children: [
+                                Expanded(child: Container()),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text("Fish Taco Salad"),
+                                        Row(
+                                          children: [
+                                            Text("\$82.00"),
+                                            Text("\$89.00"),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                    Container(
+                                      padding: EdgeInsets.all(4),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      child: Icon(
+                                        Icons.add,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            );
+                          },
                         ),
                         Container(),
                         Container(),
