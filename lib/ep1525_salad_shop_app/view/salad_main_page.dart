@@ -259,17 +259,22 @@ class _SaladMainPageState extends State<SaladMainPage> {
               length: 3,
               child: Column(
                 children: [
-                  TabBar(tabs: [
-                    Tab(
-                      text: "Recommend",
-                    ),
-                    Tab(
-                      text: "Recommend",
-                    ),
-                    Tab(
-                      text: "Recommend",
-                    ),
-                  ]),
+                  TabBar(
+                    labelColor: Color.fromRGBO(45, 54, 42, 1),
+                    unselectedLabelColor: Colors.grey,
+                    indicatorColor: Color.fromRGBO(45, 54, 42, 1),
+                    tabs: [
+                      Tab(
+                        text: "Recommend",
+                      ),
+                      Tab(
+                        text: "Offers!",
+                      ),
+                      Tab(
+                        text: "Hot Sale",
+                      ),
+                    ],
+                  ),
                   Expanded(
                     child: TabBarView(
                       children: [
