@@ -262,39 +262,58 @@ class _SaladMainPageState extends State<SaladMainPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    "Home",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+              GestureDetector(
+                onTap: (){
+                  setState(() {
+                    menuIndex = 0;
+                  });
+                },
+                child: const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Home",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 6,
-                  ),
-                  CircleAvatar(
-                    radius: 3,
-                    backgroundColor: Colors.black,
-                  ),
-                ],
+                    SizedBox(
+                      height: 6,
+                    ),
+                    CircleAvatar(
+                      radius: 3,
+                      backgroundColor: Colors.black,
+                    ),
+                  ],
+                ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    menuIndex = 1;
+                  });
+                },
                 icon: const Icon(
                   Icons.explore_outlined,
                 ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    menuIndex = 2;
+                  });
+                },
                 icon: const Icon(
                   Icons.search,
                 ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    menuIndex = 3;
+                  });
+                },
                 icon: const Icon(
                   Icons.percent,
                 ),
