@@ -53,7 +53,10 @@ class _SaladMainPageState extends State<SaladMainPage> {
                           padding: const EdgeInsets.all(2),
                           child: const Text(
                             "Saladworks",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                            ),
                           ),
                         ),
                         const SizedBox(
