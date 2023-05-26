@@ -76,10 +76,17 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                       child: Text(
                         "ABCD",
                         style: GoogleFonts.lora(
-                          // fontWeight: FontWeight.bold,
-                          fontSize: 64,
-                          color: Colors.white
-                        ),
+                            // fontWeight: FontWeight.bold,
+                            fontSize: 64,
+                            color: Colors.white),
+                      ),
+                    ),
+                    Spacer(),
+                    Text(
+                      "Explore endless style options and find the perfect"
+                      "pieces that reflect your personality",
+                      style: TextStyle(
+                        color: Colors.white,
                       ),
                     )
                   ],
