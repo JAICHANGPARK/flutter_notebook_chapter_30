@@ -95,10 +95,15 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                       padding: EdgeInsets.symmetric(vertical: 16),
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(32)
+                        borderRadius: BorderRadius.circular(32),
                       ),
                       child: Center(
-                        child: Text("Continue"),
+                        child: Text(
+                          "Continue",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     )
                   ],
