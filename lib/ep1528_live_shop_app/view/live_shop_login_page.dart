@@ -84,9 +84,15 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                     Spacer(),
                     Text(
                       "Explore endless style options and find the perfect"
-                      "pieces that reflect your personality",
+                      "pieces that reflect your personality.",
                       style: TextStyle(
                         color: Colors.white,
+                        fontSize: 24,
+                      ),
+                    ),
+                    Container(
+                      child: Center(
+                        child: Text("Continue"),
                       ),
                     )
                   ],
