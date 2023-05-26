@@ -61,7 +61,7 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                           )),
                           Expanded(
                               child: Container(
-                            margin: EdgeInsets.symmetric(horizontal: 4),
+                            margin: const EdgeInsets.symmetric(horizontal: 4),
                             color: Colors.white.withOpacity(1),
                           )),
                           Expanded(
@@ -81,8 +81,8 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                             color: Colors.white),
                       ),
                     ),
-                    Spacer(),
-                    Text(
+                    const Spacer(),
+                    const Text(
                       "Explore endless style options and find the perfect"
                       "pieces that reflect your personality.",
                       style: TextStyle(
@@ -91,13 +91,13 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 24),
-                      padding: EdgeInsets.symmetric(vertical: 20),
+                      margin: const EdgeInsets.symmetric(vertical: 24),
+                      padding: const EdgeInsets.symmetric(vertical: 20),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "Continue",
                           style: TextStyle(
