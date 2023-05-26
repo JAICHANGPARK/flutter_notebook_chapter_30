@@ -22,6 +22,8 @@ dependencies:
 
   rulers: ^1.0.7
 
+  video_player: any
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
