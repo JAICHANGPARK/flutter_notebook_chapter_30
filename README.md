@@ -5,7 +5,7 @@
 
 - Live Shop Mobile App
 - by Happy Tri Milliarta for Odama
-- https://dribbble.com/shots/21535360-Saladworks-Mobile-App
+- https://dribbble.com/shots/21553390-Live-Shop-Mobile-App
 
 <img src="https://cdn.dribbble.com/userupload/7228300/file/original-e239f7237986fbcf453e1e5b93ddd092.png?compress=1&resize=1600x1200" width="500px"/>
 
