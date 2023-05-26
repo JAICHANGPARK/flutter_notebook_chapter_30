@@ -35,6 +35,7 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
             top: 0,
             child: controller.value.isInitialized
                 ? AspectRatio(
+                    aspectRatio: controller.value.aspectRatio,
                     child: VideoPlayer(controller),
                   )
                 : Container(),
