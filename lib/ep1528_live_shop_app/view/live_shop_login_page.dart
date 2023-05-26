@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:video_player/video_player.dart';
 
 class LiveShopLoginPage extends StatefulWidget {
@@ -70,11 +71,15 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                         ],
                       ),
                     ),
-                    Text(
-                      "ABCD",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 38
+                    Padding(
+                      padding: const EdgeInsets.all(24.0),
+                      child: Text(
+                        "ABCD",
+                        style: GoogleFonts.lora(
+                          // fontWeight: FontWeight.bold,
+                          fontSize: 64,
+                          color: Colors.white
+                        ),
                       ),
                     )
                   ],
