@@ -91,7 +91,13 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                       ),
                     ),
                     Container(
+                      margin: EdgeInsets.symmetric(vertical: 16),
+                      padding: EdgeInsets.symmetric(vertical: 16),
+                      decoration: BoxDecoration(
+                        
+                      ),
                       child: Center(
+
                         child: Text("Continue"),
                       ),
                     )
