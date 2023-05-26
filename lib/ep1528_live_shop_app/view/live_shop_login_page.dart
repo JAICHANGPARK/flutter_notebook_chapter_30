@@ -40,8 +40,26 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                   )
                 : Container(),
           ),
+          Positioned(
+            left: 0,
+            top: 0,
+            bottom: 0,
+            right: 0,
+            child: SafeArea(
+              child: Column(
+                children: [],
+              ),
+            ),
+          ),
         ],
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    controller.dispose();
   }
 }
