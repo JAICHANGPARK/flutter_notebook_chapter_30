@@ -7,7 +7,7 @@
 - by Happy Tri Milliarta for Odama
 - https://dribbble.com/shots/21553390-Live-Shop-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/7228300/file/original-e239f7237986fbcf453e1e5b93ddd092.png?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/7279226/file/original-9737c0161df4eece7f6f6a64d9d88f66.png?compress=1&resize=1600x1200" width="500px"/>
 
 ## ep1525-1527
 
