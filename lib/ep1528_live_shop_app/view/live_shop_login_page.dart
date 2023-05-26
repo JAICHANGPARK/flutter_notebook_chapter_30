@@ -46,29 +46,32 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
             bottom: 0,
             right: 0,
             child: SafeArea(
-              child: Column(
-                children: [
-                  Container(
-                    height: 6,
-                    child: Row(
-                      children: [
-                        Expanded(
-                            child: Container(
-                          color: Colors.white.withOpacity(0.6),
-                        )),
-                        Expanded(
-                            child: Container(
-                              margin: EdgeInsets.symmetric(horizontal: 4),
-                          color: Colors.white.withOpacity(1),
-                        )),
-                        Expanded(
-                            child: Container(
-                          color: Colors.white.withOpacity(0.6),
-                        ))
-                      ],
-                    ),
-                  )
-                ],
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
+                child: Column(
+                  children: [
+                    Container(
+                      height: 6,
+                      child: Row(
+                        children: [
+                          Expanded(
+                              child: Container(
+                            color: Colors.white.withOpacity(0.6),
+                          )),
+                          Expanded(
+                              child: Container(
+                            margin: EdgeInsets.symmetric(horizontal: 4),
+                            color: Colors.white.withOpacity(1),
+                          )),
+                          Expanded(
+                              child: Container(
+                            color: Colors.white.withOpacity(0.6),
+                          ))
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),
