@@ -1,6 +1,4 @@
-
 import 'package:flutter/material.dart';
-
 
 class LiveShopLoginPage extends StatefulWidget {
   const LiveShopLoginPage({Key? key}) : super(key: key);
@@ -12,6 +10,6 @@ class LiveShopLoginPage extends StatefulWidget {
 class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
