@@ -47,7 +47,28 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
             right: 0,
             child: SafeArea(
               child: Column(
-                children: [],
+                children: [
+                  Container(
+                    height: 6,
+                    child: Row(
+                      children: [
+                        Expanded(
+                            child: Container(
+                          color: Colors.white.withOpacity(0.6),
+                        )),
+                        Expanded(
+                            child: Container(
+                              margin: EdgeInsets.symmetric(horizontal: 4),
+                          color: Colors.white.withOpacity(1),
+                        )),
+                        Expanded(
+                            child: Container(
+                          color: Colors.white.withOpacity(0.6),
+                        ))
+                      ],
+                    ),
+                  )
+                ],
               ),
             ),
           ),
