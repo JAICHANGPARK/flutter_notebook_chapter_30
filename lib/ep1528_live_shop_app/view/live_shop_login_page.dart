@@ -18,6 +18,7 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
     controller = VideoPlayerController.network(
         "https://cdn.pixabay.com/vimeo/411342239/36510.mp4?width=640&hash=e5a195df7fd4f1a6a453af1eb1eabf65a3e72762")
       ..initialize().then((value) {
+        controller.play();
         setState(() {});
       });
   }
@@ -28,7 +29,15 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
       body: Stack(
         children: [
           Positioned(
-            child: controller.value.isInitialized ? VideoPlayer(controller) : Container(),
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0,
+            child: controller.value.isInitialized
+                ? AspectRatio(
+                    child: VideoPlayer(controller),
+                  )
+                : Container(),
           ),
         ],
       ),
