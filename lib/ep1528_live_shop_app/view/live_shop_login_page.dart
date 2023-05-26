@@ -91,8 +91,8 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 16),
-                      padding: EdgeInsets.symmetric(vertical: 16),
+                      margin: EdgeInsets.symmetric(vertical: 24),
+                      padding: EdgeInsets.symmetric(vertical: 20),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
