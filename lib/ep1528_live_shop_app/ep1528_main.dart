@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_30/ep1528_live_shop_app/view/live_shop_login_page.dart';
 
 void main() {
-  runApp(LiveShopApp());
+  runApp(const LiveShopApp());
 }
 
 class LiveShopApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class LiveShopApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: LiveShopLoginPage(),
     );
   }
