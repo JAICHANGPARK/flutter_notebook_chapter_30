@@ -69,6 +69,13 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                           ))
                         ],
                       ),
+                    ),
+                    Text(
+                      "ABCD",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 38
+                      ),
                     )
                   ],
                 ),
