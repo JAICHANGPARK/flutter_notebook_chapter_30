@@ -101,7 +101,8 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                         child: Text(
                           "Continue",
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 16
                           ),
                         ),
                       ),
