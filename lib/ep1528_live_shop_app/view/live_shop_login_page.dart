@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1528_live_shop_app/view/live_shop_home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:video_player/video_player.dart';
 
@@ -90,19 +91,25 @@ class _LiveShopLoginPageState extends State<LiveShopLoginPage> {
                         fontSize: 24,
                       ),
                     ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(vertical: 24),
-                      padding: const EdgeInsets.symmetric(vertical: 20),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(32),
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "Continue",
-                          style: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 16
+                    InkWell(
+                      onTap: () {
+                        Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(
+                            builder: (context) => LiveShopHomePage(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.symmetric(vertical: 24),
+                        padding: const EdgeInsets.symmetric(vertical: 20),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(32),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "Continue",
+                            style: TextStyle(fontWeight: FontWeight.w400, fontSize: 16),
                           ),
                         ),
                       ),
