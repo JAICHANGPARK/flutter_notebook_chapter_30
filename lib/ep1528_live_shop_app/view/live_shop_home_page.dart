@@ -15,39 +15,54 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.5),
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                  child: Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 14,
-                      ),
-                      SizedBox(
-                        width: 4,
-                      ),
-                      Text(
-                        "Dream",
-                        style: TextStyle(
-                          color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.5),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 14,
                         ),
-                      ),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      Icon(
-                        Icons.keyboard_arrow_down,
-                        color: Colors.white,
-                      )
-                    ],
+                        SizedBox(
+                          width: 4,
+                        ),
+                        Text(
+                          "Dream",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Icon(
+                          Icons.keyboard_arrow_down,
+                          color: Colors.white,
+                        )
+                      ],
+                    ),
                   ),
-                )
-              ],
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.favorite_border),
+                    color: Colors.white,
+                  ),
+                  Badge(
+                    child: Icon(
+                      Icons.chat_bubble_outline,
+                      color: Colors.white,
+                    ),
+                    label: Text("8"),
+                  )
+                ],
+              ),
             )
           ],
         ),
