@@ -24,8 +24,8 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                       color: Colors.white.withOpacity(0.5),
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                    child: Row(
+                    padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                    child: const Row(
                       children: [
                         CircleAvatar(
                           radius: 14,
@@ -49,28 +49,28 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                       ],
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.favorite_border),
+                    icon: const Icon(Icons.favorite_border),
                     color: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
-                  Badge(
+                  const Badge(
+                    label: Text("8"),
                     child: Icon(
                       Icons.chat_bubble_outline,
                       color: Colors.white,
                     ),
-                    label: Text("8"),
                   )
                 ],
               ),
             ),
             Container(
               height: 72,
-              margin: EdgeInsets.only(
+              margin: const EdgeInsets.only(
                 left: 8,
                 top: 12,
                 bottom: 16,
@@ -88,19 +88,19 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
             children: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.home_max,
                 ),
                 color: Colors.white,
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.search,
                 ),
                 color: Colors.grey,
               ),
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 24,
                 backgroundColor: Colors.white,
                 foregroundColor: Colors.black,
@@ -108,12 +108,12 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.shopping_bag_outlined,
                 ),
                 color: Colors.grey,
               ),
-              CircleAvatar(),
+              const CircleAvatar(),
             ],
           ),
         ),
