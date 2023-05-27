@@ -55,6 +55,9 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                     icon: Icon(Icons.favorite_border),
                     color: Colors.white,
                   ),
+                  SizedBox(
+                    width: 16,
+                  ),
                   Badge(
                     child: Icon(
                       Icons.chat_bubble_outline,
