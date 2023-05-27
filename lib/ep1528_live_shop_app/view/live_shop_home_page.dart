@@ -15,7 +15,23 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Row(
+              children: [
+                Container(
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 16,
+                      ),
+                      Text("Dream"),
+                      Icon(
+                        Icons.keyboard_arrow_down,
+                      )
+                    ],
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
