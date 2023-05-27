@@ -18,15 +18,22 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
             Row(
               children: [
                 Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.7)
-                  ),
+                  decoration:
+                      BoxDecoration(color: Colors.white.withOpacity(0.5), borderRadius: BorderRadius.circular(16)),
+                  padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                   child: Row(
                     children: [
                       CircleAvatar(
                         radius: 16,
                       ),
-                      Text("Dream"),
+                      SizedBox(width: 4,),
+                      Text(
+                        "Dream",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(width: 8,),
                       Icon(
                         Icons.keyboard_arrow_down,
                       )
