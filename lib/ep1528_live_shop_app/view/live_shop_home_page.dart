@@ -49,6 +49,7 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                       ],
                     ),
                   ),
+                  Spacer(),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.favorite_border),
@@ -63,9 +64,37 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                   )
                 ],
               ),
-            )
+            ),
+            Container(
+              height: 72,
+              margin: EdgeInsets.only(
+                left: 8,
+                top: 12,
+                bottom: 16,
+              ),
+              color: Colors.blue,
+            ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: "Home",),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+              ),
+              label: "Search"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+              ),
+              label: "Search")
+        ],
       ),
     );
   }
