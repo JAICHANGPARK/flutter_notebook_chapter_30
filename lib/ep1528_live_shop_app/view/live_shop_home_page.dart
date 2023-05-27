@@ -84,7 +84,9 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
         color: Colors.black,
         child: Container(
           height: 72,
+          padding: EdgeInsets.symmetric(horizontal: 16),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
                 onPressed: () {},
@@ -113,7 +115,9 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                 ),
                 color: Colors.grey,
               ),
-              const CircleAvatar(),
+              const CircleAvatar(
+                radius: 16,
+              ),
             ],
           ),
         ),
