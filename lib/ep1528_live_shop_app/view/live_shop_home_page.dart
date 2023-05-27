@@ -98,11 +98,19 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                 color: Colors.grey,
               ),
               CircleAvatar(
-                radius: 28,
+                radius: 24,
                 backgroundColor: Colors.white,
                 foregroundColor: Colors.black,
                 child: Icon(Icons.add),
-              )
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.shopping_bag_outlined,
+                ),
+                color: Colors.grey,
+              ),
+              CircleAvatar(),
             ],
           ),
         ),
