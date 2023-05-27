@@ -18,6 +18,9 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
             Row(
               children: [
                 Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.7)
+                  ),
                   child: Row(
                     children: [
                       CircleAvatar(
