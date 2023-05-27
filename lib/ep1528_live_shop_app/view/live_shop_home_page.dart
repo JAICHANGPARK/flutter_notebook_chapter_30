@@ -77,24 +77,28 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home_filled,
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+          child: Row(
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.home_max,
+                ),
+                color: Colors.white,
               ),
-              label: "Home",),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.search,
-              ),
-              label: "Search"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.search,
-              ),
-              label: "Search")
-        ],
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.search,
+                ),
+                color: Colors.grey,
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
