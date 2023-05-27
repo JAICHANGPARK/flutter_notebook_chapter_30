@@ -78,6 +78,7 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
+        color: Colors.black,
         child: Container(
           height: 72,
           child: Row(
@@ -95,6 +96,12 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                   Icons.search,
                 ),
                 color: Colors.grey,
+              ),
+              CircleAvatar(
+                radius: 28,
+                backgroundColor: Colors.white,
+                foregroundColor: Colors.black,
+                child: Icon(Icons.add),
               )
             ],
           ),
