@@ -77,6 +77,21 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
               ),
               color: Colors.blue,
             ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Container(
+                    height: 400,
+                    
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
