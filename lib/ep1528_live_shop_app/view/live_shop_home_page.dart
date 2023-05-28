@@ -86,6 +86,8 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                     child: Column(
                       children: [
                         Container(
+                          height: 64,
+                          width: 64,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
@@ -98,8 +100,7 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          height: 64,
-                          width: 64,
+
                         ),
                         const SizedBox(
                           height: 4,
@@ -130,6 +131,9 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                     ),
                     child: Stack(
                       children: [
+                        Positioned.fill(
+                          child: SimpleVideoWidget(),
+                        ),
                         Positioned(
                           left: 8,
                           right: 8,
@@ -165,9 +169,7 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                             ],
                           ),
                         ),
-                        Positioned.fill(
-                          child: SimpleVideoWidget(),
-                        ),
+
                       ],
                     ),
                   );
