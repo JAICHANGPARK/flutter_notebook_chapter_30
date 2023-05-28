@@ -79,7 +79,25 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
-                itemBuilder: (context, index) {},
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.white,
+                            ),
+                          ),
+                          height: 64,
+                          width: 64,
+                        )
+                      ],
+                    ),
+                  );
+                },
               ),
             ),
             Expanded(
