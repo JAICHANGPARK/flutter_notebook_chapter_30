@@ -69,25 +69,27 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
               ),
             ),
             Container(
-              height: 72,
+              height: 84,
               margin: const EdgeInsets.only(
                 left: 8,
                 top: 12,
                 bottom: 16,
               ),
               color: Colors.blue,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
+                itemBuilder: (context, index) {},
+              ),
             ),
             Expanded(
               child: ListView.builder(
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container(
-                    height: 400,
-                    
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(8)
-                    ),
+                    height: 500,
+                    margin: EdgeInsets.only(bottom: 2),
+                    decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
                   );
                 },
               ),
