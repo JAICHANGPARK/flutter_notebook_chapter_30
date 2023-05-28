@@ -75,7 +75,6 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                 top: 12,
                 bottom: 16,
               ),
-              color: Colors.blue,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
@@ -89,6 +88,12 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                             shape: BoxShape.circle,
                             border: Border.all(
                               color: Colors.white,
+                            ),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2023/05/23/15/26/bengal-cat-8012976_1280.jpg",
+                              ),
+                              fit: BoxFit.cover,
                             ),
                           ),
                           height: 64,
