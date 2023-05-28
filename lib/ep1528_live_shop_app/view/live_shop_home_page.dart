@@ -106,6 +106,7 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                           "Dreamwalker",
                           style: TextStyle(
                             color: Colors.white,
+                            fontSize: 12
                           ),
                         )
                       ],
