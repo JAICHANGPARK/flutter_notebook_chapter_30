@@ -87,9 +87,9 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Colors.white,
+                              color: Colors.white.withOpacity(0.8),
                             ),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: NetworkImage(
                                 "https://cdn.pixabay.com/photo/2023/05/23/15/26/bengal-cat-8012976_1280.jpg",
                               ),
@@ -99,10 +99,10 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                           height: 64,
                           width: 64,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
-                        Text(
+                        const Text(
                           "Dreamwalker",
                           style: TextStyle(
                             color: Colors.white,
@@ -120,8 +120,8 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container(
-                    height: 500,
-                    margin: EdgeInsets.only(bottom: 2),
+                    height: 540,
+                    margin: const EdgeInsets.only(bottom: 2),
                     decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(16),
@@ -137,7 +137,7 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
         color: Colors.black,
         child: Container(
           height: 72,
-          padding: EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
