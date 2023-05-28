@@ -106,7 +106,7 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                           "Dreamwalker",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 12
+                            fontSize: 12,
                           ),
                         )
                       ],
@@ -122,7 +122,10 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                   return Container(
                     height: 500,
                     margin: EdgeInsets.only(bottom: 2),
-                    decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                   );
                 },
               ),
