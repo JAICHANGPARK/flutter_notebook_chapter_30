@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:video_player/video_player.dart';
 
 class LiveShopHomePage extends StatefulWidget {
   const LiveShopHomePage({Key? key}) : super(key: key);
@@ -134,28 +135,48 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                           top: 8,
                           child: Row(
                             children: [
-                              CircleAvatar(),
-                              Column(
+                              const CircleAvatar(),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              const Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text("Dreamwalker"),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
                                   Text("Flutter Dev"),
                                 ],
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Container(
-                                padding: EdgeInsets.symmetric(
+                                padding: const EdgeInsets.symmetric(
                                   horizontal: 20,
                                   vertical: 8,
                                 ),
-                                decoration: ShapeDecoration(
+                                decoration: const ShapeDecoration(
                                   shape: StadiumBorder(),
                                   color: Colors.white,
                                 ),
-                                child: Text("Follow"),
+                                child: const Text("Follow"),
                               )
                             ],
                           ),
                         ),
+                        Positioned.fill(
+                          child: Builder(
+                            builder: (context) {
+                              VideoPlayerController controller = VideoPlayerController.network(
+                                  "https://cdn.pixabay.com/vimeo/142621176/1006.mp4?width=480&hash=8f01009f7e4a37f7e41f7250e31889c9b5bfcf59");
+                              controller.initialize().then((value) {
+                                controller.play();
+                                setState(() {});
+                              });
+                              return controller.value.isInitialized ? VideoPlayer(controller) : CircularProgressIndicator();
+                            },
+                          ),
+                        )
                       ],
                     ),
                   );
