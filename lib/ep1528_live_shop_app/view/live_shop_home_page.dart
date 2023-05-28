@@ -126,6 +126,38 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(16),
                     ),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          left: 8,
+                          right: 8,
+                          top: 8,
+                          child: Row(
+                            children: [
+                              CircleAvatar(),
+                              Column(
+                                children: [
+                                  Text("Dreamwalker"),
+                                  Text("Flutter Dev"),
+                                ],
+                              ),
+                              Spacer(),
+                              Container(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 20,
+                                  vertical: 8,
+                                ),
+                                decoration: ShapeDecoration(
+                                  shape: StadiumBorder(),
+                                  color: Colors.white,
+                                ),
+                                child: Text("Follow"),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   );
                 },
               ),
