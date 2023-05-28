@@ -169,10 +169,10 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                             builder: (context) {
                               VideoPlayerController controller = VideoPlayerController.network(
                                   "https://cdn.pixabay.com/vimeo/142621176/1006.mp4?width=480&hash=8f01009f7e4a37f7e41f7250e31889c9b5bfcf59");
-                              controller.initialize().then((value) {
-                                controller.play();
-                                setState(() {});
-                              });
+                              // controller.initialize().then((value) {
+                              //   controller.play();
+                              //   setState(() {});
+                              // });
                               return controller.value.isInitialized ? VideoPlayer(controller) : CircularProgressIndicator();
                             },
                           ),
