@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1528_live_shop_app/view/simple_video_widget.dart';
 import 'package:video_player/video_player.dart';
 
 class LiveShopHomePage extends StatefulWidget {
@@ -165,17 +166,8 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                           ),
                         ),
                         Positioned.fill(
-                          child: Builder(
-                            builder: (context) {
-
-                              // controller.initialize().then((value) {
-                              //   controller.play();
-                              //   setState(() {});
-                              // });
-                              return controller.value.isInitialized ? VideoPlayer(controller) : CircularProgressIndicator();
-                            },
-                          ),
-                        )
+                          child: SimpleVideoWidget(),
+                        ),
                       ],
                     ),
                   );
