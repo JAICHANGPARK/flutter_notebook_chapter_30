@@ -93,6 +93,15 @@ class _LiveShopHomePageState extends State<LiveShopHomePage> {
                           ),
                           height: 64,
                           width: 64,
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Dreamwalker",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
                         )
                       ],
                     ),
