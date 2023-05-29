@@ -6,7 +6,7 @@
 - by Vazgen for koryun 🇦🇲
 - https://dribbble.com/shots/21578682-ecommerce-mobile-application
 
-<img src="https://cdn.dribbble.com/userupload/7279226/file/original-9737c0161df4eece7f6f6a64d9d88f66.png?compress=1&resize=1600x1200" width="500px"/>
+<img src="https://cdn.dribbble.com/userupload/7357964/file/original-7f84271f37908352e90aaa398dae5a7b.jpg?compress=1&resize=1600x1200" width="500px"/>
 
 ## ep1528-1530
 
