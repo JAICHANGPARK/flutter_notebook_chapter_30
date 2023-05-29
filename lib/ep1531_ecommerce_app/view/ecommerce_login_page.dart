@@ -79,7 +79,12 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
                         color: Colors.white,
                       ),
                     ),
-                    TextButton(onPressed: () {}, child: Text("Sign up"))
+                    TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        "Sign up",
+                      ),
+                    )
                   ],
                 ),
                 SizedBox(
