@@ -38,7 +38,7 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   "Fine your unique style",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -46,8 +46,8 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
                     color: Colors.white,
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 18),
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 18),
                   child: Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     style: TextStyle(
@@ -61,8 +61,8 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 16),
-                  child: Center(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  child: const Center(
                     child: Text(
                       "Login",
                       style: TextStyle(
@@ -76,7 +76,7 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Don't have an account?",
                       style: TextStyle(
                         color: Colors.white,
@@ -84,13 +84,13 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "Sign up",
                       ),
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
               ],
