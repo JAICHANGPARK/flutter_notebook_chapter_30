@@ -19,11 +19,41 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
               fit: BoxFit.cover,
             ),
           ),
+          Positioned.fill(
+              child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.bottomCenter,
+                
+                colors: [
+                  Colors.black.withOpacity(0.6),
+                  Colors.black.withOpacity(0.3),
+
+                ],
+              ),
+            ),
+          )),
           Positioned(
+            left: 16,
+            right: 16,
+            bottom: 0,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Fine your unique style"),
-                Text("")
+                Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+                Container(
+                  child: Center(
+                    child: Text(
+                      "Login",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           )
