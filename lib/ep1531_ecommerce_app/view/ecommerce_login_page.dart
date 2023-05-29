@@ -42,7 +42,7 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
                   "Fine your unique style",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 20,
+                    fontSize: 24,
                     color: Colors.white,
                   ),
                 ),
@@ -52,12 +52,15 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     style: TextStyle(
                       color: Colors.white,
-                      height: 1.5,
+                      height: 2.0,
                     ),
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                   padding: EdgeInsets.symmetric(vertical: 16),
                   child: Center(
                     child: Text(
