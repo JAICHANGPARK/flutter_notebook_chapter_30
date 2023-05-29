@@ -46,20 +46,29 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
                     color: Colors.white,
                   ),
                 ),
-                Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                  style: TextStyle(
-                    color: Colors.white,
-                    height: 1.5,
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 18),
+                  child: Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    style: TextStyle(
+                      color: Colors.white,
+                      height: 1.5,
+                    ),
                   ),
                 ),
                 Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(8)
+                  ),
+                  padding: EdgeInsets.symmetric(vertical: 16),
                   child: Center(
                     child: Text(
                       "Login",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
+                        color: Colors.white,
                       ),
                     ),
                   ),
