@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_30
 
-## ep1528
+## ep1531
+
+- ecommerce mobile application
+- by Vazgen for koryun 🇦🇲
+- https://dribbble.com/shots/21578682-ecommerce-mobile-application
+
+<img src="https://cdn.dribbble.com/userupload/7279226/file/original-9737c0161df4eece7f6f6a64d9d88f66.png?compress=1&resize=1600x1200" width="500px"/>
+
+## ep1528-1530
 
 - Live Shop Mobile App
 - by Happy Tri Milliarta for Odama
