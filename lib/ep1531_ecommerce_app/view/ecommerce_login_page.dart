@@ -24,11 +24,9 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.bottomCenter,
-                
                 colors: [
                   Colors.black.withOpacity(0.6),
                   Colors.black.withOpacity(0.3),
-
                 ],
               ),
             ),
@@ -40,9 +38,21 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Fine your unique style"),
                 Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+                  "Fine your unique style",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+                Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  style: TextStyle(
+                    color: Colors.white,
+                    height: 1.5,
+                  ),
+                ),
                 Container(
                   child: Center(
                     child: Text(
