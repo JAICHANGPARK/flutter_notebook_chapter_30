@@ -57,10 +57,7 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(8)
-                  ),
+                  decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                   padding: EdgeInsets.symmetric(vertical: 16),
                   child: Center(
                     child: Text(
@@ -72,7 +69,22 @@ class _EcommerceLoginPageState extends State<EcommerceLoginPage> {
                       ),
                     ),
                   ),
-                )
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Don't have an account?",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    TextButton(onPressed: () {}, child: Text("Sign up"))
+                  ],
+                ),
+                SizedBox(
+                  height: 16,
+                ),
               ],
             ),
           )
