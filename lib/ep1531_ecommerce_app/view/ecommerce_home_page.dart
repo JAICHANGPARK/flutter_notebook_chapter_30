@@ -15,9 +15,20 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
         children: [],
       ),
       bottomNavigationBar: BottomAppBar(
+        height: 72,
         child: Row(
           children: [
-
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CircleAvatar(
+                  child: Icon(Icons.home_outlined),
+                  backgroundColor: Color.fromRGBO(56, 130, 205, 1),
+                  foregroundColor: Colors.white,
+                ),
+                Text("Home"),
+              ],
+            )
           ],
         ),
       ),
