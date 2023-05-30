@@ -8,6 +8,8 @@ class EcommerceHomePage extends StatefulWidget {
 }
 
 class _EcommerceHomePageState extends State<EcommerceHomePage> {
+  final blueColor = Color.fromRGBO(56, 130, 205, 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +28,17 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                   backgroundColor: Color.fromRGBO(56, 130, 205, 1),
                   foregroundColor: Colors.white,
                 ),
-                Text("Home"),
+                SizedBox(
+                  height: 4,
+                ),
+                Text(
+                  "Home",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: blueColor
+                  ),
+
+                ),
               ],
             )
           ],
