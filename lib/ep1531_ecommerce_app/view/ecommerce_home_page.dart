@@ -97,6 +97,22 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Container(
                         height: 84,
                         color: Colors.blueGrey,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Popular"),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "See all",
+                            ),
+                          )
+                        ],
+                      ),
+                      Container(
+                        height: 260,
+                        color: Colors.blueGrey,
                       )
                     ],
                   ),
