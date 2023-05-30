@@ -40,11 +40,8 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               ),
                               border: InputBorder.none,
                               hintText: "Search",
-                              hintStyle: TextStyle(
-                                fontSize: 12
-                              ),
+                              hintStyle: TextStyle(fontSize: 12),
                               contentPadding: EdgeInsets.fromLTRB(8, 0, 0, 8),
-
                             ),
 
                             // style: TextStyle(fontSize: 12),
@@ -75,7 +72,36 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                     ),
                   ],
                 ),
-              )
+              ),
+              Container(
+                height: 130,
+                color: Colors.blueGrey,
+                margin: EdgeInsets.symmetric(vertical: 16),
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Shop by Category"),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "See all",
+                            ),
+                          )
+                        ],
+                      ),
+                      Container(
+                        height: 84,
+                        color: Colors.blueGrey,
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
