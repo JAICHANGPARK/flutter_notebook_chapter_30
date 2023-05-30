@@ -17,7 +17,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-            
+
           ],
         ),
       ),
