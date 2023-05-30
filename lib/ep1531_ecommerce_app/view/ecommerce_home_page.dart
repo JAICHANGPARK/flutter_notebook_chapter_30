@@ -9,23 +9,69 @@ class EcommerceHomePage extends StatefulWidget {
 
 class _EcommerceHomePageState extends State<EcommerceHomePage> {
   final blueColor = const Color.fromRGBO(56, 130, 205, 1);
-  final greyColor = Color.fromRGBO(241, 242, 242, 1);
+  final greyColor = Color.fromRGBO(243, 249, 249, 1);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
               Container(
-                height: 48,
-                color: greyColor,
+                height: 32,
                 child: Row(
                   children: [
                     Expanded(
-                      child: Container(),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: greyColor,
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: Center(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              icon: Icon(
+                                Icons.search,
+                                size: 18,
+                              ),
+                              border: InputBorder.none,
+                              hintText: "Search",
+                              hintStyle: TextStyle(
+                                fontSize: 12
+                              ),
+                              contentPadding: EdgeInsets.fromLTRB(8, 0, 0, 8),
+
+                            ),
+
+                            // style: TextStyle(fontSize: 12),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 8),
+                      padding: EdgeInsets.all(4),
+                      decoration: BoxDecoration(
+                        color: greyColor,
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                      child: Icon(
+                        Icons.notifications_none,
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: greyColor,
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                      padding: EdgeInsets.all(4),
+                      child: Icon(
+                        Icons.shopping_cart_outlined,
+                      ),
                     ),
                   ],
                 ),
