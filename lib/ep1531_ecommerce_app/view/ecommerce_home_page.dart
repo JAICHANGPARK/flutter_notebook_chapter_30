@@ -222,7 +222,15 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                           radius: 8,
                                           backgroundColor: Colors.black,
                                         ),
-                                        Text("Developer Hoodie"),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text(
+                                          "Developer Hoodie",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
+                                        ),
                                       ],
                                     ),
                                     SizedBox(
