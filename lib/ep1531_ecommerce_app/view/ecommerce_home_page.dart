@@ -202,11 +202,22 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       ),
                       Container(
                         height: 260,
-                        color: Colors.blueGrey,
+
                         child: Row(
                           children: [
-                            Expanded(child: Placeholder()),
-                            SizedBox(width: 16,),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: Border.all(
+                                    color: Colors.grey[400]!,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              width: 16,
+                            ),
                             Expanded(child: Placeholder()),
                           ],
                         ),
