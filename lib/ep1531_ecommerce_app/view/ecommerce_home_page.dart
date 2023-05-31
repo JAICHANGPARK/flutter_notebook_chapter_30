@@ -89,10 +89,24 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Color.fromRGBO(74, 96, 130, 1),
                       Colors.white.withOpacity(0.1),
                     ],
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight
                   ),
                 ),
                 child: Stack(
-                  children: [],
+                  children: [
+                    Positioned.fill(child: Container(
+                      decoration: BoxDecoration(  gradient: LinearGradient(
+                          colors: [
+                            Color.fromRGBO(55, 96, 148, 1),
+                            Color.fromRGBO(74, 96, 130, 1),
+                            Colors.white.withOpacity(0.1),
+                          ],
+                          begin: Alignment.centerLeft,
+                          end: Alignment.centerRight
+                      ),),
+                    ))
+                  ],
                 ),
               ),
               Expanded(
