@@ -213,6 +213,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   ),
                                 ),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Expanded(child: Container()),
                                     Row(
@@ -223,6 +224,9 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                         ),
                                         Text("Developer Hoodie"),
                                       ],
+                                    ),
+                                    SizedBox(
+                                      height: 8,
                                     ),
                                     Text(
                                       "Flutter Hoodie",
