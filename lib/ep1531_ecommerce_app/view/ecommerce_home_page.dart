@@ -83,15 +83,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                     image: NetworkImage("https://cdn.pixabay.com/photo/2016/10/26/07/56/wedding-1770860_1280.jpg"),
                     fit: BoxFit.cover,
                   ),
-                  gradient: LinearGradient(
-                    colors: [
-                      Color.fromRGBO(55, 96, 148, 1),
-                      Color.fromRGBO(74, 96, 130, 1),
-                      Colors.white.withOpacity(0.1),
-                    ],
-                    begin: Alignment.centerLeft,
-                    end: Alignment.centerRight
-                  ),
+                
                 ),
                 child: Stack(
                   children: [
@@ -99,7 +91,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       decoration: BoxDecoration(  gradient: LinearGradient(
                           colors: [
                             Color.fromRGBO(55, 96, 148, 1),
-                            Color.fromRGBO(74, 96, 130, 1),
+                            Color.fromRGBO(74, 96, 130, 0.4),
                             Colors.white.withOpacity(0.1),
                           ],
                           begin: Alignment.centerLeft,
