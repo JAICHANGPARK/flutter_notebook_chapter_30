@@ -153,7 +153,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text("Shop by Category"),
+                          const Text(
+                            "Shop by Category",
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                          ),
                           TextButton(
                             onPressed: () {},
                             child: const Text(
@@ -182,7 +185,13 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text("Popular"),
+                          const Text(
+                            "Popular",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
                           TextButton(
                             onPressed: () {},
                             child: const Text(
