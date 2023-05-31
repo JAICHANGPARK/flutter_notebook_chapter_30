@@ -98,11 +98,22 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             begin: Alignment.centerLeft,
                             end: Alignment.centerRight,
                           ),
-                          borderRadius: BorderRadius.circular(8)
+                          borderRadius: BorderRadius.circular(8),
                         ),
-                        
+                        child: Column(
+                          children: [
+                            Text("New Spring"),
+                            Text("Collection"),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              child: Text("Shop now"),
+                            )
+                          ],
+                        ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
