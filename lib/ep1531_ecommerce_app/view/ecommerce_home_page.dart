@@ -341,7 +341,11 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text("Recommended for you"),
+                          const Text("Recommended for you",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),),
                           TextButton(
                             onPressed: () {},
                             child: const Text(
