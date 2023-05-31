@@ -202,7 +202,6 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       ),
                       Container(
                         height: 260,
-
                         child: Row(
                           children: [
                             Expanded(
@@ -212,6 +211,23 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   border: Border.all(
                                     color: Colors.grey[400]!,
                                   ),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Expanded(child: Container()),
+                                    Row(
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 8,
+                                          backgroundColor: Colors.black,
+                                        ),
+                                        Text("Developer Hoodie"),
+                                      ],
+                                    ),
+                                    Text(
+                                      "Flutter Hoodie",
+                                    )
+                                  ],
                                 ),
                               ),
                             ),
