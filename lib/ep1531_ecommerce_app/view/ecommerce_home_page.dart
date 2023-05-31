@@ -216,29 +216,39 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Expanded(child: Container()),
-                                    Row(
+                                    Column(
                                       children: [
-                                        CircleAvatar(
-                                          radius: 8,
-                                          backgroundColor: Colors.black,
+                                        Row(
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 8,
+                                              backgroundColor: Colors.black,
+                                            ),
+                                            SizedBox(
+                                              width: 4,
+                                            ),
+                                            Text(
+                                              "Developer Hoodie",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                              ),
+                                            ),
+                                          ],
                                         ),
                                         SizedBox(
-                                          width: 4,
+                                          height: 8,
                                         ),
-                                        Text(
-                                          "Developer Hoodie",
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                          ),
-                                        ),
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Flutter Hoodie",
+                                            )
+                                          ],
+                                        )
+
                                       ],
                                     ),
-                                    SizedBox(
-                                      height: 8,
-                                    ),
-                                    Text(
-                                      "Flutter Hoodie",
-                                    )
+
                                   ],
                                 ),
                               ),
