@@ -217,8 +217,8 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   children: [
                                     Expanded(
                                       child: Container(
-                                        decoration: const BoxDecoration(
-                                          color: Colors.grey,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey[200]!,
                                           borderRadius: BorderRadius.only(
                                             topLeft: Radius.circular(8),
                                             topRight: Radius.circular(8),
@@ -271,7 +271,70 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             const SizedBox(
                               width: 16,
                             ),
-                            const Expanded(child: Placeholder()),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: Border.all(
+                                    color: Colors.grey[400]!,
+                                  ),
+                                ),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey[200]!,
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(8),
+                                            topRight: Radius.circular(8),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    const Padding(
+                                      padding: EdgeInsets.all(8.0),
+                                      child: Column(
+                                        children: [
+                                          Row(
+                                            children: [
+                                              CircleAvatar(
+                                                radius: 8,
+                                                backgroundColor: Colors.black,
+                                              ),
+                                              SizedBox(
+                                                width: 4,
+                                              ),
+                                              Text(
+                                                "Developer Hoodie",
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text(
+                                                "Flutter Hoodie",
+                                              ),
+                                              Text(
+                                                "\$118",
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       ),
