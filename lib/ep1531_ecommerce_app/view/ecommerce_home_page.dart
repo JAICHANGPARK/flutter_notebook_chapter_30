@@ -100,13 +100,25 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           ),
                           borderRadius: BorderRadius.circular(8),
                         ),
+                        padding: EdgeInsets.all(16),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("New Spring"),
-                            Text("Collection"),
+                            Text(
+                              "New Spring",
+                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                            ),
+                            Text(
+                              "Collection",
+                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                            ),
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.white,
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 8,
                               ),
                               child: Text("Shop now"),
                             )
