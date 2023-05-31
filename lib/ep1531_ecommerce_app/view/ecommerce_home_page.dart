@@ -215,7 +215,17 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Expanded(child: Container()),
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(8),
+                                            topRight: Radius.circular(8),
+                                          )
+                                        ),
+                                      ),
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Column(
@@ -251,11 +261,9 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                               )
                                             ],
                                           )
-
                                         ],
                                       ),
                                     ),
-
                                   ],
                                 ),
                               ),
