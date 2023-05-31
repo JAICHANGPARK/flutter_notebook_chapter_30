@@ -216,37 +216,44 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Expanded(child: Container()),
-                                    Column(
-                                      children: [
-                                        Row(
-                                          children: [
-                                            CircleAvatar(
-                                              radius: 8,
-                                              backgroundColor: Colors.black,
-                                            ),
-                                            SizedBox(
-                                              width: 4,
-                                            ),
-                                            Text(
-                                              "Developer Hoodie",
-                                              style: TextStyle(
-                                                fontSize: 12,
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        children: [
+                                          Row(
+                                            children: [
+                                              CircleAvatar(
+                                                radius: 8,
+                                                backgroundColor: Colors.black,
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                        SizedBox(
-                                          height: 8,
-                                        ),
-                                        Row(
-                                          children: [
-                                            Text(
-                                              "Flutter Hoodie",
-                                            )
-                                          ],
-                                        )
+                                              SizedBox(
+                                                width: 4,
+                                              ),
+                                              Text(
+                                                "Developer Hoodie",
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text(
+                                                "Flutter Hoodie",
+                                              ),
+                                              Text(
+                                                "\$118",
+                                              )
+                                            ],
+                                          )
 
-                                      ],
+                                        ],
+                                      ),
                                     ),
 
                                   ],
