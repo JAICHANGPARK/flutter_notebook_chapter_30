@@ -91,8 +91,8 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              Color.fromRGBO(55, 96, 148, 1),
-                              Color.fromRGBO(74, 96, 130, 0.4),
+                              const Color.fromRGBO(55, 96, 148, 1),
+                              const Color.fromRGBO(74, 96, 130, 0.4),
                               Colors.white.withOpacity(0.1),
                             ],
                             begin: Alignment.centerLeft,
@@ -100,11 +100,11 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           ),
                           borderRadius: BorderRadius.circular(8),
                         ),
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               "New Spring",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -112,7 +112,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 fontSize: 18,
                               ),
                             ),
-                            Text(
+                            const Text(
                               "Collection",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -120,8 +120,8 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 fontSize: 18,
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 8),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(vertical: 8),
                               child: Text(
                                 "Explore raw spring collection",
                                 style: TextStyle(
@@ -130,14 +130,14 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.white,
                               ),
-                              padding: EdgeInsets.symmetric(
+                              padding: const EdgeInsets.symmetric(
                                 horizontal: 16,
                                 vertical: 8,
                               ),
-                              child: Text("Shop now"),
+                              child: const Text("Shop now"),
                             )
                           ],
                         ),
@@ -173,7 +173,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           itemBuilder: (context, index) {
                             return Container(
                               width: 84,
-                              margin: EdgeInsets.only(right: 8),
+                              margin: const EdgeInsets.only(right: 8),
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
                                 borderRadius: BorderRadius.circular(8),
@@ -217,17 +217,17 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   children: [
                                     Expanded(
                                       child: Container(
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.grey,
                                           borderRadius: BorderRadius.only(
                                             topLeft: Radius.circular(8),
                                             topRight: Radius.circular(8),
-                                          )
+                                          ),
                                         ),
                                       ),
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                                    const Padding(
+                                      padding: EdgeInsets.all(8.0),
                                       child: Column(
                                         children: [
                                           Row(
@@ -268,10 +268,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 16,
                             ),
-                            Expanded(child: Placeholder()),
+                            const Expanded(child: Placeholder()),
                           ],
                         ),
                       ),
