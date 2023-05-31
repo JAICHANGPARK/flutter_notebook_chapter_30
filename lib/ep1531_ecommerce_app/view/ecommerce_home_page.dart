@@ -203,6 +203,13 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Container(
                         height: 260,
                         color: Colors.blueGrey,
+                        child: Row(
+                          children: [
+                            Expanded(child: Placeholder()),
+                            SizedBox(width: 16,),
+                            Expanded(child: Placeholder()),
+                          ],
+                        ),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
