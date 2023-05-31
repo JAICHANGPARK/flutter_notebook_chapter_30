@@ -165,6 +165,14 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Container(
                         height: 84,
                         color: Colors.blueGrey,
+                        child: ListView.builder(
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 64,
+                            );
+                          },
+                        ),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
