@@ -75,8 +75,14 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
               ),
               Container(
                 height: 130,
-                color: Colors.blueGrey,
                 margin: EdgeInsets.symmetric(vertical: 16),
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                  borderRadius: BorderRadius.circular(8),
+                  image: DecorationImage(
+                    
+                  )
+                ),
               ),
               Expanded(
                 child: SingleChildScrollView(
