@@ -74,7 +74,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                 ),
               ),
               Container(
-                height: 130,
+                height: 140,
                 margin: const EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
                   color: Colors.blueGrey,
@@ -106,11 +106,28 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           children: [
                             Text(
                               "New Spring",
-                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 18,
+                              ),
                             ),
                             Text(
                               "Collection",
-                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 18,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              child: Text(
+                                "Explore raw spring collection",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                             Container(
                               decoration: BoxDecoration(
