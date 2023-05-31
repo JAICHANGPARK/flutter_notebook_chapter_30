@@ -171,6 +171,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           itemBuilder: (context, index) {
                             return Container(
                               width: 64,
+                              margin: EdgeInsets.only(right: 8),
                               decoration: BoxDecoration(
                                 color: Colors.grey,
                                 borderRadius: BorderRadius.circular(8),
