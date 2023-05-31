@@ -9,7 +9,7 @@ class EcommerceHomePage extends StatefulWidget {
 
 class _EcommerceHomePageState extends State<EcommerceHomePage> {
   final blueColor = const Color.fromRGBO(56, 130, 205, 1);
-  final greyColor = Color.fromRGBO(243, 249, 249, 1);
+  final greyColor = const Color.fromRGBO(243, 249, 249, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +30,8 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           color: greyColor,
                           borderRadius: BorderRadius.circular(2),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 8),
-                        child: Center(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: const Center(
                           child: TextField(
                             decoration: InputDecoration(
                               icon: Icon(
@@ -50,13 +50,13 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8),
-                      padding: EdgeInsets.all(4),
+                      margin: const EdgeInsets.symmetric(horizontal: 8),
+                      padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
                         color: greyColor,
                         borderRadius: BorderRadius.circular(2),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.notifications_none,
                       ),
                     ),
@@ -65,8 +65,8 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                         color: greyColor,
                         borderRadius: BorderRadius.circular(2),
                       ),
-                      padding: EdgeInsets.all(4),
-                      child: Icon(
+                      padding: const EdgeInsets.all(4),
+                      child: const Icon(
                         Icons.shopping_cart_outlined,
                       ),
                     ),
@@ -75,13 +75,24 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
               ),
               Container(
                 height: 130,
-                margin: EdgeInsets.symmetric(vertical: 16),
+                margin: const EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
                   color: Colors.blueGrey,
                   borderRadius: BorderRadius.circular(8),
-                  image: DecorationImage(
-                    
+                  image: const DecorationImage(
+                    image: NetworkImage("https://cdn.pixabay.com/photo/2016/10/26/07/56/wedding-1770860_1280.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                  gradient: LinearGradient(
+                    colors: [
+                      
+                    ]
                   )
+                ),
+                child: Stack(
+                  children: [
+
+                  ],
                 ),
               ),
               Expanded(
@@ -91,10 +102,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Shop by Category"),
+                          const Text("Shop by Category"),
                           TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               "See all",
                             ),
                           )
@@ -107,10 +118,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Popular"),
+                          const Text("Popular"),
                           TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               "See all",
                             ),
                           )
@@ -123,10 +134,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Recommended for you"),
+                          const Text("Recommended for you"),
                           TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               "See all",
                             ),
                           )
