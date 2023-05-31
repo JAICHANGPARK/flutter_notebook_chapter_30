@@ -85,14 +85,14 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                   ),
                   gradient: LinearGradient(
                     colors: [
-                      
-                    ]
-                  )
+                      Color.fromRGBO(55, 96, 148, 1),
+                      Color.fromRGBO(74, 96, 130, 1),
+                      Colors.white.withOpacity(0.1),
+                    ],
+                  ),
                 ),
                 child: Stack(
-                  children: [
-
-                  ],
+                  children: [],
                 ),
               ),
               Expanded(
