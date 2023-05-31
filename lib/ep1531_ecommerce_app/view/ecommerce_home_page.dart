@@ -164,7 +164,6 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       ),
                       Container(
                         height: 84,
-                        color: Colors.blueGrey,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
@@ -173,7 +172,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               width: 84,
                               margin: EdgeInsets.only(right: 8),
                               decoration: BoxDecoration(
-                                color: Colors.grey,
+                                color: Colors.grey[100],
                                 borderRadius: BorderRadius.circular(8),
                               ),
                             );
