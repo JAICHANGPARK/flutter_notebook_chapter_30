@@ -172,7 +172,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               width: 84,
                               margin: EdgeInsets.only(right: 8),
                               decoration: BoxDecoration(
-                                color: Colors.grey[100],
+                                color: Colors.grey[200],
                                 borderRadius: BorderRadius.circular(8),
                               ),
                             );
