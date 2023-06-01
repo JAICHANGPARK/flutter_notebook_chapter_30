@@ -43,13 +43,32 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             height: 340,
             decoration: BoxDecoration(
               color: Colors.blue,
-              borderRadius: BorderRadius.circular(8)
+              borderRadius: BorderRadius.circular(8),
             ),
-            padding: EdgeInsets.all(16),
+            margin: EdgeInsets.all(16),
           ),
           Container(
-            height: 52,
-          )
+            height: 84,
+            color: Colors.grey,
+          ),
+          Row(
+            children: [
+              CircleAvatar(
+                radius: 6,
+              ),
+              Text("Developer Hoodie")
+            ],
+          ),
+          Row(
+            children: [
+              Text(
+                "Flutter Hoodie",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
