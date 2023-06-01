@@ -11,6 +11,17 @@ class EcommerceDetailPage extends StatefulWidget {
 class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: AppBar(
+        centerTitle: true,
+        title: Text("Product details"),
+        leading: Container(
+          decoration: BoxDecoration(
+            color: Colors.grey[200],
+            borderRadius: BorderRadius.circular(4)
+          ),
+        ),
+      ),
+    );
   }
 }
