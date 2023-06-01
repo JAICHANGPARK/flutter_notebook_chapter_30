@@ -32,6 +32,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               borderRadius: BorderRadius.circular(4),
             ),
             margin: EdgeInsets.all(8),
+            padding: EdgeInsets.symmetric(horizontal: 8),
             child: Icon(Icons.favorite_border),
           )
         ],
