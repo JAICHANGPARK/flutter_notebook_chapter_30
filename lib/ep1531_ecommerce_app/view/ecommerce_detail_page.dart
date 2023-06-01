@@ -87,7 +87,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   "Select Size",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    fontSize: 16,
                   ),
+                ),
+                SizedBox(
+                  height: 16,
                 ),
                 Row(
                   children: [
@@ -97,12 +101,64 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         borderRadius: BorderRadius.circular(2),
                       ),
                       padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      margin: EdgeInsets.only(right: 8),
                       child: Center(
                         child: Text(
                           "S",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300]!,
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      margin: EdgeInsets.only(right: 8),
+                      child: Center(
+                        child: Text(
+                          "M",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            // color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300]!,
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      margin: EdgeInsets.only(right: 8),
+                      child: Center(
+                        child: Text(
+                          "L",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            // color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300]!,
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      margin: EdgeInsets.only(right: 8),
+                      child: Center(
+                        child: Text(
+                          "XL",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            // color: Colors.white,
                           ),
                         ),
                       ),
@@ -113,6 +169,13 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             ),
           )
         ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            
+          ],
+        ),
       ),
     );
   }
