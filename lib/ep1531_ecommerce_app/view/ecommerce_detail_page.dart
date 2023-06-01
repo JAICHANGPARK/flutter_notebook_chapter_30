@@ -78,12 +78,16 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               Container(
                 decoration: BoxDecoration(
                   color: Colors.blueGrey,
-                  borderRadius: BorderRadius.circular(4)
+                  borderRadius: BorderRadius.circular(4),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 24),
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                 child: Center(
                   child: Text(
                     "S",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               )
