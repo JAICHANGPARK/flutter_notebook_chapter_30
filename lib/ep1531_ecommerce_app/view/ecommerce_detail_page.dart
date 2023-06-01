@@ -63,20 +63,32 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             children: [
               Text(
                 "Flutter Hoodie",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
               Text(
                 "\$72",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
             ],
           ),
+          Divider(),
+          Text("Select Size"),
+          Row(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                  borderRadius: BorderRadius.circular(4)
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 24),
+                child: Center(
+                  child: Text(
+                    "S",
+                  ),
+                ),
+              )
+            ],
+          )
         ],
       ),
     );
