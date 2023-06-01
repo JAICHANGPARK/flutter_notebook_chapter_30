@@ -50,6 +50,21 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
           Container(
             height: 84,
             color: Colors.grey,
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              children: [
+                Expanded(
+                    child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                )),
+                Expanded(child: Container()),
+                Expanded(child: Container()),
+                Expanded(child: Container()),
+                Expanded(child: Container()),
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(16.0),
