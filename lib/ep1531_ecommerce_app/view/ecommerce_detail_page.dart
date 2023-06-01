@@ -53,13 +53,22 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             child: Row(
               children: [
                 Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(color: Colors.blue),
+                    ),
+                  ),
+                ),
+                Expanded(
                     child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4),
-                    border: Border.all(color: Colors.blue)
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
                   ),
                 )),
-                Expanded(child: Container()),
                 Expanded(child: Container()),
                 Expanded(child: Container()),
                 Expanded(child: Container()),
