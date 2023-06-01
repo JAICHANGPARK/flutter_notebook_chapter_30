@@ -164,7 +164,17 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       ),
                     )
                   ],
-                )
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  child: Text(
+                    "Description",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                ),
               ],
             ),
           )
@@ -191,7 +201,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   color: Colors.blue,
                 ),
                 margin: EdgeInsets.symmetric(vertical: 8),
-                height: 52,
+                height: 42,
                 child: Center(
                   child: Text(
                     "Buy now",
