@@ -65,6 +65,14 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                 "Flutter Hoodie",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
+                  fontSize: 20
+                ),
+              ),
+              Text(
+                "\$72",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20
                 ),
               ),
             ],
