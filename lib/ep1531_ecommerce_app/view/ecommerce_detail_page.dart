@@ -18,13 +18,23 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
           decoration: BoxDecoration(
             color: Colors.grey[200],
             borderRadius: BorderRadius.circular(4),
-            
           ),
           margin: EdgeInsets.all(8),
-          
           child: Icon(Icons.arrow_back),
         ),
+        backgroundColor: Colors.white,
+        elevation: 0,
         foregroundColor: Colors.black,
+        actions: [
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
+              borderRadius: BorderRadius.circular(4),
+            ),
+            margin: EdgeInsets.all(8),
+            child: Icon(Icons.favorite_border),
+          )
+        ],
       ),
       body: Column(
         children: [],
