@@ -211,8 +211,11 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             Expanded(
                               child: GestureDetector(
                                 onTap: () {
-                                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
-                                  EcommerceDetailPage()));
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (context) => EcommerceDetailPage(),
+                                    ),
+                                  );
                                 },
                                 child: Container(
                                   decoration: BoxDecoration(
