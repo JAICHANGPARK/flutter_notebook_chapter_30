@@ -184,7 +184,25 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                 borderRadius: BorderRadius.circular(4),
               ),
             ),
-            Expanded(child: Container()),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(4),
+                  color: Colors.blue,
+                ),
+                margin: EdgeInsets.symmetric(vertical: 8),
+                height: 52,
+                child: Center(
+                  child: Text(
+                    "Buy now",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
