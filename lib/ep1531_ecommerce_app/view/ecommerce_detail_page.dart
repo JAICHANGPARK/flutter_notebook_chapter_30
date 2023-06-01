@@ -173,7 +173,17 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-            
+            Container(
+              child: Icon(
+                Icons.shopping_cart_outlined,
+              ),
+              margin: EdgeInsets.all(4),
+              padding: EdgeInsets.a4,
+              decoration: BoxDecoration(
+                color: Colors.grey[200]!,
+                borderRadius: BorderRadius.circular(4),
+              ),
+            )
           ],
         ),
       ),
