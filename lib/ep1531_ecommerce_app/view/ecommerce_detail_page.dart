@@ -177,13 +177,14 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               child: Icon(
                 Icons.shopping_cart_outlined,
               ),
-              margin: EdgeInsets.all(4),
-              padding: EdgeInsets.a4,
+              margin: EdgeInsets.all(8),
+              padding: EdgeInsets.all(8),
               decoration: BoxDecoration(
                 color: Colors.grey[200]!,
                 borderRadius: BorderRadius.circular(4),
               ),
-            )
+            ),
+            Expanded(child: Container()),
           ],
         ),
       ),
