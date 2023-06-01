@@ -51,54 +51,67 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             height: 84,
             color: Colors.grey,
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  CircleAvatar(
-                    radius: 6,
-                  ),
-                  Text("Developer Hoodie")
-                ],
-              ),
-              Row(
-                children: [
-                  Text(
-                    "Flutter Hoodie",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,),
-                  ),
-                  Text(
-                    "\$72",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,),
-                  ),
-                ],
-              ),
-              Divider(),
-              Text("Select Size"),
-              Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(2)
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 6,
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-                    child: Center(
-                      child: Text(
-                        "S",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
+                    Text("Developer Hoodie")
+                  ],
+                ),
+                Row(
+                  children: [
+                    Text(
+                      "Flutter Hoodie",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
                       ),
                     ),
-                  )
-                ],
-              )
-            ],
+                    Text(
+                      "\$72",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
+                ),
+                Divider(),
+                Text(
+                  "Select Size",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      child: Center(
+                        child: Text(
+                          "S",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
           )
-
         ],
       ),
     );
