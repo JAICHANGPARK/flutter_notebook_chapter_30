@@ -38,7 +38,18 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
         ],
       ),
       body: Column(
-        children: [],
+        children: [
+          Container(
+            height: 300,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(8)
+            ),
+          ),
+          Container(
+            height: 52,
+          )
+        ],
       ),
     );
   }
