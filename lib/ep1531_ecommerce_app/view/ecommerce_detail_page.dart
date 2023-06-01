@@ -48,8 +48,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             margin: EdgeInsets.all(16),
           ),
           Container(
-            height: 84,
-            color: Colors.grey,
+            height: 72,
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
@@ -57,6 +56,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4),
+                    border: Border.all(color: Colors.blue)
                   ),
                 )),
                 Expanded(child: Container()),
