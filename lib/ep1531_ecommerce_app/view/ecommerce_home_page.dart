@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1531_ecommerce_app/view/ecommerce_detail_page.dart';
 
 class EcommerceHomePage extends StatefulWidget {
   const EcommerceHomePage({Key? key}) : super(key: key);
@@ -155,7 +156,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                         children: [
                           const Text(
                             "Shop by Category",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
                           TextButton(
                             onPressed: () {},
@@ -205,66 +209,70 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                         child: Row(
                           children: [
                             Expanded(
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  border: Border.all(
-                                    color: Colors.grey[400]!,
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                                  EcommerceDetailPage()));
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: Border.all(
+                                      color: Colors.grey[400]!,
+                                    ),
                                   ),
-                                ),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Expanded(
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.grey[200]!,
-                                          borderRadius: BorderRadius.only(
-                                            topLeft: Radius.circular(8),
-                                            topRight: Radius.circular(8),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey[200]!,
+                                            borderRadius: BorderRadius.only(
+                                              topLeft: Radius.circular(8),
+                                              topRight: Radius.circular(8),
+                                            ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                    const Padding(
-                                      padding: EdgeInsets.all(8.0),
-                                      child: Column(
-                                        children: [
-                                          Row(
-                                            children: [
-                                              CircleAvatar(
-                                                radius: 8,
-                                                backgroundColor: Colors.black,
-                                              ),
-                                              SizedBox(
-                                                width: 4,
-                                              ),
-                                              Text(
-                                                "Developer Hoodie",
-                                                style: TextStyle(
-                                                  fontSize: 12,
+                                      const Padding(
+                                        padding: EdgeInsets.all(8.0),
+                                        child: Column(
+                                          children: [
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 8,
+                                                  backgroundColor: Colors.black,
                                                 ),
-                                              ),
-                                            ],
-                                          ),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              Text(
-                                                "Flutter Hoodie",
-                                              ),
-                                              Text(
-                                                "\$118",
-                                              )
-                                            ],
-                                          )
-                                        ],
+                                                SizedBox(
+                                                  width: 4,
+                                                ),
+                                                Text(
+                                                  "Developer Hoodie",
+                                                  style: TextStyle(fontSize: 12),
+                                                ),
+                                              ],
+                                            ),
+                                            SizedBox(
+                                              height: 8,
+                                            ),
+                                            Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Text(
+                                                  "Flutter Hoodie",
+                                                ),
+                                                Text(
+                                                  "\$118",
+                                                )
+                                              ],
+                                            )
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
@@ -341,11 +349,13 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text("Recommended for you",
+                          const Text(
+                            "Recommended for you",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 18,
-                            ),),
+                            ),
+                          ),
                           TextButton(
                             onPressed: () {},
                             child: const Text(
