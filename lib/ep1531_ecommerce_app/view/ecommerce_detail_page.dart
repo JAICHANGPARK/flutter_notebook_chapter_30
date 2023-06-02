@@ -61,7 +61,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                   ),
                 ),
-                SizedBox(width: 8,),
+                SizedBox(
+                  width: 8,
+                ),
                 Expanded(
                     child: Container(
                   decoration: BoxDecoration(
@@ -72,12 +74,45 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     color: Colors.grey[200],
                   ),
                 )),
-                SizedBox(width: 8,),
-                Expanded(child: Container()),
-                SizedBox(width: 8,),
-                Expanded(child: Container()),
-                SizedBox(width: 8,),
-                Expanded(child: Container()),
+                SizedBox(
+                  width: 8,
+                ),
+                Expanded(
+                    child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
+                    color: Colors.grey[200],
+                  ),
+                )),
+                SizedBox(
+                  width: 8,
+                ),
+                Expanded(
+                    child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
+                    color: Colors.grey[200],
+                  ),
+                )),
+                SizedBox(
+                  width: 8,
+                ),
+                Expanded(
+                    child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
+                    color: Colors.grey[200],
+                  ),
+                )),
               ],
             ),
           ),
@@ -93,6 +128,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                     Text("Developer Hoodie")
                   ],
+                ),
+                SizedBox(
+                  height: 8,
                 ),
                 Row(
                   children: [
