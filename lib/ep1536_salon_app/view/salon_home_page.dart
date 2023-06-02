@@ -168,6 +168,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                       "Nearest salon",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        fontSize: 18
                       ),
                     ),
                     TextButton(
