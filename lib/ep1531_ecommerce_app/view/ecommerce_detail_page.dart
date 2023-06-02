@@ -150,7 +150,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                   ],
                 ),
-                Divider(),
+                Divider(
+                  height: 24,
+                ),
                 Text(
                   "Select Size",
                   style: TextStyle(
