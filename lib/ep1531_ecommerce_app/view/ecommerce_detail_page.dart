@@ -74,7 +74,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: productItems
-                  .map((e) => Expanded(
+                  .map((e) =>
+                  Expanded(
                     child: GestureDetector(
                       onTap: () {
                         setState(() {
@@ -86,11 +87,16 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(4),
-                                border: Border.all(
-                                  color: selectedImageIndex == e.index ? Colors.blue : Colors.grey[300]!,
-                                ),
-                                color: Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(4),
+                                  border: Border.all(
+                                    color: selectedImageIndex == e.index ? Colors.blue : Colors.grey[300]!,
+                                  ),
+                                  color: Colors.grey[200],
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                          e.img ??""
+                                      )
+                                  )
                               ),
                             ),
                           ),
