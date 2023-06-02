@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_30
 
-## ep1531
+## ep1536
+
+- Salon App UIX
+- by theosm™
+- https://dribbble.com/shots/21620178-Salon-App-UIX
+
+<img src="https://cdn.dribbble.com/userupload/7480791/file/original-0913fa1af08a94a11e28356222c88bdb.jpg?compress=1&resize=1600x1200" width="500px"/>
+
+## ep1531-1535
 
 - ecommerce mobile application
 - by Vazgen for koryun 🇦🇲
