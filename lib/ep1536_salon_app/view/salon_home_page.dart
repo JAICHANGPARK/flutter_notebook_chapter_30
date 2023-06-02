@@ -72,6 +72,19 @@ class _SalonHomePageState extends State<SalonHomePage> {
                   ),
                   Text("Seoul, Republic of Korea")
                 ],
+              ),
+              Container(
+                child: Row(
+                  children: [
+                    Expanded(child: TextField()),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.tune,
+                      ),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
