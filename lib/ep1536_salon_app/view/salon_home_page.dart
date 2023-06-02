@@ -83,16 +83,25 @@ class _SalonHomePageState extends State<SalonHomePage> {
               ),
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 16),
-                decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 12
+                ),
                 child: Row(
                   children: [
                     Expanded(
-                        child: TextField(
-                      decoration: InputDecoration(
+                      child: TextField(
+                        decoration: InputDecoration(
                           icon: Icon(
-                        Icons.search,
-                      )),
-                    )),
+                            Icons.search,
+                          ),
+                        ),
+                      ),
+                    ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
