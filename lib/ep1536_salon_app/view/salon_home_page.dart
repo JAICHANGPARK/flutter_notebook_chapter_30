@@ -17,40 +17,50 @@ class _SalonHomePageState extends State<SalonHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                children: [
-                  Container(
-                    height: 52,
-                    width: 52,
-                  ),
-                  Spacer(),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[400]!,
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(8),
                       ),
-                      borderRadius: BorderRadius.circular(8),
                     ),
-                    padding: EdgeInsets.all(8),
-                    child: Badge(
+                    Spacer(),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[400]!,
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      padding: EdgeInsets.all(8),
+                      child: Badge(
+                        child: Icon(
+                          Icons.notifications_none,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 12,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[400]!,
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      padding: EdgeInsets.all(8),
                       child: Icon(
-                        Icons.notifications_none,
+                        Icons.favorite_border,
                       ),
                     ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[400]!,
-                      ),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    padding: EdgeInsets.all(8),
-                    child: Icon(
-                      Icons.favorite_border,
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               )
             ],
           ),
