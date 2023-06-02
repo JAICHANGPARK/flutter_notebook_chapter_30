@@ -85,6 +85,23 @@ class _SalonHomePageState extends State<SalonHomePage> {
                     ),
                   ],
                 ),
+              ),
+              Container(
+                height: 120,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 240,
+                color: Colors.pink,
+              ),
+              Row(
+                children: [
+                  Text("Nearest salon"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("View All"),
+                  ),
+                ],
               )
             ],
           ),
