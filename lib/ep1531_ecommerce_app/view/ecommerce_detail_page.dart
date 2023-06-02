@@ -43,7 +43,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
           Container(
             height: 340,
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Colors.grey[100],
               borderRadius: BorderRadius.circular(8),
             ),
             margin: const EdgeInsets.all(16),
@@ -134,6 +134,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   height: 8,
                 ),
                 const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
                       "Flutter Hoodie",
@@ -246,6 +247,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                   ),
                 ),
+                Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "),
               ],
             ),
           )
