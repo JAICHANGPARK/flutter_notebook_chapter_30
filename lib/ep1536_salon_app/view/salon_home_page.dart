@@ -129,7 +129,9 @@ class _SalonHomePageState extends State<SalonHomePage> {
                       width: 84,
                       decoration: BoxDecoration(color: Colors.red),
                       child: Column(
-                        children: [],
+                        children: [
+                          Expanded(child: Container()),
+                        ],
                       ),
                     );
                   },
