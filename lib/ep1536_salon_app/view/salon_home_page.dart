@@ -155,15 +155,24 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 height: 240,
                 color: Colors.pink,
                 margin: EdgeInsets.all(16),
+                child: Stack(
+                  children: [
+
+                  ],
+                ),
               ),
-              Row(
-                children: [
-                  Text("Nearest salon"),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text("View All"),
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Nearest salon"),
+                    TextButton(
+                      onPressed: () {},
+                      child: Text("View All"),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
