@@ -16,6 +16,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -61,6 +62,16 @@ class _SalonHomePageState extends State<SalonHomePage> {
                     ),
                   ],
                 ),
+              ),
+              Text("Hi, Dream Walker"),
+              Row(
+                children: [
+                  Icon(
+                    Icons.location_on_outlined,
+                    size: 14,
+                  ),
+                  Text("Seoul, Republic of Korea")
+                ],
               )
             ],
           ),
