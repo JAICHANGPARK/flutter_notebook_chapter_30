@@ -57,6 +57,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(color: Colors.blue),
+                      color: Colors.grey[200],
                     ),
                   ),
                 ),
@@ -67,6 +68,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     border: Border.all(
                       color: Colors.white,
                     ),
+                    color: Colors.grey[200],
                   ),
                 )),
                 Expanded(child: Container()),
