@@ -16,23 +16,11 @@ class EcommerceDetailPage extends StatefulWidget {
 
 class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
   List<Product> productItems = [
-    Product(
-      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
-      0
-    ),
-    Product(
-      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
-      1
-    ),
-    Product(
-      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",2
-    ),
-    Product(
-      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",3
-    ),
-    Product(
-      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",4
-    )
+    Product("https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg", 0),
+    Product("https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg", 1),
+    Product("https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg", 2),
+    Product("https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg", 3),
+    Product("https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg", 4)
   ];
   int selectedImageIndex = 0;
 
@@ -77,8 +65,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   image: NetworkImage(
                     productItems[selectedImageIndex].img ?? "",
                   ),
-                  fit: BoxFit.cover
-              ),
+                  fit: BoxFit.cover),
             ),
             margin: const EdgeInsets.all(16),
           ),
@@ -87,21 +74,22 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: productItems
-                  .map((e) =>
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        selectedImageIndex =
-                      });
-                    },
-                    child: Expanded(
+                  .map((e) => Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          selectedImageIndex = e.index ?? 0;
+                        });
+                      },
                       child: Row(
                         children: [
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4),
-                                border: Border.all(color: Colors.blue),
+                                border: Border.all(
+                                  color: selectedImageIndex == e.index ? Colors.blue : Colors.grey[300]!,
+                                ),
                                 color: Colors.grey[200],
                               ),
                             ),
