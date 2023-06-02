@@ -118,7 +118,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
               ),
               Container(
                 height: 120,
-                color: Colors.blue,
+                margin: EdgeInsets.only(left: 16),
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
@@ -126,7 +126,6 @@ class _SalonHomePageState extends State<SalonHomePage> {
                     return Container(
                       margin: EdgeInsets.only(right: 14),
                       width: 94,
-                      decoration: BoxDecoration(color: Colors.red),
                       child: Column(
                         children: [
                           Expanded(
@@ -155,6 +154,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
               Container(
                 height: 240,
                 color: Colors.pink,
+                margin: EdgeInsets.all(16),
               ),
               Row(
                 children: [
