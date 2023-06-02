@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+class Product{
+  String? img;
+
+  Product(this.img);
+}
+
 class EcommerceDetailPage extends StatefulWidget {
   const EcommerceDetailPage({Key? key}) : super(key: key);
 
@@ -8,6 +14,23 @@ class EcommerceDetailPage extends StatefulWidget {
 }
 
 class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
+  List<Product> productItems = [
+    Product(
+      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
+    ),
+    Product(
+      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
+    ),
+    Product(
+      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
+    ),
+    Product(
+      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
+    ),
+    Product(
+      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
+    )
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
