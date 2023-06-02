@@ -125,7 +125,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       margin: EdgeInsets.only(right: 14),
-                      width: 84,
+                      width: 94,
                       decoration: BoxDecoration(color: Colors.red),
                       child: Column(
                         children: [
@@ -133,9 +133,12 @@ class _SalonHomePageState extends State<SalonHomePage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.grey,
-                                borderRadius: BorderRadius.circular(8)
+                                borderRadius: BorderRadius.circular(12),
                               ),
                             ),
+                          ),
+                          SizedBox(
+                            height: 8,
                           ),
                           Text(
                             "Title",
