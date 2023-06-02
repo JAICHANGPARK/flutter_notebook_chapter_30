@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class Product {
   String? img;
+  int? index;
 
-  Product(this.img);
+  Product(this.img, this.index);
 }
 
 class EcommerceDetailPage extends StatefulWidget {
@@ -17,18 +18,20 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
   List<Product> productItems = [
     Product(
       "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
+      0
     ),
     Product(
       "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
+      1
     ),
     Product(
-      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
+      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",2
     ),
     Product(
-      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
+      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",3
     ),
     Product(
-      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
+      "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",4
     )
   ];
   int selectedImageIndex = 0;
@@ -71,9 +74,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               color: Colors.grey[100],
               borderRadius: BorderRadius.circular(8),
               image: DecorationImage(
-                image: NetworkImage(
-                  productItems[selectedImageIndex].img ?? "",
-                ),
+                  image: NetworkImage(
+                    productItems[selectedImageIndex].img ?? "",
+                  ),
+                  fit: BoxFit.cover
               ),
             ),
             margin: const EdgeInsets.all(16),
@@ -83,24 +87,32 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: productItems
-                  .map((e) => Expanded(
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(4),
-                                  border: Border.all(color: Colors.blue),
-                                  color: Colors.grey[200],
-                                ),
+                  .map((e) =>
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        selectedImageIndex =
+                      });
+                    },
+                    child: Expanded(
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4),
+                                border: Border.all(color: Colors.blue),
+                                color: Colors.grey[200],
                               ),
                             ),
-                            const SizedBox(
-                              width: 8,
-                            ),
-                          ],
-                        ),
-                      ))
+                          ),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ))
                   .toList(),
             ),
           ),
