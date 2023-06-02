@@ -8,6 +8,8 @@ class SalonHomePage extends StatefulWidget {
 }
 
 class _SalonHomePageState extends State<SalonHomePage> {
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +19,13 @@ class _SalonHomePageState extends State<SalonHomePage> {
         showUnselectedLabels: false,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
-        items: [
+        currentIndex: selectedIndex,
+        onTap: (idx) {
+          setState(() {
+            selectedIndex = idx;
+          });
+        },
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
             label: "Home",
