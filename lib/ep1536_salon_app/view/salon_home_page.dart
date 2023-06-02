@@ -17,7 +17,33 @@ class _SalonHomePageState extends State<SalonHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              
+              Row(
+                children: [
+                  Container(
+                    height: 52,
+                    width: 52,
+                  ),
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                    ),
+                    child: Badge(
+                      child: Icon(
+                        Icons.notifications_none,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                    ),
+                    child: Icon(
+                      Icons.favorite_border,
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
