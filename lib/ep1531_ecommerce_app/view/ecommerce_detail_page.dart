@@ -14,14 +14,14 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Product details"),
+        title: const Text("Product details"),
         leading: Container(
           decoration: BoxDecoration(
             color: Colors.grey[200],
             borderRadius: BorderRadius.circular(4),
           ),
-          margin: EdgeInsets.all(8),
-          child: Icon(Icons.arrow_back),
+          margin: const EdgeInsets.all(8),
+          child: const Icon(Icons.arrow_back),
         ),
         backgroundColor: Colors.white,
         elevation: 0,
@@ -32,9 +32,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               color: Colors.grey[200],
               borderRadius: BorderRadius.circular(4),
             ),
-            margin: EdgeInsets.all(8),
-            padding: EdgeInsets.symmetric(horizontal: 8),
-            child: Icon(Icons.favorite_border),
+            margin: const EdgeInsets.all(8),
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: const Icon(Icons.favorite_border),
           )
         ],
       ),
@@ -46,11 +46,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               color: Colors.blue,
               borderRadius: BorderRadius.circular(8),
             ),
-            margin: EdgeInsets.all(16),
+            margin: const EdgeInsets.all(16),
           ),
           Container(
             height: 72,
-            padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
                 Expanded(
@@ -62,7 +62,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 Expanded(
@@ -75,7 +75,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     color: Colors.grey[200],
                   ),
                 )),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 Expanded(
@@ -88,7 +88,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     color: Colors.grey[200],
                   ),
                 )),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 Expanded(
@@ -101,7 +101,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     color: Colors.grey[200],
                   ),
                 )),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 Expanded(
@@ -122,7 +122,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
+                const Row(
                   children: [
                     CircleAvatar(
                       radius: 6,
@@ -130,10 +130,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Text("Developer Hoodie")
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
-                Row(
+                const Row(
                   children: [
                     Text(
                       "Flutter Hoodie",
@@ -151,17 +151,17 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                   ],
                 ),
-                Divider(
+                const Divider(
                   height: 24,
                 ),
-                Text(
+                const Text(
                   "Select Size",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 Row(
@@ -171,9 +171,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.blue,
                         borderRadius: BorderRadius.circular(2),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-                      margin: EdgeInsets.only(right: 8),
-                      child: Center(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      margin: const EdgeInsets.only(right: 8),
+                      child: const Center(
                         child: Text(
                           "S",
                           style: TextStyle(
@@ -188,9 +188,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[300]!,
                         borderRadius: BorderRadius.circular(2),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-                      margin: EdgeInsets.only(right: 8),
-                      child: Center(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      margin: const EdgeInsets.only(right: 8),
+                      child: const Center(
                         child: Text(
                           "M",
                           style: TextStyle(
@@ -205,9 +205,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[300]!,
                         borderRadius: BorderRadius.circular(2),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-                      margin: EdgeInsets.only(right: 8),
-                      child: Center(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      margin: const EdgeInsets.only(right: 8),
+                      child: const Center(
                         child: Text(
                           "L",
                           style: TextStyle(
@@ -222,9 +222,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         color: Colors.grey[300]!,
                         borderRadius: BorderRadius.circular(2),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-                      margin: EdgeInsets.only(right: 8),
-                      child: Center(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                      margin: const EdgeInsets.only(right: 8),
+                      child: const Center(
                         child: Text(
                           "XL",
                           style: TextStyle(
@@ -236,8 +236,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     )
                   ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 12),
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 12),
                   child: Text(
                     "Description",
                     style: TextStyle(
@@ -255,11 +255,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
         child: Row(
           children: [
             Container(
-              child: Icon(
+              child: const Icon(
                 Icons.shopping_cart_outlined,
               ),
-              margin: EdgeInsets.all(8),
-              padding: EdgeInsets.all(8),
+              margin: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
                 color: Colors.grey[200]!,
                 borderRadius: BorderRadius.circular(4),
@@ -271,9 +271,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   borderRadius: BorderRadius.circular(4),
                   color: Colors.blue,
                 ),
-                margin: EdgeInsets.symmetric(vertical: 8),
+                margin: const EdgeInsets.symmetric(vertical: 8),
                 height: 42,
-                child: Center(
+                child: const Center(
                   child: Text(
                     "Buy now",
                     style: TextStyle(
