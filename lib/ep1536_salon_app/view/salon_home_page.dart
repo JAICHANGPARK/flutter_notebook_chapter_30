@@ -64,7 +64,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
