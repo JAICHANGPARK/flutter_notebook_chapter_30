@@ -26,8 +26,12 @@ class _SalonHomePageState extends State<SalonHomePage> {
                   Spacer(),
                   Container(
                     decoration: BoxDecoration(
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey[400]!,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
                     ),
+                    padding: EdgeInsets.all(8),
                     child: Badge(
                       child: Icon(
                         Icons.notifications_none,
@@ -36,8 +40,12 @@ class _SalonHomePageState extends State<SalonHomePage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey[400]!,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
                     ),
+                    padding: EdgeInsets.all(8),
                     child: Icon(
                       Icons.favorite_border,
                     ),
