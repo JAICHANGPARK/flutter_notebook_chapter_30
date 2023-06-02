@@ -63,20 +63,36 @@ class _SalonHomePageState extends State<SalonHomePage> {
                   ],
                 ),
               ),
-              Text("Hi, Dream Walker"),
-              Row(
-                children: [
-                  Icon(
-                    Icons.location_on_outlined,
-                    size: 14,
-                  ),
-                  Text("Seoul, Republic of Korea")
-                ],
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Hi, Dream Walker"),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.location_on_outlined,
+                          size: 14,
+                        ),
+                        Text("Seoul, Republic of Korea")
+                      ],
+                    ),
+                  ],
+                ),
               ),
               Container(
+                margin: EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                 child: Row(
                   children: [
-                    Expanded(child: TextField()),
+                    Expanded(
+                        child: TextField(
+                      decoration: InputDecoration(
+                          icon: Icon(
+                        Icons.search,
+                      )),
+                    )),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
