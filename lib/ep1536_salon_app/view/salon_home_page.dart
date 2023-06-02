@@ -68,7 +68,13 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Hi, Dream Walker"),
+                    Text(
+                      "Hi, Dream Walker",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
                     Row(
                       children: [
                         Icon(
@@ -82,15 +88,12 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 16),
+                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(8),
                 ),
-                padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 12
-                ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                 child: Row(
                   children: [
                     Expanded(
@@ -99,6 +102,8 @@ class _SalonHomePageState extends State<SalonHomePage> {
                           icon: Icon(
                             Icons.search,
                           ),
+                          border: InputBorder.none,
+                          hintText: "Search by Salons",
                         ),
                       ),
                     ),
