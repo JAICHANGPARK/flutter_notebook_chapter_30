@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Product{
+class Product {
   String? img;
 
   Product(this.img);
@@ -31,6 +31,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
       "https://cdn.pixabay.com/photo/2018/01/29/19/55/fur-3117033_1280.jpg",
     )
   ];
+  int selectedImageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,6 +70,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             decoration: BoxDecoration(
               color: Colors.grey[100],
               borderRadius: BorderRadius.circular(8),
+              image: DecorationImage(
+                image: NetworkImage(
+                  productItems[selectedImageIndex].img ?? "",
+                ),
+              ),
             ),
             margin: const EdgeInsets.all(16),
           ),
@@ -75,69 +82,26 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             height: 72,
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(4),
-                      border: Border.all(color: Colors.blue),
-                      color: Colors.grey[200],
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  width: 8,
-                ),
-                Expanded(
-                    child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(4),
-                    border: Border.all(
-                      color: Colors.white,
-                    ),
-                    color: Colors.grey[200],
-                  ),
-                )),
-                const SizedBox(
-                  width: 8,
-                ),
-                Expanded(
-                    child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(4),
-                    border: Border.all(
-                      color: Colors.white,
-                    ),
-                    color: Colors.grey[200],
-                  ),
-                )),
-                const SizedBox(
-                  width: 8,
-                ),
-                Expanded(
-                    child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(4),
-                    border: Border.all(
-                      color: Colors.white,
-                    ),
-                    color: Colors.grey[200],
-                  ),
-                )),
-                const SizedBox(
-                  width: 8,
-                ),
-                Expanded(
-                    child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(4),
-                    border: Border.all(
-                      color: Colors.white,
-                    ),
-                    color: Colors.grey[200],
-                  ),
-                )),
-              ],
+              children: productItems
+                  .map((e) => Expanded(
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(4),
+                                  border: Border.all(color: Colors.blue),
+                                  color: Colors.grey[200],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                          ],
+                        ),
+                      ))
+                  .toList(),
             ),
           ),
           Padding(
