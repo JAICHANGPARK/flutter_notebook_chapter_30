@@ -156,9 +156,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 color: Colors.pink,
                 margin: EdgeInsets.all(16),
                 child: Stack(
-                  children: [
-
-                  ],
+                  children: [],
                 ),
               ),
               Padding(
@@ -166,7 +164,12 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Nearest salon"),
+                    Text(
+                      "Nearest salon",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     TextButton(
                       onPressed: () {},
                       child: Text("View All"),
