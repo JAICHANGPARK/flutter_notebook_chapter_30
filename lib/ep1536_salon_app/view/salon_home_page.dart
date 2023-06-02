@@ -120,7 +120,6 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 height: 120,
                 color: Colors.blue,
                 child: ListView.builder(
-
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
                   itemBuilder: (context, index) {
@@ -130,7 +129,20 @@ class _SalonHomePageState extends State<SalonHomePage> {
                       decoration: BoxDecoration(color: Colors.red),
                       child: Column(
                         children: [
-                          Expanded(child: Container()),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius: BorderRadius.circular(8)
+                              ),
+                            ),
+                          ),
+                          Text(
+                            "Title",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
                         ],
                       ),
                     );
