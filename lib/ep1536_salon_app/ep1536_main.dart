@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1536_salon_app/view/salon_home_page.dart';
 
 void main() {
   runApp(SalonApp());
@@ -9,6 +10,8 @@ class SalonApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: SalonHomePage(),
+    );
   }
 }
