@@ -74,39 +74,39 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: productItems
-                  .map((e) =>
-                  Expanded(
-                    child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          selectedImageIndex = e.index ?? 0;
-                        });
-                      },
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(4),
-                                  border: Border.all(
-                                    color: selectedImageIndex == e.index ? Colors.blue : Colors.grey[300]!,
-                                  ),
-                                  color: Colors.grey[200],
-                                  image: DecorationImage(
+                  .map((e) => Expanded(
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              selectedImageIndex = e.index ?? 0;
+                            });
+                          },
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(4),
+                                    border: Border.all(
+                                      color: selectedImageIndex == e.index ? Colors.blue : Colors.grey[300]!,
+                                    ),
+                                    color: Colors.grey[200],
+                                    image: DecorationImage(
                                       image: NetworkImage(
-                                          e.img ??""
-                                      )
-                                  )
+                                        e.img ?? "",
+                                      ),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
                               ),
-                            ),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                            ],
                           ),
-                          const SizedBox(
-                            width: 8,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ))
+                        ),
+                      ))
                   .toList(),
             ),
           ),
