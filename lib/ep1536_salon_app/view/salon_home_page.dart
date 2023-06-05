@@ -251,51 +251,58 @@ class _SalonHomePageState extends State<SalonHomePage> {
               ),
               ...List.generate(
                 10,
-                (index) => Row(
-                  children: [
-                    Container(
-                      height: 64,
-                      width: 64,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(16),
+                (index) => Container(
+                  margin: EdgeInsets.all(16),
+                  height: 100,
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 64,
+                        width: 64,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                        ),
                       ),
-                    ),
-                    Column(
-                      children: [
-                        Text(
-                          "Bella Rinova",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Text(
-                          "Republic of Korea",
-                        ),
-                        Row(
+                      Expanded(
+                        child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            ...List.generate(
-                              5,
-                              (index) => Padding(
-                                padding: const EdgeInsets.only(right: 8),
-                                child: Icon(
-                                  Icons.star,
-                                  size: 14,
-                                  color: Colors.orangeAccent,
-                                ),
+                            Text(
+                              "Bella Rinova",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Spacer(),
-                            Icon(
-                              Icons.location_on_outlined,
-                            ),
                             Text(
-                              "5 km",
+                              "Republic of Korea",
+                            ),
+                            Row(
+                              children: [
+                                ...List.generate(
+                                  5,
+                                  (index) => Padding(
+                                    padding: const EdgeInsets.only(right: 4),
+                                    child: Icon(
+                                      Icons.star,
+                                      size: 14,
+                                      color: Colors.orangeAccent,
+                                    ),
+                                  ),
+                                ),
+                                Spacer(),
+                                Icon(
+                                  Icons.location_on_outlined,
+                                ),
+                                Text(
+                                  "5 km",
+                                )
+                              ],
                             )
                           ],
-                        )
-                      ],
-                    )
-                  ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ],
