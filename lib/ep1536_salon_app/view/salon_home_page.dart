@@ -133,10 +133,11 @@ class _SalonHomePageState extends State<SalonHomePage> {
                               decoration: BoxDecoration(
                                 color: Colors.grey,
                                 borderRadius: BorderRadius.circular(12),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                   image: NetworkImage(
                                     "https://cdn.pixabay.com/photo/2023/05/29/18/10/pottery-8026824_1280.jpg",
                                   ),
+                                  fit: BoxFit.cover,
                                 ),
                               ),
                             ),
@@ -171,20 +172,20 @@ class _SalonHomePageState extends State<SalonHomePage> {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(16),
                         ),
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               "-40%",
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                             ),
-                            Text("Vourcher for you next"),
-                            Text("haircut service"),
-                            SizedBox(
+                            const Text("Vourcher for you next"),
+                            const Text("haircut service"),
+                            const SizedBox(
                               height: 16,
                             ),
                             Container(
@@ -192,8 +193,8 @@ class _SalonHomePageState extends State<SalonHomePage> {
                                 color: Colors.indigoAccent,
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                              child: Text(
+                              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                              child: const Text(
                                 "Book now",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -214,7 +215,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(16),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image: NetworkImage(
                               "https://cdn.pixabay.com/photo/2023/06/01/06/22/british-shorthair-8032816_1280.jpg",
                             ),
