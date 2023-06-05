@@ -253,52 +253,60 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 10,
                 (index) => Container(
                   margin: EdgeInsets.all(16),
-                  height: 100,
+                  height: 84,
                   child: Row(
                     children: [
                       Container(
-                        height: 64,
-                        width: 64,
+                        height: 84,
+                        width: 84,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
+                          color: Colors.blue,
                         ),
                       ),
                       Expanded(
-                        child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Bella Rinova",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 16, top: 8),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Bella Rinova",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            Text(
-                              "Republic of Korea",
-                            ),
-                            Row(
-                              children: [
-                                ...List.generate(
-                                  5,
-                                  (index) => Padding(
-                                    padding: const EdgeInsets.only(right: 4),
-                                    child: Icon(
-                                      Icons.star,
-                                      size: 14,
-                                      color: Colors.orangeAccent,
+                              Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 8),
+                                child: Text(
+                                  "Republic of Korea",
+                                ),
+                              ),
+
+                              Row(
+                                children: [
+                                  ...List.generate(
+                                    5,
+                                    (index) => Padding(
+                                      padding: const EdgeInsets.only(right: 4),
+                                      child: Icon(
+                                        Icons.star,
+                                        size: 14,
+                                        color: Colors.orangeAccent,
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Spacer(),
-                                Icon(
-                                  Icons.location_on_outlined,
-                                ),
-                                Text(
-                                  "5 km",
-                                )
-                              ],
-                            )
-                          ],
+                                  Spacer(),
+                                  Icon(
+                                    Icons.location_on_outlined,
+                                  ),
+                                  Text(
+                                    "5 km",
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
