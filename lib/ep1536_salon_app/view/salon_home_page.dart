@@ -133,6 +133,11 @@ class _SalonHomePageState extends State<SalonHomePage> {
                               decoration: BoxDecoration(
                                 color: Colors.grey,
                                 borderRadius: BorderRadius.circular(12),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2023/05/29/18/10/pottery-8026824_1280.jpg",
+                                  ),
+                                ),
                               ),
                             ),
                           ),
@@ -172,15 +177,16 @@ class _SalonHomePageState extends State<SalonHomePage> {
                           children: [
                             Text(
                               "-40%",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 32
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
                             ),
-                            SizedBox(height: 16,),
+                            SizedBox(
+                              height: 16,
+                            ),
                             Text("Vourcher for you next"),
                             Text("haircut service"),
-                            SizedBox(height: 16,),
+                            SizedBox(
+                              height: 16,
+                            ),
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.indigoAccent,
