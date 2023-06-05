@@ -167,12 +167,26 @@ class _SalonHomePageState extends State<SalonHomePage> {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(16),
                         ),
+                        padding: EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("-40%"),
                             Text("Vourcher for you next"),
                             Text("haircut service"),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.indigoAccent,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Text(
+                                "Book now",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )
                           ],
                         ),
                       ),
