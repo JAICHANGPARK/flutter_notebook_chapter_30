@@ -178,8 +178,10 @@ class _SalonHomePageState extends State<SalonHomePage> {
                                 fontSize: 32
                               ),
                             ),
+                            SizedBox(height: 16,),
                             Text("Vourcher for you next"),
                             Text("haircut service"),
+                            SizedBox(height: 16,),
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.indigoAccent,
