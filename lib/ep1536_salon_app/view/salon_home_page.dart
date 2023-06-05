@@ -30,7 +30,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Container(
                       decoration: BoxDecoration(
                         border: Border.all(
@@ -38,14 +38,14 @@ class _SalonHomePageState extends State<SalonHomePage> {
                         ),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(8),
-                      child: Badge(
+                      padding: const EdgeInsets.all(8),
+                      child: const Badge(
                         child: Icon(
                           Icons.notifications_none,
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 12,
                     ),
                     Container(
@@ -55,16 +55,16 @@ class _SalonHomePageState extends State<SalonHomePage> {
                         ),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(8),
-                      child: Icon(
+                      padding: const EdgeInsets.all(8),
+                      child: const Icon(
                         Icons.favorite_border,
                       ),
                     ),
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -88,15 +88,15 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(8),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                 child: Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: TextField(
                         decoration: InputDecoration(
                           icon: Icon(
@@ -109,7 +109,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.tune,
                       ),
                     ),
@@ -118,13 +118,13 @@ class _SalonHomePageState extends State<SalonHomePage> {
               ),
               Container(
                 height: 120,
-                margin: EdgeInsets.only(left: 16),
+                margin: const EdgeInsets.only(left: 16),
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     return Container(
-                      margin: EdgeInsets.only(right: 14),
+                      margin: const EdgeInsets.only(right: 14),
                       width: 94,
                       child: Column(
                         children: [
@@ -136,10 +136,10 @@ class _SalonHomePageState extends State<SalonHomePage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
-                          Text(
+                          const Text(
                             "Title",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -154,8 +154,8 @@ class _SalonHomePageState extends State<SalonHomePage> {
               Container(
                 height: 240,
                 color: Colors.pink,
-                margin: EdgeInsets.all(16),
-                child: Stack(
+                margin: const EdgeInsets.all(16),
+                child: const Stack(
                   children: [],
                 ),
               ),
@@ -164,7 +164,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Nearest salon",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -173,7 +173,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: Text("View All"),
+                      child: const Text("View All"),
                     ),
                   ],
                 ),
