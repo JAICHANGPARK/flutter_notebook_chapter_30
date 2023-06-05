@@ -155,8 +155,21 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 height: 240,
                 color: Colors.pink,
                 margin: const EdgeInsets.all(16),
-                child: const Stack(
-                  children: [],
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 24,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                      ),
+                    )
+                  ],
                 ),
               ),
               Padding(
@@ -166,10 +179,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                   children: [
                     const Text(
                       "Nearest salon",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18
-                      ),
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                     TextButton(
                       onPressed: () {},
