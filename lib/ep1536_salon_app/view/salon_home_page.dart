@@ -178,12 +178,15 @@ class _SalonHomePageState extends State<SalonHomePage> {
                           children: [
                             const Text(
                               "-40%",
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 32,
+                              ),
                             ),
                             const SizedBox(
                               height: 16,
                             ),
-                            const Text("Vourcher for you next"),
+                            const Text("Voucher for you next"),
                             const Text("haircut service"),
                             const SizedBox(
                               height: 16,
@@ -234,7 +237,10 @@ class _SalonHomePageState extends State<SalonHomePage> {
                   children: [
                     const Text(
                       "Nearest salon",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
                     ),
                     TextButton(
                       onPressed: () {},
@@ -242,7 +248,56 @@ class _SalonHomePageState extends State<SalonHomePage> {
                     ),
                   ],
                 ),
-              )
+              ),
+              ...List.generate(
+                10,
+                (index) => Row(
+                  children: [
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                    ),
+                    Column(
+                      children: [
+                        Text(
+                          "Bella Rinova",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "Republic of Korea",
+                        ),
+                        Row(
+                          children: [
+                            ...List.generate(
+                              5,
+                              (index) => Padding(
+                                padding: const EdgeInsets.only(right: 8),
+                                child: Icon(
+                                  Icons.star,
+                                  size: 14,
+                                  color: Colors.orangeAccent,
+                                ),
+                              ),
+                            ),
+                            Spacer(),
+                            Icon(
+                              Icons.location_on_outlined,
+                            ),
+                            Text(
+                              "5 km",
+                            )
+                          ],
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
