@@ -171,7 +171,13 @@ class _SalonHomePageState extends State<SalonHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("-40%"),
+                            Text(
+                              "-40%",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 32
+                              ),
+                            ),
                             Text("Vourcher for you next"),
                             Text("haircut service"),
                             Container(
@@ -179,6 +185,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                                 color: Colors.indigoAccent,
                                 borderRadius: BorderRadius.circular(8),
                               ),
+                              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                               child: Text(
                                 "Book now",
                                 style: TextStyle(
