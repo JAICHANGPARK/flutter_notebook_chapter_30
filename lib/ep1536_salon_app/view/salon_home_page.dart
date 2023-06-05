@@ -153,7 +153,6 @@ class _SalonHomePageState extends State<SalonHomePage> {
               ),
               Container(
                 height: 200,
-                color: Colors.pink,
                 margin: const EdgeInsets.fromLTRB(16, 24, 16, 16),
                 child: Stack(
                   children: [
