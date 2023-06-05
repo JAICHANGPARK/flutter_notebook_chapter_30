@@ -152,9 +152,9 @@ class _SalonHomePageState extends State<SalonHomePage> {
                 ),
               ),
               Container(
-                height: 240,
+                height: 200,
                 color: Colors.pink,
-                margin: const EdgeInsets.all(16),
+                margin: const EdgeInsets.fromLTRB(16, 24, 16, 16),
                 child: Stack(
                   children: [
                     Positioned(
@@ -163,6 +163,18 @@ class _SalonHomePageState extends State<SalonHomePage> {
                       right: 0,
                       bottom: 0,
                       child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 0,
+                      right: 0,
+                      bottom: 0,
+                      child: Container(
+                        width: 160,
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(16),
