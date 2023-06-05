@@ -167,6 +167,14 @@ class _SalonHomePageState extends State<SalonHomePage> {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(16),
                         ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("-40%"),
+                            Text("Vourcher for you next"),
+                            Text("haircut service"),
+                          ],
+                        ),
                       ),
                     ),
                     Positioned(
@@ -178,6 +186,12 @@ class _SalonHomePageState extends State<SalonHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(16),
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2023/06/01/06/22/british-shorthair-8032816_1280.jpg",
+                            ),
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     )
