@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1536_salon_app/view/salons_search_page.dart';
 
 class SalonHomePage extends StatefulWidget {
   const SalonHomePage({Key? key}) : super(key: key);
@@ -87,34 +88,45 @@ class _SalonHomePageState extends State<SalonHomePage> {
                   ],
                 ),
               ),
-              Container(
-                margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                decoration: BoxDecoration(
-                  color: Colors.grey[200],
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                child: Row(
-                  children: [
-                    const Expanded(
-                      child: TextField(
-                        enabled: false,
-                        decoration: InputDecoration(
-                          icon: Icon(
-                            Icons.search,
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return SalonSearchPage();
+                      },
+                    ),
+                  );
+                },
+                child: Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  child: Row(
+                    children: [
+                      const Expanded(
+                        child: TextField(
+                          enabled: false,
+                          decoration: InputDecoration(
+                            icon: Icon(
+                              Icons.search,
+                            ),
+                            border: InputBorder.none,
+                            hintText: "Search by Salons",
                           ),
-                          border: InputBorder.none,
-                          hintText: "Search by Salons",
                         ),
                       ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.tune,
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.tune,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               Container(
