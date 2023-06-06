@@ -252,7 +252,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
               ...List.generate(
                 10,
                 (index) => Container(
-                  margin: EdgeInsets.all(16),
+                  margin: const EdgeInsets.all(16),
                   height: 84,
                   child: Row(
                     children: [
@@ -270,14 +270,14 @@ class _SalonHomePageState extends State<SalonHomePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 "Bella Rinova",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 8),
+                              const Padding(
+                                padding: EdgeInsets.symmetric(vertical: 8),
                                 child: Text(
                                   "Republic of Korea",
                                 ),
@@ -286,8 +286,8 @@ class _SalonHomePageState extends State<SalonHomePage> {
                                 children: [
                                   ...List.generate(
                                     5,
-                                    (index) => Padding(
-                                      padding: const EdgeInsets.only(right: 4),
+                                    (index) => const Padding(
+                                      padding: EdgeInsets.only(right: 4),
                                       child: Icon(
                                         Icons.star,
                                         size: 14,
@@ -295,11 +295,11 @@ class _SalonHomePageState extends State<SalonHomePage> {
                                       ),
                                     ),
                                   ),
-                                  Spacer(),
-                                  Icon(
+                                  const Spacer(),
+                                  const Icon(
                                     Icons.location_on_outlined,
                                   ),
-                                  Text(
+                                  const Text(
                                     "5 km",
                                   )
                                 ],
