@@ -16,7 +16,7 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
           length: 5,
           child: Column(
             children: [
-              Container(
+              Material(
                 // height: 64,
                 child: Row(
                   children: [
@@ -31,14 +31,13 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                           child: TextField(
-                            enabled: false,
                             decoration: InputDecoration(
-                              icon: Icon(
-                                Icons.search,
-                              ),
-                              border: InputBorder.none,
-                              hintText: "Search by Salons",
-                            ),
+                                icon: Icon(
+                                  Icons.search,
+                                ),
+                                border: InputBorder.none,
+                                hintText: "Search by Salons",
+                                suffixIcon: Icon(Icons.tune)),
                           ),
                         ),
                       ),
