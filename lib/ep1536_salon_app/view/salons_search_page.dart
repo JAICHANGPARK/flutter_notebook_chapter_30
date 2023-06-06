@@ -11,6 +11,15 @@ class SalonSearchPage extends StatefulWidget {
 class _SalonSearchPageState extends State<SalonSearchPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: DefaultTabController(
+        length: 5,
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
