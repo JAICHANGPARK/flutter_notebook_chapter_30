@@ -30,7 +30,7 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                          child: TextField(
+                          child: const TextField(
                             decoration: InputDecoration(
                                 icon: Icon(
                                   Icons.search,
@@ -46,11 +46,11 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                        icon: Icon(Icons.clear))
+                        icon: const Icon(Icons.clear))
                   ],
                 ),
               ),
-              TabBar(
+              const TabBar(
                 indicatorColor: Colors.indigoAccent,
                 indicatorSize: TabBarIndicatorSize.label,
                 labelColor: Colors.black,
@@ -68,11 +68,11 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                   child: TabBarView(
                 children: [
                   Container(
-                    padding: EdgeInsets.fromLTRB(16, 16, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "Popular artist",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -82,22 +82,27 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                         Container(
                           height: 120,
                           color: Colors.blue,
-                          margin: EdgeInsets.symmetric(vertical: 16),
+                          margin: const EdgeInsets.symmetric(vertical: 16),
                         ),
-                        Text(
-                          "Result founed(248)",
+                        const Text(
+                          "Result found(248)",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                           ),
                         ),
                         Expanded(
-                          child: ListView.builder(
-                            itemBuilder: (context, index) {
-                              return Container(
-                                margin: EdgeInsets.only(bottom: 16),
-                              );
-                            },
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 16),
+                            child: ListView.builder(
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  height: 120,
+                                  margin: const EdgeInsets.only(bottom: 16),
+                                  color: Colors.blue,
+                                );
+                              },
+                            ),
                           ),
                         )
                       ],
