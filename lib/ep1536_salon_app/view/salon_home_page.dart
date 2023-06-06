@@ -196,7 +196,10 @@ class _SalonHomePageState extends State<SalonHomePage> {
                                 color: Colors.indigoAccent,
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 24,
+                                vertical: 12,
+                              ),
                               child: const Text(
                                 "Book now",
                                 style: TextStyle(
