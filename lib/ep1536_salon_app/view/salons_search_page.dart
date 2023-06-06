@@ -82,6 +82,7 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                         Container(
                           height: 120,
                           color: Colors.blue,
+                          margin: EdgeInsets.symmetric(vertical: 16),
                         ),
                         Text(
                           "Result founed(248)",
