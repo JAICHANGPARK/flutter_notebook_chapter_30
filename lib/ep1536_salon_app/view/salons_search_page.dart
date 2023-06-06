@@ -55,6 +55,7 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                 indicatorSize: TabBarIndicatorSize.label,
                 labelColor: Colors.black,
                 unselectedLabelColor: Colors.grey,
+                isScrollable: true,
                 tabs: [
                   Tab(text: "All"),
                   Tab(text: "Haircuts"),
