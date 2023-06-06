@@ -282,7 +282,6 @@ class _SalonHomePageState extends State<SalonHomePage> {
                                   "Republic of Korea",
                                 ),
                               ),
-
                               Row(
                                 children: [
                                   ...List.generate(
