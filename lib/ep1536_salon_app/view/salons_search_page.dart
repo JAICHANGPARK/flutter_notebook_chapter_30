@@ -67,7 +67,41 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
               Expanded(
                   child: TabBarView(
                 children: [
-                  Container(),
+                  Container(
+                    padding: EdgeInsets.fromLTRB(16, 16, 0, 0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Popular artist",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Container(
+                          height: 120,
+                          color: Colors.blue,
+                        ),
+                        Text(
+                          "Result founed(248)",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        Expanded(
+                          child: ListView.builder(
+                            itemBuilder: (context, index) {
+                              return Container(
+                                margin: EdgeInsets.only(bottom: 16),
+                              );
+                            },
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                   Container(),
                   Container(),
                   Container(),
