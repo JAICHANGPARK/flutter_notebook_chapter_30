@@ -98,6 +98,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                   children: [
                     const Expanded(
                       child: TextField(
+                        enabled: false,
                         decoration: InputDecoration(
                           icon: Icon(
                             Icons.search,
