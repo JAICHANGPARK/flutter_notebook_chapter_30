@@ -51,12 +51,16 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                 ),
               ),
               TabBar(
+                indicatorColor: Colors.indigoAccent,
+                indicatorSize: TabBarIndicatorSize.label,
+                labelColor: Colors.black,
+                unselectedLabelColor: Colors.grey,
                 tabs: [
                   Tab(text: "All"),
-                  Tab(text: "All"),
-                  Tab(text: "All"),
-                  Tab(text: "All"),
-                  Tab(text: "All"),
+                  Tab(text: "Haircuts"),
+                  Tab(text: "Make up"),
+                  Tab(text: "Massage"),
+                  Tab(text: "Skin care"),
                 ],
               ),
               Expanded(
