@@ -143,6 +143,7 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                       Expanded(
                                           child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
                                           Text(
                                             "Dream Walker",
