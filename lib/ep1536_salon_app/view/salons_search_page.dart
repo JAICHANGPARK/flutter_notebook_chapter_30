@@ -137,7 +137,17 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                           borderRadius: BorderRadius.circular(8),
                                         ),
                                       ),
-                                      Expanded(child: Column())
+                                      Expanded(
+                                          child: Column(
+                                        children: [
+                                          Text(
+                                            "Dream Walker",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          )
+                                        ],
+                                      ))
                                     ],
                                   ),
                                 );
