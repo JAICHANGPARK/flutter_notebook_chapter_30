@@ -84,11 +84,12 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                           height: 120,
                           margin: const EdgeInsets.symmetric(vertical: 16),
                           child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return Column(
                                 children: [
                                   CircleAvatar(
-                                    radius: 18,
+                                    radius: 28,
                                   ),
                                   SizedBox(
                                     height: 8,
