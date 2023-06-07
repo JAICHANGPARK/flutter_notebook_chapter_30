@@ -147,11 +147,14 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                         children: [
                                           Text(
                                             "Dream Walker",
+                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                          ),
+                                          Text(
+                                            "Seoul, Republic of Korea",
                                             style: TextStyle(
-                                              fontWeight: FontWeight.bold,
+                                              color: Colors.grey,
                                             ),
                                           ),
-                                          Text("Seoul, Republic of Korea"),
                                           Row(
                                             children: [
                                               Icon(
@@ -168,9 +171,8 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                               Container(
                                                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepPurpleAccent,
-                                                  borderRadius: BorderRadius.circular(4)
-                                                ),
+                                                    color: Colors.deepPurpleAccent,
+                                                    borderRadius: BorderRadius.circular(4)),
                                                 child: Text(
                                                   "Book",
                                                   style: TextStyle(
