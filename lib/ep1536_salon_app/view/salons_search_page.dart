@@ -125,7 +125,7 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                             child: ListView.builder(
                               itemBuilder: (context, index) {
                                 return Container(
-                                  height: 120,
+                                  height: 100,
                                   margin: const EdgeInsets.only(bottom: 16),
                                   color: Colors.blue,
                                   child: Row(
@@ -136,6 +136,9 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                           color: Colors.indigoAccent,
                                           borderRadius: BorderRadius.circular(8),
                                         ),
+                                      ),
+                                      SizedBox(
+                                        width: 16,
                                       ),
                                       Expanded(
                                           child: Column(
@@ -155,6 +158,11 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                                 size: 12,
                                               ),
                                               Text("5.0"),
+                                              Icon(
+                                                Icons.location_on_outlined,
+                                                size: 12,
+                                              ),
+                                              Text("15 km"),
                                             ],
                                           )
                                         ],
