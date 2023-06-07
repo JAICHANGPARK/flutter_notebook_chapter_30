@@ -82,7 +82,6 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                         ),
                         Container(
                           height: 120,
-                         
                           margin: const EdgeInsets.symmetric(vertical: 16),
                           child: ListView.builder(
                             itemBuilder: (context, index) {
@@ -91,7 +90,18 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                   CircleAvatar(
                                     radius: 18,
                                   ),
-                                  Text("Dream"),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Text(
+                                    "Dream",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Text("Flutter Dev")
                                 ],
                               );
@@ -114,6 +124,16 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                   height: 120,
                                   margin: const EdgeInsets.only(bottom: 16),
                                   color: Colors.blue,
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        width: 100,
+                                        decoration: BoxDecoration(
+                                          color: Colors.indigoAccent,
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 );
                               },
                             ),
