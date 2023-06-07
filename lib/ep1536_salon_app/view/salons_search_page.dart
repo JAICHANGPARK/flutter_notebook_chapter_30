@@ -125,9 +125,8 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                             child: ListView.builder(
                               itemBuilder: (context, index) {
                                 return Container(
-                                  height: 100,
+                                  height: 92,
                                   margin: const EdgeInsets.only(bottom: 16),
-                                  color: Colors.blue,
                                   child: Row(
                                     children: [
                                       Container(
