@@ -121,11 +121,11 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 16,right: 16),
+                            padding: const EdgeInsets.only(top: 16, right: 16),
                             child: ListView.builder(
                               itemBuilder: (context, index) {
                                 return Container(
-                                  height: 100,
+                                  height: 120,
                                   margin: const EdgeInsets.only(bottom: 16),
                                   color: Colors.blue,
                                   child: Row(
@@ -134,8 +134,10 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                         width: 100,
                                         decoration: BoxDecoration(
                                           color: Colors.indigoAccent,
+                                          borderRadius: BorderRadius.circular(8),
                                         ),
-                                      )
+                                      ),
+                                      Expanded(child: Column())
                                     ],
                                   ),
                                 );
