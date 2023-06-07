@@ -82,13 +82,17 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                         ),
                         Container(
                           height: 120,
-                          color: Colors.blue,
+                         
                           margin: const EdgeInsets.symmetric(vertical: 16),
                           child: ListView.builder(
                             itemBuilder: (context, index) {
                               return Column(
                                 children: [
-
+                                  CircleAvatar(
+                                    radius: 18,
+                                  ),
+                                  Text("Dream"),
+                                  Text("Flutter Dev")
                                 ],
                               );
                             },
