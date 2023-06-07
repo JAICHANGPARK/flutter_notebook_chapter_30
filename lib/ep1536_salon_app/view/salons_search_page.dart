@@ -147,7 +147,10 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                         children: [
                                           Text(
                                             "Dream Walker",
-                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18,
+                                            ),
                                           ),
                                           Text(
                                             "Seoul, Republic of Korea",
@@ -162,6 +165,9 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                                 size: 12,
                                               ),
                                               Text("5.0"),
+                                              SizedBox(
+                                                width: 16,
+                                              ),
                                               Icon(
                                                 Icons.location_on_outlined,
                                                 size: 12,
@@ -169,7 +175,7 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                               Text("15 km"),
                                               Spacer(),
                                               Container(
-                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                                                 decoration: BoxDecoration(
                                                     color: Colors.deepPurpleAccent,
                                                     borderRadius: BorderRadius.circular(4)),
