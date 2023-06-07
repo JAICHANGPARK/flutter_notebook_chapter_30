@@ -86,25 +86,28 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
-                              return Column(
-                                children: [
-                                  CircleAvatar(
-                                    radius: 28,
-                                  ),
-                                  SizedBox(
-                                    height: 8,
-                                  ),
-                                  Text(
-                                    "Dream",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 16),
+                                child: Column(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 32,
                                     ),
-                                  ),
-                                  SizedBox(
-                                    height: 8,
-                                  ),
-                                  Text("Flutter Dev")
-                                ],
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "Dream",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text("Flutter Dev")
+                                  ],
+                                ),
                               );
                             },
                           ),
