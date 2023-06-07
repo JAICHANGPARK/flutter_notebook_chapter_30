@@ -86,8 +86,8 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
-                              return Padding(
-                                padding: const EdgeInsets.only(right: 16),
+                              return const Padding(
+                                padding: EdgeInsets.only(right: 16),
                                 child: Column(
                                   children: [
                                     CircleAvatar(
@@ -137,7 +137,7 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                           borderRadius: BorderRadius.circular(8),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 16,
                                       ),
                                       Expanded(
@@ -163,6 +163,21 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                                 size: 12,
                                               ),
                                               Text("15 km"),
+                                              Spacer(),
+                                              Container(
+                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                                decoration: BoxDecoration(
+                                                  color: Colors.deepPurpleAccent,
+                                                  borderRadius: BorderRadius.circular(4)
+                                                ),
+                                                child: Text(
+                                                  "Book",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ),
                                             ],
                                           )
                                         ],
