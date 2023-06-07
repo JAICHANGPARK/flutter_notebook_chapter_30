@@ -145,14 +145,14 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                          Text(
+                                          const Text(
                                             "Dream Walker",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               fontSize: 18,
                                             ),
                                           ),
-                                          Text(
+                                          const Text(
                                             "Seoul, Republic of Korea",
                                             style: TextStyle(
                                               color: Colors.grey,
@@ -160,35 +160,35 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                           ),
                                           Row(
                                             children: [
-                                              Icon(
+                                              const Icon(
                                                 Icons.star,
                                                 size: 12,
                                                 color: Colors.orange,
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 8,
                                               ),
-                                              Text(
+                                              const Text(
                                                 "5.0",
                                                 style: TextStyle(
                                                   color: Colors.orange,
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 16,
                                               ),
-                                              Icon(
+                                              const Icon(
                                                 Icons.location_on_outlined,
                                                 size: 12,
                                               ),
-                                              Text("15 km"),
-                                              Spacer(),
+                                              const Text("15 km"),
+                                              const Spacer(),
                                               Container(
-                                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                                                 decoration: BoxDecoration(
                                                     color: Colors.deepPurpleAccent,
                                                     borderRadius: BorderRadius.circular(4)),
-                                                child: Text(
+                                                child: const Text(
                                                   "Book",
                                                   style: TextStyle(
                                                     fontWeight: FontWeight.bold,
