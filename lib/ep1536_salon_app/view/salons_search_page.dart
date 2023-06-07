@@ -163,8 +163,17 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                               Icon(
                                                 Icons.star,
                                                 size: 12,
+                                                color: Colors.orange,
                                               ),
-                                              Text("5.0"),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text(
+                                                "5.0",
+                                                style: TextStyle(
+                                                  color: Colors.orange,
+                                                ),
+                                              ),
                                               SizedBox(
                                                 width: 16,
                                               ),
