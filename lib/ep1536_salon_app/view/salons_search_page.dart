@@ -139,12 +139,23 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                                       ),
                                       Expanded(
                                           child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text(
                                             "Dream Walker",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                             ),
+                                          ),
+                                          Text("Seoul, Republic of Korea"),
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.star,
+                                                size: 12,
+                                              ),
+                                              Text("5.0"),
+                                            ],
                                           )
                                         ],
                                       ))
