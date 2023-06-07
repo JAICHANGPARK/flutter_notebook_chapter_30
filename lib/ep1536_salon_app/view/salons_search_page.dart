@@ -43,10 +43,11 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                       ),
                     ),
                     IconButton(
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
-                        icon: const Icon(Icons.clear))
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      icon: const Icon(Icons.clear),
+                    )
                   ],
                 ),
               ),
@@ -83,6 +84,15 @@ class _SalonSearchPageState extends State<SalonSearchPage> {
                           height: 120,
                           color: Colors.blue,
                           margin: const EdgeInsets.symmetric(vertical: 16),
+                          child: ListView.builder(
+                            itemBuilder: (context, index) {
+                              return Column(
+                                children: [
+
+                                ],
+                              );
+                            },
+                          ),
                         ),
                         const Text(
                           "Result found(248)",
