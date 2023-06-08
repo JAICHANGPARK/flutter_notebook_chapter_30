@@ -24,8 +24,40 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withOpacity(0.2),
+                  blurRadius: 2,
+                  spreadRadius: 2,
+                  offset: Offset(0, 3),
                 )
               ],
+            ),
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    margin: const EdgeInsets.fromLTRB(16, 24, 16, 24),
+                    height: 64,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 0, 0, 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Featured"),
+                        Container(
+                          height: 300,
+                          color: Colors.pink,
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
         ],
