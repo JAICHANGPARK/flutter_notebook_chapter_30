@@ -16,7 +16,18 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
           Container(
             height: 240,
             color: Colors.blue,
-          )
+          ),
+          Container(
+            height: 64,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.2),
+                )
+              ],
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
