@@ -12,7 +12,12 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [],
+        children: [
+          Container(
+            height: 240,
+            color: Colors.blue,
+          )
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
