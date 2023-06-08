@@ -15,6 +15,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "My Property"),
