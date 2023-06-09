@@ -82,9 +82,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                   Container(
                     margin: const EdgeInsets.fromLTRB(16, 24, 16, 24),
                     height: 48,
-                    decoration: const BoxDecoration(
-                      color: Colors.red,
-                    ),
+                    // decoration: const BoxDecoration(
+                    //   color: Colors.red,
+                    // ),
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
@@ -99,7 +99,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           ),
                           child: const Row(
                             children: [
-                              Icon(Icons.villa),
+                              Icon(
+                                Icons.villa,
+                                color: Colors.orange,
+                              ),
                               SizedBox(
                                 width: 8,
                               ),
@@ -117,7 +120,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           ),
                           child: const Row(
                             children: [
-                              Icon(Icons.apartment),
+                              Icon(
+                                Icons.apartment,
+                                color: Colors.orange,
+                              ),
                               SizedBox(
                                 width: 8,
                               ),
