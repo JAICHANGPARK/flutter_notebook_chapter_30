@@ -253,7 +253,6 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
-
           type: BottomNavigationBarType.fixed,
           currentIndex: index,
           onTap: (idx) {
@@ -262,11 +261,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
             });
           },
           selectedItemColor: Colors.orange,
-          items: [
-            const BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Home"),
-            const BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "My Property"),
-            const BottomNavigationBarItem(icon: Icon(Icons.build_outlined), label: "Mainenance"),
-            const BottomNavigationBarItem(icon: Icon(Icons.mail_outline), label: "Message"),
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "My Property"),
+            BottomNavigationBarItem(icon: Icon(Icons.build_outlined), label: "Mainenance"),
+            BottomNavigationBarItem(icon: Icon(Icons.mail_outline), label: "Message"),
           ],
         ),
       ),
