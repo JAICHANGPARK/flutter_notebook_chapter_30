@@ -85,6 +85,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     decoration: const BoxDecoration(
                       color: Colors.red,
                     ),
+                    child: ListView(
+                      children: [
+                        
+                      ],
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 0, 0, 16),
