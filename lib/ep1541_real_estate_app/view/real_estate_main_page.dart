@@ -81,7 +81,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 children: [
                   Container(
                     margin: const EdgeInsets.fromLTRB(16, 24, 16, 24),
-                    height: 48,
+                    height: 42,
                     // decoration: const BoxDecoration(
                     //   color: Colors.red,
                     // ),
@@ -188,8 +188,21 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           height: 16,
                         ),
                         Container(
-                          height: 300,
+                          height: 320,
                           color: Colors.pink,
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 280,
+                                margin: EdgeInsets.only(right: 16),
+                                decoration: BoxDecoration(
+                                  color: Colors.red,
+                                ),
+                              );
+                            },
+                          ),
                         )
                       ],
                     ),
