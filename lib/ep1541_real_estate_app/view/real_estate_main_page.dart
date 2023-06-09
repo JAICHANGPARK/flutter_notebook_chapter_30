@@ -89,20 +89,39 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          margin: EdgeInsets.only(right: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.grey[400]!,
                             ),
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          child: Row(
+                          child: const Row(
                             children: [
                               Icon(Icons.villa),
                               SizedBox(
-                                width: 16,
+                                width: 8,
                               ),
                               Text("Villa"),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: const Row(
+                            children: [
+                              Icon(Icons.apartment),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Text("Apartment"),
                             ],
                           ),
                         )
@@ -121,7 +140,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                             fontSize: 16,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         Container(
