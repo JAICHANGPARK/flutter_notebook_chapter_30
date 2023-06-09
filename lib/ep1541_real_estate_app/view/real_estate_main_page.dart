@@ -81,7 +81,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 children: [
                   Container(
                     margin: const EdgeInsets.fromLTRB(16, 24, 16, 24),
-                    height: 64,
+                    height: 48,
                     decoration: const BoxDecoration(
                       color: Colors.red,
                     ),
@@ -89,6 +89,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.grey[400]!,
@@ -96,7 +97,13 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                             borderRadius: BorderRadius.circular(4),
                           ),
                           child: Row(
-                            children: [Icon(Icons.villa), Text("Villa")],
+                            children: [
+                              Icon(Icons.villa),
+                              SizedBox(
+                                width: 16,
+                              ),
+                              Text("Villa"),
+                            ],
                           ),
                         )
                       ],
