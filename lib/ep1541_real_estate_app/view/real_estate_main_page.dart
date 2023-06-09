@@ -55,7 +55,15 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
             ),
             child: Row(
               children: [
-                Expanded(child: TextField()),
+                Expanded(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Search...",
+                      prefixIcon: Icon(Icons.search)
+                    ),
+                  ),
+                ),
                 VerticalDivider(),
                 IconButton(
                   onPressed: () {},
