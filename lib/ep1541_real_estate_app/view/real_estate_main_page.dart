@@ -16,8 +16,18 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
           Container(
             height: 240,
             width: double.infinity,
-            color: Colors.blue,
+
             padding: EdgeInsets.fromLTRB(16, 84, 16, 24),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(
+                  "https://cdn.pixabay.com/photo/2021/08/23/01/03/cubic-house-6566412_1280.jpg",
+                ),
+                fit: BoxFit.cover,
+
+              ),
+              color: Colors.blue,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
