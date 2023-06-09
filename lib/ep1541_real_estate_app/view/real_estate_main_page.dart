@@ -16,6 +16,17 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
           Container(
             height: 240,
             color: Colors.blue,
+            padding: EdgeInsets.fromLTRB(16, 84, 16, 24),
+            child: Column(
+              
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Seek out your dream living space", style: TextStyle(
+                  color: Colors.white,
+
+                ),)
+              ],
+            ),
           ),
           Container(
             height: 64,
