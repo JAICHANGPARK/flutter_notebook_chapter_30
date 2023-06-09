@@ -16,8 +16,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
           Container(
             height: 240,
             width: double.infinity,
-            padding: EdgeInsets.fromLTRB(16, 84, 16, 24),
-            decoration: BoxDecoration(
+            padding: const EdgeInsets.fromLTRB(16, 84, 16, 24),
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage(
                   "https://cdn.pixabay.com/photo/2021/08/23/01/03/cubic-house-6566412_1280.jpg",
@@ -26,7 +26,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
               ),
               color: Colors.blue,
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -49,25 +49,25 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                   color: Colors.black.withOpacity(0.2),
                   blurRadius: 2,
                   spreadRadius: 2,
-                  offset: Offset(0, 3),
+                  offset: const Offset(0, 3),
                 )
               ],
             ),
             child: Row(
               children: [
-                Expanded(
+                const Expanded(
                   child: TextField(
                     decoration: InputDecoration(
                       border: InputBorder.none,
                       hintText: "Search...",
-                      prefixIcon: Icon(Icons.search)
+                      prefixIcon: Icon(Icons.search),
                     ),
                   ),
                 ),
-                VerticalDivider(),
+                const VerticalDivider(),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.tune,
                   ),
                 )
@@ -82,7 +82,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                   Container(
                     margin: const EdgeInsets.fromLTRB(16, 24, 16, 24),
                     height: 64,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.red,
                     ),
                   ),
@@ -91,7 +91,16 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Featured"),
+                        const Text(
+                          "Featured",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Container(
                           height: 300,
                           color: Colors.pink,
@@ -108,10 +117,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "My Property"),
-          BottomNavigationBarItem(icon: Icon(Icons.build_outlined), label: "Mainenance"),
-          BottomNavigationBarItem(icon: Icon(Icons.mail_outline), label: "Message"),
+          const BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Home"),
+          const BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "My Property"),
+          const BottomNavigationBarItem(icon: Icon(Icons.build_outlined), label: "Mainenance"),
+          const BottomNavigationBarItem(icon: Icon(Icons.mail_outline), label: "Message"),
         ],
       ),
     );
