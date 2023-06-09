@@ -106,11 +106,17 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                               SizedBox(
                                 width: 8,
                               ),
-                              Text("Villa"),
+                              Text(
+                                "Villa",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ],
                           ),
                         ),
                         Container(
+                          margin: EdgeInsets.only(right: 12),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -127,7 +133,39 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                               SizedBox(
                                 width: 8,
                               ),
-                              Text("Apartment"),
+                              Text(
+                                "Apartment",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(right: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: const Row(
+                            children: [
+                              Icon(
+                                Icons.home,
+                                color: Colors.orange,
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Text(
+                                "House",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ],
                           ),
                         )
