@@ -86,8 +86,19 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       color: Colors.red,
                     ),
                     child: ListView(
+                      scrollDirection: Axis.horizontal,
                       children: [
-                        
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Row(
+                            children: [Icon(Icons.villa), Text("Villa")],
+                          ),
+                        )
                       ],
                     ),
                   ),
