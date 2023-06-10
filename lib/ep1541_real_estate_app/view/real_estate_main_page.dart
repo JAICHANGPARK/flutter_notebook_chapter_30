@@ -244,6 +244,18 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                               ],
                                             ),
                                             Divider(),
+                                            Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.star,
+                                                  color: Colors.orange,
+                                                ),
+                                                Text("4.6"),
+                                                Text("(24 Reviews)"),
+                                                Text("\$1,5363"),
+                                                Text("\\yr")
+                                              ],
+                                            )
                                           ],
                                         ),
                                       ),
