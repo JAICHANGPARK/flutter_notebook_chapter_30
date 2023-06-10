@@ -191,7 +191,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         ),
                         Container(
                           height: 320,
-                          color: Colors.pink,
+                          // color: Colors.pink,
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemCount: 10,
@@ -200,7 +200,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                 width: 280,
                                 margin: const EdgeInsets.only(right: 16),
                                 decoration: const BoxDecoration(
-                                  color: Colors.red,
+                                  // color: Colors.red,
                                 ),
                                 child: Stack(
                                   children: [
@@ -226,7 +226,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                     "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg",
                                                   ),
                                                   fit: BoxFit.cover,
-                                                  
+
                                                 ),
                                                 borderRadius: BorderRadius.only(
 
