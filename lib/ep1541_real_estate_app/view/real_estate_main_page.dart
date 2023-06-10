@@ -226,10 +226,24 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                Text("Flutter House"),
+                                                Text(
+                                                  "Flutter House",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 16,
+                                                  ),
+                                                ),
                                                 Text("Seoul, Republic of Korea"),
+                                                Row(
+                                                  children: [
+                                                    Text("1,530 sqft"),
+                                                    Text("4 Bedrooms"),
+                                                    Text("3 Bathrooms"),
+                                                  ],
+                                                )
                                               ],
                                             ),
+                                            Divider(),
                                           ],
                                         ),
                                       ),
