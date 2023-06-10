@@ -214,6 +214,16 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                           color: Colors.white,
                                           borderRadius: BorderRadius.circular(8),
                                         ),
+                                        child: Column(
+                                          children: [
+                                            Container(
+                                              height: 140,
+                                              decoration: BoxDecoration(
+                                                color: Colors.blue,
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                                     Positioned(
@@ -221,12 +231,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                       top: 20,
                                       child: Container(
                                         decoration: const BoxDecoration(
-                                          color: Colors.lightGreen,
-                                          borderRadius: BorderRadius.only(
-                                            topRight: Radius.circular(4),
-                                            bottomRight: Radius.circular(4)
-                                          )
-                                        ),
+                                            color: Colors.lightGreen,
+                                            borderRadius: BorderRadius.only(
+                                                topRight: Radius.circular(4), bottomRight: Radius.circular(4))),
                                         padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                                         child: const Text(
                                           "Best Offer",
