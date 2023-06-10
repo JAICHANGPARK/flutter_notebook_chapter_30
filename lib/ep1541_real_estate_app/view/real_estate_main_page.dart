@@ -223,9 +223,13 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                 color: Colors.blue,
                                               ),
                                             ),
-                                            Text("Flutter House"),
-                                            Text("Seoul, Republic of Korea"),
-                                            
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text("Flutter House"),
+                                                Text("Seoul, Republic of Korea"),
+                                              ],
+                                            ),
                                           ],
                                         ),
                                       ),
