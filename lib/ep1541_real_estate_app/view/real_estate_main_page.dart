@@ -215,13 +215,17 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                           borderRadius: BorderRadius.circular(8),
                                         ),
                                         child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              height: 140,
+                                              height: 160,
                                               decoration: BoxDecoration(
                                                 color: Colors.blue,
                                               ),
-                                            )
+                                            ),
+                                            Text("Flutter House"),
+                                            Text("Seoul, Republic of Korea"),
+                                            
                                           ],
                                         ),
                                       ),
