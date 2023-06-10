@@ -264,7 +264,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Home"),
             BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "My Property"),
-            BottomNavigationBarItem(icon: Icon(Icons.build_outlined), label: "Mainenance"),
+            BottomNavigationBarItem(icon: Icon(Icons.build_outlined), label: "Maintenance"),
             BottomNavigationBarItem(icon: Icon(Icons.mail_outline), label: "Message"),
           ],
         ),
