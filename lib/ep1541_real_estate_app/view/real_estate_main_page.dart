@@ -223,6 +223,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                         decoration: BoxDecoration(
                                           color: Colors.lightGreen,
                                         ),
+                                        padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                                         child: Text(
                                           "Best Offer",
                                           style: TextStyle(color: Colors.white),
