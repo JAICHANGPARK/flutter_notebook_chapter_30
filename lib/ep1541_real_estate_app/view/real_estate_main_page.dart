@@ -219,12 +219,22 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                           children: [
                                             Container(
                                               height: 160,
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 color: Colors.blue,
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg",
+                                                  ),
+                                                  fit: BoxFit.cover,
+                                                  
+                                                ),
+                                                borderRadius: BorderRadius.only(
+
+                                                )
                                               ),
                                             ),
-                                            Padding(
-                                              padding: const EdgeInsets.all(16.0),
+                                            const Padding(
+                                              padding: EdgeInsets.all(16.0),
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
@@ -235,12 +245,18 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                       fontSize: 16,
                                                     ),
                                                   ),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
                                                   Text(
                                                     "Seoul, Republic of Korea",
                                                     style: TextStyle(
                                                       fontWeight: FontWeight.bold,
                                                       fontSize: 16,
                                                     ),
+                                                  ),
+                                                  SizedBox(
+                                                    height: 8,
                                                   ),
                                                   Row(
                                                     children: [
@@ -252,18 +268,43 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                 ],
                                               ),
                                             ),
-                                            Divider(),
-                                            Row(
-                                              children: [
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.orange,
-                                                ),
-                                                Text("4.6"),
-                                                Text("(24 Reviews)"),
-                                                Text("\$1,5363"),
-                                                Text("\\yr")
-                                              ],
+                                            const Divider(),
+                                            const Padding(
+                                              padding: EdgeInsets.symmetric(horizontal: 8),
+                                              child: Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.star,
+                                                    color: Colors.orange,
+                                                  ),
+                                                  Text(
+                                                    "4.6",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "(24 Reviews)",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  ),
+                                                  Spacer(),
+                                                  Text(
+                                                    "\$1,5363",
+                                                    style: TextStyle(
+                                                      fontSize: 18,
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "\\yr",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
                                             )
                                           ],
                                         ),
