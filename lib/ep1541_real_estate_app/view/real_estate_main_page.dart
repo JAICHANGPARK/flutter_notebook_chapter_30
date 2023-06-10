@@ -210,8 +210,23 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                       bottom: 0,
                                       right: 0,
                                       child: Container(
-                                        decoration:
-                                            BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 0,
+                                      top: 20,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.lightGreen,
+                                        ),
+                                        child: Text(
+                                          "Best Offer",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -257,6 +272,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                         left: 0,
                                         top: 20,
                                         child: Container(
+                                          width: 160,
                                           decoration: BoxDecoration(
                                             color: Colors.lightGreen,
                                           ),
