@@ -202,6 +202,22 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.red,
                                 ),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 8,
+                                      top: 0,
+                                      bottom: 0,
+                                      right: 0,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.circular(8)
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               );
                             },
                           ),
@@ -239,13 +255,17 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                 ),
                                 child: Stack(
                                   children: [
+                                    Positioned(child: Container()),
                                     Positioned(
                                       left: 8,
                                       top: 0,
                                       bottom: 0,
                                       right: 0,
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.circular(8)
+                                        ),
                                       ),
                                     ),
                                   ],
