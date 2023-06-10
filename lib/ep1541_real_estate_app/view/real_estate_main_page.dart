@@ -91,7 +91,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          margin: EdgeInsets.only(right: 12),
+                          margin: const EdgeInsets.only(right: 12),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -118,7 +118,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 12),
+                          margin: const EdgeInsets.only(right: 12),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -145,7 +145,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 12),
+                          margin: const EdgeInsets.only(right: 12),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -198,14 +198,14 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                             itemBuilder: (context, index) {
                               return Container(
                                 width: 280,
-                                margin: EdgeInsets.only(right: 16),
-                                decoration: BoxDecoration(
+                                margin: const EdgeInsets.only(right: 16),
+                                decoration: const BoxDecoration(
                                   color: Colors.red,
                                 ),
                                 child: Stack(
                                   children: [
                                     Positioned(
-                                      left: 8,
+                                      left: 6,
                                       top: 0,
                                       bottom: 0,
                                       right: 0,
@@ -220,11 +220,15 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                       left: 0,
                                       top: 20,
                                       child: Container(
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.lightGreen,
+                                          borderRadius: BorderRadius.only(
+                                            topRight: Radius.circular(4),
+                                            bottomRight: Radius.circular(4)
+                                          )
                                         ),
-                                        padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                                        child: Text(
+                                        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                                        child: const Text(
                                           "Best Offer",
                                           style: TextStyle(color: Colors.white),
                                         ),
@@ -263,8 +267,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                             itemBuilder: (context, index) {
                               return Container(
                                 width: 280,
-                                margin: EdgeInsets.only(right: 16),
-                                decoration: BoxDecoration(
+                                margin: const EdgeInsets.only(right: 16),
+                                decoration: const BoxDecoration(
                                   color: Colors.red,
                                 ),
                                 child: Stack(
@@ -274,10 +278,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                         top: 20,
                                         child: Container(
                                           width: 160,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Colors.lightGreen,
                                           ),
-                                          child: Text(
+                                          child: const Text(
                                             "Best Offer",
                                             style: TextStyle(color: Colors.white),
                                           ),
