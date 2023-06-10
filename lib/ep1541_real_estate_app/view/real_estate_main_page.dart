@@ -223,25 +223,34 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                 color: Colors.blue,
                                               ),
                                             ),
-                                            Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Text(
-                                                  "Flutter House",
-                                                  style: TextStyle(
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 16,
+                                            Padding(
+                                              padding: const EdgeInsets.all(16.0),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    "Flutter House",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 16,
+                                                    ),
                                                   ),
-                                                ),
-                                                Text("Seoul, Republic of Korea"),
-                                                Row(
-                                                  children: [
-                                                    Text("1,530 sqft"),
-                                                    Text("4 Bedrooms"),
-                                                    Text("3 Bathrooms"),
-                                                  ],
-                                                )
-                                              ],
+                                                  Text(
+                                                    "Seoul, Republic of Korea",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 16,
+                                                    ),
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      Text("1,530 sqft"),
+                                                      Text("4 Bedrooms"),
+                                                      Text("3 Bathrooms"),
+                                                    ],
+                                                  )
+                                                ],
+                                              ),
                                             ),
                                             Divider(),
                                             Row(
