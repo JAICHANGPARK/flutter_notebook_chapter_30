@@ -229,7 +229,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
 
                                                 ),
                                                 borderRadius: BorderRadius.only(
-
+                                                      topRight: Radius.circular(8),
+                                                  topLeft: Radius.circular(8)
                                                 )
                                               ),
                                             ),
