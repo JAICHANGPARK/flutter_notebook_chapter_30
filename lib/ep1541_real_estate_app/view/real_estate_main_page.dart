@@ -17,9 +17,11 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
     return Scaffold(
       body: IndexedStack(
         index: index,
-        children: const [
-          RealEstateHomePage(),
-          RealEstateMaintenancePage(),
+        children:  [
+          const RealEstateHomePage(),
+          Container(),
+          const RealEstateMaintenancePage(),
+          Container(),
         ],
       ),
       bottomNavigationBar: SizedBox(
