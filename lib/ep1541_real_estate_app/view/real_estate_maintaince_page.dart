@@ -29,6 +29,8 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
         foregroundColor: Colors.black,
         bottom: TabBar(
           controller: tabController,
+          labelColor: Colors.black,
+          indicatorColor: Colors.orange,
           tabs: [
             Tab(
               text: "Active(2)",
