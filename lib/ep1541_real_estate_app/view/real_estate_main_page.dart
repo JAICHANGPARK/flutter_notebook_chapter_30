@@ -19,6 +19,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
         index: index,
         children:  [
           const RealEstateHomePage(),
+          // Container(),
           Container(),
           const RealEstateMaintenancePage(),
           Container(),
