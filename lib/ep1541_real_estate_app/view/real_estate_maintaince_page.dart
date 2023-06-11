@@ -32,14 +32,14 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> {
               ],
             ),
           ),
-          Expanded(
-            child: TabBarView(
-              children: [
-                Container(),
-                Container(),
-              ],
-            ),
-          )
+          // Expanded(
+          //   child: TabBarView(
+          //     children: [
+          //       Container(),
+          //       Container(),
+          //     ],
+          //   ),
+          // )
         ],
       ),
     );
