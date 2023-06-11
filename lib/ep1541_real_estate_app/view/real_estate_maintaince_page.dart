@@ -12,7 +12,9 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        
+        AppBar(
+          title: Text("Maintenance"),
+        )
       ],
     );
   }
