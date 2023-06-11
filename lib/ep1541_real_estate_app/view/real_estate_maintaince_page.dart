@@ -10,17 +10,40 @@ class RealEstateMaintenancePage extends StatefulWidget {
 class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        AppBar(
-          title: Text("Maintenance"),
-          actions: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.build_outlined)),
+    return Expanded(
+      child: DefaultTabController(
+        length: 2,
+        child: Column(
+          children: [
+            AppBar(
+              title: Text("Maintenance"),
+              actions: [
+                IconButton(onPressed: () {}, icon: Icon(Icons.build_outlined)),
+              ],
+              backgroundColor: Colors.white,
+              foregroundColor: Colors.black,
+              bottom: TabBar(
+                tabs: [
+                  Tab(
+                    text: "Active(2)",
+                  ),
+                  Tab(
+                    text: "History(21)",
+                  ),
+                ],
+              ),
+            ),
+            Expanded(
+              child: TabBarView(
+                children: [
+                  Container(),
+                  Container(),
+                ],
+              ),
+            )
           ],
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
-        )
-      ],
+        ),
+      ),
     );
   }
 }
