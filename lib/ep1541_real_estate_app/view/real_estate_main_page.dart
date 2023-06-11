@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_30/ep1541_real_estate_app/view/real_estate_home_page.dart';
+import 'package:flutter_notebook_chapter_30/ep1541_real_estate_app/view/real_estate_maintaince_page.dart';
 
 class RealEstateMainPage extends StatefulWidget {
   const RealEstateMainPage({super.key});
@@ -16,8 +17,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
     return Scaffold(
       body: IndexedStack(
         index: index,
-        children: [
-          const RealEstateHomePage(),
+        children: const [
+          RealEstateHomePage(),
+          RealEstateMaintenancePage(),
         ],
       ),
       bottomNavigationBar: SizedBox(
