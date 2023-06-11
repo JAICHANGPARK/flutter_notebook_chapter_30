@@ -14,6 +14,11 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> {
       children: [
         AppBar(
           title: Text("Maintenance"),
+          actions: [
+            IconButton(onPressed: () {}, icon: Icon(Icons.build_outlined)),
+          ],
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
         )
       ],
     );
