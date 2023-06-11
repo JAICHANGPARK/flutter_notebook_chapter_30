@@ -14,7 +14,12 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: RealEstateHomePage(),
+      body: IndexedStack(
+        index: index,
+        children: [
+          const RealEstateHomePage(),
+        ],
+      ),
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
