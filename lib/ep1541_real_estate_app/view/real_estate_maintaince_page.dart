@@ -133,7 +133,10 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                             ),
                           ),
                           Container(
-                            decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(4)),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(4),
+                            ),
                             margin: const EdgeInsets.only(top: 8),
                             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                             child: const Row(
@@ -155,6 +158,29 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                       ),
                     ),
                     const Divider(),
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(),
+                            Expanded(child: Column(
+                              children: [
+                                
+                              ],
+                            )),
+                            OutlinedButton(
+                              onPressed: () {},
+                              child: Text("Email"),
+                            ),
+                            MaterialButton(
+                              color: Colors.orange,
+                              onPressed: () {},
+                              child: Text("Call"),
+                            ),
+                          ],
+                        )
+                      ],
+                    )
                   ],
                 ),
               );
