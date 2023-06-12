@@ -86,15 +86,26 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                               ),
                             ),
                             Expanded(
-                              child: Text(
-                                "",
-                                maxLines: 2,
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                child: Text(
+                                  "Flutter Project - Title Title Title Title Title Title Title Title",
+                                  maxLines: 2,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ),
                             ),
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.blue[50],
                                 borderRadius: BorderRadius.circular(4),
+                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                              child: Text(
+                                "Live",
+                                style: TextStyle(color: Colors.blue),
                               ),
                             )
                           ],
