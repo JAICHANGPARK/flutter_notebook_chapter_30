@@ -170,24 +170,36 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                               color: Colors.grey[400],
                             ),
                           ),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Row(
                             children: [
-                              CircleAvatar(),
-                              Expanded(child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Dreamwalker"),
-                                  Text("+1 2345 6789")
-                                ],
-                              )),
+                              const CircleAvatar(),
+                              const Expanded(
+                                child: Padding(
+                                  padding: EdgeInsets.only(left: 8),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Dreamwalker"),
+                                      Text("+1 2345 6789"),
+                                    ],
+                                  ),
+                                ),
+                              ),
                               OutlinedButton(
                                 onPressed: () {},
-                                child: Text("Email"),
+                                child: const Text("Email"),
+                              ),
+                              SizedBox(
+                                width: 8,
                               ),
                               MaterialButton(
+                                minWidth: 24,
                                 color: Colors.orange,
                                 onPressed: () {},
-                                child: Text("Call"),
+                                child: const Text("Call"),
                               ),
                             ],
                           )
