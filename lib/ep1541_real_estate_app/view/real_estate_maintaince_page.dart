@@ -74,7 +74,7 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                       ),
                       Divider(),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                         child: Row(
                           children: [
                             Container(
