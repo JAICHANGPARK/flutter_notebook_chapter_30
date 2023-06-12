@@ -119,27 +119,44 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                         ),
                       ),
                       Divider(),
-                      Column(
-                        children: [
-                          Text(
-                            "MAINTENANCE",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey[400],
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "MAINTENANCE",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey[400],
+                              ),
                             ),
-                          ),
-                          Container(
-                            child: Row(
-                              children: [
-                                Icon(
-                                  Icons.build_outlined,
-                                ),
-                                Text("Addressing electrical issues",)
-                              ],
-                            ),
-                          )
-                        ],
-                      )
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(4)
+                              ),
+                              margin: EdgeInsets.only(top: 8),
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.build_outlined,
+                                    size: 14,
+                                  ),
+                                  SizedBox(
+                                    width: 7,
+                                  ),
+                                  Text(
+                                    "Addressing electrical issues",
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Divider(),
                     ],
                   ),
                 );
