@@ -56,12 +56,19 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                     ),
                   ),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Row(
                           children: [
-                            Text("STATUS"),
+                            Text(
+                              "STATUS",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey[400],
+                              ),
+                            ),
                             Spacer(),
                             Icon(
                               Icons.check_circle,
@@ -112,6 +119,27 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                         ),
                       ),
                       Divider(),
+                      Column(
+                        children: [
+                          Text(
+                            "MAINTENANCE",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey[400],
+                            ),
+                          ),
+                          Container(
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.build_outlined,
+                                ),
+                                Text("Addressing electrical issues",)
+                              ],
+                            ),
+                          )
+                        ],
+                      )
                     ],
                   ),
                 );
