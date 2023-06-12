@@ -158,28 +158,41 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                       ),
                     ),
                     const Divider(),
-                    Column(
-                      children: [
-                        Row(
-                          children: [
-                            CircleAvatar(),
-                            Expanded(child: Column(
-                              children: [
-                                
-                              ],
-                            )),
-                            OutlinedButton(
-                              onPressed: () {},
-                              child: Text("Email"),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "VENDOR",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey[400],
                             ),
-                            MaterialButton(
-                              color: Colors.orange,
-                              onPressed: () {},
-                              child: Text("Call"),
-                            ),
-                          ],
-                        )
-                      ],
+                          ),
+                          Row(
+                            children: [
+                              CircleAvatar(),
+                              Expanded(child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Dreamwalker"),
+                                  Text("+1 2345 6789")
+                                ],
+                              )),
+                              OutlinedButton(
+                                onPressed: () {},
+                                child: Text("Email"),
+                              ),
+                              MaterialButton(
+                                color: Colors.orange,
+                                onPressed: () {},
+                                child: Text("Call"),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
