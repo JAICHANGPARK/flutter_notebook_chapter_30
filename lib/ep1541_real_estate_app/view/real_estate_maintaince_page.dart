@@ -73,6 +73,11 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                         ),
                       ),
                       Divider(),
+                      Row(
+                        children: [
+                          
+                        ],
+                      )
                     ],
                   ),
                 );
