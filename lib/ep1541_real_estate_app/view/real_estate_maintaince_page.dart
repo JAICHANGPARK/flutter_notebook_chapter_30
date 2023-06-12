@@ -73,10 +73,32 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                         ),
                       ),
                       Divider(),
-                      Row(
-                        children: [
-                          
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 52,
+                              width: 52,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.blue,
+                              ),
+                            ),
+                            Expanded(
+                              child: Text(
+                                "",
+                                maxLines: 2,
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blue[50],
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
