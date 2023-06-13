@@ -27,6 +27,24 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
               Icons.bar_chart,
             ),
             label: "Analytic",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.qr_code_scanner,
+            ),
+            label: "qris",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.list_alt,
+            ),
+            label: "History",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person_outline,
+            ),
+            label: "Profile",
           )
         ],
       ),
