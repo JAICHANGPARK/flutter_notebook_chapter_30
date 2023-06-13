@@ -17,8 +17,8 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
           children: [
             Row(
               children: [
-                CircleAvatar(),
-                Column(
+                const CircleAvatar(),
+                const Column(
                   children: [
                     Text(
                       "4 SEPTEMBER",
@@ -34,12 +34,18 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                     )
                   ],
                 ),
+                const Spacer(),
                 Container(
                   height: 52,
                   width: 52,
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     shape: BoxShape.circle,
+                  ),
+                  child: const Center(
+                    child: Badge(
+                      child: Icon(Icons.notifications_none),
+                    ),
                   ),
                 ),
                 Container(
@@ -48,6 +54,9 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     shape: BoxShape.circle,
+                  ),
+                  child: const Center(
+                    child: Icon(Icons.menu),
                   ),
                 )
               ],
