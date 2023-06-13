@@ -15,91 +15,107 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                const CircleAvatar(),
-                const Column(
-                  children: [
-                    Text(
-                      "4 SEPTEMBER",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  const CircleAvatar(),
+                  SizedBox(
+                    width: 12,
+                  ),
+                  const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "4 SEPTEMBER",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Text(
+                        "Hello~!",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      )
+                    ],
+                  ),
+                  const Spacer(),
+                  Container(
+                    height: 52,
+                    width: 52,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Center(
+                      child: Badge(
+                        child: Icon(Icons.notifications_none),
                       ),
                     ),
-                    Text(
-                      "Hello~!",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )
-                  ],
-                ),
-                const Spacer(),
-                Container(
-                  height: 52,
-                  width: 52,
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    shape: BoxShape.circle,
                   ),
-                  child: const Center(
-                    child: Badge(
-                      child: Icon(Icons.notifications_none),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Container(
+                    height: 52,
+                    width: 52,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      shape: BoxShape.circle,
                     ),
-                  ),
-                ),
-                Container(
-                  height: 52,
-                  width: 52,
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    shape: BoxShape.circle,
-                  ),
-                  child: const Center(
-                    child: Icon(Icons.menu),
-                  ),
-                )
-              ],
+                    child: const Center(
+                      child: Icon(Icons.menu),
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.grey,
-        type: BottomNavigationBarType.fixed,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_outlined,
+      bottomNavigationBar: SizedBox(
+        height: 72,
+        child: BottomNavigationBar(
+          selectedItemColor: Colors.green,
+          unselectedItemColor: Colors.grey,
+          type: BottomNavigationBarType.fixed,
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_outlined,
+              ),
+              label: "Home",
             ),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.bar_chart,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.bar_chart,
+              ),
+              label: "Analytic",
             ),
-            label: "Analytic",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.qr_code_scanner,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.qr_code_scanner,
+              ),
+              label: "qris",
             ),
-            label: "qris",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.list_alt,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.list_alt,
+              ),
+              label: "History",
             ),
-            label: "History",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person_outline,
-            ),
-            label: "Profile",
-          )
-        ],
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_outline,
+              ),
+              label: "Profile",
+            )
+          ],
+        ),
       ),
     );
   }
