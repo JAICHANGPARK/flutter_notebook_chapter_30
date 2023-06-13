@@ -8,6 +8,8 @@ class CrowdfundingMainPage extends StatefulWidget {
 }
 
 class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,6 +82,12 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
+          onTap: (idx) {
+            setState(() {
+              selectedIndex = idx;
+            });
+          },
+          currentIndex: selectedIndex,
           selectedItemColor: Colors.green,
           unselectedItemColor: Colors.grey,
           type: BottomNavigationBarType.fixed,
