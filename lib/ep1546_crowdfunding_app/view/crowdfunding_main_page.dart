@@ -10,6 +10,26 @@ class CrowdfundingMainPage extends StatefulWidget {
 class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_outlined,
+            ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.bar_chart,
+            ),
+            label: "Analytic",
+          )
+        ],
+      ),
+    );
   }
 }
