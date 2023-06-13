@@ -15,6 +15,8 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.green,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
