@@ -130,6 +130,8 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                   border: Border.all(color: Colors.green, width: 1.5),
                                   shape: BoxShape.circle,
                                 ),
+                                padding: EdgeInsets.all(2),
+                                child: CircleAvatar(),
                               ),
                             ),
                             Positioned(
