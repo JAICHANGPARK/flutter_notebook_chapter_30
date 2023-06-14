@@ -112,11 +112,36 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 100,
+                    width: 84,
+                    margin: EdgeInsets.only(right: 16),
                     color: Colors.orange,
                     child: Column(
                       children: [
-                        Expanded(child: Stack()),
+                        Expanded(
+                            child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: 0,
+                              bottom: 0,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.green,
+                                    width: 1.5
+                                  ),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                                right: 0,
+                                top: 0,
+                                child: CircleAvatar(radius: 10,
+                            backgroundColor: Colors.white,))
+                          ],
+                        )),
                         SizedBox(
                           height: 4,
                         ),
