@@ -140,9 +140,10 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                               child: CircleAvatar(
                                 radius: 10,
                                 backgroundColor: Colors.white,
-                                child: Text("🔥",style: TextStyle(
-                                  fontSize: 12
-                                ),),
+                                child: Text(
+                                  "🔥",
+                                  style: TextStyle(fontSize: 12),
+                                ),
                               ),
                             )
                           ],
@@ -157,6 +158,29 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                     ),
                   );
                 },
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  Text(
+                    "Top Creators",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Spacer(),
+                  Text("See all"),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Icon(
+                    Icons.arrow_forward,
+                    size: 14,
+                  ),
+                ],
               ),
             )
           ],
