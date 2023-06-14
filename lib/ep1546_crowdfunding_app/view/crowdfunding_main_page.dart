@@ -78,6 +78,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
             ),
             Container(
               height: 72,
+              margin: EdgeInsets.only(left: 16),
               color: Colors.blue,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
