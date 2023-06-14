@@ -106,7 +106,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
             ),
             Container(
               height: 100,
-              margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+              margin: EdgeInsets.only(left: 16, top: 24, bottom: 24),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
@@ -114,7 +114,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                   return Container(
                     width: 84,
                     margin: EdgeInsets.only(right: 16),
-                    color: Colors.orange,
+                    // color: Colors.orange,
                     child: Column(
                       children: [
                         Expanded(
@@ -148,7 +148,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                           ],
                         )),
                         SizedBox(
-                          height: 4,
+                          height: 6,
                         ),
                         Text(
                           "Dreamwalker",
