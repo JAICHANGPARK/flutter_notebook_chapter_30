@@ -77,7 +77,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
               ),
             ),
             Container(
-              height: 72,
+              height: 58,
               margin: EdgeInsets.only(left: 16),
               color: Colors.blue,
               child: ListView.builder(
@@ -85,10 +85,16 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                    ),
                     margin: EdgeInsets.only(right: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 4,),
                     child: Row(
                       children: [
-                        CircleAvatar(),
+                        CircleAvatar(
+                          radius: 18,
+                        ),
                         SizedBox(
                           width: 6,
                         ),
