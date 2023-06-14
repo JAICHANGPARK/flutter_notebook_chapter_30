@@ -80,7 +80,22 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
               height: 72,
               color: Colors.blue,
               child: ListView.builder(
-                itemBuilder: (context, index) {},
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Container(
+                    margin: EdgeInsets.only(right: 12),
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        SizedBox(
+                          width: 6,
+                        ),
+                        Text("Streamer"),
+                      ],
+                    ),
+                  );
+                },
               ),
             )
           ],
