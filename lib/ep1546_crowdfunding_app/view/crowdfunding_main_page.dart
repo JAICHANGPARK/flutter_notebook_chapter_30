@@ -247,6 +247,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                 child: Column(
                                   children: [
                                     Row(
@@ -261,12 +262,14 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                           ),
                                         ),
                                         Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("Raised"),
                                             Text("\$2600")
                                           ],
                                         ),
                                         Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("Goals"),
                                             Text("\$4800")
