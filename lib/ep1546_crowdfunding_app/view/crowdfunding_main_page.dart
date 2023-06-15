@@ -238,10 +238,19 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                         ),
                       ),
                       SizedBox(
-                        height: 32,
+                        height: 42,
                         child: Row(
                           children: [
-                            Expanded(child: Container()),
+                            Expanded(
+                                child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[300],
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                            )),
+                            SizedBox(
+                              width: 16,
+                            ),
                             Expanded(child: Container()),
                           ],
                         ),
