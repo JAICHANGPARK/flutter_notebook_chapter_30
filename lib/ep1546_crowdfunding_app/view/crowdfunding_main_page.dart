@@ -187,9 +187,22 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                 child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
+                  margin: EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(12)
+                  ),
+                  child: Row(
+                    children: [
+                      CircleAvatar(),
+                      Column(
+                        children: [
+                          Text("Dream Walker"),
+                          Text("Flutter Streaming"),
+                        ],
+                      ),
+
+                    ],
                   ),
                 );
               },
