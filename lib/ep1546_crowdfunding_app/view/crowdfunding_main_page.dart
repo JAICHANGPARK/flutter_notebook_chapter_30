@@ -199,19 +199,32 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                       CircleAvatar(
                         radius: 22,
                       ),
+                      SizedBox(
+                        width: 8,
+                      ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Dream Walker"),
+                            Text(
+                              "Dream Walker",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Text("Flutter Streaming"),
                           ],
                         ),
                       ),
-
-                      Text("🔥", style: TextStyle(
-                        fontSize: 18,
-                      ),)
+                      Text(
+                        "🔥",
+                        style: TextStyle(
+                          fontSize: 18,
+                        ),
+                      )
                     ],
                   ),
                 );
