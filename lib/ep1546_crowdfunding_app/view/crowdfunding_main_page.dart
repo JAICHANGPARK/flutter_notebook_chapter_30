@@ -315,16 +315,27 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                         child: Row(
                           children: [
                             Expanded(
-                                child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey[300],
-                                borderRadius: BorderRadius.circular(24),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[300],
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
                               ),
-                            )),
+                            ),
                             SizedBox(
                               width: 16,
                             ),
-                            Expanded(child: Container()),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.green[300],
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                child: Center(
+                                  child: Text("Support"),
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       )
