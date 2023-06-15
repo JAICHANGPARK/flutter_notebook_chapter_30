@@ -239,17 +239,46 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                         child: Stack(
                           children: [
                             Positioned(
-                                left: 8,
-                                right: 8,
-                                bottom: 8,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                  ),
-                                  child: Column(
-                                    children: [],
-                                  ),
-                                ))
+                              left: 8,
+                              right: 8,
+                              bottom: 8,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Dream PC"),
+                                              Text("56%")
+                                            ],
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text("Raised"),
+                                            Text("\$2600")
+                                          ],
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text("Goals"),
+                                            Text("\$4800")
+                                          ],
+                                        )
+                                      ],
+                                    )
+
+                                  ],
+                                ),
+                              ),
+                            )
                           ],
                         ),
                       ),
