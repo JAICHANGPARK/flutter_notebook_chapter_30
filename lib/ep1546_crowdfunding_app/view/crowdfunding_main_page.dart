@@ -13,6 +13,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -190,18 +191,27 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                   margin: EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(12)
+                    borderRadius: BorderRadius.circular(12),
                   ),
+                  padding: EdgeInsets.all(16),
                   child: Row(
                     children: [
-                      CircleAvatar(),
-                      Column(
-                        children: [
-                          Text("Dream Walker"),
-                          Text("Flutter Streaming"),
-                        ],
+                      CircleAvatar(
+                        radius: 22,
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Dream Walker"),
+                            Text("Flutter Streaming"),
+                          ],
+                        ),
                       ),
 
+                      Text("🔥", style: TextStyle(
+                        fontSize: 18,
+                      ),)
                     ],
                   ),
                 );
