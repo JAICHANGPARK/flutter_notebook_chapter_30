@@ -193,36 +193,57 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  padding: EdgeInsets.all(16),
-                  child: Row(
+                  padding: EdgeInsets.all(12),
+                  child: Column(
                     children: [
-                      CircleAvatar(
-                        radius: 22,
-                      ),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Dream Walker",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
+                      Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 22,
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Dream Walker",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text("Flutter Streaming"),
+                              ],
                             ),
-                            SizedBox(
-                              height: 8,
+                          ),
+                          Text(
+                            "🔥",
+                            style: TextStyle(
+                              fontSize: 18,
                             ),
-                            Text("Flutter Streaming"),
-                          ],
+                          )
+                        ],
+                      ),
+                      Container(
+                        height: 160,
+                        margin: EdgeInsets.symmetric(vertical: 16),
+                        decoration: BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.circular(8),
                         ),
                       ),
-                      Text(
-                        "🔥",
-                        style: TextStyle(
-                          fontSize: 18,
+                      SizedBox(
+                        height: 32,
+                        child: Row(
+                          children: [
+                            Expanded(child: Container()),
+                            Expanded(child: Container()),
+                          ],
                         ),
                       )
                     ],
