@@ -22,7 +22,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
               child: Row(
                 children: [
                   const CircleAvatar(),
-                  SizedBox(
+                  const SizedBox(
                     width: 12,
                   ),
                   const Column(
@@ -59,7 +59,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   Container(
@@ -78,18 +78,18 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
             ),
             Container(
               height: 48,
-              margin: EdgeInsets.only(left: 16),
+              margin: const EdgeInsets.only(left: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container(
                     decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(24)),
-                    margin: EdgeInsets.only(right: 12),
-                    padding: EdgeInsets.symmetric(
+                    margin: const EdgeInsets.only(right: 12),
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 8,
                     ),
-                    child: Row(
+                    child: const Row(
                       children: [
                         CircleAvatar(
                           radius: 18,
@@ -106,14 +106,14 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
             ),
             Container(
               height: 100,
-              margin: EdgeInsets.only(left: 16, top: 24, bottom: 24),
+              margin: const EdgeInsets.only(left: 16, top: 24, bottom: 24),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container(
                     width: 84,
-                    margin: EdgeInsets.only(right: 16),
+                    margin: const EdgeInsets.only(right: 16),
                     // color: Colors.orange,
                     child: Column(
                       children: [
@@ -130,11 +130,11 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                   border: Border.all(color: Colors.green, width: 1.5),
                                   shape: BoxShape.circle,
                                 ),
-                                padding: EdgeInsets.all(2),
-                                child: CircleAvatar(),
+                                padding: const EdgeInsets.all(2),
+                                child: const CircleAvatar(),
                               ),
                             ),
-                            Positioned(
+                            const Positioned(
                               right: 4,
                               top: 4,
                               child: CircleAvatar(
@@ -148,10 +148,10 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                             )
                           ],
                         )),
-                        SizedBox(
+                        const SizedBox(
                           height: 6,
                         ),
-                        Text(
+                        const Text(
                           "Dreamwalker",
                         )
                       ],
@@ -160,8 +160,8 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                 },
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Text(
