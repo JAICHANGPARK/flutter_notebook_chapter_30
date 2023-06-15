@@ -320,6 +320,18 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                   color: Colors.grey[300],
                                   borderRadius: BorderRadius.circular(24),
                                 ),
+                                child: Center(
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(Icons.share),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+                                      Text("Share"),
+                                    ],
+                                  ),
+                                ),
                               ),
                             ),
                             SizedBox(
