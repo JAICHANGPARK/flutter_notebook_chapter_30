@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class CrowdfundingMainPage extends StatefulWidget {
   const CrowdfundingMainPage({super.key});
@@ -256,7 +257,12 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
-                                              Text("Dream PC"),
+                                              Text(
+                                                "Dream PC",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                               Text("56%")
                                             ],
                                           ),
@@ -265,19 +271,38 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("Raised"),
-                                            Text("\$2600")
+                                            Text(
+                                              "\$2600",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            )
                                           ],
+                                        ),
+                                        SizedBox(
+                                          width: 16,
                                         ),
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("Goals"),
-                                            Text("\$4800")
+                                            Text(
+                                              "\$4800",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            )
                                           ],
                                         )
                                       ],
-                                    )
-
+                                    ),
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+                                    LinearPercentIndicator(
+                                      percent: 0.56,
+                                      padding: EdgeInsets.zero,
+                                    ),
                                   ],
                                 ),
                               ),
