@@ -64,18 +64,31 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                 children: [
                   Container(
                     height: 200,
-                    color: Colors.blue,
                     child: Stack(
                       children: [
                         Positioned(
-                            top: 0,
-                            left: 0,
-                            right: 0,
-                            child: Container(
-                              height: 150,
+                          top: 0,
+                          left: 0,
+                          right: 0,
+                          child: Container(
+                            height: 150,
+                            decoration: BoxDecoration(
                               color: Colors.pink,
-                              
-                            )),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  child: CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                  ),
+                                  right: 8,
+                                  top: 8,
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
                         Positioned(
                           left: 0,
                           right: 0,
