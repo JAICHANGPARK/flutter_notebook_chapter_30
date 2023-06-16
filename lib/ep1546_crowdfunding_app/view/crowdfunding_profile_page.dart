@@ -35,6 +35,8 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                       ),
                       CircleAvatar(
                         backgroundColor: Colors.grey[300],
+                        foregroundColor: Colors.black,
+                        child: Icon(Icons.share),
                       ),
                     ],
                   )),
@@ -42,7 +44,10 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                     child: Center(
                       child: Text(
                         "Profile",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
                       ),
                     ),
                   )
