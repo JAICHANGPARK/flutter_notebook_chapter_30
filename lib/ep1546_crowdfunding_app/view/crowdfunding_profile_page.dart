@@ -108,6 +108,34 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                         )
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Text(
+                    "Dream Walker",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                  ),
+                  Text("Flutter Streaming"),
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    height: 32,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                            ),
+                          ),
+                        ),
+                        Expanded(child: Container()),
+                        Expanded(child: Container()),
+                      ],
+                    ),
                   )
                 ],
               ),
