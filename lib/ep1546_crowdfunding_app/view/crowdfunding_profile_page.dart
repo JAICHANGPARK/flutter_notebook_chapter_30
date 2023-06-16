@@ -13,7 +13,21 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Container(
+            height: 48,
+            child: Stack(
+              children: [
+                Positioned(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    CircleAvatar(),
+                    CircleAvatar(),
+                  ],
+                )),
+              ],
+            ),
+          )
         ],
       ),
     );
