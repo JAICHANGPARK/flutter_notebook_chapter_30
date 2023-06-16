@@ -114,15 +114,24 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                   ),
                   Text(
                     "Dream Walker",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
                   ),
                   Text("Flutter Streaming"),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
                   ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
-                    height: 32,
+                    margin: EdgeInsets.symmetric(vertical: 8),
+                    height: 42,
                     child: Row(
                       children: [
                         Expanded(
@@ -132,11 +141,27 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                             ),
                           ),
                         ),
-                        Expanded(child: Container()),
-                        Expanded(child: Container()),
+                        Expanded(
+                          child: Container(
+                            margin: EdgeInsets.symmetric(horizontal: 8),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                            ),
+                          ),
+                        ),
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
                 ],
               ),
             )
