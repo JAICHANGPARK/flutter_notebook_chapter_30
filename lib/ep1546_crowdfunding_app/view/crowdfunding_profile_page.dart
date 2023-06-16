@@ -13,7 +13,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
       ),
     );
