@@ -23,18 +23,26 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                       child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CircleAvatar(),
-                      CircleAvatar(),
+                      InkWell(
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: CircleAvatar(
+                          backgroundColor: Colors.grey[300],
+                          foregroundColor: Colors.black,
+                          child: Icon(Icons.arrow_back),
+                        ),
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.grey[300],
+                      ),
                     ],
                   )),
                   Positioned(
                     child: Center(
                       child: Text(
                         "Profile",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                     ),
                   )
