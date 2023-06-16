@@ -53,6 +53,51 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                   )
                 ],
               ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              margin: EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  Container(
+                    height: 200,
+                    color: Colors.blue,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            child: Container(
+                              height: 150,
+                              color: Colors.pink,
+                              
+                            )),
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          child: Center(
+                            child: Container(
+                              height: 100,
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
