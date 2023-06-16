@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_30/ep1546_crowdfunding_app/view/crowdfunding_profile_page.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class CrowdfundingMainPage extends StatefulWidget {
@@ -189,7 +190,13 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                 child: ListView.builder(
               itemBuilder: (context, index) {
                 return GestureDetector(
-                  onTap: (){},
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => CrowdfundingProfilePage(),
+                      ),
+                    );
+                  },
                   child: Container(
                     margin: EdgeInsets.all(8),
                     decoration: BoxDecoration(
