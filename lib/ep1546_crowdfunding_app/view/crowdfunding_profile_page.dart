@@ -164,8 +164,8 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
               ),
             ),
             Container(
-              height: 72,
-              margin: EdgeInsets.all(16),
+              height: 84,
+              margin: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Expanded(
@@ -176,6 +176,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                       ),
                     ),
                   ),
+                  SizedBox(width: 16,),
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
