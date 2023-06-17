@@ -16,7 +16,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               height: 48,
               child: Stack(
                 children: [
@@ -31,17 +31,17 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                         child: CircleAvatar(
                           backgroundColor: Colors.grey[300],
                           foregroundColor: Colors.black,
-                          child: Icon(Icons.arrow_back),
+                          child: const Icon(Icons.arrow_back),
                         ),
                       ),
                       CircleAvatar(
                         backgroundColor: Colors.grey[300],
                         foregroundColor: Colors.black,
-                        child: Icon(Icons.share),
+                        child: const Icon(Icons.share),
                       ),
                     ],
                   )),
-                  Positioned(
+                  const Positioned(
                     child: Center(
                       child: Text(
                         "Profile",
@@ -60,7 +60,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(8),
               ),
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               child: Column(
                 children: [
                   Container(
@@ -77,7 +77,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                               color: Colors.pink,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Stack(
+                            child: const Stack(
                               children: [
                                 Positioned(
                                   child: CircleAvatar(
@@ -110,27 +110,27 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-                  Text(
+                  const Text(
                     "Dream Walker",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
                     ),
                   ),
-                  Text("Flutter Streaming"),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
+                  const Text("Flutter Streaming"),
+                  const Padding(
+                    padding: EdgeInsets.all(16.0),
                     child: Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 8),
+                    margin: const EdgeInsets.symmetric(vertical: 8),
                     height: 42,
-                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: Row(
                       children: [
                         Expanded(
@@ -142,7 +142,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                         ),
                         Expanded(
                           child: Container(
-                            margin: EdgeInsets.symmetric(horizontal: 8),
+                            margin: const EdgeInsets.symmetric(horizontal: 8),
                             decoration: BoxDecoration(
                               color: Colors.grey[200],
                             ),
@@ -158,7 +158,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                 ],
@@ -166,7 +166,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
             ),
             Container(
               height: 84,
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Expanded(
@@ -177,7 +177,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                       ),
                     ),
                   ),
-                  SizedBox(width: 16,),
+                  const SizedBox(width: 16,),
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
