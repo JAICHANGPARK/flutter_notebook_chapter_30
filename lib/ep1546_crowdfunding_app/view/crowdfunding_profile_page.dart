@@ -260,12 +260,25 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                 borderRadius: BorderRadius.circular(8),
               ),
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              padding: EdgeInsets.all(8),
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Dream PC"),
-                      Text("Top Supporters"),
+                      Text(
+                        "Dream PC",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        "Top Supporters",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                        ),
+                      ),
                     ],
                   ),
                   Row(
@@ -275,6 +288,13 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                         children: [
                           Text("Raised"),
                           Text("\$2600"),
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Goal"),
+                          Text("\$4000"),
                         ],
                       ),
                     ],
