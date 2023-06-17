@@ -260,11 +260,11 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(8),
               ),
-              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-              padding: EdgeInsets.all(8),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              padding: const EdgeInsets.all(8),
               child: Column(
                 children: [
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
@@ -282,10 +282,10 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -322,21 +322,21 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                   LinearPercentIndicator(
                     padding: EdgeInsets.zero,
                     percent: 0.56,
                     progressColor: Colors.green,
-                    barRadius: Radius.circular(8),
+                    barRadius: const Radius.circular(8),
                   ),
                 ],
               ),
             ),
             Container(
               height: 42,
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Expanded(
@@ -345,7 +345,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -359,7 +359,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Expanded(
@@ -368,7 +368,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                         color: Colors.green[300],
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text("Support"),
                       ),
                     ),
