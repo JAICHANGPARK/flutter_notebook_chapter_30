@@ -335,9 +335,44 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
               ),
             ),
             Container(
+              height: 42,
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
-
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      child: Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.share),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Text("Share"),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.green[300],
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      child: Center(
+                        child: Text("Support"),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             )
