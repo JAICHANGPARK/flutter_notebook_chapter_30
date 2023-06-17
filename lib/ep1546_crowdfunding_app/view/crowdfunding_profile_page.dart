@@ -64,7 +64,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
               margin: const EdgeInsets.all(16),
               child: Column(
                 children: [
-                  Container(
+                  SizedBox(
                     height: 200,
                     child: Stack(
                       children: [
