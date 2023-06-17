@@ -81,11 +81,11 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                             child: const Stack(
                               children: [
                                 Positioned(
+                                  right: 8,
+                                  top: 8,
                                   child: CircleAvatar(
                                     backgroundColor: Colors.white,
                                   ),
-                                  right: 8,
-                                  top: 8,
                                 )
                               ],
                             ),
