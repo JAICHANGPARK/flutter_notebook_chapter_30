@@ -162,6 +162,20 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                   ),
                 ],
               ),
+            ),
+            Container(
+              height: 72,
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      
+                    ),
+                  ))
+                ],
+              ),
             )
           ],
         ),
