@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class CrowdfundingProfilePage extends StatefulWidget {
   const CrowdfundingProfilePage({super.key});
@@ -320,7 +321,23 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                         radius: 14,
                       )
                     ],
-                  )
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  LinearPercentIndicator(
+                    padding: EdgeInsets.zero,
+                    percent: 0.56,
+                    progressColor: Colors.green,
+                    barRadius: Radius.circular(8),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              child: Row(
+                children: [
+
                 ],
               ),
             )
