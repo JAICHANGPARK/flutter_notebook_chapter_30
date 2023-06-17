@@ -175,21 +175,31 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(8),
-                      child: Column(
+                      padding: const EdgeInsets.all(8),
+                      child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.supervisor_account),
-                              Text("Followers"),
+                              Icon(
+                                Icons.supervisor_account,
+                                color: Colors.green,
+                              ),
+                              SizedBox(width: 6,),
+                              Text(
+                                "Followers",
+                                style: TextStyle(
+                                  color: Colors.green,
+                                ),
+                              ),
                             ],
                           ),
                           Text(
                             "1.2K",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 32,
+                              fontSize: 28,
                             ),
                           )
                         ],
@@ -205,11 +215,41 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
                       ),
+                      padding: const EdgeInsets.all(8),
+                      child: const Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.redeem,
+                                color: Colors.green,
+                              ),
+                              SizedBox(width: 6,),
+                              Text(
+                                "Rewards",
+                                style: TextStyle(
+                                  color: Colors.green,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Text(
+                            "12",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 28,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
-                  )
+                  ),
                 ],
               ),
             )
+
           ],
         ),
       ),
