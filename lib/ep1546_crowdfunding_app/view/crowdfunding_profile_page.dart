@@ -281,6 +281,9 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                       ),
                     ],
                   ),
+                  SizedBox(
+                    height: 8,
+                  ),
                   Row(
                     children: [
                       Column(
@@ -290,6 +293,9 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                           Text("\$2600"),
                         ],
                       ),
+                      SizedBox(
+                        width: 8,
+                      ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -297,6 +303,22 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                           Text("\$4000"),
                         ],
                       ),
+                      Spacer(),
+                      CircleAvatar(
+                        radius: 14,
+                      ),
+                      SizedBox(
+                        width: 4,
+                      ),
+                      CircleAvatar(
+                        radius: 14,
+                      ),
+                      SizedBox(
+                        width: 4,
+                      ),
+                      CircleAvatar(
+                        radius: 14,
+                      )
                     ],
                   )
                 ],
