@@ -168,12 +168,13 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
               child: Row(
                 children: [
                   Expanded(
-                      child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     ),
-                  ))
+                  )
                 ],
               ),
             )
