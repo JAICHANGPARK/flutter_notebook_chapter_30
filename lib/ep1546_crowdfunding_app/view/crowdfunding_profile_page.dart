@@ -165,7 +165,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
               ),
             ),
             Container(
-              height: 84,
+              height: 88,
               margin: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
@@ -175,9 +175,30 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
                       ),
+                      padding: EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.supervisor_account),
+                              Text("Followers"),
+                            ],
+                          ),
+                          Text(
+                            "1.2K",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 32,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                  const SizedBox(width: 16,),
+                  const SizedBox(
+                    width: 16,
+                  ),
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
