@@ -271,10 +271,12 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                   Row(
                     children: [
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          
+                          Text("Raised"),
+                          Text("\$2600"),
                         ],
-                      )
+                      ),
                     ],
                   )
                 ],
