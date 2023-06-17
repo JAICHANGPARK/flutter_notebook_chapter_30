@@ -186,7 +186,9 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                                 Icons.supervisor_account,
                                 color: Colors.green,
                               ),
-                              SizedBox(width: 6,),
+                              SizedBox(
+                                width: 6,
+                              ),
                               Text(
                                 "Followers",
                                 style: TextStyle(
@@ -226,7 +228,9 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                                 Icons.redeem,
                                 color: Colors.green,
                               ),
-                              SizedBox(width: 6,),
+                              SizedBox(
+                                width: 6,
+                              ),
                               Text(
                                 "Rewards",
                                 style: TextStyle(
@@ -248,8 +252,20 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                   ),
                 ],
               ),
+            ),
+            Container(
+              height: 92,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              child: Column(
+                children: [
+                  
+                ],
+              ),
             )
-
           ],
         ),
       ),
