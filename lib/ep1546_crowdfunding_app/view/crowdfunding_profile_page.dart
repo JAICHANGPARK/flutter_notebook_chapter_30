@@ -342,7 +342,7 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[300],
+                        color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
                       ),
                       child: Center(
