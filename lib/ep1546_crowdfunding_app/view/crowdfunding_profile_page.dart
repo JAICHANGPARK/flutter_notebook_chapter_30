@@ -262,7 +262,21 @@ class _CrowdfundingProfilePageState extends State<CrowdfundingProfilePage> {
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Column(
                 children: [
-                  
+                  Row(
+                    children: [
+                      Text("Dream PC"),
+                      Text("Top Supporters"),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          
+                        ],
+                      )
+                    ],
+                  )
                 ],
               ),
             )
