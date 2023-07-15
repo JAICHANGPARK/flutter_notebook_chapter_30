@@ -193,20 +193,20 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => CrowdfundingProfilePage(),
+                        builder: (context) => const CrowdfundingProfilePage(),
                       ),
                     );
                   },
                   child: Container(
-                    margin: EdgeInsets.all(8),
+                    margin: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    padding: EdgeInsets.all(12),
+                    padding: const EdgeInsets.all(12),
                     child: Column(
                       children: [
-                        Row(
+                        const Row(
                           children: [
                             CircleAvatar(
                               radius: 22,
@@ -241,7 +241,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                         ),
                         Container(
                           height: 200,
-                          margin: EdgeInsets.symmetric(vertical: 16),
+                          margin: const EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
                             color: Colors.green,
                             borderRadius: BorderRadius.circular(8),
@@ -257,10 +257,10 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                   child: Column(
                                     children: [
-                                      Row(
+                                      const Row(
                                         children: [
                                           Expanded(
                                             child: Column(
@@ -305,7 +305,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                           )
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 12,
                                       ),
                                       LinearPercentIndicator(
@@ -329,7 +329,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                     color: Colors.grey[300],
                                     borderRadius: BorderRadius.circular(24),
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
@@ -343,7 +343,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 16,
                               ),
                               Expanded(
@@ -352,7 +352,7 @@ class _CrowdfundingMainPageState extends State<CrowdfundingMainPage> {
                                     color: Colors.green[300],
                                     borderRadius: BorderRadius.circular(24),
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text("Support"),
                                   ),
                                 ),
