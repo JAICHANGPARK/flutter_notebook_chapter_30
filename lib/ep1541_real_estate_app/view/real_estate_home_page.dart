@@ -186,7 +186,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       const SizedBox(
                         height: 16,
                       ),
-                      Container(
+                      SizedBox(
                         height: 320,
                         // color: Colors.pink,
                         child: ListView.builder(
