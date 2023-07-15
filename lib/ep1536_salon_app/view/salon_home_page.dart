@@ -93,7 +93,7 @@ class _SalonHomePageState extends State<SalonHomePage> {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) {
-                        return SalonSearchPage();
+                        return const SalonSearchPage();
                       },
                     ),
                   );
