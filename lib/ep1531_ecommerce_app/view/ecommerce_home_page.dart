@@ -21,7 +21,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 height: 32,
                 child: Row(
                   children: [
@@ -169,7 +169,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           )
                         ],
                       ),
-                      Container(
+                      SizedBox(
                         height: 84,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
@@ -204,7 +204,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           )
                         ],
                       ),
-                      Container(
+                      SizedBox(
                         height: 260,
                         child: Row(
                           children: [
@@ -213,7 +213,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 onTap: () {
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
-                                      builder: (context) => EcommerceDetailPage(),
+                                      builder: (context) => const EcommerceDetailPage(),
                                     ),
                                   );
                                 },
@@ -231,7 +231,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: Colors.grey[200]!,
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               topLeft: Radius.circular(8),
                                               topRight: Radius.circular(8),
                                             ),
@@ -297,7 +297,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.grey[200]!,
-                                          borderRadius: BorderRadius.only(
+                                          borderRadius: const BorderRadius.only(
                                             topLeft: Radius.circular(8),
                                             topRight: Radius.circular(8),
                                           ),
@@ -367,7 +367,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           )
                         ],
                       ),
-                      Container(
+                      SizedBox(
                         height: 260,
                         child: Row(
                           children: [
@@ -386,7 +386,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.grey[200]!,
-                                          borderRadius: BorderRadius.only(
+                                          borderRadius: const BorderRadius.only(
                                             topLeft: Radius.circular(8),
                                             topRight: Radius.circular(8),
                                           ),
@@ -453,7 +453,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.grey[200]!,
-                                          borderRadius: BorderRadius.only(
+                                          borderRadius: const BorderRadius.only(
                                             topLeft: Radius.circular(8),
                                             topRight: Radius.circular(8),
                                           ),
