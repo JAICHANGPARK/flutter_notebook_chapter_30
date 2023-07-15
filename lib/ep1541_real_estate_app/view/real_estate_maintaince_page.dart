@@ -31,11 +31,11 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
           controller: tabController,
           labelColor: Colors.black,
           indicatorColor: Colors.orange,
-          tabs: [
-            const Tab(
+          tabs: const [
+            Tab(
               text: "Active(2)",
             ),
-            const Tab(
+            Tab(
               text: "History(21)",
             ),
           ],
@@ -170,7 +170,7 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                               color: Colors.grey[400],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Row(
@@ -192,7 +192,7 @@ class _RealEstateMaintenancePageState extends State<RealEstateMaintenancePage> w
                                 onPressed: () {},
                                 child: const Text("Email"),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
                               MaterialButton(
