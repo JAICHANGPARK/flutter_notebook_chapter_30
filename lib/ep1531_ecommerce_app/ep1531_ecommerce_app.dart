@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_30/ep1531_ecommerce_app/view/ecommerce_login_page.dart';
 
 void main() {
-  runApp(EcommerceApp());
+  runApp(const EcommerceApp());
 }
 
 class EcommerceApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class EcommerceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: EcommerceLoginPage(),
     );
   }
